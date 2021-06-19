@@ -12,8 +12,11 @@ GIMMIK_CFLAGS = -I./bin/generated_kernels
 
 LDFLAGS_XSMM_REFERENCE =-L./../libxsmm_reference/lib -lxsmmnoblas -lxsmm -lpthread -lrt -ldl -lm -lc
 LDFLAGS_XSMM_CUSTOM =-L./../libxsmm_custom/lib -lxsmmnoblas -lxsmm -lpthread -lrt -ldl -lm -lc
-LDFLAGS_XSMM_REFERENCE +=-L./../OpenBlas-build/lib -lopenblas
-LDFLAGS_XSMM_CUSTOM +=-L./../OpenBlas-build/lib -lopenblas
+LDFLAGS_XSMM_REFERENCE += -lblas
+LDFLAGS_XSMM_CUSTOM += -lblas
+# LDFLAGS_XSMM_REFERENCE +=-L./../OpenBlas-build/lib -lopenblas
+# LDFLAGS_XSMM_CUSTOM +=-L./../OpenBlas-build/lib -lopenblas
+
 
 CXX = gcc
 GIMMIK_CXX = icc
