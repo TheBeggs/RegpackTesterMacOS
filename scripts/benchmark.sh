@@ -41,10 +41,10 @@ if [ "$SKIP_BENCH" = "0" ]
 then
   echo "Building LIBXSMM libraries"
   cd $XSMM_REFERENCE_DIR
-  make realclean
+#   make realclean
   make -j CXX=gcc CC=gcc
   cd $XSMM_CUSTOM_DIR
-  make realclean
+#   make realclean
   make -j CXX=gcc CC=gcc
 
   TIMESTAMP="$(date +"%T")"

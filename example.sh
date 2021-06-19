@@ -1,0 +1,1 @@
+./scripts/benchmark.sh -o log -p plot -m "data/example_mats_small" -t pyfr
