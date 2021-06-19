@@ -36,6 +36,9 @@ while getopts ":d:g:m:t:o:p:n:s:" opt; do
   esac
 done
 
+# make log dir
+mkdir -p $LOG_DIR
+
 # run benchmark
 if [ "$SKIP_BENCH" = "0" ]
 then
