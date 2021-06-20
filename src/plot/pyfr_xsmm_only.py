@@ -81,7 +81,7 @@ def plot(runs, mat_flops, shape, title, limit_y=False):
         plt.xlabel(xlabels[i])
         plt.ylabel("Pseudo-FLOP/s")
         plt.yscale("log", base=10)
-        plt.title("Quad: " + xtitles[i] + " vs Pseudo-FLOP/s")
+        plt.title(title + ": " + xtitles[i] + " vs Pseudo-FLOP/s")
         if limit_y:
             plt.ylim(top=10e9)
         plt.tight_layout()

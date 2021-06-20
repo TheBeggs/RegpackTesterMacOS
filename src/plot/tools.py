@@ -275,6 +275,27 @@ def calc_GFLOPs(mat_FLOPS, mat_names, data, b_num_col, gimmik, t='best'):
     else:
         return custom_GFLOPs, ref_GFLOPs
 
+# data is a list formed from runs: i.e run["quad"] for pyfr mats
+def calc_GFLOPs_xsmm_only(mat_FLOPS, mat_names, data, b_num_col, gimmik, t='best'):
+    _NUM_PANELS = b_num_col / B_TARGET_PANEL_WIDTH
+
+    ref_GFLOPs = []
+
+    for i, mat_name in enumerate(mat_names):
+        _FLOPS_PER_PANEL = mat_FLOPS[mat_name]
+        ref_inner = []
+
+        for run in data:
+            # *1e-3 for ms to s
+            time_per_panel_ref   = (run['xsmm_reference_'+t][i]*1e-3)/_NUM_PANELS
+            ref_inner.append(_FLOPS_PER_PANEL / time_per_panel_ref)
+
+        ref_avg = sum(ref_inner) / len(ref_inner)
+        ref_GFLOPs.append(ref_avg / 1e9)
+
+    
+    return ref_GFLOPs
+
 def _calc_mem_spMM_beta_0(mat):
     # dont count A load
     num_panels = B_TARGET_PANEL_WIDTH/AVX_512_WIDTH
@@ -320,17 +341,18 @@ def _calc_mem_dense_beta_0(mat):
     return (mem * num_panels)# + mem_A # dont repeat A load
 
 # returns AIs for XSMM SpMM, dense, (and GiMMiK)
-def get_AIs(mat_paths, gimmik):
+def get_AIs(mat_paths, gimmik, shape):
     spMM_AIs, dense_AIs = [], []
 
     for mat_path in mat_paths:
-        with open(mat_path) as f:
-            test_mat = clean(np.loadtxt(f))
-            flops_per_panel = basic_flops(test_mat, B_TARGET_PANEL_WIDTH)
-            spmm_mem_per_panel = _calc_mem_spMM_beta_0(test_mat)
-            dense_mem_per_panel = _calc_mem_dense_beta_0(test_mat)
-            spMM_AIs.append( flops_per_panel / spmm_mem_per_panel )
-            dense_AIs.append( flops_per_panel / dense_mem_per_panel )
+        if shape in mat_path:
+            with open(mat_path) as f:
+                test_mat = clean(np.loadtxt(f))
+                flops_per_panel = basic_flops(test_mat, B_TARGET_PANEL_WIDTH)
+                spmm_mem_per_panel = _calc_mem_spMM_beta_0(test_mat)
+                dense_mem_per_panel = _calc_mem_dense_beta_0(test_mat)
+                spMM_AIs.append( flops_per_panel / spmm_mem_per_panel )
+                dense_AIs.append( flops_per_panel / dense_mem_per_panel )
 
     if gimmik == "1":
         # gimmik has same AI as xsmm SpMM
