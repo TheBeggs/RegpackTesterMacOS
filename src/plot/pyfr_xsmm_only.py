@@ -46,31 +46,44 @@ def plot(runs, mat_flops, shape, title, limit_y=False):
             get_perf_xsmm_only(runs, N_RUNS, shape, x_term, mat_flops, B_NUM_COL, TEST_GIMMIK)
 
         # plt.plot(x_values, custom_y_avg, label="Custom LIBXSMM", color="limegreen", marker=".")
-        plt.plot(x_values, ref_y_avg, label="Reference LIBXSMM", color="maroon")#, marker=".")
+        plt.plot(x_values, ref_y_avg, color="maroon")#, marker=".")
 
         for j in range(len(x_values)):
 
             if (ref_y_kernel[j] == "sparse"):
                 marker = "o"
+                face = False
+                # label = "sparse"
             elif (ref_y_kernel[j] == "wide-sparse"):
                 marker = "."
+                face = True
+                # label = "wide-sparse"
             elif (ref_y_kernel[j] == "dense"):
-                marker = "*"
+                marker = "^"
+                face = True
+                # label = "dense"
             else:
                 assert False, f"undefined kernel type: {ref_y_kernel[j]}"
-
-            plt.plot(x_values[j], ref_y_avg[j], marker, color="maroon")
+            if face:
+                plt.plot(x_values[j], ref_y_avg[j], marker, color="maroon")
+            else:
+                plt.plot(x_values[j], ref_y_avg[j], marker, markerfacecolor='none', color="maroon")
 
         # if TEST_GIMMIK == "1":
         #     plt.plot(x_values, gimmik_y_avg, label="GiMMiK", color="orange", marker=".")
 
+        # Manual legend
+        plt.plot([], [], "o", color="maroon", markerfacecolor='none', label="sparse")
+        plt.plot([], [], ".", color="maroon", label="wide-sparse")
+        plt.plot([], [], "^", color="maroon", label="dense")
+        plt.legend()
+        
         plt.xlabel(xlabels[i])
         plt.ylabel("Pseudo-FLOP/s")
         plt.yscale("log", base=10)
         plt.title("Quad: " + xtitles[i] + " vs Pseudo-FLOP/s")
         if limit_y:
             plt.ylim(top=10e9)
-        # plt.legend()
         plt.tight_layout()
         plt.savefig(os.path.join(PLOT_DIR,"pyfr",shape,"{}_{}.pdf".format(x_term, TIMESTAMP)), bbox_inches='tight')
 
