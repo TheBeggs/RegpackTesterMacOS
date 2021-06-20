@@ -225,10 +225,10 @@ def get_perf_xsmm_only(runs, n_runs, shape, x_term, mat_flops, b_num_col, gimmik
     ref_y_avg = [sum(elem)/len(elem) for elem in zip(*ref_y)]
     
     # check if kernel type is the same for different runs
-    if (len(ref_kernel) > 1):
-        for i in range(len(ref_kernel[0])):
-            for j in range(1, len(ref_kernel)):
-                assert(ref_kernel[j][i] == ref_kernel[j - 1][i])
+    # if (len(ref_kernel) > 1):
+    #     for i in range(len(ref_kernel[0])):
+    #         for j in range(1, len(ref_kernel)):
+    #             assert(ref_kernel[j][i] == ref_kernel[j - 1][i])
 
     return ref_x[0], ref_y_avg, ref_kernel[0]
 
