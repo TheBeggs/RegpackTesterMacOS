@@ -147,6 +147,91 @@ def get_perf(runs, n_runs, shape, x_term, mat_flops, b_num_col, gimmik, t='best'
 
         return custom_x[0], custom_y_avg, ref_y_avg
 
+
+# trait is from a run: i.e run["quad"] for pyfr mats
+def sort_values_xsmm_only(x_term, trait, mat_flops, b_num_col, gimmik, t='best'):
+    _NUM_PANELS = b_num_col / B_TARGET_PANEL_WIDTH
+
+    # custom_x, custom_y = [], []
+    ref_x, ref_y = [], []
+    ref_kernel_type = []
+    # if gimmik == "1":
+    #     gimmik_x, gimmik_y = [], []
+
+    for i, u in enumerate(trait[x_term]):
+        FLOPS_PER_PANEL = mat_flops[trait['mat_file'][i]]
+
+        # time_per_panel_custom = (trait['xsmm_custom_'+t][i]*1e-3)/_NUM_PANELS
+        time_per_panel_ref   = (trait['xsmm_reference_'+t][i]*1e-3)/_NUM_PANELS
+
+        # custom_x.append(u)
+        # custom_y.append(FLOPS_PER_PANEL / time_per_panel_custom)
+        ref_x.append(u)
+        ref_y.append(FLOPS_PER_PANEL / time_per_panel_ref)
+        ref_kernel_type.append(trait['xsmm_reference_kernel_type'][i])
+
+        # if gimmik == "1":
+        #     time_per_panel_gimmik = (trait['gimmik_'+t][i]*1e-3)/_NUM_PANELS
+        #     gimmik_x.append(u)
+        #     gimmik_y.append(FLOPS_PER_PANEL / time_per_panel_gimmik)
+
+    # old_len = len(custom_y)
+
+    # what are these for?
+    # custom_y = [x for _,x in sorted(zip(custom_x, custom_y))]
+    # custom_x.sort()
+    # assert(old_len == len(custom_y))
+
+    ref_y = [x for _,x in sorted(zip(ref_x, ref_y))]
+    ref_kernel_type = [x for _, x in sorted(zip(ref_x, ref_kernel_type))]
+    ref_x.sort()
+
+    # if gimmik == "1":
+    #     gimmik_y = [x for _,x in sorted(zip(gimmik_x, gimmik_y))]
+    #     gimmik_x.sort()
+
+    # if gimmik == "1":
+    #     return custom_x, custom_y, ref_x, ref_y, gimmik_x, gimmik_y
+    # else:
+    return ref_x, ref_y, ref_kernel_type
+
+# sort_values(x_term, run, mat_flops, b_num_col, gimmik, t='best'):
+def get_perf_xsmm_only(runs, n_runs, shape, x_term, mat_flops, b_num_col, gimmik, t='best'):
+    # if gimmik == "1":
+    #     ref_x, ref_y, ref_kernel = [], [], []
+    #     for i in range(n_runs):
+    #         rx1, ry1, rkernel = \
+    #             sort_values(x_term, runs[i][shape], mat_flops, b_num_col, gimmik, t)
+    #         ref_x.append(rx1)
+    #         ref_y.append(ry1)
+    #         ref_kernel.append(rkernel)
+
+    #     custom_y_avg = [sum(elem)/len(elem) for elem in zip(*custom_y)]
+    #     ref_y_avg = [sum(elem)/len(elem) for elem in zip(*ref_y)]
+    #     gimmik_y_avg = [sum(elem)/len(elem) for elem in zip(*gimmik_y)]
+
+    #     return custom_x[0], custom_y_avg, ref_y_avg, gimmik_y_avg
+
+    # else:
+    ref_x, ref_y, ref_kernel = [], [], []
+    for i in range(n_runs):
+        rx1, ry1, rkernel = \
+            sort_values_xsmm_only(x_term, runs[i][shape], mat_flops, b_num_col, gimmik, t)
+        ref_x.append(rx1)
+        ref_y.append(ry1)
+        ref_kernel.append(rkernel)
+
+    # custom_y_avg = [sum(elem)/len(elem) for elem in zip(*custom_y)]
+    ref_y_avg = [sum(elem)/len(elem) for elem in zip(*ref_y)]
+    
+    # check if kernel type is the same for different runs
+    if (len(ref_kernel) > 1):
+        for i in range(len(ref_kernel[0])):
+            for j in range(1, len(ref_kernel)):
+                assert(ref_kernel[j][i] == ref_kernel[j - 1][i])
+
+    return ref_x[0], ref_y_avg, ref_kernel[0]
+
 # data is a list formed from runs: i.e run["quad"] for pyfr mats
 def calc_GFLOPs(mat_FLOPS, mat_names, data, b_num_col, gimmik, t='best'):
     _NUM_PANELS = b_num_col / B_TARGET_PANEL_WIDTH
