@@ -42,7 +42,7 @@ if [ "$SKIP_BENCH" = "0" ]
 then
   echo "Building reference LIBXSMM"
   cd $XSMM_REFERENCE_DIR
-  make -j CXX=gcc CC=gcc
+  make CXX=gcc CC=gcc
 
   TIMESTAMP="$(date +"%d-%m_%T")"
   echo "Using $TIMESTAMP to stamp log and plot files"
