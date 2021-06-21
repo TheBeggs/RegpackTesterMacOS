@@ -1,4 +1,4 @@
-./scripts/benchmark_xsmm_only.sh -o log -p plots -m "data/example_mats_small" -t pyfr
+./scripts/benchmark_xsmm_only.sh -o log -p plots -m "data/example_mats" -t pyfr
 
 # ./scripts/benchmark_xsmm_only.sh -o log -p plots -m "data/example_mats_small" -t pyfr -n 1
 
