@@ -50,7 +50,7 @@ then
 #   make realclean
   make -j CXX=gcc CC=gcc
 
-  TIMESTAMP="$(date +"%T")"
+  TIMESTAMP="$(date +"%d-%m_%T")"
   echo "Using $TIMESTAMP to stamp log and plot files"
 
   cd $WD
