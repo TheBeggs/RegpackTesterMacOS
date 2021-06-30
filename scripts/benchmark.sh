@@ -36,16 +36,19 @@ while getopts ":d:g:m:t:o:p:n:s:" opt; do
   esac
 done
 
+# make log dir
+mkdir -p $LOG_DIR
+
 # run benchmark
 if [ "$SKIP_BENCH" = "0" ]
 then
   echo "Building LIBXSMM libraries"
   cd $XSMM_REFERENCE_DIR
-  make realclean
-  make -j CXX=gcc CC=gcc
+  # make realclean
+  make CXX=gcc CC=gcc
   cd $XSMM_CUSTOM_DIR
-  make realclean
-  make -j CXX=gcc CC=gcc
+  # make realclean
+  make CXX=gcc CC=gcc
 
   TIMESTAMP="$(date +"%T")"
   echo "Using $TIMESTAMP to stamp log and plot files"
