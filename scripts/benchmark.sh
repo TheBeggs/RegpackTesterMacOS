@@ -45,10 +45,10 @@ then
   echo "Building LIBXSMM libraries"
   cd $XSMM_REFERENCE_DIR
 #   make realclean
-  make -j CXX=gcc CC=gcc
+  make CXX=gcc CC=gcc
   cd $XSMM_CUSTOM_DIR
 #   make realclean
-  make -j CXX=gcc CC=gcc
+  make CXX=gcc CC=gcc
 
   TIMESTAMP="$(date +"%d-%m_%T")"
   echo "Using $TIMESTAMP to stamp log and plot files"
