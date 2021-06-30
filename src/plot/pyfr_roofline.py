@@ -34,10 +34,13 @@ shape_title = ["Quad", "Hex", "Tet", "Tri"]
 
 for i_title, shape in enumerate(shapes):
     # get data
-    mat_names = [x for x in mat_paths if shape in x]
+    # mat_names = [x for x in mat_paths if shape in x]
     data = []
     for i in range(N_RUNS):
         data.append(runs[i][shape])
+
+    mat_names = data[0]["mat_file"]
+
     if TEST_GIMMIK == "1":
         custom_GFLOPs, ref_GFLOPs, gimmik_GFLOPs = \
             calc_GFLOPs(mat_flops, mat_names, data, B_NUM_COL, TEST_GIMMIK)

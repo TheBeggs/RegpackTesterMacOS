@@ -34,10 +34,12 @@ shape_title = ["Quad", "Hex", "Tet", "Tri"]
 
 for i_title, shape in enumerate(shapes):
     # get data
-    mat_names = [x for x in mat_paths if shape in x]
+    # mat_names = [x for x in mat_paths if shape in x]
     data = []
     for i in range(N_RUNS):
         data.append(runs[i][shape])
+
+    mat_names = data[0]["mat_file"]
 
     ref_GFLOPs = calc_GFLOPs_xsmm_only(mat_flops, mat_names, data, B_NUM_COL, TEST_GIMMIK)
     if REF_IS_DENSE == "1":
