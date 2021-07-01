@@ -48,17 +48,17 @@ for i_title, shape in enumerate(shapes):
         custom_GFLOPs, ref_GFLOPs, gimmik_GFLOPs = \
             calc_GFLOPs(mat_flops, mat_names, data, B_NUM_COL, TEST_GIMMIK)
         if REF_IS_DENSE == "1":
-            custom_AIs, ref_AIs, gimmik_AIs = get_AIs(mat_paths, TEST_GIMMIK)
+            custom_AIs, ref_AIs, gimmik_AIs = get_AIs(mat_names, TEST_GIMMIK)
         else:
-            custom_AIs, _, gimmik_AIs = get_AIs(mat_paths, TEST_GIMMIK)
+            custom_AIs, _, gimmik_AIs = get_AIs(mat_names, TEST_GIMMIK)
             ref_AIs = custom_AIs
     else:
         custom_GFLOPs, ref_GFLOPs = \
             calc_GFLOPs(mat_flops, mat_names, data, B_NUM_COL, TEST_GIMMIK)
         if REF_IS_DENSE == "1":
-            custom_AIs, ref_AIs = get_AIs(mat_paths, TEST_GIMMIK)
+            custom_AIs, ref_AIs = get_AIs(mat_names, TEST_GIMMIK)
         else:
-            custom_AIs, _ = get_AIs(mat_paths, TEST_GIMMIK)
+            custom_AIs, _ = get_AIs(mat_names, TEST_GIMMIK)
             ref_AIs = custom_AIs
 
     # plot rooflines

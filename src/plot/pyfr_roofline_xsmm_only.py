@@ -46,9 +46,9 @@ for i_title, shape in enumerate(shapes):
 
     ref_GFLOPs = calc_GFLOPs_xsmm_only(mat_flops, mat_names, data, B_NUM_COL, TEST_GIMMIK)
     if REF_IS_DENSE == "1":
-        custom_AIs, ref_AIs = get_AIs(mat_paths, TEST_GIMMIK, shape)
+        custom_AIs, ref_AIs = get_AIs(mat_names, TEST_GIMMIK, shape)
     else:
-        custom_AIs, _ = get_AIs(mat_paths, TEST_GIMMIK, shape)
+        custom_AIs, _ = get_AIs(mat_names, TEST_GIMMIK, shape)
         ref_AIs = custom_AIs
 
     # plot rooflines
