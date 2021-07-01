@@ -59,7 +59,6 @@ for i_title, shape in enumerate(shapes):
     ax.plot(x, y)
     x = np.array([cpu_info["peak_flops_dp"]/cpu_info["peak_memory_bw"], 2**4])
     y = [cpu_info["peak_flops_dp"],cpu_info["peak_flops_dp"]]
-    print(f"{y = }")
     ax.plot(x, y, color='red', label="Double AVX512 Unit")
     x = np.array([(cpu_info["peak_flops_dp"]/2)/cpu_info["peak_memory_bw"], 2**4])
     y = [(cpu_info["peak_flops_dp"]/2),(cpu_info["peak_flops_dp"]/2)]

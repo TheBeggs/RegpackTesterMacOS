@@ -16,7 +16,4 @@ xeon_8124M_stats = dict()
 xeon_8124M_stats["num_avx512_units"] = 2
 xeon_8124M_stats["avx512_freq"] = 3.0 # All Cores Active AVX512 Boost (GHz) estimated, might need to be changed TODO
 xeon_8124M_stats["peak_flops_dp"] = xeon_8124M_stats["avx512_freq"] * xeon_8124M_stats["num_avx512_units"] * AVX512_FLOPS_PER_CYCLE_DP
-xeon_8124M_stats["peak_memory_bw"] = 13.5163 # GB/s not measured yet!! TODO
-
-print(f"{xeon_8175M_stats['peak_flops_dp'] = }")
-print(f"{xeon_8124M_stats['peak_flops_dp'] = }")
+xeon_8124M_stats["peak_memory_bw"] = 12.7632 # GB/s measured on c5n.large
