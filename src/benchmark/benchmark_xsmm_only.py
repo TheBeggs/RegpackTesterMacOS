@@ -46,7 +46,10 @@ def benchmark_matrix(file_name, num_col_b, gimmik):
 
     # run benchmark script
     print("Running", file_name, file=sys.stderr)
-    benchmark_cmd = ["./scripts/bin_benchmark_xsmm_only.sh", str(num_col_b), str(random.randint(0, 2**31)), str(gimmik)]
+
+    clean_mat_path = file_name.replace("data", "cleaned_data")
+
+    benchmark_cmd = ["./scripts/bin_benchmark_xsmm_only.sh", str(num_col_b), str(random.randint(0, 2**31)), str(gimmik), clean_mat_path]
     runout = subprocess.Popen(
         benchmark_cmd,
         stdout=subprocess.PIPE

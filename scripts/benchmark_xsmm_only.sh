@@ -10,8 +10,9 @@ REF_IS_DENSE="0"
 TEST_GIMMIK="0"
 N_RUNS=3
 SKIP_BENCH="0" # 0 don't skip, otherwise == timestamp of previous benchmark
+N_ITER=60 # number of iterations for each run
 
-while getopts ":d:g:m:t:o:p:n:s:" opt; do
+while getopts ":d:g:m:t:o:p:n:s:i:" opt; do
   case $opt in
     d) REF_IS_DENSE="$OPTARG"
     ;;
@@ -29,13 +30,15 @@ while getopts ":d:g:m:t:o:p:n:s:" opt; do
     ;;
     s) SKIP_BENCH="$OPTARG"
     ;;
+    i) N_ITER=$OPTARG
+    ;;
     \?) echo "Invalid option -$OPTARG" >&2
     ;;
   esac
 done
 
-# make log dir
-mkdir -p $LOG_DIR
+# clean binary benchmark executable file (just in case)
+make clean
 
 # run benchmark
 if [ "$SKIP_BENCH" = "0" ]
@@ -49,22 +52,33 @@ then
 
   cd $WD
 
+  # make log dir
+  LOG_DIR=$LOG_DIR/$TIMESTAMP
+  mkdir -p $LOG_DIR
+
   # Perform N benchmark runs
   START=1
   for (( i=$START; i<=$N_RUNS; i++ ))
   do
 	echo "Starting benchmark run $i"
-	python3 src/benchmark/benchmark_xsmm_only.py $MATS_DIR $WD $B_NUM_COL $TEST_GIMMIK > $LOG_DIR/run_${TIMESTAMP}_$i.out 2> $LOG_DIR/run_${TIMESTAMP}_$i.err
+
+  for (( j=$START; j<=$N_ITER; j++ ))
+  do
+  echo -e "\titernation $j"
+  python3 src/benchmark/benchmark_xsmm_only.py $MATS_DIR $WD $B_NUM_COL $TEST_GIMMIK > $LOG_DIR/run_${TIMESTAMP}_${i}_${j}.out 2> $LOG_DIR/run_${TIMESTAMP}_${i}_${j}.err
+  done
+
 	echo "Finished benchmark run $i"
   done
 
 else
   TIMESTAMP=$SKIP_BENCH
+  LOG_DIR=$LOG_DIR/$TIMESTAMP
 fi
 
 # Sort log data and pickle for plotting
 mkdir -p bin/log_data
-python3 src/plot/pickle_runs_xsmm_only.py $MAT_TYPE $N_RUNS $LOG_DIR $TIMESTAMP $TEST_GIMMIK
+python3 src/plot/pickle_runs_xsmm_only.py $MAT_TYPE $N_RUNS $LOG_DIR $TIMESTAMP $TEST_GIMMIK $N_ITER
 
 # Plot
 if [ "$MAT_TYPE" = "pyfr" ]

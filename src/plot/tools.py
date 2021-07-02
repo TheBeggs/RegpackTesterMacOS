@@ -346,9 +346,6 @@ def get_AIs(mat_paths, gimmik, shape):
 
     for mat_path in mat_paths:
         if shape in mat_path:
-
-            print(mat_path)
-
             with open(mat_path) as f:
                 test_mat = clean(np.loadtxt(f))
                 flops_per_panel = basic_flops(test_mat, B_TARGET_PANEL_WIDTH)

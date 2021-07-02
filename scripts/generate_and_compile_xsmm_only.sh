@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-make clean
+# make clean
 mkdir -p bin/generated_kernels
 
 FILENAME=$1

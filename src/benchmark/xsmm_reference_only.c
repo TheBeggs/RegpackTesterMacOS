@@ -19,8 +19,8 @@
 #define DEBUG 0
 
 int main(int argc, char **argv) {
-    if (argc != 3) {
-      printf("Expected 2 arguments: size_of_B, seed_of_B");
+    if (argc != 4) {
+      printf("Expected 3 arguments: size_of_B, seed_of_B, path_of_mat_A");
       exit(1);
     }
 
@@ -31,7 +31,7 @@ int main(int argc, char **argv) {
     double beta = getenv("BETA") ? atof(getenv("BETA")) : 0.0;
     printf("alpha = %f, beta = %f\n", alpha, beta);
 
-    char *a_path = "bin/generated_kernels/clean_mat_a.txt";
+    char *a_path = argv[3];
 
     int m = 0;
     int k = 0;
@@ -79,10 +79,10 @@ int main(int argc, char **argv) {
       } else {
       printf("undefined");
       }
-  }
+    }
     printf("\n");
 
-    struct benchmark_data b_data = benchmark_xsmm(b_d, c_xsmm_d, n, xsmm_d);
+    struct benchmark_data b_data = benchmark_xsmm_1iter(b_d, c_xsmm_d, n, xsmm_d);
 
     printf("%s", "Done.\n");
     printf("---------------------------------------------------------------\n");
