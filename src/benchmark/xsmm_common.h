@@ -101,6 +101,9 @@ void exec_xsmm(const double *b, double *c, int n, const libxsmm_dfsspmdm *xsmm_d
     }
 }
 
+#pragma GCC push_options
+#pragma GCC optimize ("O0")
+
 void flush_cache() {
     int num_numbers = CACHE_SIZE / sizeof(double);
 
@@ -112,5 +115,7 @@ void flush_cache() {
     
     free(dummy_array);
 }
+
+#pragma GCC pop_options
 
 #endif // BENCHMARK_XSMM_COMMON_H
