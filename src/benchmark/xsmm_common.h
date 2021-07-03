@@ -88,7 +88,7 @@ struct benchmark_data benchmark_xsmm_1iter(double *b, double *c, int num_col, li
     b_data.avg_iqr_time = exec_time;
 
     double cpu_freq = ((double) duration_data.ncycles / (double) duration_data.libxsmm) * 1e-6;
-    printf("CPU clock speed: %f GHz\n", cpu_freq);
+    printf("CPU clock speed (GHz): %f\n", cpu_freq);
 
     return b_data;
 }

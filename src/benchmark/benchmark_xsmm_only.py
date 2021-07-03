@@ -63,8 +63,10 @@ def benchmark_matrix(file_name, num_col_b, gimmik):
                     result["xsmm_reference_best"] = float(value)
                 elif "avg execution time" in head:
                     result["xsmm_reference_avg"] = float(value)
-            if "kernel type" in head:
+            elif "kernel type" in head:
                 result["xsmm_reference_kernel_type"] = value.strip()
+            elif "CPU clock speed (GHz)" in head:
+                result["cpu_freq"] = float(value)
 
     print("Finished running in", str(result["xsmm_reference_best"]) + "ms", file=sys.stderr)
 
