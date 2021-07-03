@@ -11,6 +11,7 @@ TEST_GIMMIK="0"
 N_RUNS=3
 SKIP_BENCH="0" # 0 don't skip, otherwise == timestamp of previous benchmark
 N_ITER=60 # number of iterations for each run
+MATRIX_SIZE=288000000 # 1500*192000 DP numbers, taking 2197.27 MB
 
 while getopts ":d:g:m:t:o:p:n:s:i:" opt; do
   case $opt in
@@ -65,7 +66,7 @@ then
   for (( j=$START; j<=$N_ITER; j++ ))
   do
   echo -e "\titernation $j"
-  python3 src/benchmark/benchmark_xsmm_only.py $MATS_DIR $WD $B_NUM_COL $TEST_GIMMIK > $LOG_DIR/run_${TIMESTAMP}_${i}_${j}.out 2> $LOG_DIR/run_${TIMESTAMP}_${i}_${j}.err
+  python3 src/benchmark/benchmark_xsmm_only.py $MATS_DIR $WD $MATRIX_SIZE $TEST_GIMMIK > $LOG_DIR/run_${TIMESTAMP}_${i}_${j}.out 2> $LOG_DIR/run_${TIMESTAMP}_${i}_${j}.err
   done
 
 	echo "Finished benchmark run $i"

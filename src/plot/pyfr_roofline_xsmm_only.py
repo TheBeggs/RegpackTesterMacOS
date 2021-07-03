@@ -17,7 +17,7 @@ if len(sys.argv) < 8:
 
 MAT_PATH = sys.argv[1]
 N_RUNS = int(sys.argv[2])
-B_NUM_COL = int(sys.argv[3])
+# B_NUM_COL = int(sys.argv[3])
 TEST_GIMMIK = sys.argv[4]
 TIMESTAMP = sys.argv[5]
 PLOT_DIR = sys.argv[6]
@@ -44,7 +44,7 @@ for i_title, shape in enumerate(shapes):
 
     mat_names = data[0]["mat_file"]
 
-    ref_GFLOPs = calc_GFLOPs_xsmm_only(mat_flops, mat_names, data, B_NUM_COL, TEST_GIMMIK)
+    ref_GFLOPs = calc_GFLOPs_xsmm_only(mat_flops, mat_names, data, 0, TEST_GIMMIK)
     if REF_IS_DENSE == "1":
         custom_AIs, ref_AIs = get_AIs(mat_names, TEST_GIMMIK, shape)
     else:
