@@ -66,7 +66,7 @@ int main(int argc, char **argv) {
 
   // Fill B matrix with random values.
   printf("%s", "Randomly generating B matrix...\n");
-  fill_B_matrix(b_size, b_d, seed);
+  fill_B_matrix_semi_random(b_size, b_d, seed);
 
   printf("%s", "Running XSMM Reference MM...\n");
   double *c_xsmm_d = (double *) calloc(c_size, sizeof(double));

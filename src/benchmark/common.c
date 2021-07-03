@@ -14,11 +14,21 @@ void d2f(const double *a, float *b, int size) {
   }
 }
 
-void fill_B_matrix(int b_size, double *b, int seed) {
+void fill_B_matrix_random(int b_size, double *b, int seed) {
   srand(seed);
   
   for (int i = 0; i < b_size; ++i) {
     b[i] = rand() % 499 + 1;
+  }
+}
+
+void fill_B_matrix_semi_random(int b_size, double *b, int seed) {
+  srand(seed);
+
+  int element = rand() % 499 + 1;
+  
+  for (int i = 0; i < b_size; ++i) {
+    b[i] = element;
   }
 }
 

@@ -26,7 +26,9 @@ struct duration
 
 void d2f(const double *a, float *b, int size);
 
-void fill_B_matrix(int b_size, double *b, int seed);
+void fill_B_matrix_random(int b_size, double *b, int seed);
+
+void fill_B_matrix_semi_random(int b_size, double *b, int seed);
 
 bool compare_results_d(double *a, double *b, int size, double delta);
 
