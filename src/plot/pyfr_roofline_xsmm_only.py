@@ -88,6 +88,12 @@ for i_title, shape in enumerate(shapes):
         else:
             ax.plot(ref_AIs[i], ref_GFLOPs[i], marker, color="maroon", markerfacecolor='none')
 
+        # Warning if datapoint is higher than RAM BW roofline
+        if (ref_GFLOPs[i] > ref_AIs[i] * cpu_info["peak_memory_bw"]):
+            print(f"Over roofline:")
+            print(f"{mat_path}")
+            print(f"{ref_AIs[i] = }, {ref_GFLOPs[i] = }")
+
     # plot details
     ax.set_xscale('log', base=2)
     ax.set_yscale('log', base=2)

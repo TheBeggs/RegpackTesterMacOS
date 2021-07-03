@@ -7,6 +7,8 @@
 
 #define DEBUG 0
 
+#define CACHE_SIZE 52428800
+
 struct benchmark_data
 {
     double fastest_time;

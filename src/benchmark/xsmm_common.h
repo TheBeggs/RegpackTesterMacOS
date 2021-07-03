@@ -86,4 +86,16 @@ void exec_xsmm(const double *b, double *c, int n, const libxsmm_dfsspmdm *xsmm_d
     }
 }
 
+void flush_cache() {
+    int num_numbers = CACHE_SIZE / sizeof(double);
+
+    double* dummy_array = (double*) malloc(num_numbers * sizeof(double));
+
+    for (int i = 0; i < num_numbers; i++) {
+        dummy_array[i] = 0.0;
+    }
+    
+    free(dummy_array);
+}
+
 #endif // BENCHMARK_XSMM_COMMON_H

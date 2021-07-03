@@ -4,7 +4,8 @@ WD=$(pwd)
 
 XSMM_REFERENCE_DIR=./../libxsmm_reference
 
-B_NUM_COL=192000
+# B_NUM_COL=192000
+B_NUM_COL=400000
 
 REF_IS_DENSE="0"
 TEST_GIMMIK="0"
