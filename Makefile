@@ -1,5 +1,7 @@
 CFLAGS = -std=c11 -O3 -pthread -fopenmp
 
+CFLAGS_G = -std=c11 -O0 -g -pthread -fopenmp
+
 GIMMIK_CFLAGS += -std=c11 -O3 -pthread -qopenmp
 GIMMIK_CFLAGS += -mavx512f -mavx512cd -mavx512vl -mavx512dq -mavx512bw -mfma
 GIMMIK_CFLAGS += -march=skylake-avx512
@@ -29,6 +31,9 @@ bin/benchmark_xsmm_custom : src/benchmark/xsmm_custom.c src/benchmark/common.c
 
 bin/benchmark_xsmm_only : src/benchmark/xsmm_reference_only.c src/benchmark/common.c
 	$(CXX) $(CFLAGS) $(CFLAGS_XSMM_REFERENCE) $^ $(LDFLAGS_XSMM_REFERENCE) -o $@
+
+bin/benchmark_xsmm_only_g : src/benchmark/xsmm_reference_only.c src/benchmark/common.c
+	$(CXX) $(CFLAGS_G) $(CFLAGS_XSMM_REFERENCE) $^ $(LDFLAGS_XSMM_REFERENCE) -o $@
 
 bin/benchmark_gimmik : src/benchmark/gimmik.c src/benchmark/common.c
 	$(GIMMIK_CXX) $(GIMMIK_CFLAGS) $^ -o $@
