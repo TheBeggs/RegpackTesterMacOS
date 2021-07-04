@@ -10,7 +10,7 @@ if len(sys.argv) < 7:
 
 MAT_PATH = sys.argv[1]
 N_RUNS = int(sys.argv[2])
-B_NUM_COL = int(sys.argv[3])
+# B_NUM_COL = int(sys.argv[3])
 TEST_GIMMIK = sys.argv[4]
 TIMESTAMP = sys.argv[5]
 PLOT_DIR = sys.argv[6]
@@ -33,7 +33,7 @@ xtitles = ['Number of Unique Constants in A', 'Number of Columns in A',
 
 def plot(runs, mat_flops, shape, title, limit_y=False):
     global PLOT_DIR
-    global B_NUM_COL
+    # global B_NUM_COL
     global TEST_GIMMIK
     global x_terms
     global xlabels
@@ -43,7 +43,7 @@ def plot(runs, mat_flops, shape, title, limit_y=False):
         plt.figure(figsize=(6,5))
 
         x_values, ref_y_avg, ref_y_kernel = \
-            get_perf_xsmm_only(runs, N_RUNS, shape, x_term, mat_flops, B_NUM_COL, TEST_GIMMIK)
+            get_perf_xsmm_only(runs, N_RUNS, shape, x_term, mat_flops, 0, TEST_GIMMIK)
 
         # plt.plot(x_values, custom_y_avg, label="Custom LIBXSMM", color="limegreen", marker=".")
         plt.plot(x_values, ref_y_avg, color="maroon")#, marker=".")

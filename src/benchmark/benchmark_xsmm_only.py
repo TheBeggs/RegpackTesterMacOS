@@ -8,15 +8,15 @@ import random
 import pprint as pp
 
 if len(sys.argv) < 5:
-    print("expected 4 arguments: mat_dir cwd b_num_col test_gimmik")
+    print("expected 4 arguments: mat_dir cwd matrix_size test_gimmik")
     exit(1)
 
 mats_dir = sys.argv[1]
 cwd = sys.argv[2]
-B_NUM_COL = sys.argv[3]
+M_SIZE = sys.argv[3]
 test_gimmik = sys.argv[4]
 
-def benchmark_matrix(file_name, num_col_b, gimmik):
+def benchmark_matrix(file_name, matrix_size, gimmik):
     # print A matrix to bin/generated_kernels and compile benchmark program
     print("Generating and Compiling", file_name, file=sys.stderr)
     result = {"mat_file": file_name}
@@ -49,7 +49,7 @@ def benchmark_matrix(file_name, num_col_b, gimmik):
 
     clean_mat_path = file_name.replace("data", "cleaned_data")
 
-    benchmark_cmd = ["./scripts/bin_benchmark_xsmm_only.sh", str(num_col_b), str(random.randint(0, 2**31)), str(gimmik), clean_mat_path]
+    benchmark_cmd = ["./scripts/bin_benchmark_xsmm_only.sh", str(matrix_size), str(random.randint(0, 2**31)), str(gimmik), clean_mat_path]
     runout = subprocess.Popen(
         benchmark_cmd,
         stdout=subprocess.PIPE
@@ -63,8 +63,12 @@ def benchmark_matrix(file_name, num_col_b, gimmik):
                     result["xsmm_reference_best"] = float(value)
                 elif "avg execution time" in head:
                     result["xsmm_reference_avg"] = float(value)
-            if "kernel type" in head:
+            elif "kernel type" in head:
                 result["xsmm_reference_kernel_type"] = value.strip()
+            elif "CPU clock speed (GHz)" in head:
+                result["cpu_freq"] = float(value)
+            elif "Array B width (N)" in head:
+                result["size_n"] = int(value)
 
     print("Finished running in", str(result["xsmm_reference_best"]) + "ms", file=sys.stderr)
 
@@ -84,4 +88,4 @@ mat_paths.sort(key=natural_keys)
 
 for mat_path in mat_paths:
     if test_gimmik == "0":
-        benchmark_matrix(mat_path, B_NUM_COL, test_gimmik)
+        benchmark_matrix(mat_path, M_SIZE, test_gimmik)

@@ -45,6 +45,7 @@ for i, run in enumerate(runs):
         run[t]['xsmm_reference_best'] = []
         run[t]['xsmm_reference_worst'] = []
         run[t]['xsmm_reference_kernel_type'] = []
+        run[t]['size_n'] = []
 
         for j in range(n_iters):
             log_file = os.path.join(
@@ -78,6 +79,7 @@ for i, run in enumerate(runs):
                                 res['xsmm_reference_best'])
                             run[t]['xsmm_reference_kernel_type'].append(
                                 res['xsmm_reference_kernel_type'])
+                            run[t]['size_n'].append(res['size_n'])
                         else:
                             run[t]['xsmm_reference_avg'][m] += res['xsmm_reference_avg']
                             if res['xsmm_reference_best'] < run[t]['xsmm_reference_best'][m]:

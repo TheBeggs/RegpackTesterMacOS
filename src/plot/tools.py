@@ -150,7 +150,7 @@ def get_perf(runs, n_runs, shape, x_term, mat_flops, b_num_col, gimmik, t='best'
 
 # trait is from a run: i.e run["quad"] for pyfr mats
 def sort_values_xsmm_only(x_term, trait, mat_flops, b_num_col, gimmik, t='best'):
-    _NUM_PANELS = b_num_col / B_TARGET_PANEL_WIDTH
+    _NUM_PANELS = (np.array(trait["size_n"]) / B_TARGET_PANEL_WIDTH).astype(int)
 
     # custom_x, custom_y = [], []
     ref_x, ref_y = [], []
@@ -162,7 +162,7 @@ def sort_values_xsmm_only(x_term, trait, mat_flops, b_num_col, gimmik, t='best')
         FLOPS_PER_PANEL = mat_flops[trait['mat_file'][i]]
 
         # time_per_panel_custom = (trait['xsmm_custom_'+t][i]*1e-3)/_NUM_PANELS
-        time_per_panel_ref   = (trait['xsmm_reference_'+t][i]*1e-3)/_NUM_PANELS
+        time_per_panel_ref = (trait['xsmm_reference_'+t][i]*1e-3)/_NUM_PANELS[i]
 
         # custom_x.append(u)
         # custom_y.append(FLOPS_PER_PANEL / time_per_panel_custom)
@@ -277,7 +277,7 @@ def calc_GFLOPs(mat_FLOPS, mat_names, data, b_num_col, gimmik, t='best'):
 
 # data is a list formed from runs: i.e run["quad"] for pyfr mats
 def calc_GFLOPs_xsmm_only(mat_FLOPS, mat_names, data, b_num_col, gimmik, t='best'):
-    _NUM_PANELS = b_num_col / B_TARGET_PANEL_WIDTH
+    _NUM_PANELS = (np.array(data[0]["size_n"]) / B_TARGET_PANEL_WIDTH).astype(int)
 
     ref_GFLOPs = []
 
@@ -287,7 +287,7 @@ def calc_GFLOPs_xsmm_only(mat_FLOPS, mat_names, data, b_num_col, gimmik, t='best
 
         for run in data:
             # *1e-3 for ms to s
-            time_per_panel_ref   = (run['xsmm_reference_'+t][i]*1e-3)/_NUM_PANELS
+            time_per_panel_ref   = (run['xsmm_reference_'+t][i]*1e-3)/_NUM_PANELS[i]
             ref_inner.append(_FLOPS_PER_PANEL / time_per_panel_ref)
 
         ref_avg = sum(ref_inner) / len(ref_inner)

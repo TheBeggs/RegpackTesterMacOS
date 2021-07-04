@@ -7,6 +7,7 @@
 #include <stdint.h>
 #include <inttypes.h>
 #include <stdbool.h>
+#include <assert.h>
 
 #include <cblas.h>
 #include <libxsmm.h>
@@ -20,7 +21,7 @@
 
 int main(int argc, char **argv) {
   if (argc != 4) {
-    printf("Expected 3 arguments: size_of_B, seed_of_B, path_of_mat_A");
+    printf("Expected 3 arguments: test_matrix_size, seed_of_B, path_of_mat_A\n");
     exit(1);
   }
 
@@ -40,7 +41,13 @@ int main(int argc, char **argv) {
   // Load A matrix and sizes from file.
   load_matrix(a_path, &a_d, &k, &m);
 
-  int n = (atoi(argv[1]) / BLOCK_ALIGNMENT) * BLOCK_ALIGNMENT;
+  int test_matrix_size = atoi(argv[1]);
+  int n = test_matrix_size / (m + k);
+  n = n / BLOCK_ALIGNMENT * BLOCK_ALIGNMENT;
+
+  assert(n % BLOCK_ALIGNMENT == 0);
+
+  // int n = (atoi(argv[1]) / BLOCK_ALIGNMENT) * BLOCK_ALIGNMENT;
   int seed = (atoi(argv[2]));
 
   int lda = k;
@@ -49,6 +56,7 @@ int main(int argc, char **argv) {
 
   printf("Input arrays: A (%d, %d), B (%d, %d).\n", m, k, k, n);
   printf("Output array: C (%d, %d).\n", m, n);
+  printf("Array B width (N): %d\n", n);
 
   int b_size = k * n;
   int c_size = m * n;
@@ -58,14 +66,13 @@ int main(int argc, char **argv) {
 
   // Fill B matrix with random values.
   printf("%s", "Randomly generating B matrix...\n");
-  fill_B_matrix(b_size, b_d, seed);
+  fill_B_matrix_semi_random(b_size, b_d, seed);
 
   printf("%s", "Running XSMM Reference MM...\n");
   double *c_xsmm_d = (double *) calloc(c_size, sizeof(double));
   libxsmm_dfsspmdm *xsmm_d = libxsmm_dfsspmdm_create(m, BLOCK_ALIGNMENT, k, lda, ldb, ldc, alpha, beta, 1, a_d);
 
-  // Check kernel type
-  
+  // Check kernel type  
   printf("kernel type: ");
   if ( xsmm_d->a_dense != NULL ) {
     printf("dense");
