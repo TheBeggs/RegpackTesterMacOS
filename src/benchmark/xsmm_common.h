@@ -118,4 +118,68 @@ void flush_cache() {
 
 #pragma GCC pop_options
 
+void read_args(int argc, char** argv, int* test_matrix_size, int* seed, char** a_path) {
+  
+  if (argc != 4) {
+    printf("Expected 3 arguments: test_matrix_size, seed_of_B, path_of_mat_A\n");
+    exit(1);
+  }
+
+  *test_matrix_size = atoi(argv[1]);
+  *seed = (atoi(argv[2]));
+  *a_path = argv[3];
+}
+
+void read_alpha_beta(double* alpha, double* beta) {
+  *alpha = getenv("ALPHA") ? atof(getenv("ALPHA")) : 1.0;
+  *beta = getenv("BETA") ? atof(getenv("BETA")) : 0.0;
+}
+
+void prepare_benchmark(int argc, char** argv, libxsmm_dfsspmdm** xsmm_d, double** a_d, double** b_d, double** c_xsmm_d, int* n) {
+  int test_matrix_size, seed;
+  char* a_path;
+
+  read_args(argc, argv, &test_matrix_size, &seed, &a_path);
+
+  libxsmm_init();
+
+  // Set values for alpha and beta from environment
+  double alpha, beta;
+  read_alpha_beta(&alpha, &beta);
+  printf("alpha = %f, beta = %f\n", alpha, beta);
+
+  int m = 0;
+  int k = 0;
+  
+  // Load A matrix and sizes from file.
+  load_matrix(a_path, a_d, &k, &m);
+
+  *n = test_matrix_size / (m + k);
+  *n = *n / BLOCK_ALIGNMENT * BLOCK_ALIGNMENT;
+
+  assert(*n % BLOCK_ALIGNMENT == 0);
+
+  int lda = k;
+  int ldb = *n;
+  int ldc = *n;
+
+  printf("Input arrays: A (%d, %d), B (%d, %d).\n", m, k, k, *n);
+  printf("Output array: C (%d, %d).\n", m, *n);
+  printf("Array B width (N): %d\n", *n);
+
+  int b_size = k * *n;
+  int c_size = m * *n;
+
+  // Allocate memory according to sizes given.
+  *b_d = (double *) aligned_alloc(BLOCK_ALIGNMENT * sizeof(double), b_size * sizeof(double));
+
+  // Fill B matrix with random values.
+  printf("%s", "Randomly generating B matrix...\n");
+  fill_B_matrix_semi_random(b_size, *b_d, seed);
+
+  printf("%s", "Running XSMM Reference MM...\n");
+  *c_xsmm_d = (double *) calloc(c_size, sizeof(double));
+  *xsmm_d = libxsmm_dfsspmdm_create(m, BLOCK_ALIGNMENT, k, lda, ldb, ldc, alpha, beta, 1, *a_d);
+}
+
 #endif // BENCHMARK_XSMM_COMMON_H
