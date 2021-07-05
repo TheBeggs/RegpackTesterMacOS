@@ -1,0 +1,150 @@
+./scripts/bin_benchmark_xsmm_only.sh: line 5: 89372 Killed                  sudo nice -n -20 taskset -c 0 bin/benchmark_xsmm_only $1 $2 $4
+Generating and Compiling data/example_mats/hex/p1/gauss-legendre/m0.txt
+Running data/example_mats/hex/p1/gauss-legendre/m0.txt
+Finished running in 12.967ms
+Generating and Compiling data/example_mats/hex/p1/gauss-legendre/m3.txt
+Running data/example_mats/hex/p1/gauss-legendre/m3.txt
+Finished running in 7.246ms
+Generating and Compiling data/example_mats/hex/p1/gauss-legendre/m6.txt
+Running data/example_mats/hex/p1/gauss-legendre/m6.txt
+Finished running in 12.271ms
+Generating and Compiling data/example_mats/hex/p1/gauss-legendre/m132.txt
+Running data/example_mats/hex/p1/gauss-legendre/m132.txt
+Finished running in 7.291ms
+Generating and Compiling data/example_mats/hex/p1/gauss-legendre/m460.txt
+Running data/example_mats/hex/p1/gauss-legendre/m460.txt
+Finished running in 11.494ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre-lobatto/m0.txt
+Running data/example_mats/hex/p2/gauss-legendre-lobatto/m0.txt
+Finished running in 27.051ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre-lobatto/m3.txt
+Running data/example_mats/hex/p2/gauss-legendre-lobatto/m3.txt
+Finished running in 44.38199999999995ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre-lobatto/m6.txt
+Running data/example_mats/hex/p2/gauss-legendre-lobatto/m6.txt
+Finished running in 66.472ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre-lobatto/m132.txt
+Running data/example_mats/hex/p2/gauss-legendre-lobatto/m132.txt
+Finished running in 59.64ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre-lobatto/m460.txt
+Running data/example_mats/hex/p2/gauss-legendre-lobatto/m460.txt
+Finished running in 42.126ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre/m0.txt
+Running data/example_mats/hex/p2/gauss-legendre/m0.txt
+Finished running in 29.125ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre/m3.txt
+Running data/example_mats/hex/p2/gauss-legendre/m3.txt
+Finished running in 43.899ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre/m6.txt
+Running data/example_mats/hex/p2/gauss-legendre/m6.txt
+Finished running in 63.225ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre/m132.txt
+Running data/example_mats/hex/p2/gauss-legendre/m132.txt
+Finished running in 53.244ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre/m460.txt
+Running data/example_mats/hex/p2/gauss-legendre/m460.txt
+Finished running in 41.758ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre-lobatto/m0.txt
+Running data/example_mats/hex/p3/gauss-legendre-lobatto/m0.txt
+Finished running in 71.66300000000001ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre-lobatto/m3.txt
+Running data/example_mats/hex/p3/gauss-legendre-lobatto/m3.txt
+Finished running in 90.423ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre-lobatto/m6.txt
+Running data/example_mats/hex/p3/gauss-legendre-lobatto/m6.txt
+Finished running in 143.363ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre-lobatto/m132.txt
+Running data/example_mats/hex/p3/gauss-legendre-lobatto/m132.txt
+Finished running in 155.15ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre-lobatto/m460.txt
+Running data/example_mats/hex/p3/gauss-legendre-lobatto/m460.txt
+Finished running in 127.993ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre/m0.txt
+Running data/example_mats/hex/p3/gauss-legendre/m0.txt
+Finished running in 80.409ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre/m3.txt
+Running data/example_mats/hex/p3/gauss-legendre/m3.txt
+Finished running in 90.809ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre/m6.txt
+Running data/example_mats/hex/p3/gauss-legendre/m6.txt
+Finished running in 135.234ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre/m132.txt
+Running data/example_mats/hex/p3/gauss-legendre/m132.txt
+Finished running in 159.66700000000003ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre/m460.txt
+Running data/example_mats/hex/p3/gauss-legendre/m460.txt
+Finished running in 124.78399999999999ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre-lobatto/m0.txt
+Running data/example_mats/hex/p4/gauss-legendre-lobatto/m0.txt
+Finished running in 116.945ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre-lobatto/m3.txt
+Running data/example_mats/hex/p4/gauss-legendre-lobatto/m3.txt
+Finished running in 161.366ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre-lobatto/m6.txt
+Running data/example_mats/hex/p4/gauss-legendre-lobatto/m6.txt
+Finished running in 259.207ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre-lobatto/m132.txt
+Running data/example_mats/hex/p4/gauss-legendre-lobatto/m132.txt
+Finished running in 292.822ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre-lobatto/m460.txt
+Running data/example_mats/hex/p4/gauss-legendre-lobatto/m460.txt
+Finished running in 269.744ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre/m0.txt
+Running data/example_mats/hex/p4/gauss-legendre/m0.txt
+Finished running in 140.418ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre/m3.txt
+Running data/example_mats/hex/p4/gauss-legendre/m3.txt
+Finished running in 165.046ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre/m6.txt
+Running data/example_mats/hex/p4/gauss-legendre/m6.txt
+Finished running in 259.875ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre/m132.txt
+Running data/example_mats/hex/p4/gauss-legendre/m132.txt
+Finished running in 296.182ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre/m460.txt
+Running data/example_mats/hex/p4/gauss-legendre/m460.txt
+Finished running in 268.703ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre-lobatto/m0.txt
+Running data/example_mats/hex/p5/gauss-legendre-lobatto/m0.txt
+Finished running in 174.25ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre-lobatto/m3.txt
+Running data/example_mats/hex/p5/gauss-legendre-lobatto/m3.txt
+Finished running in 252.011ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre-lobatto/m6.txt
+Running data/example_mats/hex/p5/gauss-legendre-lobatto/m6.txt
+Finished running in 431.869ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre-lobatto/m132.txt
+Running data/example_mats/hex/p5/gauss-legendre-lobatto/m132.txt
+Finished running in 541.4639999999999ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre-lobatto/m460.txt
+Running data/example_mats/hex/p5/gauss-legendre-lobatto/m460.txt
+Finished running in 457.409ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre/m0.txt
+Running data/example_mats/hex/p5/gauss-legendre/m0.txt
+Finished running in 217.725ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre/m3.txt
+Running data/example_mats/hex/p5/gauss-legendre/m3.txt
+Finished running in 256.077ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre/m6.txt
+Running data/example_mats/hex/p5/gauss-legendre/m6.txt
+Finished running in 430.342ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre/m132.txt
+Running data/example_mats/hex/p5/gauss-legendre/m132.txt
+Finished running in 495.85ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre/m460.txt
+Running data/example_mats/hex/p5/gauss-legendre/m460.txt
+Finished running in 461.553ms
+Generating and Compiling data/example_mats/hex/p6/gauss-legendre-lobatto/m0.txt
+Running data/example_mats/hex/p6/gauss-legendre-lobatto/m0.txt
+Finished running in 242.53ms
+Generating and Compiling data/example_mats/hex/p6/gauss-legendre-lobatto/m3.txt
+Running data/example_mats/hex/p6/gauss-legendre-lobatto/m3.txt
+Finished running in 376.97299999999996ms
+Generating and Compiling data/example_mats/hex/p6/gauss-legendre-lobatto/m6.txt
+Running data/example_mats/hex/p6/gauss-legendre-lobatto/m6.txt
+Traceback (most recent call last):
+  File "src/benchmark/benchmark_xsmm_only.py", line 87, in <module>
+    benchmark_matrix(mat_path, B_NUM_COL, test_gimmik)
+  File "src/benchmark/benchmark_xsmm_only.py", line 69, in benchmark_matrix
+    print("Finished running in", str(result["xsmm_reference_best"]) + "ms", file=sys.stderr)
+KeyError: 'xsmm_reference_best'

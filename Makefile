@@ -1,12 +1,14 @@
 CFLAGS = -std=c11 -O3 -pthread -fopenmp
 
+CFLAGS_G = -std=c11 -O0 -g -pthread -fopenmp
+
 GIMMIK_CFLAGS += -std=c11 -O3 -pthread -qopenmp
 GIMMIK_CFLAGS += -mavx512f -mavx512cd -mavx512vl -mavx512dq -mavx512bw -mfma
 GIMMIK_CFLAGS += -march=skylake-avx512
 GIMMIK_CFLAGS += -qopt-zmm-usage=high
 
-CFLAGS_XSMM_REFERENCE = -I./../libxsmm_reference/include -I./../OpenBlas-build/include
-CFLAGS_XSMM_CUSTOM = -I./../libxsmm_custom/include -I./../OpenBlas-build/include
+CFLAGS_XSMM_REFERENCE = -I./../libxsmm_reference/include -I./../libxsmm_reference/src
+CFLAGS_XSMM_CUSTOM = -I./../libxsmm_custom/include -I./../libxsmm_reference/src
 
 GIMMIK_CFLAGS = -I./bin/generated_kernels
 
@@ -26,6 +28,12 @@ bin/benchmark_xsmm_reference : src/benchmark/xsmm_reference.c src/benchmark/comm
 
 bin/benchmark_xsmm_custom : src/benchmark/xsmm_custom.c src/benchmark/common.c
 	$(CXX) $(CFLAGS) ${CFLAGS_XSMM_CUSTOM} $^ $(LDFLAGS_XSMM_CUSTOM) -o $@
+
+bin/benchmark_xsmm_only : src/benchmark/xsmm_reference_only.c src/benchmark/common.c
+	$(CXX) $(CFLAGS) $(CFLAGS_XSMM_REFERENCE) $^ $(LDFLAGS_XSMM_REFERENCE) -o $@
+
+bin/benchmark_xsmm_only_g : src/benchmark/xsmm_reference_only.c src/benchmark/common.c
+	$(CXX) $(CFLAGS_G) $(CFLAGS_XSMM_REFERENCE) $^ $(LDFLAGS_XSMM_REFERENCE) -o $@
 
 bin/benchmark_gimmik : src/benchmark/gimmik.c src/benchmark/common.c
 	$(GIMMIK_CXX) $(GIMMIK_CFLAGS) $^ -o $@

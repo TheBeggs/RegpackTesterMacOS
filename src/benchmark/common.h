@@ -7,15 +7,28 @@
 
 #define DEBUG 0
 
+#define CACHE_SIZE 52428800
+
+#include <libxsmm.h>
+
 struct benchmark_data
 {
     double fastest_time;
     double avg_iqr_time;
 };
 
+struct duration
+{
+    double gettimeofday;
+    double libxsmm;
+    libxsmm_timer_tickint ncycles; 
+};
+
 void d2f(const double *a, float *b, int size);
 
-void fill_B_matrix(int b_size, double *b, int seed);
+void fill_B_matrix_random(int b_size, double *b, int seed);
+
+void fill_B_matrix_semi_random(int b_size, double *b, int seed);
 
 bool compare_results_d(double *a, double *b, int size, double delta);
 

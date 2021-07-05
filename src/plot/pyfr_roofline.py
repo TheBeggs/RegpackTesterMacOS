@@ -6,7 +6,10 @@ import numpy as np
 
 from tools import calc_FLOPS, load_benchmark_data, get_perf, B_TARGET_PANEL_WIDTH
 from tools import calc_GFLOPs, get_AIs
-from cpu_stats import XEON_8175M_PEAK_FLOPS, XEON_8175M_PEAK_BW
+from cpu_stats import xeon_8175M_stats, xeon_8124M_stats
+
+# cpu stats
+cpu_info = xeon_8124M_stats
 
 if len(sys.argv) < 8:
     print("expected 7 arguments: mat_dir n_runs b_num_col test_gimmik TIMESTAMP plot_dir ref_is_dense")
@@ -34,38 +37,41 @@ shape_title = ["Quad", "Hex", "Tet", "Tri"]
 
 for i_title, shape in enumerate(shapes):
     # get data
-    mat_names = [x for x in mat_paths if shape in x]
+    # mat_names = [x for x in mat_paths if shape in x]
     data = []
     for i in range(N_RUNS):
         data.append(runs[i][shape])
+
+    mat_names = data[0]["mat_file"]
+
     if TEST_GIMMIK == "1":
         custom_GFLOPs, ref_GFLOPs, gimmik_GFLOPs = \
             calc_GFLOPs(mat_flops, mat_names, data, B_NUM_COL, TEST_GIMMIK)
         if REF_IS_DENSE == "1":
-            custom_AIs, ref_AIs, gimmik_AIs = get_AIs(mat_paths, TEST_GIMMIK)
+            custom_AIs, ref_AIs, gimmik_AIs = get_AIs(mat_names, TEST_GIMMIK)
         else:
-            custom_AIs, _, gimmik_AIs = get_AIs(mat_paths, TEST_GIMMIK)
+            custom_AIs, _, gimmik_AIs = get_AIs(mat_names, TEST_GIMMIK)
             ref_AIs = custom_AIs
     else:
         custom_GFLOPs, ref_GFLOPs = \
             calc_GFLOPs(mat_flops, mat_names, data, B_NUM_COL, TEST_GIMMIK)
         if REF_IS_DENSE == "1":
-            custom_AIs, ref_AIs = get_AIs(mat_paths, TEST_GIMMIK)
+            custom_AIs, ref_AIs = get_AIs(mat_names, TEST_GIMMIK)
         else:
-            custom_AIs, _ = get_AIs(mat_paths, TEST_GIMMIK)
+            custom_AIs, _ = get_AIs(mat_names, TEST_GIMMIK)
             ref_AIs = custom_AIs
 
     # plot rooflines
     fig = plt.figure(dpi=150)
     ax = fig.add_subplot(111)
-    x = np.array([2**(-4), XEON_8175M_PEAK_FLOPS/XEON_8175M_PEAK_BW])
-    y = x*XEON_8175M_PEAK_BW
+    x = np.array([2**(-4), cpu_info["peak_flops_dp"]/cpu_info["peak_memory_bw"]])
+    y = x*cpu_info["peak_memory_bw"]
     ax.plot(x, y)
-    x = np.array([XEON_8175M_PEAK_FLOPS/XEON_8175M_PEAK_BW, 2**4])
-    y = [XEON_8175M_PEAK_FLOPS,XEON_8175M_PEAK_FLOPS]
+    x = np.array([cpu_info["peak_flops_dp"]/cpu_info["peak_memory_bw"], 2**4])
+    y = [cpu_info["peak_flops_dp"],cpu_info["peak_flops_dp"]]
     ax.plot(x, y, color='red', label="Double AVX512 Unit")
-    x = np.array([(XEON_8175M_PEAK_FLOPS/2)/XEON_8175M_PEAK_BW, 2**4])
-    y = [(XEON_8175M_PEAK_FLOPS/2),(XEON_8175M_PEAK_FLOPS/2)]
+    x = np.array([(cpu_info["peak_flops_dp"]/2)/cpu_info["peak_memory_bw"], 2**4])
+    y = [(cpu_info["peak_flops_dp"]/2),(cpu_info["peak_flops_dp"]/2)]
     ax.plot(x, y, color='black', label="Single AVX512 Unit")
 
     # plot data points
