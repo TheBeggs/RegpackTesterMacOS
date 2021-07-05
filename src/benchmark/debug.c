@@ -48,7 +48,7 @@ void print_kernel_type(libxsmm_dfsspmdm const* const handle) {
 
 int main(/*int argc, char **argv*/) {
   // matrix dimensions
-  int m = 10, n = 480000, k = m;
+  int m = 10, n = 48, k = m;
 
   // allocate matrix
   double* matrix_a = (double*)calloc(m * k, sizeof(double));
@@ -58,11 +58,9 @@ int main(/*int argc, char **argv*/) {
 
   // make matrix A identity matrix
   eye(matrix_a, m);
-  // print_matrix(matrix_a, m, k, k);
 
   // assign matrix B
-  assign_arr(matrix_b, 1e100, k, n);
-  // print_matrix(matrix_b, k, n, n);
+  assign_arr(matrix_b, 10.0, k, n);
 
   int lda = k;
   int ldb = n;
@@ -72,9 +70,9 @@ int main(/*int argc, char **argv*/) {
 
   libxsmm_init();
 
-  // kernel_type k_type = DEFAULT;
+  kernel_type k_type = DEFAULT;
   // kernel_type k_type = DENSE;
-  kernel_type k_type = NAIVE;
+  // kernel_type k_type = NAIVE;
 
   libxsmm_dfsspmdm* xsmm_handle = NULL;
 
