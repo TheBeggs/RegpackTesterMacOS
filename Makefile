@@ -1,6 +1,6 @@
-CFLAGS = -std=c11 -O3 -pthread -fopenmp
+CFLAGS = -std=c11 -O3 -pthread -fopenmp -Wall -Wextra
 
-CFLAGS_G = -std=c11 -O0 -g -pthread -fopenmp
+CFLAGS_G = -std=c11 -O0 -g -pthread -fopenmp -Wall -Wextra
 
 GIMMIK_CFLAGS += -std=c11 -O3 -pthread -qopenmp
 GIMMIK_CFLAGS += -mavx512f -mavx512cd -mavx512vl -mavx512dq -mavx512bw -mfma
@@ -37,6 +37,12 @@ bin/benchmark_xsmm_only_g : src/benchmark/xsmm_reference_only.c src/benchmark/co
 
 bin/benchmark_gimmik : src/benchmark/gimmik.c src/benchmark/common.c
 	$(GIMMIK_CXX) $(GIMMIK_CFLAGS) $^ -o $@
+
+bin/benchmark_xsmm_check_correctness : src/benchmark/xsmm_check_correctness.c src/benchmark/common.c
+	$(CXX) $(CFLAGS_G) ${CFLAGS_XSMM_CUSTOM} $^ $(LDFLAGS_XSMM_CUSTOM) -o $@
+
+bin/benchmark_debug : src/benchmark/debug.c src/benchmark/common.c
+	$(CXX) $(CFLAGS_G) ${CFLAGS_XSMM_CUSTOM} $^ $(LDFLAGS_XSMM_CUSTOM) -o $@
 
 clean :
 	rm -rf bin

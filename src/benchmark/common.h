@@ -9,6 +9,7 @@
 
 #define CACHE_SIZE 52428800
 
+#include <stdbool.h>
 #include <libxsmm.h>
 
 struct benchmark_data
@@ -30,6 +31,8 @@ void fill_B_matrix_random(int b_size, double *b, int seed);
 
 void fill_B_matrix_semi_random(int b_size, double *b, int seed);
 
+void fill_matrix(int size, double* arr, double value);
+
 bool compare_results_d(double *a, double *b, int size, double delta);
 
 bool compare_results_s(float *a, float *b, int size, double delta);
@@ -47,5 +50,10 @@ void print_matrix_d(double *matrix, int size, int rowlen);
 void verify_d(double *c, double *c_naive, int b_num_col, int c_size);
 
 int cmpfunc(const void * a, const void * b);
+
+bool is_matrices_eq(double const* const arr1, double const* const arr2,
+                    int size_m, int size_n);
+
+void print_matrix(double const* const arr, int size_m, int size_n, int ldn);
 
 #endif // BENCHMARK_COMMON_H

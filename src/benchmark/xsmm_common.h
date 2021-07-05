@@ -135,7 +135,10 @@ void read_alpha_beta(double* alpha, double* beta) {
   *beta = getenv("BETA") ? atof(getenv("BETA")) : 0.0;
 }
 
-void prepare_benchmark(int argc, char** argv, libxsmm_dfsspmdm** xsmm_d, double** a_d, double** b_d, double** c_xsmm_d, int* n) {
+void prepare_benchmark(int argc, char** argv, libxsmm_dfsspmdm** xsmm_d,
+                       double** a_d, double** b_d, double** c_xsmm_d, int* m, int* n, int* k,
+                       int* c_size, bool require_ref_dense,
+                       libxsmm_dfsspmdm** dense_handle) {
   int test_matrix_size, seed;
   char* a_path;
 
@@ -148,38 +151,64 @@ void prepare_benchmark(int argc, char** argv, libxsmm_dfsspmdm** xsmm_d, double*
   read_alpha_beta(&alpha, &beta);
   printf("alpha = %f, beta = %f\n", alpha, beta);
 
-  int m = 0;
-  int k = 0;
-  
   // Load A matrix and sizes from file.
-  load_matrix(a_path, a_d, &k, &m);
+  load_matrix(a_path, a_d, k, m);
 
-  *n = test_matrix_size / (m + k);
+  *n = test_matrix_size / (*m + *k);
   *n = *n / BLOCK_ALIGNMENT * BLOCK_ALIGNMENT;
 
   assert(*n % BLOCK_ALIGNMENT == 0);
 
-  int lda = k;
+  int lda = *k;
   int ldb = *n;
   int ldc = *n;
 
-  printf("Input arrays: A (%d, %d), B (%d, %d).\n", m, k, k, *n);
-  printf("Output array: C (%d, %d).\n", m, *n);
+  printf("Input arrays: A (%d, %d), B (%d, %d).\n", *m, *k, *k, *n);
+  printf("Output array: C (%d, %d).\n", *m, *n);
   printf("Array B width (N): %d\n", *n);
 
-  int b_size = k * *n;
-  int c_size = m * *n;
+  int b_size = *k * *n;
+  *c_size = *m * *n;
 
   // Allocate memory according to sizes given.
-  *b_d = (double *) aligned_alloc(BLOCK_ALIGNMENT * sizeof(double), b_size * sizeof(double));
+  *b_d = (double*)aligned_alloc(BLOCK_ALIGNMENT * sizeof(double),
+                                b_size * sizeof(double));
 
   // Fill B matrix with random values.
   printf("%s", "Randomly generating B matrix...\n");
   fill_B_matrix_semi_random(b_size, *b_d, seed);
-
+  
   printf("%s", "Running XSMM Reference MM...\n");
-  *c_xsmm_d = (double *) calloc(c_size, sizeof(double));
-  *xsmm_d = libxsmm_dfsspmdm_create(m, BLOCK_ALIGNMENT, k, lda, ldb, ldc, alpha, beta, 1, *a_d);
+  *c_xsmm_d = (double*)calloc(*c_size, sizeof(double));
+  *xsmm_d = libxsmm_dfsspmdm_create(*m, BLOCK_ALIGNMENT, *k, lda, ldb, ldc, alpha,
+                                    beta, 1, *a_d);
+
+  // generate a ref dense kernel
+  if (require_ref_dense) {
+    *dense_handle = (libxsmm_dfsspmdm*)malloc(sizeof(libxsmm_dfsspmdm));
+
+    assert(*dense_handle);
+    LIBXSMM_MEMZERO127(*dense_handle);
+
+    double one = 1.0;
+    int flags = LIBXSMM_GEMM_FLAGS('N', 'N');
+
+    if (beta == 0.0 && 1 != 0) {
+      flags |= LIBXSMM_GEMM_FLAG_ALIGN_C_NTS_HINT;
+    }
+
+    (*dense_handle)->M = *m;
+    (*dense_handle)->N = BLOCK_ALIGNMENT;
+    (*dense_handle)->K = *k;
+    (*dense_handle)->ldb = ldb;
+    (*dense_handle)->ldc = ldc;
+    (*dense_handle)->a_dense = *a_d;
+    (*dense_handle)->N_chunksize = 8;
+    (*dense_handle)->kernel = libxsmm_dmmdispatch(
+        (*dense_handle)->N_chunksize, (*dense_handle)->M, (*dense_handle)->K,
+        &ldb, &((*dense_handle)->K), &ldc, &one, &beta, &flags,
+        (const int*)LIBXSMM_GEMM_PREFETCH_NONE);
+  }
 }
 
-#endif // BENCHMARK_XSMM_COMMON_H
+#endif  // BENCHMARK_XSMM_COMMON_H
