@@ -2,7 +2,7 @@ make clean
 mkdir bin
 make bin/benchmark_xsmm_check_correctness
 
-./bin/benchmark_xsmm_check_correctness 1920 0 "cleaned_data/example_mats/hex/p1/gauss-legendre/m3.txt"
+./bin/benchmark_xsmm_check_correctness 19200 0 "cleaned_data/example_mats/hex/p2/gauss-legendre-lobatto/m132.txt"
 
 rm results.out error.out
 

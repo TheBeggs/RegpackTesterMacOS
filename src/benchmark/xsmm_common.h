@@ -176,8 +176,9 @@ void prepare_benchmark(int argc, char** argv, libxsmm_dfsspmdm** xsmm_d,
 
   // Fill B matrix with random values.
   printf("%s", "Randomly generating B matrix...\n");
-  fill_B_matrix_semi_random(b_size, *b_d, seed);
-  
+  // fill_B_matrix_semi_random(b_size, *b_d, seed);
+  fill_matrix(b_size, *b_d, 10.21568);
+
   printf("%s", "Running XSMM Reference MM...\n");
   *c_xsmm_d = (double*)calloc(*c_size, sizeof(double));
   *xsmm_d = libxsmm_dfsspmdm_create(*m, BLOCK_ALIGNMENT, *k, lda, ldb, ldc, alpha,

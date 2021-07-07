@@ -195,8 +195,13 @@ bool is_matrices_eq(double const* const arr1, double const* const arr2,
 
   for (int m = 0; m < size_m; m++) {
     for (int n = 0; n < size_n; n++) {
-      if (fabs((arr1[m * size_n + n] - arr2[m * size_n + n]) / arr1[m * size_n + n]) > 1e-13) {
-        printf("m = %d, n = %d, diff = %e\n", m, n, arr1[m * size_n + n] - arr2[m * size_n + n]);
+      // if (fabs((arr1[m * size_n + n] - arr2[m * size_n + n]) / arr2[m * size_n + n]) > 1e-13) {
+      if (fabs((arr1[m * size_n + n] - arr2[m * size_n + n])) > 0.0) {
+        if (0 == n)
+          printf(
+              "m = %d, n = %d, arr1[m, n] = %e, arr2[m, n] = %e, diff = %e\n",
+              m, n, arr1[m * size_n + n], arr2[m * size_n + n],
+              arr1[m * size_n + n] - arr2[m * size_n + n]);
         is_correct = false;
       }
     }

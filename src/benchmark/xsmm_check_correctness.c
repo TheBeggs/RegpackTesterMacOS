@@ -31,6 +31,7 @@ int main(int argc, char **argv) {
   prepare_benchmark(argc, argv, &xsmm_d, &a_d, &b_d, &c_xsmm_d, &m, &n, &k, &c_size, true, &dense_handle);
 
   // Check kernel type  s
+  assert(xsmm_d);
   printf("kernel type: ");
   if ( xsmm_d->a_dense != NULL ) {
     printf("dense");
@@ -60,7 +61,7 @@ int main(int argc, char **argv) {
 
   // compute using the ref dense kernel
   assert(dense_handle);
-  exec_xsmm(b_d, c_xsmm_ref_dense, n, dense_handle);
+  // exec_xsmm(b_d, c_xsmm_ref_dense, n, dense_handle);
   
   // allocate C matrix for naive approach
   double* c_xsmm_naive = (double *) calloc(c_size, sizeof(double));
@@ -69,17 +70,20 @@ int main(int argc, char **argv) {
   naive_mm(a_d, b_d, c_xsmm_naive, m, n, k);
 
   // check for correctness
-  bool is_correct = is_matrices_eq(c_xsmm_d, c_xsmm_ref_dense, m, n);
+  bool is_correct = is_matrices_eq(c_xsmm_d, c_xsmm_naive, m, n);
   printf("The custom kernel is correct? %d\n", is_correct);  
   
+  // printf("b_d:\n");
+  // print_matrix(b_d, 81, 10, 48);
+
   // printf("c_xsmm_d:\n");
-  // print_matrix(c_xsmm_d, 8, 10, 48);
+  // print_matrix(c_xsmm_d, 27, 10, 48);
 
   // printf("c_xsmm_ref_dense:\n");
   // print_matrix(c_xsmm_ref_dense, 8, 10, 48);
 
   // printf("c_xsmm_naive:\n");
-  // print_matrix(c_xsmm_naive, 8, 10, 48);
+  // print_matrix(c_xsmm_naive, 27, 10, 48);
 
   printf("%s", "Done.\n");
   printf("---------------------------------------------------------------\n");
