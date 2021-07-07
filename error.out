@@ -1,0 +1,1556 @@
+cleaned_data/example_mats/hex/p1/gauss-legendre/m0.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.060118 s
+cleaned_data/example_mats/hex/p1/gauss-legendre/m132.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.106395 s
+cleaned_data/example_mats/hex/p1/gauss-legendre/m3.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.074914 s
+cleaned_data/example_mats/hex/p1/gauss-legendre/m460.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.104270 s
+cleaned_data/example_mats/hex/p1/gauss-legendre/m6.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.120850 s
+cleaned_data/example_mats/hex/p2/gauss-legendre-lobatto/m0.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.139029 s
+cleaned_data/example_mats/hex/p2/gauss-legendre-lobatto/m132.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.158096 s
+cleaned_data/example_mats/hex/p2/gauss-legendre-lobatto/m3.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.164952 s
+cleaned_data/example_mats/hex/p2/gauss-legendre-lobatto/m460.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.169608 s
+cleaned_data/example_mats/hex/p2/gauss-legendre-lobatto/m6.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.172223 s
+cleaned_data/example_mats/hex/p2/gauss-legendre/m0.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.076195 s
+cleaned_data/example_mats/hex/p2/gauss-legendre/m132.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.086581 s
+cleaned_data/example_mats/hex/p2/gauss-legendre/m3.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.077919 s
+cleaned_data/example_mats/hex/p2/gauss-legendre/m460.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.078616 s
+cleaned_data/example_mats/hex/p2/gauss-legendre/m6.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.094600 s
+cleaned_data/example_mats/hex/p3/gauss-legendre-lobatto/m0.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.104215 s
+cleaned_data/example_mats/hex/p3/gauss-legendre-lobatto/m132.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.126346 s
+cleaned_data/example_mats/hex/p3/gauss-legendre-lobatto/m3.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.109236 s
+cleaned_data/example_mats/hex/p3/gauss-legendre-lobatto/m460.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.116041 s
+cleaned_data/example_mats/hex/p3/gauss-legendre-lobatto/m6.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.150562 s
+cleaned_data/example_mats/hex/p3/gauss-legendre/m0.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.103049 s
+cleaned_data/example_mats/hex/p3/gauss-legendre/m132.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.129314 s
+cleaned_data/example_mats/hex/p3/gauss-legendre/m3.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.109675 s
+cleaned_data/example_mats/hex/p3/gauss-legendre/m460.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.115262 s
+cleaned_data/example_mats/hex/p3/gauss-legendre/m6.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.151219 s
+cleaned_data/example_mats/hex/p4/gauss-legendre-lobatto/m0.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.150390 s
+cleaned_data/example_mats/hex/p4/gauss-legendre-lobatto/m132.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.218829 s
+cleaned_data/example_mats/hex/p4/gauss-legendre-lobatto/m3.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.152616 s
+cleaned_data/example_mats/hex/p4/gauss-legendre-lobatto/m460.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.205785 s
+cleaned_data/example_mats/hex/p4/gauss-legendre-lobatto/m6.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 12 KB (gemm=1)
+Uptime: 0.208008 s
+cleaned_data/example_mats/hex/p4/gauss-legendre/m0.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.151192 s
+cleaned_data/example_mats/hex/p4/gauss-legendre/m132.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.218904 s
+cleaned_data/example_mats/hex/p4/gauss-legendre/m3.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.153245 s
+cleaned_data/example_mats/hex/p4/gauss-legendre/m460.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.206612 s
+cleaned_data/example_mats/hex/p4/gauss-legendre/m6.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 12 KB (gemm=1)
+Uptime: 0.207518 s
+cleaned_data/example_mats/hex/p5/gauss-legendre-lobatto/m0.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.209856 s
+cleaned_data/example_mats/hex/p5/gauss-legendre-lobatto/m132.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.315267 s
+cleaned_data/example_mats/hex/p5/gauss-legendre-lobatto/m3.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.213412 s
+cleaned_data/example_mats/hex/p5/gauss-legendre-lobatto/m460.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.307108 s
+cleaned_data/example_mats/hex/p5/gauss-legendre-lobatto/m6.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.296806 s
+cleaned_data/example_mats/hex/p5/gauss-legendre/m0.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.212075 s
+cleaned_data/example_mats/hex/p5/gauss-legendre/m132.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.314377 s
+cleaned_data/example_mats/hex/p5/gauss-legendre/m3.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.211353 s
+cleaned_data/example_mats/hex/p5/gauss-legendre/m460.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.298853 s
+cleaned_data/example_mats/hex/p5/gauss-legendre/m6.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.326507 s
+cleaned_data/example_mats/hex/p6/gauss-legendre-lobatto/m0.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 12 KB (gemm=1)
+Uptime: 0.318172 s
+cleaned_data/example_mats/hex/p6/gauss-legendre-lobatto/m132.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.546040 s
+cleaned_data/example_mats/hex/p6/gauss-legendre-lobatto/m3.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 12 KB (gemm=1)
+Uptime: 0.317148 s
+cleaned_data/example_mats/hex/p6/gauss-legendre-lobatto/m460.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 12 KB (gemm=1)
+Uptime: 0.499769 s
+cleaned_data/example_mats/hex/p6/gauss-legendre-lobatto/m6.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 12 KB (gemm=1)
+Uptime: 0.430356 s
+cleaned_data/example_mats/hex/p6/gauss-legendre/m0.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 12 KB (gemm=1)
+Uptime: 0.318946 s
+cleaned_data/example_mats/hex/p6/gauss-legendre/m132.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.583901 s
+cleaned_data/example_mats/hex/p6/gauss-legendre/m3.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 12 KB (gemm=1)
+Uptime: 0.316521 s
+cleaned_data/example_mats/hex/p6/gauss-legendre/m460.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 12 KB (gemm=1)
+Uptime: 0.491132 s
+cleaned_data/example_mats/hex/p6/gauss-legendre/m6.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 12 KB (gemm=1)
+Uptime: 0.429425 s
+cleaned_data/example_mats/quad/p1/gauss-legendre/m0.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.053291 s
+cleaned_data/example_mats/quad/p1/gauss-legendre/m132.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.051556 s
+cleaned_data/example_mats/quad/p1/gauss-legendre/m3.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.053711 s
+cleaned_data/example_mats/quad/p1/gauss-legendre/m460.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.056063 s
+cleaned_data/example_mats/quad/p1/gauss-legendre/m6.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.055378 s
+cleaned_data/example_mats/quad/p2/gauss-legendre-lobatto/m0.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.057270 s
+cleaned_data/example_mats/quad/p2/gauss-legendre-lobatto/m132.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.058139 s
+cleaned_data/example_mats/quad/p2/gauss-legendre-lobatto/m3.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.056749 s
+cleaned_data/example_mats/quad/p2/gauss-legendre-lobatto/m460.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.059160 s
+cleaned_data/example_mats/quad/p2/gauss-legendre-lobatto/m6.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.062957 s
+cleaned_data/example_mats/quad/p2/gauss-legendre/m0.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.057395 s
+cleaned_data/example_mats/quad/p2/gauss-legendre/m132.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.057464 s
+cleaned_data/example_mats/quad/p2/gauss-legendre/m3.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.056740 s
+cleaned_data/example_mats/quad/p2/gauss-legendre/m460.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.058831 s
+cleaned_data/example_mats/quad/p2/gauss-legendre/m6.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.060480 s
+cleaned_data/example_mats/quad/p3/gauss-legendre-lobatto/m0.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.060659 s
+cleaned_data/example_mats/quad/p3/gauss-legendre-lobatto/m132.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.066344 s
+cleaned_data/example_mats/quad/p3/gauss-legendre-lobatto/m3.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.061041 s
+cleaned_data/example_mats/quad/p3/gauss-legendre-lobatto/m460.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.064916 s
+cleaned_data/example_mats/quad/p3/gauss-legendre-lobatto/m6.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.064269 s
+cleaned_data/example_mats/quad/p3/gauss-legendre/m0.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.061257 s
+cleaned_data/example_mats/quad/p3/gauss-legendre/m132.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.065218 s
+cleaned_data/example_mats/quad/p3/gauss-legendre/m3.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.060893 s
+cleaned_data/example_mats/quad/p3/gauss-legendre/m460.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.064530 s
+cleaned_data/example_mats/quad/p3/gauss-legendre/m6.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.064478 s
+cleaned_data/example_mats/quad/p4/gauss-legendre-lobatto/m0.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.073731 s
+cleaned_data/example_mats/quad/p4/gauss-legendre-lobatto/m132.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.076990 s
+cleaned_data/example_mats/quad/p4/gauss-legendre-lobatto/m3.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 12 KB (gemm=1)
+Uptime: 0.065951 s
+cleaned_data/example_mats/quad/p4/gauss-legendre-lobatto/m460.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.074426 s
+cleaned_data/example_mats/quad/p4/gauss-legendre-lobatto/m6.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 12 KB (gemm=1)
+Uptime: 0.073257 s
+cleaned_data/example_mats/quad/p4/gauss-legendre/m0.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.064777 s
+cleaned_data/example_mats/quad/p4/gauss-legendre/m132.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.077328 s
+cleaned_data/example_mats/quad/p4/gauss-legendre/m3.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 12 KB (gemm=1)
+Uptime: 0.067454 s
+cleaned_data/example_mats/quad/p4/gauss-legendre/m460.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.074847 s
+cleaned_data/example_mats/quad/p4/gauss-legendre/m6.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 12 KB (gemm=1)
+Uptime: 0.072756 s
+cleaned_data/example_mats/quad/p5/gauss-legendre-lobatto/m0.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.069560 s
+cleaned_data/example_mats/quad/p5/gauss-legendre-lobatto/m132.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.086816 s
+cleaned_data/example_mats/quad/p5/gauss-legendre-lobatto/m3.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.069463 s
+cleaned_data/example_mats/quad/p5/gauss-legendre-lobatto/m460.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.080942 s
+cleaned_data/example_mats/quad/p5/gauss-legendre-lobatto/m6.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.074238 s
+cleaned_data/example_mats/quad/p5/gauss-legendre/m0.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.069256 s
+cleaned_data/example_mats/quad/p5/gauss-legendre/m132.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.086484 s
+cleaned_data/example_mats/quad/p5/gauss-legendre/m3.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.069429 s
+cleaned_data/example_mats/quad/p5/gauss-legendre/m460.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.080799 s
+cleaned_data/example_mats/quad/p5/gauss-legendre/m6.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.074097 s
+cleaned_data/example_mats/quad/p6/gauss-legendre-lobatto/m0.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.077563 s
+cleaned_data/example_mats/quad/p6/gauss-legendre-lobatto/m132.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.106345 s
+cleaned_data/example_mats/quad/p6/gauss-legendre-lobatto/m3.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.074198 s
+cleaned_data/example_mats/quad/p6/gauss-legendre-lobatto/m460.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.097308 s
+cleaned_data/example_mats/quad/p6/gauss-legendre-lobatto/m6.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.078878 s
+cleaned_data/example_mats/quad/p6/gauss-legendre/m0.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.076596 s
+cleaned_data/example_mats/quad/p6/gauss-legendre/m132.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.113831 s
+cleaned_data/example_mats/quad/p6/gauss-legendre/m3.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.073891 s
+cleaned_data/example_mats/quad/p6/gauss-legendre/m460.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.097521 s
+cleaned_data/example_mats/quad/p6/gauss-legendre/m6.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.078912 s
+cleaned_data/example_mats/tet/p1/shunn-ham/m0.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.053772 s
+cleaned_data/example_mats/tet/p1/shunn-ham/m132.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.052272 s
+cleaned_data/example_mats/tet/p1/shunn-ham/m3.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.051986 s
+cleaned_data/example_mats/tet/p1/shunn-ham/m460.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.054354 s
+cleaned_data/example_mats/tet/p1/shunn-ham/m6.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.060371 s
+cleaned_data/example_mats/tet/p2/shunn-ham/m0.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.060896 s
+cleaned_data/example_mats/tet/p2/shunn-ham/m132.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.061894 s
+cleaned_data/example_mats/tet/p2/shunn-ham/m3.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.060986 s
+cleaned_data/example_mats/tet/p2/shunn-ham/m460.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.061155 s
+cleaned_data/example_mats/tet/p2/shunn-ham/m6.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.075869 s
+cleaned_data/example_mats/tet/p3/shunn-ham/m0.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 12 KB (gemm=1)
+Uptime: 0.069905 s
+cleaned_data/example_mats/tet/p3/shunn-ham/m132.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.076640 s
+cleaned_data/example_mats/tet/p3/shunn-ham/m3.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.070602 s
+cleaned_data/example_mats/tet/p3/shunn-ham/m460.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 12 KB (gemm=1)
+Uptime: 0.073180 s
+cleaned_data/example_mats/tet/p3/shunn-ham/m6.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.084367 s
+cleaned_data/example_mats/tet/p4/shunn-ham/m0.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.081441 s
+cleaned_data/example_mats/tet/p4/shunn-ham/m132.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.098635 s
+cleaned_data/example_mats/tet/p4/shunn-ham/m3.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.087609 s
+cleaned_data/example_mats/tet/p4/shunn-ham/m460.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 12 KB (gemm=1)
+Uptime: 0.092795 s
+cleaned_data/example_mats/tet/p4/shunn-ham/m6.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.106207 s
+cleaned_data/example_mats/tet/p5/shunn-ham/m0.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.103254 s
+cleaned_data/example_mats/tet/p5/shunn-ham/m132.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.164508 s
+cleaned_data/example_mats/tet/p5/shunn-ham/m3.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.114794 s
+cleaned_data/example_mats/tet/p5/shunn-ham/m460.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.158696 s
+cleaned_data/example_mats/tet/p5/shunn-ham/m6.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.152734 s
+cleaned_data/example_mats/tet/p6/shunn-ham/m0.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.151567 s
+cleaned_data/example_mats/tet/p6/shunn-ham/m132.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.366561 s
+cleaned_data/example_mats/tet/p6/shunn-ham/m3.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.176490 s
+cleaned_data/example_mats/tet/p6/shunn-ham/m460.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.409967 s
+cleaned_data/example_mats/tet/p6/shunn-ham/m6.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.218990 s
+cleaned_data/example_mats/tri/p1/williams-shunn/m0.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.051849 s
+cleaned_data/example_mats/tri/p1/williams-shunn/m132.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.053534 s
+cleaned_data/example_mats/tri/p1/williams-shunn/m3.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.050729 s
+cleaned_data/example_mats/tri/p1/williams-shunn/m460.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.052358 s
+cleaned_data/example_mats/tri/p1/williams-shunn/m6.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.053364 s
+cleaned_data/example_mats/tri/p2/williams-shunn/m0.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.054935 s
+cleaned_data/example_mats/tri/p2/williams-shunn/m132.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.054461 s
+cleaned_data/example_mats/tri/p2/williams-shunn/m3.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.053863 s
+cleaned_data/example_mats/tri/p2/williams-shunn/m460.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.055874 s
+cleaned_data/example_mats/tri/p2/williams-shunn/m6.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.057672 s
+cleaned_data/example_mats/tri/p3/williams-shunn/m0.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.057904 s
+cleaned_data/example_mats/tri/p3/williams-shunn/m132.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.060119 s
+cleaned_data/example_mats/tri/p3/williams-shunn/m3.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.057600 s
+cleaned_data/example_mats/tri/p3/williams-shunn/m460.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.060194 s
+cleaned_data/example_mats/tri/p3/williams-shunn/m6.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.060864 s
+cleaned_data/example_mats/tri/p4/williams-shunn/m0.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.060786 s
+cleaned_data/example_mats/tri/p4/williams-shunn/m132.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.064536 s
+cleaned_data/example_mats/tri/p4/williams-shunn/m3.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.060824 s
+cleaned_data/example_mats/tri/p4/williams-shunn/m460.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 12 KB (gemm=1)
+Uptime: 0.064405 s
+cleaned_data/example_mats/tri/p4/williams-shunn/m6.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 12 KB (gemm=1)
+Uptime: 0.064312 s
+cleaned_data/example_mats/tri/p5/williams-shunn/m0.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.063406 s
+cleaned_data/example_mats/tri/p5/williams-shunn/m132.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.074136 s
+cleaned_data/example_mats/tri/p5/williams-shunn/m3.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.063640 s
+cleaned_data/example_mats/tri/p5/williams-shunn/m460.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 12 KB (gemm=1)
+Uptime: 0.070613 s
+cleaned_data/example_mats/tri/p5/williams-shunn/m6.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.067854 s
+cleaned_data/example_mats/tri/p6/williams-shunn/m0.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.071283 s
+cleaned_data/example_mats/tri/p6/williams-shunn/m132.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.083417 s
+cleaned_data/example_mats/tri/p6/williams-shunn/m3.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 12 KB (gemm=1)
+Uptime: 0.067419 s
+cleaned_data/example_mats/tri/p6/williams-shunn/m460.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.079147 s
+cleaned_data/example_mats/tri/p6/williams-shunn/m6.txt
+
+LIBXSMM_VERSION: master-1.16.1-1572 (25183780)
+SKX/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 12 KB (gemm=1)
+Uptime: 0.071264 s

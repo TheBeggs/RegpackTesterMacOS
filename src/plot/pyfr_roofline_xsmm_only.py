@@ -11,7 +11,7 @@ from cpu_stats import xeon_8175M_stats, xeon_8124M_stats
 # cpu stats
 cpu_info = xeon_8124M_stats
 
-if len(sys.argv) < 8:
+if len(sys.argv) != 8:
     print("expected 7 arguments: mat_dir n_runs b_num_col test_gimmik TIMESTAMP plot_dir ref_is_dense")
     exit(1)
 

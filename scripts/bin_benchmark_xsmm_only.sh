@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-export LD_LIBRARY_PATH=~/OpenBlas-build/lib:$LD_LIBRARY_PATH
 
 sudo nice -n -20 taskset -c 0 bin/benchmark_xsmm_only $1 $2 $4
 

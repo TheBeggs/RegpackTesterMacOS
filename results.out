@@ -1,0 +1,3060 @@
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p1/gauss-legendre/m0.txt...
+Read matrix has 24 rows and 8 columns.
+Input arrays: A (24, 8), B (8, 8976).
+Output array: C (24, 8976).
+Array B width (N): 8976
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.354000 ms
+Time (libxsmm): 0.354165 ms
+No. of CPU cycles: 1062442
+CPU clock speed (GHz): 2.999854
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.35399999999999998
+xsmm-reference avg execution time: 0.35399999999999998
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p1/gauss-legendre/m132.txt...
+Read matrix has 8 rows and 24 columns.
+Input arrays: A (8, 24), B (24, 8976).
+Output array: C (8, 8976).
+Array B width (N): 8976
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 18.382000 ms
+Time (libxsmm): 18.382120 ms
+No. of CPU cycles: 55145170
+CPU clock speed (GHz): 2.999935
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 18.382000000000001
+xsmm-reference avg execution time: 18.382000000000001
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p1/gauss-legendre/m3.txt...
+Read matrix has 8 rows and 24 columns.
+Input arrays: A (8, 24), B (24, 8976).
+Output array: C (8, 8976).
+Array B width (N): 8976
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.412000 ms
+Time (libxsmm): 0.411381 ms
+No. of CPU cycles: 1234116
+CPU clock speed (GHz): 2.999937
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.41199999999999998
+xsmm-reference avg execution time: 0.41199999999999998
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p1/gauss-legendre/m460.txt...
+Read matrix has 24 rows and 8 columns.
+Input arrays: A (24, 8), B (8, 8976).
+Output array: C (24, 8976).
+Array B width (N): 8976
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 16.444000 ms
+Time (libxsmm): 16.444533 ms
+No. of CPU cycles: 49332810
+CPU clock speed (GHz): 2.999952
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 16.443999999999999
+xsmm-reference avg execution time: 16.443999999999999
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p1/gauss-legendre/m6.txt...
+Read matrix has 24 rows and 24 columns.
+Input arrays: A (24, 24), B (24, 6000).
+Output array: C (24, 6000).
+Array B width (N): 6000
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 10.844000 ms
+Time (libxsmm): 10.844569 ms
+No. of CPU cycles: 32532944
+CPU clock speed (GHz): 2.999930
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 10.843999999999999
+xsmm-reference avg execution time: 10.843999999999999
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p2/gauss-legendre-lobatto/m0.txt...
+Read matrix has 54 rows and 27 columns.
+Input arrays: A (54, 27), B (27, 3552).
+Output array: C (54, 3552).
+Array B width (N): 3552
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 16.752000 ms
+Time (libxsmm): 16.752958 ms
+No. of CPU cycles: 50257968
+CPU clock speed (GHz): 2.999946
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 16.751999999999999
+xsmm-reference avg execution time: 16.751999999999999
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p2/gauss-legendre-lobatto/m132.txt...
+Read matrix has 27 rows and 81 columns.
+Input arrays: A (27, 81), B (81, 2640).
+Output array: C (27, 2640).
+Array B width (N): 2640
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 8.836000 ms
+Time (libxsmm): 8.835909 ms
+No. of CPU cycles: 26506612
+CPU clock speed (GHz): 2.999874
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 8.8360000000000003
+xsmm-reference avg execution time: 8.8360000000000003
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p2/gauss-legendre-lobatto/m3.txt...
+Read matrix has 27 rows and 54 columns.
+Input arrays: A (27, 54), B (54, 3552).
+Output array: C (27, 3552).
+Array B width (N): 3552
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 28.844000 ms
+Time (libxsmm): 28.844070 ms
+No. of CPU cycles: 86529340
+CPU clock speed (GHz): 2.999900
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 28.844000000000001
+xsmm-reference avg execution time: 28.844000000000001
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p2/gauss-legendre-lobatto/m460.txt...
+Read matrix has 81 rows and 27 columns.
+Input arrays: A (81, 27), B (27, 2640).
+Output array: C (81, 2640).
+Array B width (N): 2640
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 13.417000 ms
+Time (libxsmm): 13.417017 ms
+No. of CPU cycles: 40250594
+CPU clock speed (GHz): 2.999966
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 13.417
+xsmm-reference avg execution time: 13.417
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p2/gauss-legendre-lobatto/m6.txt...
+Read matrix has 81 rows and 54 columns.
+Input arrays: A (81, 54), B (54, 2112).
+Output array: C (81, 2112).
+Array B width (N): 2112
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 9.598000 ms
+Time (libxsmm): 9.597630 ms
+No. of CPU cycles: 28792610
+CPU clock speed (GHz): 2.999971
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 9.5980000000000008
+xsmm-reference avg execution time: 9.5980000000000008
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p2/gauss-legendre/m0.txt...
+Read matrix has 54 rows and 27 columns.
+Input arrays: A (54, 27), B (27, 3552).
+Output array: C (54, 3552).
+Array B width (N): 3552
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.432000 ms
+Time (libxsmm): 0.431849 ms
+No. of CPU cycles: 1295518
+CPU clock speed (GHz): 2.999930
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.432
+xsmm-reference avg execution time: 0.432
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p2/gauss-legendre/m132.txt...
+Read matrix has 27 rows and 81 columns.
+Input arrays: A (27, 81), B (81, 2640).
+Output array: C (27, 2640).
+Array B width (N): 2640
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.417000 ms
+Time (libxsmm): 0.416353 ms
+No. of CPU cycles: 1249016
+CPU clock speed (GHz): 2.999895
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.41699999999999998
+xsmm-reference avg execution time: 0.41699999999999998
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p2/gauss-legendre/m3.txt...
+Read matrix has 27 rows and 54 columns.
+Input arrays: A (27, 54), B (54, 3552).
+Output array: C (27, 3552).
+Array B width (N): 3552
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.420000 ms
+Time (libxsmm): 0.419871 ms
+No. of CPU cycles: 1259568
+CPU clock speed (GHz): 2.999892
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.41999999999999998
+xsmm-reference avg execution time: 0.41999999999999998
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p2/gauss-legendre/m460.txt...
+Read matrix has 81 rows and 27 columns.
+Input arrays: A (81, 27), B (27, 2640).
+Output array: C (81, 2640).
+Array B width (N): 2640
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.419000 ms
+Time (libxsmm): 0.418380 ms
+No. of CPU cycles: 1255108
+CPU clock speed (GHz): 2.999925
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.41899999999999998
+xsmm-reference avg execution time: 0.41899999999999998
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p2/gauss-legendre/m6.txt...
+Read matrix has 81 rows and 54 columns.
+Input arrays: A (81, 54), B (54, 2112).
+Output array: C (81, 2112).
+Array B width (N): 2112
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.841000 ms
+Time (libxsmm): 0.840190 ms
+No. of CPU cycles: 2520522
+CPU clock speed (GHz): 2.999943
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.84099999999999997
+xsmm-reference avg execution time: 0.84099999999999997
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p3/gauss-legendre-lobatto/m0.txt...
+Read matrix has 96 rows and 64 columns.
+Input arrays: A (96, 64), B (64, 1776).
+Output array: C (96, 1776).
+Array B width (N): 1776
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.405000 ms
+Time (libxsmm): 0.405235 ms
+No. of CPU cycles: 1215660
+CPU clock speed (GHz): 2.999886
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.40500000000000003
+xsmm-reference avg execution time: 0.40500000000000003
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p3/gauss-legendre-lobatto/m132.txt...
+Read matrix has 64 rows and 192 columns.
+Input arrays: A (64, 192), B (192, 1104).
+Output array: C (64, 1104).
+Array B width (N): 1104
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.436000 ms
+Time (libxsmm): 0.435975 ms
+No. of CPU cycles: 1307884
+CPU clock speed (GHz): 2.999905
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.436
+xsmm-reference avg execution time: 0.436
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p3/gauss-legendre-lobatto/m3.txt...
+Read matrix has 64 rows and 96 columns.
+Input arrays: A (64, 96), B (96, 1776).
+Output array: C (64, 1776).
+Array B width (N): 1776
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.428000 ms
+Time (libxsmm): 0.427573 ms
+No. of CPU cycles: 1282678
+CPU clock speed (GHz): 2.999905
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.42799999999999999
+xsmm-reference avg execution time: 0.42799999999999999
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p3/gauss-legendre-lobatto/m460.txt...
+Read matrix has 192 rows and 64 columns.
+Input arrays: A (192, 64), B (64, 1104).
+Output array: C (192, 1104).
+Array B width (N): 1104
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.462000 ms
+Time (libxsmm): 0.461860 ms
+No. of CPU cycles: 1385504
+CPU clock speed (GHz): 2.999836
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.46200000000000002
+xsmm-reference avg execution time: 0.46200000000000002
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p3/gauss-legendre-lobatto/m6.txt...
+Read matrix has 192 rows and 96 columns.
+Input arrays: A (192, 96), B (96, 960).
+Output array: C (192, 960).
+Array B width (N): 960
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.418000 ms
+Time (libxsmm): 0.417767 ms
+No. of CPU cycles: 1253236
+CPU clock speed (GHz): 2.999843
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.41799999999999998
+xsmm-reference avg execution time: 0.41799999999999998
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p3/gauss-legendre/m0.txt...
+Read matrix has 96 rows and 64 columns.
+Input arrays: A (96, 64), B (64, 1776).
+Output array: C (96, 1776).
+Array B width (N): 1776
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.454000 ms
+Time (libxsmm): 0.454323 ms
+No. of CPU cycles: 1362928
+CPU clock speed (GHz): 2.999911
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.45400000000000001
+xsmm-reference avg execution time: 0.45400000000000001
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p3/gauss-legendre/m132.txt...
+Read matrix has 64 rows and 192 columns.
+Input arrays: A (64, 192), B (192, 1104).
+Output array: C (64, 1104).
+Array B width (N): 1104
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 1.244000 ms
+Time (libxsmm): 1.244409 ms
+No. of CPU cycles: 3733082
+CPU clock speed (GHz): 2.999883
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 1.244
+xsmm-reference avg execution time: 1.244
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p3/gauss-legendre/m3.txt...
+Read matrix has 64 rows and 96 columns.
+Input arrays: A (64, 96), B (96, 1776).
+Output array: C (64, 1776).
+Array B width (N): 1776
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.421000 ms
+Time (libxsmm): 0.421131 ms
+No. of CPU cycles: 1263346
+CPU clock speed (GHz): 2.999890
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.42099999999999999
+xsmm-reference avg execution time: 0.42099999999999999
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p3/gauss-legendre/m460.txt...
+Read matrix has 192 rows and 64 columns.
+Input arrays: A (192, 64), B (64, 1104).
+Output array: C (192, 1104).
+Array B width (N): 1104
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.432000 ms
+Time (libxsmm): 0.431898 ms
+No. of CPU cycles: 1295656
+CPU clock speed (GHz): 2.999912
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.432
+xsmm-reference avg execution time: 0.432
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p3/gauss-legendre/m6.txt...
+Read matrix has 192 rows and 96 columns.
+Input arrays: A (192, 96), B (96, 960).
+Output array: C (192, 960).
+Array B width (N): 960
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.409000 ms
+Time (libxsmm): 0.409641 ms
+No. of CPU cycles: 1228890
+CPU clock speed (GHz): 2.999922
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.40899999999999997
+xsmm-reference avg execution time: 0.40899999999999997
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p4/gauss-legendre-lobatto/m0.txt...
+Read matrix has 150 rows and 125 columns.
+Input arrays: A (150, 125), B (125, 1008).
+Output array: C (150, 1008).
+Array B width (N): 1008
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.384000 ms
+Time (libxsmm): 0.383799 ms
+No. of CPU cycles: 1151390
+CPU clock speed (GHz): 2.999978
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.38400000000000001
+xsmm-reference avg execution time: 0.38400000000000001
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p4/gauss-legendre-lobatto/m132.txt...
+Read matrix has 125 rows and 375 columns.
+Input arrays: A (125, 375), B (375, 576).
+Output array: C (125, 576).
+Array B width (N): 576
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.471000 ms
+Time (libxsmm): 0.471249 ms
+No. of CPU cycles: 1413722
+CPU clock speed (GHz): 2.999949
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.47099999999999997
+xsmm-reference avg execution time: 0.47099999999999997
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p4/gauss-legendre-lobatto/m3.txt...
+Read matrix has 125 rows and 150 columns.
+Input arrays: A (125, 150), B (150, 1008).
+Output array: C (125, 1008).
+Array B width (N): 1008
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.422000 ms
+Time (libxsmm): 0.421921 ms
+No. of CPU cycles: 1265728
+CPU clock speed (GHz): 2.999916
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.42199999999999999
+xsmm-reference avg execution time: 0.42199999999999999
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p4/gauss-legendre-lobatto/m460.txt...
+Read matrix has 375 rows and 125 columns.
+Input arrays: A (375, 125), B (125, 576).
+Output array: C (375, 576).
+Array B width (N): 576
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.479000 ms
+Time (libxsmm): 0.479590 ms
+No. of CPU cycles: 1438726
+CPU clock speed (GHz): 2.999906
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.47899999999999998
+xsmm-reference avg execution time: 0.47899999999999998
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p4/gauss-legendre-lobatto/m6.txt...
+Read matrix has 375 rows and 150 columns.
+Input arrays: A (375, 150), B (150, 528).
+Output array: C (375, 528).
+Array B width (N): 528
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.411000 ms
+Time (libxsmm): 0.410146 ms
+No. of CPU cycles: 1230382
+CPU clock speed (GHz): 2.999861
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.41099999999999998
+xsmm-reference avg execution time: 0.41099999999999998
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p4/gauss-legendre/m0.txt...
+Read matrix has 150 rows and 125 columns.
+Input arrays: A (150, 125), B (125, 1008).
+Output array: C (150, 1008).
+Array B width (N): 1008
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.432000 ms
+Time (libxsmm): 0.431888 ms
+No. of CPU cycles: 1295626
+CPU clock speed (GHz): 2.999909
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.432
+xsmm-reference avg execution time: 0.432
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p4/gauss-legendre/m132.txt...
+Read matrix has 125 rows and 375 columns.
+Input arrays: A (125, 375), B (375, 576).
+Output array: C (125, 576).
+Array B width (N): 576
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.475000 ms
+Time (libxsmm): 0.474181 ms
+No. of CPU cycles: 1422532
+CPU clock speed (GHz): 2.999977
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.47499999999999998
+xsmm-reference avg execution time: 0.47499999999999998
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p4/gauss-legendre/m3.txt...
+Read matrix has 125 rows and 150 columns.
+Input arrays: A (125, 150), B (150, 1008).
+Output array: C (125, 1008).
+Array B width (N): 1008
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.434000 ms
+Time (libxsmm): 0.433523 ms
+No. of CPU cycles: 1300558
+CPU clock speed (GHz): 2.999973
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.434
+xsmm-reference avg execution time: 0.434
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p4/gauss-legendre/m460.txt...
+Read matrix has 375 rows and 125 columns.
+Input arrays: A (375, 125), B (125, 576).
+Output array: C (375, 576).
+Array B width (N): 576
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.470000 ms
+Time (libxsmm): 0.469259 ms
+No. of CPU cycles: 1407740
+CPU clock speed (GHz): 2.999923
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.46999999999999997
+xsmm-reference avg execution time: 0.46999999999999997
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p4/gauss-legendre/m6.txt...
+Read matrix has 375 rows and 150 columns.
+Input arrays: A (375, 150), B (150, 528).
+Output array: C (375, 528).
+Array B width (N): 528
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.412000 ms
+Time (libxsmm): 0.412285 ms
+No. of CPU cycles: 1236822
+CPU clock speed (GHz): 2.999922
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.41199999999999998
+xsmm-reference avg execution time: 0.41199999999999998
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p5/gauss-legendre-lobatto/m0.txt...
+Read matrix has 216 rows and 216 columns.
+Input arrays: A (216, 216), B (216, 624).
+Output array: C (216, 624).
+Array B width (N): 624
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.352000 ms
+Time (libxsmm): 0.352420 ms
+No. of CPU cycles: 1057234
+CPU clock speed (GHz): 2.999925
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.35199999999999998
+xsmm-reference avg execution time: 0.35199999999999998
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p5/gauss-legendre-lobatto/m132.txt...
+Read matrix has 216 rows and 648 columns.
+Input arrays: A (216, 648), B (648, 288).
+Output array: C (216, 288).
+Array B width (N): 288
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.416000 ms
+Time (libxsmm): 0.415627 ms
+No. of CPU cycles: 1246830
+CPU clock speed (GHz): 2.999878
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.41599999999999998
+xsmm-reference avg execution time: 0.41599999999999998
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p5/gauss-legendre-lobatto/m3.txt...
+Read matrix has 216 rows and 216 columns.
+Input arrays: A (216, 216), B (216, 624).
+Output array: C (216, 624).
+Array B width (N): 624
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.416000 ms
+Time (libxsmm): 0.415992 ms
+No. of CPU cycles: 1247958
+CPU clock speed (GHz): 2.999954
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.41599999999999998
+xsmm-reference avg execution time: 0.41599999999999998
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p5/gauss-legendre-lobatto/m460.txt...
+Read matrix has 648 rows and 216 columns.
+Input arrays: A (648, 216), B (216, 288).
+Output array: C (648, 288).
+Array B width (N): 288
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.400000 ms
+Time (libxsmm): 0.399974 ms
+No. of CPU cycles: 1199908
+CPU clock speed (GHz): 2.999964
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.40000000000000002
+xsmm-reference avg execution time: 0.40000000000000002
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p5/gauss-legendre-lobatto/m6.txt...
+Read matrix has 648 rows and 216 columns.
+Input arrays: A (648, 216), B (216, 288).
+Output array: C (648, 288).
+Array B width (N): 288
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.372000 ms
+Time (libxsmm): 0.372624 ms
+No. of CPU cycles: 1117838
+CPU clock speed (GHz): 2.999912
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.372
+xsmm-reference avg execution time: 0.372
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p5/gauss-legendre/m0.txt...
+Read matrix has 216 rows and 216 columns.
+Input arrays: A (216, 216), B (216, 624).
+Output array: C (216, 624).
+Array B width (N): 624
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.469000 ms
+Time (libxsmm): 0.468865 ms
+No. of CPU cycles: 1406570
+CPU clock speed (GHz): 2.999945
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.46899999999999997
+xsmm-reference avg execution time: 0.46899999999999997
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p5/gauss-legendre/m132.txt...
+Read matrix has 216 rows and 648 columns.
+Input arrays: A (216, 648), B (648, 288).
+Output array: C (216, 288).
+Array B width (N): 288
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.414000 ms
+Time (libxsmm): 0.413709 ms
+No. of CPU cycles: 1241116
+CPU clock speed (GHz): 2.999973
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.41399999999999998
+xsmm-reference avg execution time: 0.41399999999999998
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p5/gauss-legendre/m3.txt...
+Read matrix has 216 rows and 216 columns.
+Input arrays: A (216, 216), B (216, 624).
+Output array: C (216, 624).
+Array B width (N): 624
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.415000 ms
+Time (libxsmm): 0.414695 ms
+No. of CPU cycles: 1244032
+CPU clock speed (GHz): 2.999869
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.41499999999999998
+xsmm-reference avg execution time: 0.41499999999999998
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p5/gauss-legendre/m460.txt...
+Read matrix has 648 rows and 216 columns.
+Input arrays: A (648, 216), B (216, 288).
+Output array: C (648, 288).
+Array B width (N): 288
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.392000 ms
+Time (libxsmm): 0.390971 ms
+No. of CPU cycles: 1172886
+CPU clock speed (GHz): 2.999934
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.39200000000000002
+xsmm-reference avg execution time: 0.39200000000000002
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p5/gauss-legendre/m6.txt...
+Read matrix has 648 rows and 216 columns.
+Input arrays: A (648, 216), B (216, 288).
+Output array: C (648, 288).
+Array B width (N): 288
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 9.740000 ms
+Time (libxsmm): 9.741042 ms
+No. of CPU cycles: 29221812
+CPU clock speed (GHz): 2.999865
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 9.7400000000000002
+xsmm-reference avg execution time: 9.7400000000000002
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p6/gauss-legendre-lobatto/m0.txt...
+Read matrix has 294 rows and 343 columns.
+Input arrays: A (294, 343), B (343, 432).
+Output array: C (294, 432).
+Array B width (N): 432
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.362000 ms
+Time (libxsmm): 0.362367 ms
+No. of CPU cycles: 1087090
+CPU clock speed (GHz): 2.999971
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.36199999999999999
+xsmm-reference avg execution time: 0.36199999999999999
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p6/gauss-legendre-lobatto/m132.txt...
+Read matrix has 343 rows and 1029 columns.
+Input arrays: A (343, 1029), B (1029, 192).
+Output array: C (343, 192).
+Array B width (N): 192
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.450000 ms
+Time (libxsmm): 0.449919 ms
+No. of CPU cycles: 1349734
+CPU clock speed (GHz): 2.999952
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.45000000000000001
+xsmm-reference avg execution time: 0.45000000000000001
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p6/gauss-legendre-lobatto/m3.txt...
+Read matrix has 343 rows and 294 columns.
+Input arrays: A (343, 294), B (294, 432).
+Output array: C (343, 432).
+Array B width (N): 432
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.418000 ms
+Time (libxsmm): 0.418293 ms
+No. of CPU cycles: 1254864
+CPU clock speed (GHz): 2.999966
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.41799999999999998
+xsmm-reference avg execution time: 0.41799999999999998
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p6/gauss-legendre-lobatto/m460.txt...
+Read matrix has 1029 rows and 343 columns.
+Input arrays: A (1029, 343), B (343, 192).
+Output array: C (1029, 192).
+Array B width (N): 192
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.443000 ms
+Time (libxsmm): 0.442351 ms
+No. of CPU cycles: 1326990
+CPU clock speed (GHz): 2.999855
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.443
+xsmm-reference avg execution time: 0.443
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p6/gauss-legendre-lobatto/m6.txt...
+Read matrix has 1029 rows and 294 columns.
+Input arrays: A (1029, 294), B (294, 192).
+Output array: C (1029, 192).
+Array B width (N): 192
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.367000 ms
+Time (libxsmm): 0.367465 ms
+No. of CPU cycles: 1102374
+CPU clock speed (GHz): 2.999943
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.36699999999999999
+xsmm-reference avg execution time: 0.36699999999999999
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p6/gauss-legendre/m0.txt...
+Read matrix has 294 rows and 343 columns.
+Input arrays: A (294, 343), B (343, 432).
+Output array: C (294, 432).
+Array B width (N): 432
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.482000 ms
+Time (libxsmm): 0.482012 ms
+No. of CPU cycles: 1446026
+CPU clock speed (GHz): 2.999976
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.48199999999999998
+xsmm-reference avg execution time: 0.48199999999999998
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p6/gauss-legendre/m132.txt...
+Read matrix has 343 rows and 1029 columns.
+Input arrays: A (343, 1029), B (1029, 192).
+Output array: C (343, 192).
+Array B width (N): 192
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.474000 ms
+Time (libxsmm): 0.473909 ms
+No. of CPU cycles: 1421714
+CPU clock speed (GHz): 2.999974
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.47399999999999998
+xsmm-reference avg execution time: 0.47399999999999998
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p6/gauss-legendre/m3.txt...
+Read matrix has 343 rows and 294 columns.
+Input arrays: A (343, 294), B (294, 432).
+Output array: C (343, 432).
+Array B width (N): 432
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.440000 ms
+Time (libxsmm): 0.439828 ms
+No. of CPU cycles: 1319450
+CPU clock speed (GHz): 2.999920
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.44
+xsmm-reference avg execution time: 0.44
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p6/gauss-legendre/m460.txt...
+Read matrix has 1029 rows and 343 columns.
+Input arrays: A (1029, 343), B (343, 192).
+Output array: C (1029, 192).
+Array B width (N): 192
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.464000 ms
+Time (libxsmm): 0.463803 ms
+No. of CPU cycles: 1391364
+CPU clock speed (GHz): 2.999903
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.46400000000000002
+xsmm-reference avg execution time: 0.46400000000000002
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/hex/p6/gauss-legendre/m6.txt...
+Read matrix has 1029 rows and 294 columns.
+Input arrays: A (1029, 294), B (294, 192).
+Output array: C (1029, 192).
+Array B width (N): 192
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.374000 ms
+Time (libxsmm): 0.373878 ms
+No. of CPU cycles: 1121618
+CPU clock speed (GHz): 2.999954
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.374
+xsmm-reference avg execution time: 0.374
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p1/gauss-legendre/m0.txt...
+Read matrix has 8 rows and 4 columns.
+Input arrays: A (8, 4), B (4, 24000).
+Output array: C (8, 24000).
+Array B width (N): 24000
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.324000 ms
+Time (libxsmm): 0.324587 ms
+No. of CPU cycles: 973738
+CPU clock speed (GHz): 2.999928
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.32400000000000001
+xsmm-reference avg execution time: 0.32400000000000001
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p1/gauss-legendre/m132.txt...
+Read matrix has 4 rows and 8 columns.
+Input arrays: A (4, 8), B (8, 24000).
+Output array: C (4, 24000).
+Array B width (N): 24000
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.248000 ms
+Time (libxsmm): 0.248423 ms
+No. of CPU cycles: 745252
+CPU clock speed (GHz): 2.999935
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.248
+xsmm-reference avg execution time: 0.248
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p1/gauss-legendre/m3.txt...
+Read matrix has 4 rows and 8 columns.
+Input arrays: A (4, 8), B (8, 24000).
+Output array: C (4, 24000).
+Array B width (N): 24000
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.299000 ms
+Time (libxsmm): 0.298659 ms
+No. of CPU cycles: 895958
+CPU clock speed (GHz): 2.999936
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.29899999999999999
+xsmm-reference avg execution time: 0.29899999999999999
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p1/gauss-legendre/m460.txt...
+Read matrix has 8 rows and 4 columns.
+Input arrays: A (8, 4), B (4, 24000).
+Output array: C (8, 24000).
+Array B width (N): 24000
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.335000 ms
+Time (libxsmm): 0.334509 ms
+No. of CPU cycles: 1003510
+CPU clock speed (GHz): 2.999947
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.33500000000000002
+xsmm-reference avg execution time: 0.33500000000000002
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p1/gauss-legendre/m6.txt...
+Read matrix has 8 rows and 8 columns.
+Input arrays: A (8, 8), B (8, 18000).
+Output array: C (8, 18000).
+Array B width (N): 18000
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.299000 ms
+Time (libxsmm): 0.299343 ms
+No. of CPU cycles: 897992
+CPU clock speed (GHz): 2.999880
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.29899999999999999
+xsmm-reference avg execution time: 0.29899999999999999
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p2/gauss-legendre-lobatto/m0.txt...
+Read matrix has 12 rows and 9 columns.
+Input arrays: A (12, 9), B (9, 13680).
+Output array: C (12, 13680).
+Array B width (N): 13680
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.300000 ms
+Time (libxsmm): 0.299409 ms
+No. of CPU cycles: 898208
+CPU clock speed (GHz): 2.999938
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.29999999999999999
+xsmm-reference avg execution time: 0.29999999999999999
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p2/gauss-legendre-lobatto/m132.txt...
+Read matrix has 9 rows and 18 columns.
+Input arrays: A (9, 18), B (18, 10656).
+Output array: C (9, 10656).
+Array B width (N): 10656
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.267000 ms
+Time (libxsmm): 0.266777 ms
+No. of CPU cycles: 800292
+CPU clock speed (GHz): 2.999850
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.26700000000000002
+xsmm-reference avg execution time: 0.26700000000000002
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p2/gauss-legendre-lobatto/m3.txt...
+Read matrix has 9 rows and 12 columns.
+Input arrays: A (9, 12), B (12, 13680).
+Output array: C (9, 13680).
+Array B width (N): 13680
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.278000 ms
+Time (libxsmm): 0.278440 ms
+No. of CPU cycles: 835302
+CPU clock speed (GHz): 2.999939
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.27800000000000002
+xsmm-reference avg execution time: 0.27800000000000002
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p2/gauss-legendre-lobatto/m460.txt...
+Read matrix has 18 rows and 9 columns.
+Input arrays: A (18, 9), B (9, 10656).
+Output array: C (18, 10656).
+Array B width (N): 10656
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.332000 ms
+Time (libxsmm): 0.332659 ms
+No. of CPU cycles: 997948
+CPU clock speed (GHz): 2.999916
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.33200000000000002
+xsmm-reference avg execution time: 0.33200000000000002
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p2/gauss-legendre-lobatto/m6.txt...
+Read matrix has 18 rows and 12 columns.
+Input arrays: A (18, 12), B (12, 9600).
+Output array: C (18, 9600).
+Array B width (N): 9600
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.332000 ms
+Time (libxsmm): 0.331744 ms
+No. of CPU cycles: 995220
+CPU clock speed (GHz): 2.999960
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.33200000000000002
+xsmm-reference avg execution time: 0.33200000000000002
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p2/gauss-legendre/m0.txt...
+Read matrix has 12 rows and 9 columns.
+Input arrays: A (12, 9), B (9, 13680).
+Output array: C (12, 13680).
+Array B width (N): 13680
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.325000 ms
+Time (libxsmm): 0.325082 ms
+No. of CPU cycles: 975222
+CPU clock speed (GHz): 2.999927
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.32500000000000001
+xsmm-reference avg execution time: 0.32500000000000001
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p2/gauss-legendre/m132.txt...
+Read matrix has 9 rows and 18 columns.
+Input arrays: A (9, 18), B (18, 10656).
+Output array: C (9, 10656).
+Array B width (N): 10656
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.257000 ms
+Time (libxsmm): 0.256550 ms
+No. of CPU cycles: 769618
+CPU clock speed (GHz): 2.999879
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.25700000000000001
+xsmm-reference avg execution time: 0.25700000000000001
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p2/gauss-legendre/m3.txt...
+Read matrix has 9 rows and 12 columns.
+Input arrays: A (9, 12), B (12, 13680).
+Output array: C (9, 13680).
+Array B width (N): 13680
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.275000 ms
+Time (libxsmm): 0.275198 ms
+No. of CPU cycles: 825584
+CPU clock speed (GHz): 2.999963
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.27500000000000002
+xsmm-reference avg execution time: 0.27500000000000002
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p2/gauss-legendre/m460.txt...
+Read matrix has 18 rows and 9 columns.
+Input arrays: A (18, 9), B (9, 10656).
+Output array: C (18, 10656).
+Array B width (N): 10656
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.324000 ms
+Time (libxsmm): 0.323780 ms
+No. of CPU cycles: 971302
+CPU clock speed (GHz): 2.999879
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.32400000000000001
+xsmm-reference avg execution time: 0.32400000000000001
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p2/gauss-legendre/m6.txt...
+Read matrix has 18 rows and 12 columns.
+Input arrays: A (18, 12), B (12, 9600).
+Output array: C (18, 9600).
+Array B width (N): 9600
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.295000 ms
+Time (libxsmm): 0.294637 ms
+No. of CPU cycles: 883882
+CPU clock speed (GHz): 2.999897
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.29499999999999998
+xsmm-reference avg execution time: 0.29499999999999998
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p3/gauss-legendre-lobatto/m0.txt...
+Read matrix has 16 rows and 16 columns.
+Input arrays: A (16, 16), B (16, 8976).
+Output array: C (16, 8976).
+Array B width (N): 8976
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.266000 ms
+Time (libxsmm): 0.265899 ms
+No. of CPU cycles: 797676
+CPU clock speed (GHz): 2.999924
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.26600000000000001
+xsmm-reference avg execution time: 0.26600000000000001
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p3/gauss-legendre-lobatto/m132.txt...
+Read matrix has 16 rows and 32 columns.
+Input arrays: A (16, 32), B (32, 6000).
+Output array: C (16, 6000).
+Array B width (N): 6000
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.430000 ms
+Time (libxsmm): 0.430051 ms
+No. of CPU cycles: 1290086
+CPU clock speed (GHz): 2.999846
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.42999999999999999
+xsmm-reference avg execution time: 0.42999999999999999
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p3/gauss-legendre-lobatto/m3.txt...
+Read matrix has 16 rows and 16 columns.
+Input arrays: A (16, 16), B (16, 8976).
+Output array: C (16, 8976).
+Array B width (N): 8976
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.313000 ms
+Time (libxsmm): 0.313446 ms
+No. of CPU cycles: 940306
+CPU clock speed (GHz): 2.999899
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.313
+xsmm-reference avg execution time: 0.313
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p3/gauss-legendre-lobatto/m460.txt...
+Read matrix has 32 rows and 16 columns.
+Input arrays: A (32, 16), B (16, 6000).
+Output array: C (32, 6000).
+Array B width (N): 6000
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.337000 ms
+Time (libxsmm): 0.337624 ms
+No. of CPU cycles: 1012850
+CPU clock speed (GHz): 2.999933
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.33700000000000002
+xsmm-reference avg execution time: 0.33700000000000002
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p3/gauss-legendre-lobatto/m6.txt...
+Read matrix has 32 rows and 16 columns.
+Input arrays: A (32, 16), B (16, 6000).
+Output array: C (32, 6000).
+Array B width (N): 6000
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.315000 ms
+Time (libxsmm): 0.315733 ms
+No. of CPU cycles: 947190
+CPU clock speed (GHz): 2.999970
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.315
+xsmm-reference avg execution time: 0.315
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p3/gauss-legendre/m0.txt...
+Read matrix has 16 rows and 16 columns.
+Input arrays: A (16, 16), B (16, 8976).
+Output array: C (16, 8976).
+Array B width (N): 8976
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.305000 ms
+Time (libxsmm): 0.304872 ms
+No. of CPU cycles: 914586
+CPU clock speed (GHz): 2.999900
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.30499999999999999
+xsmm-reference avg execution time: 0.30499999999999999
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p3/gauss-legendre/m132.txt...
+Read matrix has 16 rows and 32 columns.
+Input arrays: A (16, 32), B (32, 6000).
+Output array: C (16, 6000).
+Array B width (N): 6000
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.440000 ms
+Time (libxsmm): 0.440074 ms
+No. of CPU cycles: 1320194
+CPU clock speed (GHz): 2.999934
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.44
+xsmm-reference avg execution time: 0.44
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p3/gauss-legendre/m3.txt...
+Read matrix has 16 rows and 16 columns.
+Input arrays: A (16, 16), B (16, 8976).
+Output array: C (16, 8976).
+Array B width (N): 8976
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.290000 ms
+Time (libxsmm): 0.290188 ms
+No. of CPU cycles: 870556
+CPU clock speed (GHz): 2.999969
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.28999999999999998
+xsmm-reference avg execution time: 0.28999999999999998
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p3/gauss-legendre/m460.txt...
+Read matrix has 32 rows and 16 columns.
+Input arrays: A (32, 16), B (16, 6000).
+Output array: C (32, 6000).
+Array B width (N): 6000
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.347000 ms
+Time (libxsmm): 0.346214 ms
+No. of CPU cycles: 1038614
+CPU clock speed (GHz): 2.999920
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.34699999999999998
+xsmm-reference avg execution time: 0.34699999999999998
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p3/gauss-legendre/m6.txt...
+Read matrix has 32 rows and 16 columns.
+Input arrays: A (32, 16), B (16, 6000).
+Output array: C (32, 6000).
+Array B width (N): 6000
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.321000 ms
+Time (libxsmm): 0.320371 ms
+No. of CPU cycles: 961080
+CPU clock speed (GHz): 2.999901
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.32100000000000001
+xsmm-reference avg execution time: 0.32100000000000001
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p4/gauss-legendre-lobatto/m0.txt...
+Read matrix has 20 rows and 25 columns.
+Input arrays: A (20, 25), B (25, 6384).
+Output array: C (20, 6384).
+Array B width (N): 6384
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.243000 ms
+Time (libxsmm): 0.242743 ms
+No. of CPU cycles: 728216
+CPU clock speed (GHz): 2.999942
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.24299999999999999
+xsmm-reference avg execution time: 0.24299999999999999
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p4/gauss-legendre-lobatto/m132.txt...
+Read matrix has 25 rows and 50 columns.
+Input arrays: A (25, 50), B (50, 3840).
+Output array: C (25, 3840).
+Array B width (N): 3840
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.468000 ms
+Time (libxsmm): 0.467659 ms
+No. of CPU cycles: 1402932
+CPU clock speed (GHz): 2.999904
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.46800000000000003
+xsmm-reference avg execution time: 0.46800000000000003
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p4/gauss-legendre-lobatto/m3.txt...
+Read matrix has 25 rows and 20 columns.
+Input arrays: A (25, 20), B (20, 6384).
+Output array: C (25, 6384).
+Array B width (N): 6384
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.316000 ms
+Time (libxsmm): 0.315604 ms
+No. of CPU cycles: 946784
+CPU clock speed (GHz): 2.999908
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.316
+xsmm-reference avg execution time: 0.316
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p4/gauss-legendre-lobatto/m460.txt...
+Read matrix has 50 rows and 25 columns.
+Input arrays: A (50, 25), B (25, 3840).
+Output array: C (50, 3840).
+Array B width (N): 3840
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.448000 ms
+Time (libxsmm): 0.447676 ms
+No. of CPU cycles: 1342990
+CPU clock speed (GHz): 2.999915
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.44800000000000001
+xsmm-reference avg execution time: 0.44800000000000001
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p4/gauss-legendre-lobatto/m6.txt...
+Read matrix has 50 rows and 20 columns.
+Input arrays: A (50, 20), B (20, 4080).
+Output array: C (50, 4080).
+Array B width (N): 4080
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.419000 ms
+Time (libxsmm): 0.419153 ms
+No. of CPU cycles: 1257416
+CPU clock speed (GHz): 2.999900
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.41899999999999998
+xsmm-reference avg execution time: 0.41899999999999998
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p4/gauss-legendre/m0.txt...
+Read matrix has 20 rows and 25 columns.
+Input arrays: A (20, 25), B (25, 6384).
+Output array: C (20, 6384).
+Array B width (N): 6384
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.440000 ms
+Time (libxsmm): 0.439757 ms
+No. of CPU cycles: 1319236
+CPU clock speed (GHz): 2.999923
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.44
+xsmm-reference avg execution time: 0.44
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p4/gauss-legendre/m132.txt...
+Read matrix has 25 rows and 50 columns.
+Input arrays: A (25, 50), B (50, 3840).
+Output array: C (25, 3840).
+Array B width (N): 3840
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.457000 ms
+Time (libxsmm): 0.457370 ms
+No. of CPU cycles: 1372104
+CPU clock speed (GHz): 2.999987
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.45700000000000002
+xsmm-reference avg execution time: 0.45700000000000002
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p4/gauss-legendre/m3.txt...
+Read matrix has 25 rows and 20 columns.
+Input arrays: A (25, 20), B (20, 6384).
+Output array: C (25, 6384).
+Array B width (N): 6384
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.315000 ms
+Time (libxsmm): 0.314722 ms
+No. of CPU cycles: 944128
+CPU clock speed (GHz): 2.999882
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.315
+xsmm-reference avg execution time: 0.315
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p4/gauss-legendre/m460.txt...
+Read matrix has 50 rows and 25 columns.
+Input arrays: A (50, 25), B (25, 3840).
+Output array: C (50, 3840).
+Array B width (N): 3840
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.399000 ms
+Time (libxsmm): 0.399653 ms
+No. of CPU cycles: 1198910
+CPU clock speed (GHz): 2.999875
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.39900000000000002
+xsmm-reference avg execution time: 0.39900000000000002
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p4/gauss-legendre/m6.txt...
+Read matrix has 50 rows and 20 columns.
+Input arrays: A (50, 20), B (20, 4080).
+Output array: C (50, 4080).
+Array B width (N): 4080
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.420000 ms
+Time (libxsmm): 0.419353 ms
+No. of CPU cycles: 1258024
+CPU clock speed (GHz): 2.999917
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.41999999999999998
+xsmm-reference avg execution time: 0.41999999999999998
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p5/gauss-legendre-lobatto/m0.txt...
+Read matrix has 24 rows and 36 columns.
+Input arrays: A (24, 36), B (36, 4800).
+Output array: C (24, 4800).
+Array B width (N): 4800
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.325000 ms
+Time (libxsmm): 0.324863 ms
+No. of CPU cycles: 974576
+CPU clock speed (GHz): 2.999956
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.32500000000000001
+xsmm-reference avg execution time: 0.32500000000000001
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p5/gauss-legendre-lobatto/m132.txt...
+Read matrix has 36 rows and 72 columns.
+Input arrays: A (36, 72), B (72, 2640).
+Output array: C (36, 2640).
+Array B width (N): 2640
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.450000 ms
+Time (libxsmm): 0.449735 ms
+No. of CPU cycles: 1349128
+CPU clock speed (GHz): 2.999827
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.45000000000000001
+xsmm-reference avg execution time: 0.45000000000000001
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p5/gauss-legendre-lobatto/m3.txt...
+Read matrix has 36 rows and 24 columns.
+Input arrays: A (36, 24), B (24, 4800).
+Output array: C (36, 4800).
+Array B width (N): 4800
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.436000 ms
+Time (libxsmm): 0.436385 ms
+No. of CPU cycles: 1309144
+CPU clock speed (GHz): 2.999976
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.436
+xsmm-reference avg execution time: 0.436
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p5/gauss-legendre-lobatto/m460.txt...
+Read matrix has 72 rows and 36 columns.
+Input arrays: A (72, 36), B (36, 2640).
+Output array: C (72, 2640).
+Array B width (N): 2640
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.442000 ms
+Time (libxsmm): 0.441823 ms
+No. of CPU cycles: 1325442
+CPU clock speed (GHz): 2.999940
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.442
+xsmm-reference avg execution time: 0.442
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p5/gauss-legendre-lobatto/m6.txt...
+Read matrix has 72 rows and 24 columns.
+Input arrays: A (72, 24), B (24, 2976).
+Output array: C (72, 2976).
+Array B width (N): 2976
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.432000 ms
+Time (libxsmm): 0.432323 ms
+No. of CPU cycles: 1296942
+CPU clock speed (GHz): 2.999937
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.432
+xsmm-reference avg execution time: 0.432
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p5/gauss-legendre/m0.txt...
+Read matrix has 24 rows and 36 columns.
+Input arrays: A (24, 36), B (36, 4800).
+Output array: C (24, 4800).
+Array B width (N): 4800
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.430000 ms
+Time (libxsmm): 0.429974 ms
+No. of CPU cycles: 1289884
+CPU clock speed (GHz): 2.999915
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.42999999999999999
+xsmm-reference avg execution time: 0.42999999999999999
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p5/gauss-legendre/m132.txt...
+Read matrix has 36 rows and 72 columns.
+Input arrays: A (36, 72), B (72, 2640).
+Output array: C (36, 2640).
+Array B width (N): 2640
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.459000 ms
+Time (libxsmm): 0.458212 ms
+No. of CPU cycles: 1374586
+CPU clock speed (GHz): 2.999892
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.45900000000000002
+xsmm-reference avg execution time: 0.45900000000000002
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p5/gauss-legendre/m3.txt...
+Read matrix has 36 rows and 24 columns.
+Input arrays: A (36, 24), B (24, 4800).
+Output array: C (36, 4800).
+Array B width (N): 4800
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.432000 ms
+Time (libxsmm): 0.432078 ms
+No. of CPU cycles: 1296204
+CPU clock speed (GHz): 2.999932
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.432
+xsmm-reference avg execution time: 0.432
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p5/gauss-legendre/m460.txt...
+Read matrix has 72 rows and 36 columns.
+Input arrays: A (72, 36), B (36, 2640).
+Output array: C (72, 2640).
+Array B width (N): 2640
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.640000 ms
+Time (libxsmm): 0.640337 ms
+No. of CPU cycles: 1920962
+CPU clock speed (GHz): 2.999923
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.64000000000000001
+xsmm-reference avg execution time: 0.64000000000000001
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p5/gauss-legendre/m6.txt...
+Read matrix has 72 rows and 24 columns.
+Input arrays: A (72, 24), B (24, 2976).
+Output array: C (72, 2976).
+Array B width (N): 2976
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.417000 ms
+Time (libxsmm): 0.417138 ms
+No. of CPU cycles: 1251378
+CPU clock speed (GHz): 2.999917
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.41699999999999998
+xsmm-reference avg execution time: 0.41699999999999998
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p6/gauss-legendre-lobatto/m0.txt...
+Read matrix has 28 rows and 49 columns.
+Input arrays: A (28, 49), B (49, 3696).
+Output array: C (28, 3696).
+Array B width (N): 3696
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.295000 ms
+Time (libxsmm): 0.294389 ms
+No. of CPU cycles: 883138
+CPU clock speed (GHz): 2.999903
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.29499999999999998
+xsmm-reference avg execution time: 0.29499999999999998
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p6/gauss-legendre-lobatto/m132.txt...
+Read matrix has 49 rows and 98 columns.
+Input arrays: A (49, 98), B (98, 1920).
+Output array: C (49, 1920).
+Array B width (N): 1920
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 1.134000 ms
+Time (libxsmm): 1.133980 ms
+No. of CPU cycles: 3401818
+CPU clock speed (GHz): 2.999893
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 1.1339999999999999
+xsmm-reference avg execution time: 1.1339999999999999
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p6/gauss-legendre-lobatto/m3.txt...
+Read matrix has 49 rows and 28 columns.
+Input arrays: A (49, 28), B (28, 3696).
+Output array: C (49, 3696).
+Array B width (N): 3696
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.431000 ms
+Time (libxsmm): 0.430678 ms
+No. of CPU cycles: 1292002
+CPU clock speed (GHz): 2.999928
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.43099999999999999
+xsmm-reference avg execution time: 0.43099999999999999
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p6/gauss-legendre-lobatto/m460.txt...
+Read matrix has 98 rows and 49 columns.
+Input arrays: A (98, 49), B (49, 1920).
+Output array: C (98, 1920).
+Array B width (N): 1920
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.470000 ms
+Time (libxsmm): 0.470408 ms
+No. of CPU cycles: 1411160
+CPU clock speed (GHz): 2.999864
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.46999999999999997
+xsmm-reference avg execution time: 0.46999999999999997
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p6/gauss-legendre-lobatto/m6.txt...
+Read matrix has 98 rows and 28 columns.
+Input arrays: A (98, 28), B (28, 2256).
+Output array: C (98, 2256).
+Array B width (N): 2256
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.429000 ms
+Time (libxsmm): 0.428418 ms
+No. of CPU cycles: 1285202
+CPU clock speed (GHz): 2.999879
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.42899999999999999
+xsmm-reference avg execution time: 0.42899999999999999
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p6/gauss-legendre/m0.txt...
+Read matrix has 28 rows and 49 columns.
+Input arrays: A (28, 49), B (49, 3696).
+Output array: C (28, 3696).
+Array B width (N): 3696
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.431000 ms
+Time (libxsmm): 0.431472 ms
+No. of CPU cycles: 1294388
+CPU clock speed (GHz): 2.999934
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.43099999999999999
+xsmm-reference avg execution time: 0.43099999999999999
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p6/gauss-legendre/m132.txt...
+Read matrix has 49 rows and 98 columns.
+Input arrays: A (49, 98), B (98, 1920).
+Output array: C (49, 1920).
+Array B width (N): 1920
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.969000 ms
+Time (libxsmm): 0.968331 ms
+No. of CPU cycles: 2904912
+CPU clock speed (GHz): 2.999916
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.96899999999999997
+xsmm-reference avg execution time: 0.96899999999999997
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p6/gauss-legendre/m3.txt...
+Read matrix has 49 rows and 28 columns.
+Input arrays: A (49, 28), B (28, 3696).
+Output array: C (49, 3696).
+Array B width (N): 3696
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.413000 ms
+Time (libxsmm): 0.412656 ms
+No. of CPU cycles: 1237938
+CPU clock speed (GHz): 2.999924
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.41299999999999998
+xsmm-reference avg execution time: 0.41299999999999998
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p6/gauss-legendre/m460.txt...
+Read matrix has 98 rows and 49 columns.
+Input arrays: A (98, 49), B (49, 1920).
+Output array: C (98, 1920).
+Array B width (N): 1920
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.474000 ms
+Time (libxsmm): 0.474075 ms
+No. of CPU cycles: 1422184
+CPU clock speed (GHz): 2.999913
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.47399999999999998
+xsmm-reference avg execution time: 0.47399999999999998
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/quad/p6/gauss-legendre/m6.txt...
+Read matrix has 98 rows and 28 columns.
+Input arrays: A (98, 28), B (28, 2256).
+Output array: C (98, 2256).
+Array B width (N): 2256
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.625000 ms
+Time (libxsmm): 0.624166 ms
+No. of CPU cycles: 1872478
+CPU clock speed (GHz): 2.999966
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.625
+xsmm-reference avg execution time: 0.625
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tet/p1/shunn-ham/m0.txt...
+Read matrix has 12 rows and 4 columns.
+Input arrays: A (12, 4), B (4, 18000).
+Output array: C (12, 18000).
+Array B width (N): 18000
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.359000 ms
+Time (libxsmm): 0.358823 ms
+No. of CPU cycles: 1076408
+CPU clock speed (GHz): 2.999830
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.35899999999999999
+xsmm-reference avg execution time: 0.35899999999999999
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tet/p1/shunn-ham/m132.txt...
+Read matrix has 4 rows and 12 columns.
+Input arrays: A (4, 12), B (12, 18000).
+Output array: C (4, 18000).
+Array B width (N): 18000
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.252000 ms
+Time (libxsmm): 0.251720 ms
+No. of CPU cycles: 755150
+CPU clock speed (GHz): 2.999965
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.252
+xsmm-reference avg execution time: 0.252
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tet/p1/shunn-ham/m3.txt...
+Read matrix has 4 rows and 12 columns.
+Input arrays: A (4, 12), B (12, 18000).
+Output array: C (4, 18000).
+Array B width (N): 18000
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.267000 ms
+Time (libxsmm): 0.267855 ms
+No. of CPU cycles: 803530
+CPU clock speed (GHz): 2.999864
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.26700000000000002
+xsmm-reference avg execution time: 0.26700000000000002
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tet/p1/shunn-ham/m460.txt...
+Read matrix has 12 rows and 4 columns.
+Input arrays: A (12, 4), B (4, 18000).
+Output array: C (12, 18000).
+Array B width (N): 18000
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.246000 ms
+Time (libxsmm): 0.245237 ms
+No. of CPU cycles: 735706
+CPU clock speed (GHz): 2.999981
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.246
+xsmm-reference avg execution time: 0.246
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tet/p1/shunn-ham/m6.txt...
+Read matrix has 12 rows and 12 columns.
+Input arrays: A (12, 12), B (12, 12000).
+Output array: C (12, 12000).
+Array B width (N): 12000
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.912000 ms
+Time (libxsmm): 0.911840 ms
+No. of CPU cycles: 2735482
+CPU clock speed (GHz): 2.999960
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.91200000000000003
+xsmm-reference avg execution time: 0.91200000000000003
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tet/p2/shunn-ham/m0.txt...
+Read matrix has 24 rows and 10 columns.
+Input arrays: A (24, 10), B (10, 8448).
+Output array: C (24, 8448).
+Array B width (N): 8448
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.401000 ms
+Time (libxsmm): 0.401093 ms
+No. of CPU cycles: 1203240
+CPU clock speed (GHz): 2.999899
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.40100000000000002
+xsmm-reference avg execution time: 0.40100000000000002
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tet/p2/shunn-ham/m132.txt...
+Read matrix has 10 rows and 30 columns.
+Input arrays: A (10, 30), B (30, 7200).
+Output array: C (10, 7200).
+Array B width (N): 7200
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.313000 ms
+Time (libxsmm): 0.312158 ms
+No. of CPU cycles: 936458
+CPU clock speed (GHz): 2.999947
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.313
+xsmm-reference avg execution time: 0.313
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tet/p2/shunn-ham/m3.txt...
+Read matrix has 10 rows and 24 columns.
+Input arrays: A (10, 24), B (24, 8448).
+Output array: C (10, 8448).
+Array B width (N): 8448
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.464000 ms
+Time (libxsmm): 0.464098 ms
+No. of CPU cycles: 1392276
+CPU clock speed (GHz): 2.999962
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.46400000000000002
+xsmm-reference avg execution time: 0.46400000000000002
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tet/p2/shunn-ham/m460.txt...
+Read matrix has 30 rows and 10 columns.
+Input arrays: A (30, 10), B (10, 7200).
+Output array: C (30, 7200).
+Array B width (N): 7200
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.397000 ms
+Time (libxsmm): 0.397153 ms
+No. of CPU cycles: 1191416
+CPU clock speed (GHz): 2.999892
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.39700000000000002
+xsmm-reference avg execution time: 0.39700000000000002
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tet/p2/shunn-ham/m6.txt...
+Read matrix has 30 rows and 24 columns.
+Input arrays: A (30, 24), B (24, 5328).
+Output array: C (30, 5328).
+Array B width (N): 5328
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.378000 ms
+Time (libxsmm): 0.378462 ms
+No. of CPU cycles: 1135354
+CPU clock speed (GHz): 2.999916
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.378
+xsmm-reference avg execution time: 0.378
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tet/p3/shunn-ham/m0.txt...
+Read matrix has 40 rows and 20 columns.
+Input arrays: A (40, 20), B (20, 4800).
+Output array: C (40, 4800).
+Array B width (N): 4800
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.513000 ms
+Time (libxsmm): 0.512883 ms
+No. of CPU cycles: 1538636
+CPU clock speed (GHz): 2.999972
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.51300000000000001
+xsmm-reference avg execution time: 0.51300000000000001
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tet/p3/shunn-ham/m132.txt...
+Read matrix has 20 rows and 60 columns.
+Input arrays: A (20, 60), B (60, 3600).
+Output array: C (20, 3600).
+Array B width (N): 3600
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.711000 ms
+Time (libxsmm): 0.711012 ms
+No. of CPU cycles: 2132960
+CPU clock speed (GHz): 2.999891
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.71099999999999997
+xsmm-reference avg execution time: 0.71099999999999997
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tet/p3/shunn-ham/m3.txt...
+Read matrix has 20 rows and 40 columns.
+Input arrays: A (20, 40), B (40, 4800).
+Output array: C (20, 4800).
+Array B width (N): 4800
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.619000 ms
+Time (libxsmm): 0.618516 ms
+No. of CPU cycles: 1855510
+CPU clock speed (GHz): 2.999936
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.61899999999999999
+xsmm-reference avg execution time: 0.61899999999999999
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tet/p3/shunn-ham/m460.txt...
+Read matrix has 60 rows and 20 columns.
+Input arrays: A (60, 20), B (20, 3600).
+Output array: C (60, 3600).
+Array B width (N): 3600
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.543000 ms
+Time (libxsmm): 0.543430 ms
+No. of CPU cycles: 1630286
+CPU clock speed (GHz): 2.999993
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.54300000000000004
+xsmm-reference avg execution time: 0.54300000000000004
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tet/p3/shunn-ham/m6.txt...
+Read matrix has 60 rows and 40 columns.
+Input arrays: A (60, 40), B (40, 2880).
+Output array: C (60, 2880).
+Array B width (N): 2880
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.976000 ms
+Time (libxsmm): 0.975677 ms
+No. of CPU cycles: 2926952
+CPU clock speed (GHz): 2.999919
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.97599999999999998
+xsmm-reference avg execution time: 0.97599999999999998
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tet/p4/shunn-ham/m0.txt...
+Read matrix has 60 rows and 35 columns.
+Input arrays: A (60, 35), B (35, 3024).
+Output array: C (60, 3024).
+Array B width (N): 3024
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 1.072000 ms
+Time (libxsmm): 1.072104 ms
+No. of CPU cycles: 3216238
+CPU clock speed (GHz): 2.999932
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 1.0720000000000001
+xsmm-reference avg execution time: 1.0720000000000001
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tet/p4/shunn-ham/m132.txt...
+Read matrix has 35 rows and 105 columns.
+Input arrays: A (35, 105), B (105, 2016).
+Output array: C (35, 2016).
+Array B width (N): 2016
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.984000 ms
+Time (libxsmm): 0.984284 ms
+No. of CPU cycles: 2952734
+CPU clock speed (GHz): 2.999880
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.98399999999999999
+xsmm-reference avg execution time: 0.98399999999999999
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tet/p4/shunn-ham/m3.txt...
+Read matrix has 35 rows and 60 columns.
+Input arrays: A (35, 60), B (60, 3024).
+Output array: C (35, 3024).
+Array B width (N): 3024
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.883000 ms
+Time (libxsmm): 0.883036 ms
+No. of CPU cycles: 2649036
+CPU clock speed (GHz): 2.999919
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.88300000000000001
+xsmm-reference avg execution time: 0.88300000000000001
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tet/p4/shunn-ham/m460.txt...
+Read matrix has 105 rows and 35 columns.
+Input arrays: A (105, 35), B (35, 2016).
+Output array: C (105, 2016).
+Array B width (N): 2016
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.743000 ms
+Time (libxsmm): 0.742894 ms
+No. of CPU cycles: 2228604
+CPU clock speed (GHz): 2.999896
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.74299999999999999
+xsmm-reference avg execution time: 0.74299999999999999
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tet/p4/shunn-ham/m6.txt...
+Read matrix has 105 rows and 60 columns.
+Input arrays: A (105, 60), B (60, 1728).
+Output array: C (105, 1728).
+Array B width (N): 1728
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.706000 ms
+Time (libxsmm): 0.705134 ms
+No. of CPU cycles: 2115354
+CPU clock speed (GHz): 2.999931
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.70599999999999996
+xsmm-reference avg execution time: 0.70599999999999996
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tet/p5/shunn-ham/m0.txt...
+Read matrix has 84 rows and 56 columns.
+Input arrays: A (84, 56), B (56, 2016).
+Output array: C (84, 2016).
+Array B width (N): 2016
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 1.164000 ms
+Time (libxsmm): 1.164200 ms
+No. of CPU cycles: 3492554
+CPU clock speed (GHz): 2.999961
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 1.1639999999999999
+xsmm-reference avg execution time: 1.1639999999999999
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tet/p5/shunn-ham/m132.txt...
+Read matrix has 56 rows and 168 columns.
+Input arrays: A (56, 168), B (168, 1248).
+Output array: C (56, 1248).
+Array B width (N): 1248
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 1.837000 ms
+Time (libxsmm): 1.836266 ms
+No. of CPU cycles: 5508660
+CPU clock speed (GHz): 2.999925
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 1.837
+xsmm-reference avg execution time: 1.837
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tet/p5/shunn-ham/m3.txt...
+Read matrix has 56 rows and 84 columns.
+Input arrays: A (56, 84), B (84, 2016).
+Output array: C (56, 2016).
+Array B width (N): 2016
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 1.207000 ms
+Time (libxsmm): 1.206856 ms
+No. of CPU cycles: 3620512
+CPU clock speed (GHz): 2.999955
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 1.2070000000000001
+xsmm-reference avg execution time: 1.2070000000000001
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tet/p5/shunn-ham/m460.txt...
+Read matrix has 168 rows and 56 columns.
+Input arrays: A (168, 56), B (56, 1248).
+Output array: C (168, 1248).
+Array B width (N): 1248
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 1.335000 ms
+Time (libxsmm): 1.334810 ms
+No. of CPU cycles: 4004376
+CPU clock speed (GHz): 2.999960
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 1.335
+xsmm-reference avg execution time: 1.335
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tet/p5/shunn-ham/m6.txt...
+Read matrix has 168 rows and 84 columns.
+Input arrays: A (168, 84), B (84, 1104).
+Output array: C (168, 1104).
+Array B width (N): 1104
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 10.234000 ms
+Time (libxsmm): 10.234557 ms
+No. of CPU cycles: 30702330
+CPU clock speed (GHz): 2.999869
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 10.234
+xsmm-reference avg execution time: 10.234
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tet/p6/shunn-ham/m0.txt...
+Read matrix has 112 rows and 84 columns.
+Input arrays: A (112, 84), B (84, 1440).
+Output array: C (112, 1440).
+Array B width (N): 1440
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 1.578000 ms
+Time (libxsmm): 1.577474 ms
+No. of CPU cycles: 4732312
+CPU clock speed (GHz): 2.999930
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 1.5780000000000001
+xsmm-reference avg execution time: 1.5780000000000001
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tet/p6/shunn-ham/m132.txt...
+Read matrix has 84 rows and 252 columns.
+Input arrays: A (84, 252), B (252, 816).
+Output array: C (84, 816).
+Array B width (N): 816
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 2.477000 ms
+Time (libxsmm): 2.477445 ms
+No. of CPU cycles: 7432242
+CPU clock speed (GHz): 2.999962
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 2.4769999999999999
+xsmm-reference avg execution time: 2.4769999999999999
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tet/p6/shunn-ham/m3.txt...
+Read matrix has 84 rows and 112 columns.
+Input arrays: A (84, 112), B (112, 1440).
+Output array: C (84, 1440).
+Array B width (N): 1440
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 1.638000 ms
+Time (libxsmm): 1.637767 ms
+No. of CPU cycles: 4913216
+CPU clock speed (GHz): 2.999949
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 1.6379999999999999
+xsmm-reference avg execution time: 1.6379999999999999
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tet/p6/shunn-ham/m460.txt...
+Read matrix has 252 rows and 84 columns.
+Input arrays: A (252, 84), B (84, 816).
+Output array: C (252, 816).
+Array B width (N): 816
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 1.985000 ms
+Time (libxsmm): 1.984822 ms
+No. of CPU cycles: 5954220
+CPU clock speed (GHz): 2.999877
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 1.9850000000000001
+xsmm-reference avg execution time: 1.9850000000000001
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tet/p6/shunn-ham/m6.txt...
+Read matrix has 252 rows and 112 columns.
+Input arrays: A (252, 112), B (112, 768).
+Output array: C (252, 768).
+Array B width (N): 768
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 1.703000 ms
+Time (libxsmm): 1.702808 ms
+No. of CPU cycles: 5108372
+CPU clock speed (GHz): 2.999970
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 1.7030000000000001
+xsmm-reference avg execution time: 1.7030000000000001
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tri/p1/williams-shunn/m0.txt...
+Read matrix has 6 rows and 3 columns.
+Input arrays: A (6, 3), B (3, 31968).
+Output array: C (6, 31968).
+Array B width (N): 31968
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.333000 ms
+Time (libxsmm): 0.333696 ms
+No. of CPU cycles: 1001052
+CPU clock speed (GHz): 2.999896
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.33300000000000002
+xsmm-reference avg execution time: 0.33300000000000002
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tri/p1/williams-shunn/m132.txt...
+Read matrix has 3 rows and 6 columns.
+Input arrays: A (3, 6), B (6, 31968).
+Output array: C (3, 31968).
+Array B width (N): 31968
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.787000 ms
+Time (libxsmm): 0.786991 ms
+No. of CPU cycles: 2360910
+CPU clock speed (GHz): 2.999920
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.78700000000000003
+xsmm-reference avg execution time: 0.78700000000000003
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tri/p1/williams-shunn/m3.txt...
+Read matrix has 3 rows and 6 columns.
+Input arrays: A (3, 6), B (6, 31968).
+Output array: C (3, 31968).
+Array B width (N): 31968
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.243000 ms
+Time (libxsmm): 0.243069 ms
+No. of CPU cycles: 729180
+CPU clock speed (GHz): 2.999893
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.24299999999999999
+xsmm-reference avg execution time: 0.24299999999999999
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tri/p1/williams-shunn/m460.txt...
+Read matrix has 6 rows and 3 columns.
+Input arrays: A (6, 3), B (3, 31968).
+Output array: C (6, 31968).
+Array B width (N): 31968
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.254000 ms
+Time (libxsmm): 0.254842 ms
+No. of CPU cycles: 764512
+CPU clock speed (GHz): 2.999945
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.254
+xsmm-reference avg execution time: 0.254
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tri/p1/williams-shunn/m6.txt...
+Read matrix has 6 rows and 6 columns.
+Input arrays: A (6, 6), B (6, 24000).
+Output array: C (6, 24000).
+Array B width (N): 24000
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.300000 ms
+Time (libxsmm): 0.299608 ms
+No. of CPU cycles: 898784
+CPU clock speed (GHz): 2.999868
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.29999999999999999
+xsmm-reference avg execution time: 0.29999999999999999
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tri/p2/williams-shunn/m0.txt...
+Read matrix has 9 rows and 6 columns.
+Input arrays: A (9, 6), B (6, 19200).
+Output array: C (9, 19200).
+Array B width (N): 19200
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.346000 ms
+Time (libxsmm): 0.346186 ms
+No. of CPU cycles: 1038530
+CPU clock speed (GHz): 2.999917
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.34599999999999997
+xsmm-reference avg execution time: 0.34599999999999997
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tri/p2/williams-shunn/m132.txt...
+Read matrix has 6 rows and 12 columns.
+Input arrays: A (6, 12), B (12, 15984).
+Output array: C (6, 15984).
+Array B width (N): 15984
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.289000 ms
+Time (libxsmm): 0.288629 ms
+No. of CPU cycles: 865860
+CPU clock speed (GHz): 2.999904
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.28899999999999998
+xsmm-reference avg execution time: 0.28899999999999998
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tri/p2/williams-shunn/m3.txt...
+Read matrix has 6 rows and 9 columns.
+Input arrays: A (6, 9), B (9, 19200).
+Output array: C (6, 19200).
+Array B width (N): 19200
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.292000 ms
+Time (libxsmm): 0.291463 ms
+No. of CPU cycles: 874380
+CPU clock speed (GHz): 2.999969
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.29199999999999998
+xsmm-reference avg execution time: 0.29199999999999998
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tri/p2/williams-shunn/m460.txt...
+Read matrix has 12 rows and 6 columns.
+Input arrays: A (12, 6), B (6, 15984).
+Output array: C (12, 15984).
+Array B width (N): 15984
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.347000 ms
+Time (libxsmm): 0.347750 ms
+No. of CPU cycles: 1043232
+CPU clock speed (GHz): 2.999945
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.34699999999999998
+xsmm-reference avg execution time: 0.34699999999999998
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tri/p2/williams-shunn/m6.txt...
+Read matrix has 12 rows and 9 columns.
+Input arrays: A (12, 9), B (9, 13680).
+Output array: C (12, 13680).
+Array B width (N): 13680
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.326000 ms
+Time (libxsmm): 0.326546 ms
+No. of CPU cycles: 979608
+CPU clock speed (GHz): 2.999904
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.32600000000000001
+xsmm-reference avg execution time: 0.32600000000000001
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tri/p3/williams-shunn/m0.txt...
+Read matrix has 12 rows and 10 columns.
+Input arrays: A (12, 10), B (10, 13056).
+Output array: C (12, 13056).
+Array B width (N): 13056
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.350000 ms
+Time (libxsmm): 0.350005 ms
+No. of CPU cycles: 1049988
+CPU clock speed (GHz): 2.999925
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.34999999999999998
+xsmm-reference avg execution time: 0.34999999999999998
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tri/p3/williams-shunn/m132.txt...
+Read matrix has 10 rows and 20 columns.
+Input arrays: A (10, 20), B (20, 9600).
+Output array: C (10, 9600).
+Array B width (N): 9600
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.344000 ms
+Time (libxsmm): 0.344223 ms
+No. of CPU cycles: 1032644
+CPU clock speed (GHz): 2.999923
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.34399999999999997
+xsmm-reference avg execution time: 0.34399999999999997
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tri/p3/williams-shunn/m3.txt...
+Read matrix has 10 rows and 12 columns.
+Input arrays: A (10, 12), B (12, 13056).
+Output array: C (10, 13056).
+Array B width (N): 13056
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.340000 ms
+Time (libxsmm): 0.339678 ms
+No. of CPU cycles: 1019020
+CPU clock speed (GHz): 2.999957
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.34000000000000002
+xsmm-reference avg execution time: 0.34000000000000002
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tri/p3/williams-shunn/m460.txt...
+Read matrix has 20 rows and 10 columns.
+Input arrays: A (20, 10), B (10, 9600).
+Output array: C (20, 9600).
+Array B width (N): 9600
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.378000 ms
+Time (libxsmm): 0.377928 ms
+No. of CPU cycles: 1133750
+CPU clock speed (GHz): 2.999912
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.378
+xsmm-reference avg execution time: 0.378
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tri/p3/williams-shunn/m6.txt...
+Read matrix has 20 rows and 12 columns.
+Input arrays: A (20, 12), B (12, 8976).
+Output array: C (20, 8976).
+Array B width (N): 8976
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.343000 ms
+Time (libxsmm): 0.343618 ms
+No. of CPU cycles: 1030834
+CPU clock speed (GHz): 2.999940
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.34300000000000003
+xsmm-reference avg execution time: 0.34300000000000003
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tri/p4/williams-shunn/m0.txt...
+Read matrix has 15 rows and 15 columns.
+Input arrays: A (15, 15), B (15, 9600).
+Output array: C (15, 9600).
+Array B width (N): 9600
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.402000 ms
+Time (libxsmm): 0.402390 ms
+No. of CPU cycles: 1207154
+CPU clock speed (GHz): 2.999961
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.40200000000000002
+xsmm-reference avg execution time: 0.40200000000000002
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tri/p4/williams-shunn/m132.txt...
+Read matrix has 15 rows and 30 columns.
+Input arrays: A (15, 30), B (30, 6384).
+Output array: C (15, 6384).
+Array B width (N): 6384
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.373000 ms
+Time (libxsmm): 0.372377 ms
+No. of CPU cycles: 1117110
+CPU clock speed (GHz): 2.999943
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.373
+xsmm-reference avg execution time: 0.373
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tri/p4/williams-shunn/m3.txt...
+Read matrix has 15 rows and 15 columns.
+Input arrays: A (15, 15), B (15, 9600).
+Output array: C (15, 9600).
+Array B width (N): 9600
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.391000 ms
+Time (libxsmm): 0.390762 ms
+No. of CPU cycles: 1172244
+CPU clock speed (GHz): 2.999893
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.39100000000000001
+xsmm-reference avg execution time: 0.39100000000000001
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tri/p4/williams-shunn/m460.txt...
+Read matrix has 30 rows and 15 columns.
+Input arrays: A (30, 15), B (15, 6384).
+Output array: C (30, 6384).
+Array B width (N): 6384
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.457000 ms
+Time (libxsmm): 0.456562 ms
+No. of CPU cycles: 1369650
+CPU clock speed (GHz): 2.999923
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.45700000000000002
+xsmm-reference avg execution time: 0.45700000000000002
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tri/p4/williams-shunn/m6.txt...
+Read matrix has 30 rows and 15 columns.
+Input arrays: A (30, 15), B (15, 6384).
+Output array: C (30, 6384).
+Array B width (N): 6384
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.395000 ms
+Time (libxsmm): 0.394942 ms
+No. of CPU cycles: 1184792
+CPU clock speed (GHz): 2.999911
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.39500000000000002
+xsmm-reference avg execution time: 0.39500000000000002
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tri/p5/williams-shunn/m0.txt...
+Read matrix has 18 rows and 21 columns.
+Input arrays: A (18, 21), B (21, 7344).
+Output array: C (18, 7344).
+Array B width (N): 7344
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.429000 ms
+Time (libxsmm): 0.428948 ms
+No. of CPU cycles: 1286808
+CPU clock speed (GHz): 2.999917
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.42899999999999999
+xsmm-reference avg execution time: 0.42899999999999999
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tri/p5/williams-shunn/m132.txt...
+Read matrix has 21 rows and 42 columns.
+Input arrays: A (21, 42), B (42, 4560).
+Output array: C (21, 4560).
+Array B width (N): 4560
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.647000 ms
+Time (libxsmm): 0.647338 ms
+No. of CPU cycles: 1941964
+CPU clock speed (GHz): 2.999923
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.64700000000000002
+xsmm-reference avg execution time: 0.64700000000000002
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tri/p5/williams-shunn/m3.txt...
+Read matrix has 21 rows and 18 columns.
+Input arrays: A (21, 18), B (18, 7344).
+Output array: C (21, 7344).
+Array B width (N): 7344
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.439000 ms
+Time (libxsmm): 0.439331 ms
+No. of CPU cycles: 1317962
+CPU clock speed (GHz): 2.999926
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.439
+xsmm-reference avg execution time: 0.439
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tri/p5/williams-shunn/m460.txt...
+Read matrix has 42 rows and 21 columns.
+Input arrays: A (42, 21), B (21, 4560).
+Output array: C (42, 4560).
+Array B width (N): 4560
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.664000 ms
+Time (libxsmm): 0.662978 ms
+No. of CPU cycles: 1988884
+CPU clock speed (GHz): 2.999923
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.66400000000000003
+xsmm-reference avg execution time: 0.66400000000000003
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tri/p5/williams-shunn/m6.txt...
+Read matrix has 42 rows and 18 columns.
+Input arrays: A (42, 18), B (18, 4800).
+Output array: C (42, 4800).
+Array B width (N): 4800
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.450000 ms
+Time (libxsmm): 0.450099 ms
+No. of CPU cycles: 1350262
+CPU clock speed (GHz): 2.999924
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.45000000000000001
+xsmm-reference avg execution time: 0.45000000000000001
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tri/p6/williams-shunn/m0.txt...
+Read matrix has 21 rows and 28 columns.
+Input arrays: A (21, 28), B (28, 5856).
+Output array: C (21, 5856).
+Array B width (N): 5856
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.448000 ms
+Time (libxsmm): 0.447978 ms
+No. of CPU cycles: 1343908
+CPU clock speed (GHz): 2.999940
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.44800000000000001
+xsmm-reference avg execution time: 0.44800000000000001
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tri/p6/williams-shunn/m132.txt...
+Read matrix has 28 rows and 56 columns.
+Input arrays: A (28, 56), B (56, 3408).
+Output array: C (28, 3408).
+Array B width (N): 3408
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.788000 ms
+Time (libxsmm): 0.787671 ms
+No. of CPU cycles: 2362944
+CPU clock speed (GHz): 2.999914
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.78800000000000003
+xsmm-reference avg execution time: 0.78800000000000003
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tri/p6/williams-shunn/m3.txt...
+Read matrix has 28 rows and 21 columns.
+Input arrays: A (28, 21), B (21, 5856).
+Output array: C (28, 5856).
+Array B width (N): 5856
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.470000 ms
+Time (libxsmm): 0.469384 ms
+No. of CPU cycles: 1408132
+CPU clock speed (GHz): 2.999957
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.46999999999999997
+xsmm-reference avg execution time: 0.46999999999999997
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tri/p6/williams-shunn/m460.txt...
+Read matrix has 56 rows and 28 columns.
+Input arrays: A (56, 28), B (28, 3408).
+Output array: C (56, 3408).
+Array B width (N): 3408
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.615000 ms
+Time (libxsmm): 0.615214 ms
+No. of CPU cycles: 1845604
+CPU clock speed (GHz): 2.999937
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.61499999999999999
+xsmm-reference avg execution time: 0.61499999999999999
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tri/p6/williams-shunn/m6.txt...
+Read matrix has 56 rows and 21 columns.
+Input arrays: A (56, 21), B (21, 3696).
+Output array: C (56, 3696).
+Array B width (N): 3696
+Randomly generating B matrix...
+Running XSMM Reference MM...
+kernel type: dense
+Time (gettimeofday): 0.494000 ms
+Time (libxsmm): 0.494091 ms
+No. of CPU cycles: 1482222
+CPU clock speed (GHz): 2.999898
+The custom kernel is correct? 1
+Done.
+---------------------------------------------------------------
+xsmm-reference best execution time: 0.49399999999999999
+xsmm-reference avg execution time: 0.49399999999999999

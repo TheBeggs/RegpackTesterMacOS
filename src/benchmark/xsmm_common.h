@@ -71,7 +71,7 @@ struct benchmark_data benchmark_xsmm(double *b, double *c, int num_col, libxsmm_
     return b_data;
 }
 
-struct benchmark_data benchmark_xsmm_1iter(double *b, double *c, int num_col, libxsmm_dfsspmdm const* xsmm_d) {
+struct benchmark_data benchmark_xsmm_1iter(double *b, double *c, int num_col, libxsmm_dfsspmdm const* xsmm_d, char const* const run_type) {
     struct benchmark_data b_data;
     
     b_data.fastest_time = DBL_MAX;
@@ -80,9 +80,10 @@ struct benchmark_data benchmark_xsmm_1iter(double *b, double *c, int num_col, li
     struct duration duration_data = run_and_time(b, c, num_col, xsmm_d);
     double exec_time = duration_data.gettimeofday;
 
-    printf("Time (gettimeofday): %lf ms\n", duration_data.gettimeofday);
-    printf("Time (libxsmm): %lf ms\n", duration_data.libxsmm);
-    printf("No. of CPU cycles: %llu\n", duration_data.ncycles);
+    printf("%s Time (gettimeofday): %lf ms\n", run_type,
+           duration_data.gettimeofday);
+    printf("%s Time (libxsmm): %lf ms\n", run_type, duration_data.libxsmm);
+    printf("%s No. of CPU cycles: %llu\n", run_type, duration_data.ncycles);
 
     b_data.fastest_time = exec_time;
     b_data.avg_iqr_time = exec_time;
@@ -210,6 +211,25 @@ void prepare_benchmark(int argc, char** argv, libxsmm_dfsspmdm** xsmm_d,
         &ldb, &((*dense_handle)->K), &ldc, &one, &beta, &flags,
         (const int*)LIBXSMM_GEMM_PREFETCH_NONE);
   }
+}
+
+void print_kernel_type(libxsmm_dfsspmdm const* const kernel, char const* const run_type) {
+  assert(kernel);
+  printf("%s kernel type: ", run_type);
+  if (kernel->a_dense != NULL) {
+    printf("dense");
+  } else {
+    int const N_vec_reg_dp = libxsmm_cpuid_vlen32(libxsmm_cpuid()) / 2;
+
+    if (kernel->N_chunksize == N_vec_reg_dp) {
+      printf("sparse");
+    } else if (kernel->N_chunksize == 2 * N_vec_reg_dp) {
+      printf("wide-sparse");
+    } else {
+      printf("undefined");
+    }
+  }
+  printf("\n");
 }
 
 #endif  // BENCHMARK_XSMM_COMMON_H
