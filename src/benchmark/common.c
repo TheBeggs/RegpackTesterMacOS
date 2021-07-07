@@ -27,8 +27,12 @@ void fill_B_matrix_semi_random(int b_size, double *b, int seed) {
 
   int element = rand() % 499 + 1;
   
-  for (int i = 0; i < b_size; ++i) {
-    b[i] = element;
+  fill_matrix(b_size, b, element);
+}
+
+void fill_matrix(int size, double* arr, double value) {
+  for (int i = 0; i < size; i++) {
+    arr[i] = value;
   }
 }
 
@@ -138,6 +142,7 @@ void naive_mm(double *a, double *b, double *c, int mm, int nn, int kk) {
   // m = a_y, n = b_x, k = a_x
   for (int m = 0; m < mm; ++m) {
     for (int n = 0; n < nn; ++n) {
+      c[m * nn + n] = 0.0;
       for (int k = 0; k < kk; ++k) {
         c[m * nn + n] += a[m * kk + k] * b[k * nn + n];
       }
@@ -181,4 +186,38 @@ int cmpfunc (const void * a, const void * b) {
   if (*(double*)a > *(double*)b) return 1;
   else if (*(double*)a < *(double*)b) return -1;
   else return 0;  
+}
+
+bool is_matrices_eq(double const* const arr1, double const* const arr2,
+                    int size_m, int size_n) {
+  
+  bool is_correct = true;
+
+  for (int m = 0; m < size_m; m++) {
+    for (int n = 0; n < size_n; n++) {
+      // if (fabs((arr1[m * size_n + n] - arr2[m * size_n + n]) / arr2[m * size_n + n]) > 1e-13) {
+      if (fabs((arr1[m * size_n + n] - arr2[m * size_n + n])) > 0.0) {
+        if (0 == n)
+          printf(
+              "m = %d, n = %d, arr1[m, n] = %e, arr2[m, n] = %e, diff = %e\n",
+              m, n, arr1[m * size_n + n], arr2[m * size_n + n],
+              arr1[m * size_n + n] - arr2[m * size_n + n]);
+        is_correct = false;
+      }
+    }
+  }
+
+  return is_correct;
+}
+
+void print_matrix(double const* const arr, int size_m, int size_n, int ldn) {
+  assert(size_n <= ldn);
+
+  for (int m = 0; m < size_m; m++) {
+    for (int n = 0; n < size_n; n++) {
+      double element = arr[m * ldn + n];
+      printf("%10.2e ", element);
+    }
+    printf("\n");
+  }
 }
