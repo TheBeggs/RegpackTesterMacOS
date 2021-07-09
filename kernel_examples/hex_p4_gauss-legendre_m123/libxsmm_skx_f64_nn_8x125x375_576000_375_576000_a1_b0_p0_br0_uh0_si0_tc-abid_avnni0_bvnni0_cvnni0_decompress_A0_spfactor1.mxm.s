@@ -248,8 +248,10 @@ Disassembly of section .data:
  4c6:	48 83 c6 20          	add    rsi,0x20
  4ca:	49 81 fc 74 01 00 00 	cmp    r12,0x174
  4d1:	0f 8c e5 fb ff ff    	jl     0xbc
- 4d7:	62 f1 fd 48 10 07    	vmovupd zmm0,ZMMWORD PTR [rdi]
- 4dd:	62 f1 fd 48 10 8f 00 	vmovupd zmm1,ZMMWORD PTR [rdi+0x465000]
+ ; rdi pointing to 372'th column of A
+ ; rsi pointing to 372'th row of B
+ 4d7:	62 f1 fd 48 10 07    	vmovupd zmm0,ZMMWORD PTR [rdi] ; col 372
+ 4dd:	62 f1 fd 48 10 8f 00 	vmovupd zmm1,ZMMWORD PTR [rdi+0x465000] ; col 373
  4e4:	50 46 00 
  4e7:	62 f2 fd 58 b8 3e    	vfmadd231pd zmm7,zmm0,QWORD PTR [rsi]{1to8}
  4ed:	62 72 fd 58 b8 86 b8 	vfmadd231pd zmm8,zmm0,QWORD PTR [rsi+0xbb8]{1to8}
@@ -300,7 +302,7 @@ Disassembly of section .data:
  5d0:	0d 01 00 
  5d3:	62 62 fd 58 b8 be 40 	vfmadd231pd zmm31,zmm0,QWORD PTR [rsi+0x11940]{1to8}
  5da:	19 01 00 
- 5dd:	62 f1 fd 48 10 87 00 	vmovupd zmm0,ZMMWORD PTR [rdi+0x8ca000]
+ 5dd:	62 f1 fd 48 10 87 00 	vmovupd zmm0,ZMMWORD PTR [rdi+0x8ca000] ; col 374
  5e4:	a0 8c 00 
  5e7:	62 f2 f5 58 b8 7e 01 	vfmadd231pd zmm7,zmm1,QWORD PTR [rsi+0x8]{1to8}
  5ee:	62 72 f5 58 b8 86 c0 	vfmadd231pd zmm8,zmm1,QWORD PTR [rsi+0xbc0]{1to8}
@@ -351,7 +353,7 @@ Disassembly of section .data:
  6d1:	0d 01 00 
  6d4:	62 62 f5 58 b8 be 48 	vfmadd231pd zmm31,zmm1,QWORD PTR [rsi+0x11948]{1to8}
  6db:	19 01 00 
- 6de:	48 81 c7 00 f0 d2 00 	add    rdi,0xd2f000
+ 6de:	48 81 c7 00 f0 d2 00 	add    rdi,0xd2f000 ; rdi pointing at the 375'th col of A
  6e5:	62 f2 fd 58 b8 7e 02 	vfmadd231pd zmm7,zmm0,QWORD PTR [rsi+0x10]{1to8}
  6ec:	62 72 fd 58 b8 86 c8 	vfmadd231pd zmm8,zmm0,QWORD PTR [rsi+0xbc8]{1to8}
  6f3:	0b 00 00 
@@ -402,8 +404,8 @@ Disassembly of section .data:
  7d2:	62 62 fd 58 b8 be 50 	vfmadd231pd zmm31,zmm0,QWORD PTR [rsi+0x11950]{1to8}
  7d9:	19 01 00 
  7dc:	48 83 c6 18          	add    rsi,0x18
- 7e0:	48 81 ee b8 0b 00 00 	sub    rsi,0xbb8
- 7e7:	62 f1 fd 48 2b 3a    	vmovntpd ZMMWORD PTR [rdx],zmm7
+ 7e0:	48 81 ee b8 0b 00 00 	sub    rsi,0xbb8 ; rsi pointing at the start of B
+ 7e7:	62 f1 fd 48 2b 3a    	vmovntpd ZMMWORD PTR [rdx],zmm7 ; rdx pointing to the start of C
  7ed:	62 71 fd 48 2b 82 00 	vmovntpd ZMMWORD PTR [rdx+0x465000],zmm8
  7f4:	50 46 00 
  7f7:	62 71 fd 48 2b 8a 00 	vmovntpd ZMMWORD PTR [rdx+0x8ca000],zmm9
@@ -452,8 +454,8 @@ Disassembly of section .data:
  8d0:	30 51 06 
  8d3:	62 61 fd 48 2b ba 00 	vmovntpd ZMMWORD PTR [rdx+0x6978000],zmm31
  8da:	80 97 06 
- 8dd:	48 83 c2 40          	add    rdx,0x40
- 8e1:	48 81 ef c0 2f ff 66 	sub    rdi,0x66ff2fc0
+ 8dd:	48 83 c2 40          	add    rdx,0x40 ; rdx pointing at row 8 of C
+ 8e1:	48 81 ef c0 2f ff 66 	sub    rdi,0x66ff2fc0 ; rdi pointing at row 8 of A
  8e8:	49 83 fa 08          	cmp    r10,0x8
  8ec:	0f 8c 29 f7 ff ff    	jl     0x1b
  8f2:	48 81 c2 c0 cf dd 06 	add    rdx,0x6ddcfc0
