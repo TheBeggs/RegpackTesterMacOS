@@ -3,8 +3,8 @@ import pickle
 import sys
 import os
 
-if len(sys.argv) != 7:
-    print("expected 6 arguments: mat_type n_runs log_dir timestamp test_gimmik n_iters")
+if len(sys.argv) != 7 and len(sys.argv) != 8:
+    print("expected 6 or 7 arguments: mat_type n_runs log_dir timestamp test_gimmik n_iters opt:envs")
     exit(1)
 
 mat_type = sys.argv[1] # "pyfr" of "synth"
@@ -14,6 +14,11 @@ timestamp = sys.argv[4]
 test_gimmik = sys.argv[5]
 n_iters = int(sys.argv[6])
 
+if (len(sys.argv) == 8 and sys.argv[7]):
+    envs = sys.argv[7].split(',')
+else:
+    envs = []
+    
 runs = []
 for _ in range(n_runs):
     runs.append({})
@@ -38,17 +43,25 @@ for i, run in enumerate(runs):
         run[t]['density'] = []
         run[t]['mat_file'] = []
         run[t]['size_n'] = []
-        run[t]['speedup_avg_over_ref'] = []
-        run[t]['speedup_best_over_ref'] = []
-        run[t]['xsmm_custom_avg'] = []
-        run[t]['xsmm_custom_best'] = []
-        run[t]['xsmm_custom_worst'] = []
-        run[t]['xsmm_custom_kernel_type'] = []
         run[t]['xsmm_reference_avg'] = []
         run[t]['xsmm_reference_best'] = []
         run[t]['xsmm_reference_worst'] = []
         run[t]['xsmm_reference_kernel_type'] = []
 
+        if not envs:
+            run[t]['speedup_avg_over_ref'] = []
+            run[t]['speedup_best_over_ref'] = []
+            run[t]['xsmm_custom_avg'] = []
+            run[t]['xsmm_custom_best'] = []
+            run[t]['xsmm_custom_worst'] = []
+            run[t]['xsmm_custom_kernel_type'] = []
+        else:
+            for env in envs:
+                run[t][env + "_avg"] = []
+                run[t][env + "_best"] = []
+                run[t][env + "_worst"] = []
+                run[t][env + "_kernel_type"] = []        
+        
         for j in range(n_iters):
             log_file = os.path.join(
                 log_dir, "run_{}_{}_{}.out".format(timestamp, i+1, j+1))
@@ -70,18 +83,6 @@ for i, run in enumerate(runs):
                             run[t]['density'].append(res['density'])
                             run[t]['mat_file'].append(res['mat_file'])
                             run[t]['size_n'].append(res['size_n'])
-                            run[t]['speedup_avg_over_ref'].append(
-                                res['speedup_avg_over_ref'])
-                            run[t]['speedup_best_over_ref'].append(
-                                res['speedup_best_over_ref'])
-                            run[t]['xsmm_custom_avg'].append(
-                                res['xsmm_custom_avg'])
-                            run[t]['xsmm_custom_best'].append(
-                                res['xsmm_custom_best'])
-                            run[t]['xsmm_custom_worst'].append(
-                                res['xsmm_custom_best'])
-                            run[t]['xsmm_custom_kernel_type'].append(
-                                res['xsmm_custom_kernel_type'])
                             run[t]['xsmm_reference_avg'].append(
                                 res['xsmm_reference_avg'])
                             run[t]['xsmm_reference_best'].append(
@@ -90,6 +91,30 @@ for i, run in enumerate(runs):
                                 res['xsmm_reference_best'])
                             run[t]['xsmm_reference_kernel_type'].append(
                                 res['xsmm_reference_kernel_type'])
+                            if not envs:
+                                run[t]['speedup_avg_over_ref'].append(
+                                    res['speedup_avg_over_ref'])
+                                run[t]['speedup_best_over_ref'].append(
+                                    res['speedup_best_over_ref'])
+                                run[t]['xsmm_custom_avg'].append(
+                                    res['xsmm_custom_avg'])
+                                run[t]['xsmm_custom_best'].append(
+                                    res['xsmm_custom_best'])
+                                run[t]['xsmm_custom_worst'].append(
+                                    res['xsmm_custom_best'])
+                                run[t]['xsmm_custom_kernel_type'].append(
+                                    res['xsmm_custom_kernel_type'])
+                            else:
+                                for env in envs:
+                                    run[t][env + '_avg'].append(
+                                        res[env + '_avg'])
+                                    run[t][env + '_best'].append(
+                                        res[env + '_best'])
+                                    run[t][env + '_worst'].append(
+                                        res[env + '_best'])
+                                    run[t][env + '_kernel_type'].append(
+                                        res[env + '_kernel_type'])
+
                         else:
                             run[t]['xsmm_reference_avg'][m] += res['xsmm_reference_avg']
 
@@ -98,20 +123,32 @@ for i, run in enumerate(runs):
                             if res['xsmm_reference_best'] > run[t]['xsmm_reference_worst'][m]:
                                 run[t]['xsmm_reference_worst'][m] = res['xsmm_reference_best']
 
-                            run[t]['xsmm_custom_avg'][m] += res['xsmm_custom_avg']
+                            if not envs:
+                                run[t]['xsmm_custom_avg'][m] += res['xsmm_custom_avg']
 
-                            if res['xsmm_custom_best'] < run[t]['xsmm_custom_best'][m]:
-                                run[t]['xsmm_custom_best'][m] = res['xsmm_custom_best']
-                            if res['xsmm_custom_best'] > run[t]['xsmm_custom_worst'][m]:
-                                run[t]['xsmm_custom_worst'][m] = res['xsmm_custom_best']
+                                if res['xsmm_custom_best'] < run[t]['xsmm_custom_best'][m]:
+                                    run[t]['xsmm_custom_best'][m] = res['xsmm_custom_best']
+                                if res['xsmm_custom_best'] > run[t]['xsmm_custom_worst'][m]:
+                                    run[t]['xsmm_custom_worst'][m] = res['xsmm_custom_best']
+                            else:
+                                for env in envs:
+                                    run[t][env + '_avg'][m] += res[env + '_avg']
 
-
+                                    if res[env + '_best'] < run[t][env + '_best'][m]:
+                                        run[t][env + '_best'][m] = res[env + '_best']
+                                    if res[env + '_best'] > run[t][env + '_worst'][m]:
+                                        run[t][env + '_worst'][m] = res[env + '_best']
 
         for m, average_time in enumerate(run[t]['xsmm_reference_avg']):
             run[t]['xsmm_reference_avg'][m] = average_time / n_iters            
 
-        for m, average_time in enumerate(run[t]['xsmm_custom_avg']):
-            run[t]['xsmm_custom_avg'][m] = average_time / n_iters
+        if not envs:
+            for m, average_time in enumerate(run[t]['xsmm_custom_avg']):
+                run[t]['xsmm_custom_avg'][m] = average_time / n_iters
+        else:
+            for env in envs:
+                for m, average_time in enumerate(run[t][env + '_avg']):
+                    run[t][env + '_avg'][m] = average_time / n_iters
 
     out_file = "./bin/log_data/run_{}_{}.out".format(timestamp, i+1)
 
