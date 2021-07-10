@@ -51,7 +51,7 @@ int main(int argc, char **argv) {
   // flush cache
   flush_cache();
 
-  struct benchmark_data b_data = benchmark_xsmm_1iter(b_d, c_xsmm_d, n, xsmm_d);
+  struct benchmark_data b_data = benchmark_xsmm_1iter(b_d, c_xsmm_d, n, xsmm_d, "check_correctness");
 
   // check for correctness
 
