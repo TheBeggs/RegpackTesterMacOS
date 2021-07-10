@@ -14,8 +14,9 @@ N_RUNS=3
 SKIP_BENCH="0" # 0 don't skip, otherwise == timestamp of previous benchmark
 N_ITER=60 # number of iterations for each run
 MATRIX_SIZE=288000000 # 1500*192000 DP numbers, taking 2197.27 MB
+ENVS=""
 
-while getopts ":d:g:m:t:o:p:n:s:i:" opt; do
+while getopts ":d:g:m:t:o:p:n:s:i:e:" opt; do
   case $opt in
     d) REF_IS_DENSE="$OPTARG"
     ;;
@@ -34,6 +35,8 @@ while getopts ":d:g:m:t:o:p:n:s:i:" opt; do
     s) SKIP_BENCH="$OPTARG"
     ;;
     i) N_ITER=$OPTARG
+    ;;
+    e) ENVS="$OPTARG"
     ;;
     \?) echo "Invalid option -$OPTARG" >&2
     ;;
@@ -70,7 +73,7 @@ then
 	for (( j=$START; j<=$N_ITER; j++ ))
   do
   echo -e "\titernation $j"
-  python3 src/benchmark/benchmark.py $MATS_DIR $WD $MATRIX_SIZE $TEST_GIMMIK > $LOG_DIR/run_${TIMESTAMP}_${i}_${j}.out 2> $LOG_DIR/run_${TIMESTAMP}_${i}_${j}.err
+  python3 src/benchmark/benchmark.py $MATS_DIR $WD $MATRIX_SIZE $TEST_GIMMIK "$ENVS" > $LOG_DIR/run_${TIMESTAMP}_${i}_${j}.out 2> $LOG_DIR/run_${TIMESTAMP}_${i}_${j}.err
   done
 
 	echo "Finished benchmark run $i"
@@ -81,26 +84,26 @@ else
   LOG_DIR=$LOG_DIR/$TIMESTAMP
 fi
 
-# Sort log data and pickle for plotting
-mkdir -p bin/log_data
-python3 src/plot/pickle_runs.py $MAT_TYPE $N_RUNS $LOG_DIR $TIMESTAMP $TEST_GIMMIK $N_ITER
+# # Sort log data and pickle for plotting
+# mkdir -p bin/log_data
+# python3 src/plot/pickle_runs.py $MAT_TYPE $N_RUNS $LOG_DIR $TIMESTAMP $TEST_GIMMIK $N_ITER
 
-# Plot
-if [ "$MAT_TYPE" = "pyfr" ]
-then
-  mkdir -p $PLOT_DIR/$TIMESTAMP/pyfr/quad
-  mkdir -p $PLOT_DIR/$TIMESTAMP/pyfr/hex
-  mkdir -p $PLOT_DIR/$TIMESTAMP/pyfr/tet
-  mkdir -p $PLOT_DIR/$TIMESTAMP/pyfr/tri
-  mkdir -p $PLOT_DIR/$TIMESTAMP/pyfr/roofline
-
-  python3 src/plot/pyfr.py $MATS_DIR $N_RUNS $B_NUM_COL $TEST_GIMMIK $TIMESTAMP $PLOT_DIR/$TIMESTAMP
-  python3 src/plot/pyfr_roofline.py $MATS_DIR $N_RUNS $B_NUM_COL $TEST_GIMMIK $TIMESTAMP $PLOT_DIR/$TIMESTAMP $REF_IS_DENSE
-# elif [ "$MAT_TYPE" = "synth" ]
+# # Plot
+# if [ "$MAT_TYPE" = "pyfr" ]
 # then
-#   mkdir -p $PLOT_DIR/synth
-#   mkdir -p $PLOT_DIR/synth/roofline
+#   mkdir -p $PLOT_DIR/$TIMESTAMP/pyfr/quad
+#   mkdir -p $PLOT_DIR/$TIMESTAMP/pyfr/hex
+#   mkdir -p $PLOT_DIR/$TIMESTAMP/pyfr/tet
+#   mkdir -p $PLOT_DIR/$TIMESTAMP/pyfr/tri
+#   mkdir -p $PLOT_DIR/$TIMESTAMP/pyfr/roofline
 
-#   python3 src/plot/synth.py $MATS_DIR $N_RUNS $B_NUM_COL $TEST_GIMMIK $TIMESTAMP $PLOT_DIR
-#   python3 src/plot/synth_roofline.py $MATS_DIR $N_RUNS $B_NUM_COL $TEST_GIMMIK $TIMESTAMP $PLOT_DIR $REF_IS_DENSE
-fi
+#   python3 src/plot/pyfr.py $MATS_DIR $N_RUNS $B_NUM_COL $TEST_GIMMIK $TIMESTAMP $PLOT_DIR/$TIMESTAMP
+#   python3 src/plot/pyfr_roofline.py $MATS_DIR $N_RUNS $B_NUM_COL $TEST_GIMMIK $TIMESTAMP $PLOT_DIR/$TIMESTAMP $REF_IS_DENSE
+# # elif [ "$MAT_TYPE" = "synth" ]
+# # then
+# #   mkdir -p $PLOT_DIR/synth
+# #   mkdir -p $PLOT_DIR/synth/roofline
+
+# #   python3 src/plot/synth.py $MATS_DIR $N_RUNS $B_NUM_COL $TEST_GIMMIK $TIMESTAMP $PLOT_DIR
+# #   python3 src/plot/synth_roofline.py $MATS_DIR $N_RUNS $B_NUM_COL $TEST_GIMMIK $TIMESTAMP $PLOT_DIR $REF_IS_DENSE
+# fi

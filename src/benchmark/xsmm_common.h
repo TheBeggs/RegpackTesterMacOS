@@ -121,8 +121,8 @@ void flush_cache() {
 
 void read_args(int argc, char** argv, int* test_matrix_size, int* seed, char** a_path) {
   
-  if (argc != 4) {
-    printf("Expected 3 arguments: test_matrix_size, seed_of_B, path_of_mat_A\n");
+  if (argc != 5 && argc != 4) {
+    printf("Expected 3 or 4 arguments: test_matrix_size, seed_of_B, path_of_mat_A, opt: (run_type)\n");
     exit(1);
   }
 
