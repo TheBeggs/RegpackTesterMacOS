@@ -73,6 +73,9 @@ for i_title, shape in enumerate(shapes):
     x = np.array([(cpu_info["peak_flops_dp"]/2)/cpu_info["peak_memory_bw"], 2**4])
     y = [(cpu_info["peak_flops_dp"]/2),(cpu_info["peak_flops_dp"]/2)]
     ax.plot(x, y, color='black', label="Single AVX512 Unit")
+    x = np.array([(cpu_info["linpack_flops_dp"])/cpu_info["peak_memory_bw"], 2**4])
+    y = [(cpu_info["linpack_flops_dp"]),(cpu_info["linpack_flops_dp"])]
+    ax.plot(x, y, "--", color='red', label="LINPACK")
 
     # plot data points
     ax.plot(custom_AIs, custom_GFLOPs, 'x', color='limegreen')#, label="Custom LIBXSMM")

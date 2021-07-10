@@ -17,3 +17,4 @@ xeon_8124M_stats["num_avx512_units"] = 2
 xeon_8124M_stats["avx512_freq"] = 3.0 # 1 Cores Active AVX512 Boost (GHz), measured 
 xeon_8124M_stats["peak_flops_dp"] = xeon_8124M_stats["avx512_freq"] * xeon_8124M_stats["num_avx512_units"] * AVX512_FLOPS_PER_CYCLE_DP
 xeon_8124M_stats["peak_memory_bw"] = 12.93656 # GB/s measured on c5n.large
+xeon_8124M_stats["linpack_flops_dp"] = 85.1125
