@@ -120,7 +120,7 @@ def benchmark_matrix(file_name, matrix_size, gimmik):
         else:
             print("Finished running in", str(result["xsmm_reference_best"]) + "ms", file=sys.stderr)
 
-    pp.pprint(result, compact=True, width=1000)
+    pp.pprint(result, compact=True, width=10000)
 
     if gimmik == "1": 
         return result["speedup_best_over_ref"], result["speedup_avg_over_ref"], \
