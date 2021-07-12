@@ -8,7 +8,7 @@ GIMMIK_CFLAGS += -march=skylake-avx512
 GIMMIK_CFLAGS += -qopt-zmm-usage=high
 
 CFLAGS_XSMM_REFERENCE = -I./../libxsmm_reference/include -I./../libxsmm_reference/src
-CFLAGS_XSMM_CUSTOM = -I./../libxsmm_custom/include -I./../libxsmm_reference/src
+CFLAGS_XSMM_CUSTOM = -I./../libxsmm_custom/include -I./../libxsmm_custom/src
 
 GIMMIK_CFLAGS = -I./bin/generated_kernels
 

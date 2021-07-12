@@ -53,6 +53,7 @@ then
   cd $XSMM_REFERENCE_DIR
   make CXX=gcc CC=gcc
   cd $XSMM_CUSTOM_DIR
+  git status
   make CXX=gcc CC=gcc DBG=1
 
   TIMESTAMP="$(date +"%d-%m_%T")"
