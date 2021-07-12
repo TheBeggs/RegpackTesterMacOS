@@ -394,7 +394,7 @@ def calc_GFLOPs_xsmm_only(mat_FLOPS, mat_names, data, b_num_col, gimmik, t='best
 
         for run in data:
             # *1e-3 for ms to s
-            time_per_panel_ref   = (run['xsmm_reference_'+t][i]*1e-3)/_NUM_PANELS[i]
+            time_per_panel_ref = (run['xsmm_reference_'+t][i]*1e-3)/_NUM_PANELS[i]
             ref_inner.append(_FLOPS_PER_PANEL / time_per_panel_ref)
 
         ref_avg = sum(ref_inner) / len(ref_inner)

@@ -92,11 +92,11 @@ then
 
   python3 src/plot/pyfr_xsmm_only.py $MATS_DIR $N_RUNS $B_NUM_COL $TEST_GIMMIK $TIMESTAMP $PLOT_DIR/$TIMESTAMP
   python3 src/plot/pyfr_roofline_xsmm_only.py $MATS_DIR $N_RUNS $B_NUM_COL $TEST_GIMMIK $TIMESTAMP $PLOT_DIR/$TIMESTAMP $REF_IS_DENSE
-# elif [ "$MAT_TYPE" = "synth" ]
-# then
-#   mkdir -p $PLOT_DIR/$TIMESTAMP/synth
-#   mkdir -p $PLOT_DIR/$TIMESTAMP/synth/roofline
+elif [ "$MAT_TYPE" = "synth" ]
+then
+  mkdir -p $PLOT_DIR/$TIMESTAMP/synth
+  mkdir -p $PLOT_DIR/$TIMESTAMP/synth/roofline
 
-#   python3 src/plot/synth.py $MATS_DIR $N_RUNS $B_NUM_COL $TEST_GIMMIK $TIMESTAMP $PLOT_DIR
-#   python3 src/plot/synth_roofline.py $MATS_DIR $N_RUNS $B_NUM_COL $TEST_GIMMIK $TIMESTAMP $PLOT_DIR $REF_IS_DENSE
+  python3 src/plot/synth_xsmm_only.py $MATS_DIR $N_RUNS $B_NUM_COL $TEST_GIMMIK $TIMESTAMP $PLOT_DIR/$TIMESTAMP
+  python3 src/plot/synth_roofline_xsmm_only.py $MATS_DIR $N_RUNS $B_NUM_COL $TEST_GIMMIK $TIMESTAMP $PLOT_DIR/$TIMESTAMP $REF_IS_DENSE
 fi

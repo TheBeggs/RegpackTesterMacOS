@@ -4,8 +4,8 @@ import os
 import sys
 import numpy as np
 
-from tools import calc_FLOPS, calc_GFLOPs_xsmm_only, load_benchmark_data, get_perf, B_TARGET_PANEL_WIDTH
-from tools import calc_GFLOPs, get_AIs
+from tools import calc_FLOPS, load_benchmark_data, get_perf, B_TARGET_PANEL_WIDTH
+from tools import calc_GFLOPs_xsmm_only, get_AIs
 from cpu_stats import xeon_8175M_stats, xeon_8124M_stats
 
 # cpu stats
@@ -32,27 +32,37 @@ mat_flops = calc_FLOPS(mat_paths, B_TARGET_PANEL_WIDTH)
 
 runs = load_benchmark_data(N_RUNS, LOG_DATA_DIR, TIMESTAMP)
 
-shapes = ["quad", "hex", "tet", "tri"]
-shape_title = ["Quad", "Hex", "Tet", "Tri"]
+terms = ["vary_row/q_16", "vary_row/q_64",
+	     "vary_col/q_16", "vary_col/q_64",
+         "vary_density/q_16", "vary_density/q_64",
+         "vary_unique"]
+term_titles = ["Vary Row (U16)", "Vary Row (U64)",
+	           "Vary Column (U16)", "vary Column (U64)",
+               "Vary Density (U16)", "Vary Density (U64)",
+               "Vary Number of Unique"]
+term_files = ["vary_row_u16", "vary_row_u64",
+	          "vary_col_u16", "vary_col_u64",
+              "vary_density_u16", "vary_density_u64",
+              "vary_unique"]
 
 # colours
 ref_colour = "C0"
 custom_colour = ["C1","C2","C3","C4","C5","C6","C7","C8","C9"]
 
-for i_title, shape in enumerate(shapes):
+for i_title, term in enumerate(terms):
     # get data
-    # mat_names = [x for x in mat_paths if shape in x]
     data = []
     for i in range(N_RUNS):
-        data.append(runs[i][shape])
+        data.append(runs[i][term])
 
     mat_names = data[0]["mat_file"]
 
-    ref_GFLOPs = calc_GFLOPs_xsmm_only(mat_flops, mat_names, data, 0, TEST_GIMMIK)
+    ref_GFLOPs = \
+        calc_GFLOPs_xsmm_only(mat_flops, mat_names, data, 0, TEST_GIMMIK)
     if REF_IS_DENSE == "1":
-        custom_AIs, ref_AIs = get_AIs(mat_names, TEST_GIMMIK, shape)
+        custom_AIs, ref_AIs = get_AIs(mat_names, TEST_GIMMIK, term)
     else:
-        custom_AIs, _ = get_AIs(mat_names, TEST_GIMMIK, shape)
+        custom_AIs, _ = get_AIs(mat_names, TEST_GIMMIK, term)
         ref_AIs = custom_AIs
 
     # plot rooflines
@@ -72,10 +82,6 @@ for i_title, shape in enumerate(shapes):
     ax.plot(x, y, "--", color='red', label="LINPACK")
 
     # plot data points
-    # ax.plot(ref_AIs[0], ref_GFLOPs[0], marker='x', color='maroon', ms=1, label="Reference LIBXSMM")
-    # for i, mat_path in enumerate(mat_names):
-    #     ax.plot(ref_AIs[i], ref_GFLOPs[i], marker='x', color='maroon', ms=3)
-
     for i, mat_path in enumerate(mat_names):
         kernel_type = data[0]["xsmm_reference_kernel_type"][i]
         if kernel_type == "sparse":
@@ -101,6 +107,7 @@ for i_title, shape in enumerate(shapes):
             print(f"{mat_path}")
             print(f"{ref_AIs[i] = }, {ref_GFLOPs[i] = }")
 
+
     # plot details
     ax.set_xscale('log', base=2)
     ax.set_yscale('log', base=2)
@@ -110,8 +117,8 @@ for i_title, shape in enumerate(shapes):
     ax.yaxis.set_major_formatter(LogFormatter(base=2))
     ax.set_xlabel('Arithmetic Intensity (FLOP/DRAM Byte)')
     ax.set_ylabel('Performance (Pseudo-GFLOP/s)')
-    ax.set_title('Roofline - '+shape_title[i_title])
-    
+    ax.set_title('Roofline - '+term_titles[i_title])
+
     # legend
     ax.plot([], [], "o", color=ref_colour, markerfacecolor='none', label="sparse")
     ax.plot([], [], "s", color=ref_colour, markerfacecolor='none', label="wide-sparse")
@@ -119,4 +126,4 @@ for i_title, shape in enumerate(shapes):
 
     plt.legend()
     plt.tight_layout()
-    plt.savefig(os.path.join(PLOT_DIR,"pyfr","roofline","{}_{}.pdf".format(shape, TIMESTAMP)), bbox_inches='tight')
+    plt.savefig(os.path.join(PLOT_DIR,"synth","roofline","{}_{}.pdf".format(term_files[i_title], TIMESTAMP)), bbox_inches='tight')
