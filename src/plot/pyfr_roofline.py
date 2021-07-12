@@ -167,5 +167,5 @@ for i_title, shape in enumerate(shapes):
         for e, env in enumerate(envs):
             ax.plot([], [], "x", color=custom_colour[e], label=env)
     plt.legend()
-
+    plt.tight_layout()
     plt.savefig(os.path.join(PLOT_DIR,"pyfr","roofline","{}_{}.pdf".format(shape, TIMESTAMP)), bbox_inches='tight')

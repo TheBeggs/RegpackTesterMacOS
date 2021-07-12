@@ -100,11 +100,11 @@ then
 
   python3 src/plot/pyfr.py $MATS_DIR $N_RUNS $B_NUM_COL $TEST_GIMMIK $TIMESTAMP $PLOT_DIR/$TIMESTAMP "$ENVS"
   python3 src/plot/pyfr_roofline.py $MATS_DIR $N_RUNS $B_NUM_COL $TEST_GIMMIK $TIMESTAMP $PLOT_DIR/$TIMESTAMP $REF_IS_DENSE "$ENVS"
-# elif [ "$MAT_TYPE" = "synth" ]
-# then
-#   mkdir -p $PLOT_DIR/synth
-#   mkdir -p $PLOT_DIR/synth/roofline
+elif [ "$MAT_TYPE" = "synth" ]
+then
+  mkdir -p $PLOT_DIR/$TIMESTAMP/synth
+  mkdir -p $PLOT_DIR/$TIMESTAMP/synth/roofline
 
-#   python3 src/plot/synth.py $MATS_DIR $N_RUNS $B_NUM_COL $TEST_GIMMIK $TIMESTAMP $PLOT_DIR
-#   python3 src/plot/synth_roofline.py $MATS_DIR $N_RUNS $B_NUM_COL $TEST_GIMMIK $TIMESTAMP $PLOT_DIR $REF_IS_DENSE
+  python3 src/plot/synth.py $MATS_DIR $N_RUNS $B_NUM_COL $TEST_GIMMIK $TIMESTAMP $PLOT_DIR/$TIMESTAMP "$ENVS"
+  python3 src/plot/synth_roofline.py $MATS_DIR $N_RUNS $B_NUM_COL $TEST_GIMMIK $TIMESTAMP $PLOT_DIR/$TIMESTAMP $REF_IS_DENSE "$ENVS"
 fi

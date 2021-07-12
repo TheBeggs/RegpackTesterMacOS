@@ -104,6 +104,7 @@ def plot(runs, mat_flops, shape, title, limit_y=False):
         if limit_y:
             plt.ylim(top=10e9)
         plt.legend()
+        plt.tight_layout()
         plt.savefig(os.path.join(PLOT_DIR,"pyfr",shape,"{}_{}.pdf".format(x_term, TIMESTAMP)), bbox_inches='tight')
 
 plot(runs, mat_flops, "quad", "Quad", limit_y=False)
