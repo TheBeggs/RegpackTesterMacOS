@@ -92,6 +92,8 @@ then
 
   python3 src/plot/pyfr_xsmm_only.py $MATS_DIR $N_RUNS $B_NUM_COL $TEST_GIMMIK $TIMESTAMP $PLOT_DIR/$TIMESTAMP
   python3 src/plot/pyfr_roofline_xsmm_only.py $MATS_DIR $N_RUNS $B_NUM_COL $TEST_GIMMIK $TIMESTAMP $PLOT_DIR/$TIMESTAMP $REF_IS_DENSE
+  # mkdir -p $PLOT_DIR/$TIMESTAMP/pyfr/roofline_diff
+  # python3 src/plot/pyfr_roofline_diff_xsmm_only.py $MATS_DIR $N_RUNS $B_NUM_COL $TEST_GIMMIK $TIMESTAMP $PLOT_DIR/$TIMESTAMP $REF_IS_DENSE
 elif [ "$MAT_TYPE" = "synth" ]
 then
   mkdir -p $PLOT_DIR/$TIMESTAMP/synth
