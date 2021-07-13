@@ -130,15 +130,38 @@ for i_title, shape in enumerate(shapes):
                 print(f"Over roofline (custom):")
                 print(f"{mat_path}")
                 print(f"{custom_AIs[i] = }, {custom_GFLOPs[i] = }")
+        
+        perf_ratio = []
+        for i in range(len(mat_names)):
+            perf_ratio.append(custom_GFLOPs[i] / ref_GFLOPs[i])
+            
+            perf_ratio_avg = sum(perf_ratio) / len(perf_ratio)
+
+            print("==========")
+            print(f"{shape}: libxsmm_custom is {perf_ratio_avg} faster than libxsmm_reference.")
+            print("==========")
+
     else:
         for e, env in enumerate(envs):
+
+
             ax.plot(custom_AIs, custom_GFLOPs[env], 'x', color=custom_colour[e])
 
             for i, mat_path in enumerate(mat_names):
                 if (custom_GFLOPs[env][i] > custom_AIs[i] * cpu_info["peak_memory_bw"]):
                     print(f"Over roofline (custom):")
                     print(f"{mat_path}")
-                    print(f"{custom_AIs[i] = }, {custom_GFLOPs[env][i] = }")
+                    print(f"{custom_AIs[i] = }, {custom_GFLOPs[env][i] = }, {env = }")
+            
+            perf_ratio = []
+            for i in range(len(mat_names)):
+                perf_ratio.append(custom_GFLOPs[env][i] / ref_GFLOPs[i])
+            
+            perf_ratio_avg = sum(perf_ratio) / len(perf_ratio)
+
+            print("==========")
+            print(f"{shape}: {env} is {perf_ratio_avg} faster than libxsmm_reference.")
+            print("==========")
 
     if TEST_GIMMIK == "1":
         ax.plot(gimmik_AIs[0], gimmik_GFLOPs[0], marker='x', color='orange', ms=1, label="GiMMiK")
