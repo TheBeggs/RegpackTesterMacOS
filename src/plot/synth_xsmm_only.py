@@ -84,6 +84,7 @@ def plot(runs, mat_flops, x_term, trait, xlabel, title, save_as, \
         plt.xticks(x_values)
     plt.title(title)
     plt.legend()
+    plt.tight_layout()
     plt.savefig(os.path.join(PLOT_DIR,"synth","{}_{}.pdf".format(save_as, TIMESTAMP)), bbox_inches='tight')
 
 ### Vary Rows ###
