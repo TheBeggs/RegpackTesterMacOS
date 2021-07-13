@@ -14,7 +14,7 @@ else
   for env_setting in $5; do
     Field_Separator=$IFS
 
-    sudo $env_setting nice -n -20 taskset -c 0 bin/benchmark_xsmm_custom $1 $2 $4 $env_setting
+    eval sudo $env_setting nice -n -20 taskset -c 0 bin/benchmark_xsmm_custom $1 $2 $4 \"$env_setting\"
 
     IFS=,
   done

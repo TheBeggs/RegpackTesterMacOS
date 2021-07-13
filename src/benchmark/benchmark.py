@@ -26,7 +26,6 @@ def benchmark_matrix(file_name, matrix_size, gimmik):
         ["./scripts/generate_and_compile.sh", file_name, gimmik],
         stdout=subprocess.PIPE, cwd=cwd
     )
-    # TODO: continue from here!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     for line in compout.stdout.readlines():
         strline = line.decode('utf-8')
         if "INFO" in strline:
