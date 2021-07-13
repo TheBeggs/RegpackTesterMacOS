@@ -31,6 +31,10 @@ xlabels = ['Number of Unique Constants', 'Number of Columns',
 xtitles = ['Number of Unique Constants in A', 'Number of Columns in A',
            'Number of Rows in A', 'Size of A', 'Density of A']
 
+# colours
+ref_colour = "C0"
+custom_colour = ["C1","C2","C3","C4","C5","C6","C7","C8","C9"]
+
 def plot(runs, mat_flops, shape, title, limit_y=False):
     global PLOT_DIR
     # global B_NUM_COL
@@ -46,7 +50,7 @@ def plot(runs, mat_flops, shape, title, limit_y=False):
             get_perf_xsmm_only(runs, N_RUNS, shape, x_term, mat_flops, 0, TEST_GIMMIK)
 
         # plt.plot(x_values, custom_y_avg, label="Custom LIBXSMM", color="limegreen", marker=".")
-        plt.plot(x_values, ref_y_avg, color="maroon")#, marker=".")
+        plt.plot(x_values, ref_y_avg, color=ref_colour)#, marker=".")
 
         for j in range(len(x_values)):
 
@@ -55,8 +59,8 @@ def plot(runs, mat_flops, shape, title, limit_y=False):
                 face = False
                 # label = "sparse"
             elif (ref_y_kernel[j] == "wide-sparse"):
-                marker = "."
-                face = True
+                marker = "s"
+                face = False
                 # label = "wide-sparse"
             elif (ref_y_kernel[j] == "dense"):
                 marker = "^"
@@ -65,17 +69,17 @@ def plot(runs, mat_flops, shape, title, limit_y=False):
             else:
                 assert False, f"undefined kernel type: {ref_y_kernel[j]}"
             if face:
-                plt.plot(x_values[j], ref_y_avg[j], marker, color="maroon")
+                plt.plot(x_values[j], ref_y_avg[j], marker, color=ref_colour)
             else:
-                plt.plot(x_values[j], ref_y_avg[j], marker, markerfacecolor='none', color="maroon")
+                plt.plot(x_values[j], ref_y_avg[j], marker, markerfacecolor='none', color=ref_colour)
 
         # if TEST_GIMMIK == "1":
         #     plt.plot(x_values, gimmik_y_avg, label="GiMMiK", color="orange", marker=".")
 
         # Manual legend
-        plt.plot([], [], "o", color="maroon", markerfacecolor='none', label="sparse")
-        plt.plot([], [], ".", color="maroon", label="wide-sparse")
-        plt.plot([], [], "^", color="maroon", label="dense")
+        plt.plot([], [], "o", color=ref_colour, markerfacecolor='none', label="sparse")
+        plt.plot([], [], "s", color=ref_colour, label="wide-sparse")
+        plt.plot([], [], "^", color=ref_colour, label="dense")
         plt.legend()
         
         plt.xlabel(xlabels[i])

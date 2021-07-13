@@ -25,7 +25,13 @@ int main(int argc, char** argv) {
   int m = 0, n = 0, k = 0;
   int c_size = 0;
 
-  char const* const run_type = "xsmm-custom";
+  char const* run_type;
+  if (4 == argc) {
+    run_type = "xsmm-custom";
+  } else {
+    run_type = argv[4];
+  }
+   
   prepare_benchmark(argc, argv, &xsmm_d, &a_d, &b_d, &c_xsmm_d, &m, &n, &k,
                     &c_size, false, NULL);
 

@@ -35,6 +35,10 @@ runs = load_benchmark_data(N_RUNS, LOG_DATA_DIR, TIMESTAMP)
 shapes = ["quad", "hex", "tet", "tri"]
 shape_title = ["Quad", "Hex", "Tet", "Tri"]
 
+# colours
+ref_colour = "C0"
+custom_colour = ["C1","C2","C3","C4","C5","C6","C7","C8","C9"]
+
 for i_title, shape in enumerate(shapes):
     # get data
     # mat_names = [x for x in mat_paths if shape in x]
@@ -56,13 +60,16 @@ for i_title, shape in enumerate(shapes):
     ax = fig.add_subplot(111)
     x = np.array([2**(-4), cpu_info["peak_flops_dp"]/cpu_info["peak_memory_bw"]])
     y = x*cpu_info["peak_memory_bw"]
-    ax.plot(x, y)
+    ax.plot(x, y, 'r')
     x = np.array([cpu_info["peak_flops_dp"]/cpu_info["peak_memory_bw"], 2**4])
     y = [cpu_info["peak_flops_dp"],cpu_info["peak_flops_dp"]]
     ax.plot(x, y, color='red', label="Double AVX512 Unit")
     x = np.array([(cpu_info["peak_flops_dp"]/2)/cpu_info["peak_memory_bw"], 2**4])
     y = [(cpu_info["peak_flops_dp"]/2),(cpu_info["peak_flops_dp"]/2)]
     ax.plot(x, y, color='black', label="Single AVX512 Unit")
+    x = np.array([(cpu_info["linpack_flops_dp"])/cpu_info["peak_memory_bw"], 2**4])
+    y = [(cpu_info["linpack_flops_dp"]),(cpu_info["linpack_flops_dp"])]
+    ax.plot(x, y, "--", color='red', label="LINPACK")
 
     # plot data points
     # ax.plot(ref_AIs[0], ref_GFLOPs[0], marker='x', color='maroon', ms=1, label="Reference LIBXSMM")
@@ -75,8 +82,8 @@ for i_title, shape in enumerate(shapes):
             marker = "o"
             face = False
         elif kernel_type == "wide-sparse":
-            marker = '.'
-            face = True
+            marker = 's'
+            face = False
         elif kernel_type == "dense":
             marker = "^"
             face = True
@@ -84,13 +91,13 @@ for i_title, shape in enumerate(shapes):
             assert False, f"undefined kernel type: {kernel_type}"
         
         if face:
-            ax.plot(ref_AIs[i], ref_GFLOPs[i], marker, color="maroon")
+            ax.plot(ref_AIs[i], ref_GFLOPs[i], marker, color=ref_colour)
         else:
-            ax.plot(ref_AIs[i], ref_GFLOPs[i], marker, color="maroon", markerfacecolor='none')
+            ax.plot(ref_AIs[i], ref_GFLOPs[i], marker, color=ref_colour, markerfacecolor='none')
 
         # Warning if datapoint is higher than RAM BW roofline
         if (ref_GFLOPs[i] > ref_AIs[i] * cpu_info["peak_memory_bw"]):
-            print(f"Over roofline:")
+            print(f"Over roofline (ref):")
             print(f"{mat_path}")
             print(f"{ref_AIs[i] = }, {ref_GFLOPs[i] = }")
 
@@ -106,9 +113,9 @@ for i_title, shape in enumerate(shapes):
     ax.set_title('Roofline - '+shape_title[i_title])
     
     # legend
-    ax.plot([], [], "o", color="maroon",  markerfacecolor='none', label="sparse")
-    ax.plot([], [], ".", color="maroon", label="wide-sparse")
-    ax.plot([], [], "^", color="maroon", label="dense")
+    ax.plot([], [], "o", color=ref_colour, markerfacecolor='none', label="sparse")
+    ax.plot([], [], "s", color=ref_colour, markerfacecolor='none', label="wide-sparse")
+    ax.plot([], [], "^", color=ref_colour, label="dense")
 
     plt.legend()
     plt.tight_layout()

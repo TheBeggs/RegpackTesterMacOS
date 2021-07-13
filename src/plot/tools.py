@@ -121,8 +121,50 @@ def sort_values(x_term, trait, mat_flops, b_num_col, gimmik, t='best'):
     else:
         return ref_x, ref_y, custom_y, ref_kernel_type
 
+def sort_values_different_envs(x_term, trait, mat_flops, gimmik, envs, t):
+    _NUM_PANELS = (np.array(trait["size_n"]) /
+                   B_TARGET_PANEL_WIDTH).astype(int)
+
+    ref_x, ref_y = [], []
+    ref_kernel_type = []
+    custom_x = []
+
+    custom_y = dict()
+    for env in envs:
+        custom_y[env] = []
+
+    for i, u in enumerate(trait[x_term]):
+
+        FLOPS_PER_PANEL = mat_flops[trait['mat_file'][i]]
+        time_per_panel_ref = (
+            trait['xsmm_reference_'+t][i]*1e-3)/_NUM_PANELS[i]    
+
+        time_per_panel_custom = dict()
+        for env in envs:
+            time_per_panel_custom[env] = (
+                trait[env + '_' + t][i]*1e-3)/_NUM_PANELS[i]
+        
+        ref_x.append(u)
+        ref_y.append(FLOPS_PER_PANEL / time_per_panel_ref)
+        ref_kernel_type.append(trait['xsmm_reference_kernel_type'][i])
+
+        custom_x.append(u)
+        for env in envs:
+            custom_y[env].append(FLOPS_PER_PANEL / time_per_panel_custom[env])
+    
+    ref_y = [x for _, x in sorted(zip(ref_x, ref_y))]
+    ref_kernel_type = [x for _, x in sorted(zip(ref_x, ref_kernel_type))]
+    ref_x.sort()
+
+    for env in envs:
+        custom_y[env] = [x for _, x in sorted(zip(custom_x, custom_y[env]))]
+    
+    return ref_x, ref_y, custom_y, ref_kernel_type
+
+
+
 # sort_values(x_term, run, mat_flops, b_num_col, gimmik, t='best'):
-def get_perf(runs, n_runs, shape, x_term, mat_flops, b_num_col, gimmik, t='best'):
+def get_perf(runs, n_runs, shape, x_term, mat_flops, b_num_col, gimmik, envs, t='best'):
     if gimmik == "1":
         ref_x, custom_y, ref_y, gimmik_y = [], [], [], []
         for i in range(n_runs):
@@ -140,19 +182,44 @@ def get_perf(runs, n_runs, shape, x_term, mat_flops, b_num_col, gimmik, t='best'
         return ref_x[0], custom_y_avg, ref_y_avg, gimmik_y_avg
 
     else:
-        ref_x, custom_y, ref_y, ref_kernel = [], [], [], []
-        for i in range(n_runs):
-            rx1, ry1, cy1, rkernel = \
-                sort_values(x_term, runs[i][shape], mat_flops, b_num_col, gimmik, t)
-            ref_x.append(rx1)
-            custom_y.append(cy1)
-            ref_y.append(ry1)
-            ref_kernel.append(rkernel)
+        if not envs:
+            ref_x, custom_y, ref_y, ref_kernel = [], [], [], []
+            for i in range(n_runs):
+                rx1, ry1, cy1, rkernel = \
+                    sort_values(x_term, runs[i][shape], mat_flops, b_num_col, gimmik, t)
+                ref_x.append(rx1)
+                custom_y.append(cy1)
+                ref_y.append(ry1)
+                ref_kernel.append(rkernel)
 
-        custom_y_avg = [sum(elem)/len(elem) for elem in zip(*custom_y)]
-        ref_y_avg = [sum(elem)/len(elem) for elem in zip(*ref_y)]
+            custom_y_avg = [sum(elem)/len(elem) for elem in zip(*custom_y)]
+            ref_y_avg = [sum(elem)/len(elem) for elem in zip(*ref_y)]
 
-        return ref_x[0], custom_y_avg, ref_y_avg, ref_kernel[0]
+            return ref_x[0], ref_y_avg, ref_kernel[0], custom_y_avg
+        else:
+            ref_x, ref_y, ref_kernel = [], [], []
+            custom_y = dict()
+
+            for env in envs:
+                custom_y[env] = []
+            
+            for i in range(n_runs):
+                rx1, ry1, cy1, rkernel = sort_values_different_envs(
+                    x_term, runs[i][shape], mat_flops, gimmik, envs, t)
+                
+                ref_x.append(rx1)
+                ref_y.append(ry1)
+                ref_kernel.append(rkernel)
+                for env in envs:
+                    custom_y[env].append(cy1[env])
+            
+            ref_y_avg = [sum(elem)/len(elem) for elem in zip(*ref_y)]
+            custom_y_avg = dict()
+            for env in envs:
+                custom_y_avg[env] = [sum(elem)/len(elem) for elem in zip(*(custom_y[env]))]
+            
+            return ref_x[0], ref_y_avg, ref_kernel[0], custom_y_avg
+
 
 
 # trait is from a run: i.e run["quad"] for pyfr mats
@@ -282,6 +349,39 @@ def calc_GFLOPs(mat_FLOPS, mat_names, data, b_num_col, gimmik, t='best'):
     else:
         return custom_GFLOPs, ref_GFLOPs
 
+def calc_GFLOPs_different_envs(mat_FLOPS, mat_names, data, TEST_GIMMIK, envs, t='best'):
+    _NUM_PANELS = (np.array(data[0]["size_n"]) / B_TARGET_PANEL_WIDTH).astype(int)
+    ref_GFLOPs = []
+
+    custom_GFLOPs = dict()
+    for env in envs:
+        custom_GFLOPs[env] = []
+
+    for i, mat_name in enumerate(mat_names):
+        _FLOPS_PER_PANEL = mat_FLOPS[mat_name]
+        
+        ref_inner = []
+        custom_inner = dict()
+        for env in envs:
+            custom_inner[env] = []
+
+        for run in data:
+            time_per_panel_ref   = (run['xsmm_reference_'+t][i]*1e-3)/_NUM_PANELS[i]
+            ref_inner.append(_FLOPS_PER_PANEL / time_per_panel_ref)
+
+            for env in envs:
+                time_per_panel_custom = (run[env+'_'+t][i]*1e-3)/_NUM_PANELS[i]
+                custom_inner[env].append(_FLOPS_PER_PANEL / time_per_panel_custom)
+        
+        ref_avg = sum(ref_inner) / len(ref_inner)
+        ref_GFLOPs.append(ref_avg / 1e9)
+
+        for env in envs:
+            custom_avg = sum(custom_inner[env]) / len(custom_inner[env])
+            custom_GFLOPs[env].append(custom_avg / 1e9)
+        
+    return custom_GFLOPs, ref_GFLOPs
+
 # data is a list formed from runs: i.e run["quad"] for pyfr mats
 def calc_GFLOPs_xsmm_only(mat_FLOPS, mat_names, data, b_num_col, gimmik, t='best'):
     _NUM_PANELS = (np.array(data[0]["size_n"]) / B_TARGET_PANEL_WIDTH).astype(int)
@@ -294,7 +394,7 @@ def calc_GFLOPs_xsmm_only(mat_FLOPS, mat_names, data, b_num_col, gimmik, t='best
 
         for run in data:
             # *1e-3 for ms to s
-            time_per_panel_ref   = (run['xsmm_reference_'+t][i]*1e-3)/_NUM_PANELS[i]
+            time_per_panel_ref = (run['xsmm_reference_'+t][i]*1e-3)/_NUM_PANELS[i]
             ref_inner.append(_FLOPS_PER_PANEL / time_per_panel_ref)
 
         ref_avg = sum(ref_inner) / len(ref_inner)

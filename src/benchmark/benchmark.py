@@ -5,14 +5,18 @@ import re
 import random
 import pprint as pp
 
-if len(sys.argv) < 5:
-    print("expected 4 arguments: mat_dir cwd matrix_size test_gimmik")
+if len(sys.argv) != 5 and len(sys.argv) != 6:
+    print("expected 4 or 5 arguments: mat_dir cwd matrix_size test_gimmik opt:(envs)")
     exit(1)
 
 mats_dir = sys.argv[1]
 cwd = sys.argv[2]
 M_SIZE = sys.argv[3]
 test_gimmik = sys.argv[4]
+if len(sys.argv) == 6:
+    envs = sys.argv[5]
+else:
+    envs = ""
 
 def benchmark_matrix(file_name, matrix_size, gimmik):
     # print A matrix to bin/generated_kernels and compile benchmark program
@@ -22,7 +26,6 @@ def benchmark_matrix(file_name, matrix_size, gimmik):
         ["./scripts/generate_and_compile.sh", file_name, gimmik],
         stdout=subprocess.PIPE, cwd=cwd
     )
-    # TODO: continue from here!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     for line in compout.stdout.readlines():
         strline = line.decode('utf-8')
         if "INFO" in strline:
@@ -48,7 +51,11 @@ def benchmark_matrix(file_name, matrix_size, gimmik):
 
     clean_mat_path = file_name.replace("data", "cleaned_data")
 
-    benchmark_cmd = ["./scripts/bin_benchmark.sh", str(matrix_size), str(random.randint(0, 2**31)), str(gimmik), clean_mat_path]
+    if not envs:
+        benchmark_cmd = ["./scripts/bin_benchmark.sh", str(matrix_size), str(random.randint(0, 2**31)), str(gimmik), clean_mat_path]
+    else:
+        benchmark_cmd = ["./scripts/bin_benchmark.sh", str(matrix_size), str(random.randint(0, 2**31)), str(gimmik), clean_mat_path, envs]
+    
     runout = subprocess.Popen(
         benchmark_cmd,
         stdout=subprocess.PIPE
@@ -72,16 +79,22 @@ def benchmark_matrix(file_name, matrix_size, gimmik):
             if "xsmm-reference avg execution time" in head:
                 result["xsmm_reference_avg"] = float(value)
             
-            # custom-xsmm
-            if "xsmm-custom kernel type" in head:
-                result["xsmm_custom_kernel_type"] = value.strip()
-            if "CPU clock speed (GHz)" in head:
-                result["xsmm_custom_cpu_freq"] = float(value)
-            if "xsmm-custom best execution time" in head:
-                result["xsmm_custom_best"] = float(value)
-            if "xsmm-custom avg execution time" in head:
-                result["xsmm_custom_avg"] = float(value)
-
+            if not envs:
+                # custom-xsmm
+                if "xsmm-custom kernel type" in head:
+                    result["xsmm_custom_kernel_type"] = value.strip()
+                if "xsmm-custom best execution time" in head:
+                    result["xsmm_custom_best"] = float(value)
+                if "xsmm-custom avg execution time" in head:
+                    result["xsmm_custom_avg"] = float(value)
+            else:
+                for env in envs.split(','):
+                    if env + " kernel type" in head:
+                        result[env + "_kernel_type"] = value.strip()
+                    if env + " best execution time" in head:
+                        result[env + "_best"] = float(value)
+                    if env + " avg execution time" in head:
+                        result[env + "_avg"] = float(value)
 
             # elif "gimmik" in engine:
             #     if "best" in stat:
@@ -89,8 +102,9 @@ def benchmark_matrix(file_name, matrix_size, gimmik):
             #     elif "avg" in stat:
             #         result["gimmik_avg"] = float(time)
 
-    result["speedup_best_over_ref"] = result["xsmm_reference_best"] / result["xsmm_custom_best"]
-    result["speedup_avg_over_ref"] = result["xsmm_reference_avg"] / result["xsmm_custom_avg"]
+    if not envs:
+        result["speedup_best_over_ref"] = result["xsmm_reference_best"] / result["xsmm_custom_best"]
+        result["speedup_avg_over_ref"] = result["xsmm_reference_avg"] / result["xsmm_custom_avg"]
     if gimmik == "1": 
         result["speedup_best_over_gim"] = result["gimmik_best"] / result["xsmm_custom_best"]
         result["speedup_avg_over_gim"] = result["gimmik_avg"] / result["xsmm_custom_avg"]
@@ -99,16 +113,22 @@ def benchmark_matrix(file_name, matrix_size, gimmik):
         print("Finished running in", str(min(result["xsmm_reference_best"], \
             result["xsmm_custom_best"], result["gimmik_best"])) + "ms", file=sys.stderr)
     else:
-        print("Finished running in", str(min(result["xsmm_reference_best"], \
-            result["xsmm_custom_best"])) + "ms", file=sys.stderr)
+        if not envs:
+            print("Finished running in", str(min(result["xsmm_reference_best"], \
+                result["xsmm_custom_best"])) + "ms", file=sys.stderr)
+        else:
+            print("Finished running in", str(result["xsmm_reference_best"]) + "ms", file=sys.stderr)
 
-    pp.pprint(result, compact=True, width=1000)
+    pp.pprint(result, compact=True, width=10000)
 
     if gimmik == "1": 
         return result["speedup_best_over_ref"], result["speedup_avg_over_ref"], \
             result["speedup_best_over_gim"], result["speedup_avg_over_gim"]
     else:
-        return result["speedup_best_over_ref"], result["speedup_avg_over_ref"]
+        if not envs:
+            return result["speedup_best_over_ref"], result["speedup_avg_over_ref"]
+        else:
+            return None, None
 
 def atoi(text):
     return int(text) if text.isdigit() else text
