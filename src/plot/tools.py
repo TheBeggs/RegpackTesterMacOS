@@ -74,55 +74,61 @@ def load_benchmark_data(n_runs, log_data_dir, timestamp):
 
 # trait is from a run: i.e run["quad"] for pyfr mats
 def sort_values(x_term, trait, mat_flops, b_num_col, gimmik, t='best'):
-    _NUM_PANELS = b_num_col / B_TARGET_PANEL_WIDTH
+    _NUM_PANELS = (np.array(trait["size_n"]) /
+                   B_TARGET_PANEL_WIDTH).astype(int)
 
     custom_x, custom_y = [], []
     ref_x, ref_y = [], []
+    ref_kernel_type = []
     if gimmik == "1":
         gimmik_x, gimmik_y = [], []
 
     for i, u in enumerate(trait[x_term]):
         FLOPS_PER_PANEL = mat_flops[trait['mat_file'][i]]
 
-        time_per_panel_custom = (trait['xsmm_custom_'+t][i]*1e-3)/_NUM_PANELS
-        time_per_panel_ref   = (trait['xsmm_reference_'+t][i]*1e-3)/_NUM_PANELS
+        time_per_panel_custom = (
+            trait['xsmm_custom_'+t][i]*1e-3)/_NUM_PANELS[i]
+        time_per_panel_ref = (
+            trait['xsmm_reference_'+t][i]*1e-3)/_NUM_PANELS[i]
 
         custom_x.append(u)
         custom_y.append(FLOPS_PER_PANEL / time_per_panel_custom)
         ref_x.append(u)
         ref_y.append(FLOPS_PER_PANEL / time_per_panel_ref)
+        ref_kernel_type.append(trait['xsmm_reference_kernel_type'][i])
 
         if gimmik == "1":
-            time_per_panel_gimmik = (trait['gimmik_'+t][i]*1e-3)/_NUM_PANELS
+            time_per_panel_gimmik = (trait['gimmik_'+t][i]*1e-3)/_NUM_PANELS[i]
             gimmik_x.append(u)
             gimmik_y.append(FLOPS_PER_PANEL / time_per_panel_gimmik)
 
     old_len = len(custom_y)
 
-    custom_y = [x for _,x in sorted(zip(custom_x, custom_y))]
+    custom_y = [x for _, x in sorted(zip(custom_x, custom_y))]
     custom_x.sort()
     assert(old_len == len(custom_y))
 
-    ref_y = [x for _,x in sorted(zip(ref_x, ref_y))]
+    ref_y = [x for _, x in sorted(zip(ref_x, ref_y))]
+    ref_kernel_type = [x for _, x in sorted(zip(ref_x, ref_kernel_type))]
     ref_x.sort()
 
     if gimmik == "1":
-        gimmik_y = [x for _,x in sorted(zip(gimmik_x, gimmik_y))]
+        gimmik_y = [x for _, x in sorted(zip(gimmik_x, gimmik_y))]
         gimmik_x.sort()
 
     if gimmik == "1":
         return custom_x, custom_y, ref_x, ref_y, gimmik_x, gimmik_y
     else:
-        return custom_x, custom_y, ref_x, ref_y
+        return ref_x, ref_y, custom_y, ref_kernel_type
 
 # sort_values(x_term, run, mat_flops, b_num_col, gimmik, t='best'):
 def get_perf(runs, n_runs, shape, x_term, mat_flops, b_num_col, gimmik, t='best'):
     if gimmik == "1":
-        custom_x, custom_y, ref_y, gimmik_y = [], [], [], []
+        ref_x, custom_y, ref_y, gimmik_y = [], [], [], []
         for i in range(n_runs):
-            cx1, cy1, _, ry1, _, gy1 = \
+            rx1, cy1, _, ry1, _, gy1 = \
                 sort_values(x_term, runs[i][shape], mat_flops, b_num_col, gimmik, t)
-            custom_x.append(cx1)
+            ref_x.append(rx1)
             custom_y.append(cy1)
             ref_y.append(ry1)
             gimmik_y.append(gy1)
@@ -131,21 +137,22 @@ def get_perf(runs, n_runs, shape, x_term, mat_flops, b_num_col, gimmik, t='best'
         ref_y_avg = [sum(elem)/len(elem) for elem in zip(*ref_y)]
         gimmik_y_avg = [sum(elem)/len(elem) for elem in zip(*gimmik_y)]
 
-        return custom_x[0], custom_y_avg, ref_y_avg, gimmik_y_avg
+        return ref_x[0], custom_y_avg, ref_y_avg, gimmik_y_avg
 
     else:
-        custom_x, custom_y, ref_y = [], [], []
+        ref_x, custom_y, ref_y, ref_kernel = [], [], [], []
         for i in range(n_runs):
-            cx1, cy1, _, ry1 = \
+            rx1, ry1, cy1, rkernel = \
                 sort_values(x_term, runs[i][shape], mat_flops, b_num_col, gimmik, t)
-            custom_x.append(cx1)
+            ref_x.append(rx1)
             custom_y.append(cy1)
             ref_y.append(ry1)
+            ref_kernel.append(rkernel)
 
         custom_y_avg = [sum(elem)/len(elem) for elem in zip(*custom_y)]
         ref_y_avg = [sum(elem)/len(elem) for elem in zip(*ref_y)]
 
-        return custom_x[0], custom_y_avg, ref_y_avg
+        return ref_x[0], custom_y_avg, ref_y_avg, ref_kernel[0]
 
 
 # trait is from a run: i.e run["quad"] for pyfr mats
@@ -234,7 +241,7 @@ def get_perf_xsmm_only(runs, n_runs, shape, x_term, mat_flops, b_num_col, gimmik
 
 # data is a list formed from runs: i.e run["quad"] for pyfr mats
 def calc_GFLOPs(mat_FLOPS, mat_names, data, b_num_col, gimmik, t='best'):
-    _NUM_PANELS = b_num_col / B_TARGET_PANEL_WIDTH
+    _NUM_PANELS = (np.array(data[0]["size_n"]) / B_TARGET_PANEL_WIDTH).astype(int)
 
     custom_GFLOPs = []
     ref_GFLOPs = []
@@ -250,14 +257,14 @@ def calc_GFLOPs(mat_FLOPS, mat_names, data, b_num_col, gimmik, t='best'):
 
         for run in data:
             # *1e-3 for ms to s
-            time_per_panel_custom = (run['xsmm_custom_'+t][i]*1e-3)/_NUM_PANELS
+            time_per_panel_custom = (run['xsmm_custom_'+t][i]*1e-3)/_NUM_PANELS[i]
             custom_inner.append(_FLOPS_PER_PANEL / time_per_panel_custom)
 
-            time_per_panel_ref   = (run['xsmm_reference_'+t][i]*1e-3)/_NUM_PANELS
+            time_per_panel_ref   = (run['xsmm_reference_'+t][i]*1e-3)/_NUM_PANELS[i]
             ref_inner.append(_FLOPS_PER_PANEL / time_per_panel_ref)
 
             if gimmik == "1":
-                time_per_panel_gimmik = (run['gimmik_'+t][i]*1e-3)/_NUM_PANELS
+                time_per_panel_gimmik = (run['gimmik_'+t][i]*1e-3)/_NUM_PANELS[i]
                 gimmik_inner.append(_FLOPS_PER_PANEL / time_per_panel_gimmik)
 
         custom_avg = sum(custom_inner) / len(custom_inner)

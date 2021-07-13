@@ -11,13 +11,13 @@ from cpu_stats import xeon_8175M_stats, xeon_8124M_stats
 # cpu stats
 cpu_info = xeon_8124M_stats
 
-if len(sys.argv) < 8:
+if len(sys.argv) != 8:
     print("expected 7 arguments: mat_dir n_runs b_num_col test_gimmik TIMESTAMP plot_dir ref_is_dense")
     exit(1)
 
 MAT_PATH = sys.argv[1]
 N_RUNS = int(sys.argv[2])
-B_NUM_COL = int(sys.argv[3])
+# B_NUM_COL = int(sys.argv[3])
 TEST_GIMMIK = sys.argv[4]
 TIMESTAMP = sys.argv[5]
 PLOT_DIR = sys.argv[6]
@@ -46,7 +46,7 @@ for i_title, shape in enumerate(shapes):
 
     if TEST_GIMMIK == "1":
         custom_GFLOPs, ref_GFLOPs, gimmik_GFLOPs = \
-            calc_GFLOPs(mat_flops, mat_names, data, B_NUM_COL, TEST_GIMMIK)
+            calc_GFLOPs(mat_flops, mat_names, data, 0, TEST_GIMMIK)
         if REF_IS_DENSE == "1":
             custom_AIs, ref_AIs, gimmik_AIs = get_AIs(mat_names, TEST_GIMMIK)
         else:
@@ -54,11 +54,11 @@ for i_title, shape in enumerate(shapes):
             ref_AIs = custom_AIs
     else:
         custom_GFLOPs, ref_GFLOPs = \
-            calc_GFLOPs(mat_flops, mat_names, data, B_NUM_COL, TEST_GIMMIK)
+            calc_GFLOPs(mat_flops, mat_names, data, 0, TEST_GIMMIK)
         if REF_IS_DENSE == "1":
-            custom_AIs, ref_AIs = get_AIs(mat_names, TEST_GIMMIK)
+            custom_AIs, ref_AIs = get_AIs(mat_names, TEST_GIMMIK, shape)
         else:
-            custom_AIs, _ = get_AIs(mat_names, TEST_GIMMIK)
+            custom_AIs, _ = get_AIs(mat_names, TEST_GIMMIK, shape)
             ref_AIs = custom_AIs
 
     # plot rooflines
@@ -73,15 +73,47 @@ for i_title, shape in enumerate(shapes):
     x = np.array([(cpu_info["peak_flops_dp"]/2)/cpu_info["peak_memory_bw"], 2**4])
     y = [(cpu_info["peak_flops_dp"]/2),(cpu_info["peak_flops_dp"]/2)]
     ax.plot(x, y, color='black', label="Single AVX512 Unit")
+    x = np.array([(cpu_info["linpack_flops_dp"])/cpu_info["peak_memory_bw"], 2**4])
+    y = [(cpu_info["linpack_flops_dp"]),(cpu_info["linpack_flops_dp"])]
+    ax.plot(x, y, "--", color='red', label="LINPACK")
 
     # plot data points
-    ax.plot(custom_AIs[0], custom_GFLOPs[0], marker='x', color='limegreen', ms=1, label="Custom LIBXSMM")
-    for i, mat_path in enumerate(mat_names):
-        ax.plot(custom_AIs[i], custom_GFLOPs[i], marker='x', color='limegreen', ms=3)
+    ax.plot(custom_AIs, custom_GFLOPs, 'x', color='limegreen')#, label="Custom LIBXSMM")
 
-    ax.plot(ref_AIs[0], ref_GFLOPs[0], marker='x', color='maroon', ms=1, label="Reference LIBXSMM")
     for i, mat_path in enumerate(mat_names):
-        ax.plot(ref_AIs[i], ref_GFLOPs[i], marker='x', color='maroon', ms=3)
+        if (custom_GFLOPs[i] > custom_AIs[i] * cpu_info["peak_memory_bw"]):
+            print(f"Over roofline (custom):")
+            print(f"{mat_path}")
+            print(f"{custom_AIs[i] = }, {custom_GFLOPs[i] = }")
+
+    # ax.plot(ref_AIs[0], ref_GFLOPs[0], marker='x', color='maroon', ms=1, label="Reference LIBXSMM")
+    # for i, mat_path in enumerate(mat_names):
+    #     ax.plot(ref_AIs[i], ref_GFLOPs[i], marker='x', color='maroon', ms=3)
+
+    for i, mat_path in enumerate(mat_names):
+        kernel_type = data[0]["xsmm_reference_kernel_type"][i]
+        if kernel_type == "sparse":
+            marker = "o"
+            face = False
+        elif kernel_type == "wide-sparse":
+            marker = '.'
+            face = True
+        elif kernel_type == "dense":
+            marker = "^"
+            face = True
+        else:
+            assert False, f"undefined kernel type: {kernel_type}"
+        
+        if face:
+            ax.plot(ref_AIs[i], ref_GFLOPs[i], marker, color="maroon")
+        else:
+            ax.plot(ref_AIs[i], ref_GFLOPs[i], marker, color="maroon", markerfacecolor='none')
+
+        # Warning if datapoint is higher than RAM BW roofline
+        if (ref_GFLOPs[i] > ref_AIs[i] * cpu_info["peak_memory_bw"]):
+            print(f"Over roofline (ref):")
+            print(f"{mat_path}")
+            print(f"{ref_AIs[i] = }, {ref_GFLOPs[i] = }")
 
     if TEST_GIMMIK == "1":
         ax.plot(gimmik_AIs[0], gimmik_GFLOPs[0], marker='x', color='orange', ms=1, label="GiMMiK")
@@ -98,5 +130,12 @@ for i_title, shape in enumerate(shapes):
     ax.set_xlabel('Arithmetic Intensity (FLOP/DRAM Byte)')
     ax.set_ylabel('Performance (Pseudo-GFLOP/s)')
     ax.set_title('Roofline - '+shape_title[i_title])
+
+    # legend
+    ax.plot([], [], "x", color="limegreen", label="custom LIBXSMM")
+    ax.plot([], [], "o", color="maroon",  markerfacecolor='none', label="sparse")
+    ax.plot([], [], ".", color="maroon", label="wide-sparse")
+    ax.plot([], [], "^", color="maroon", label="dense")
     plt.legend()
+
     plt.savefig(os.path.join(PLOT_DIR,"pyfr","roofline","{}_{}.pdf".format(shape, TIMESTAMP)), bbox_inches='tight')

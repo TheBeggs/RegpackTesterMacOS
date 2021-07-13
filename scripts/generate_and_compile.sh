@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
-export LD_LIBRARY_PATH=~/OpenBlas-build/lib:$LD_LIBRARY_PATH
-
-make clean
+# make clean
 mkdir -p bin/generated_kernels
 
 FILENAME=$1

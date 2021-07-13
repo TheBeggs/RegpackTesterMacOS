@@ -24,7 +24,7 @@ CXX = gcc
 GIMMIK_CXX = icc
 
 bin/benchmark_xsmm_reference : src/benchmark/xsmm_reference.c src/benchmark/common.c
-	$(CXX) $(CFLAGS) $(CFLAGS_XSMM_REFERENCE) $^ $(LDFLAGS_XSMM_REFERENCE) -o $@
+	$(CXX) $(CFLAGS_G) $(CFLAGS_XSMM_REFERENCE) $^ $(LDFLAGS_XSMM_REFERENCE) -o $@
 
 bin/benchmark_xsmm_custom : src/benchmark/xsmm_custom.c src/benchmark/common.c
 	$(CXX) $(CFLAGS) ${CFLAGS_XSMM_CUSTOM} $^ $(LDFLAGS_XSMM_CUSTOM) -o $@

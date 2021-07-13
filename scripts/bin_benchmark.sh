@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 
-export LD_LIBRARY_PATH=~/OpenBlas-build/lib:$LD_LIBRARY_PATH
 
-nice -20 taskset -c 0 bin/benchmark_xsmm_reference $1 $2
-nice -20 taskset -c 0 bin/benchmark_xsmm_custom $1 $2
+sudo nice -n -20 taskset -c 0 bin/benchmark_xsmm_reference $1 $2 $4
+sudo nice -n -20 taskset -c 0 bin/benchmark_xsmm_custom $1 $2 $4
 
 if [ $3 -eq 1 ]; # gimmik
 then

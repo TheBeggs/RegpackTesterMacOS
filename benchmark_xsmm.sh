@@ -1,4 +1,3 @@
-make clean
-mkdir bin
-make bin/benchmark_xsmm_only
-./bin/benchmark_xsmm_only 288000000 123 "cleaned_data/example_mats/hex/p1/gauss-legendre/m3.txt"
+# ./scripts/benchmark.sh -o log -p plots -m "data/example_mats" -t pyfr -i 10 -n 3
+
+./scripts/benchmark.sh -o log -p plots -m "data/example_mats" -t pyfr -i 10 -n 3 -s "07-07_23:32:51"
