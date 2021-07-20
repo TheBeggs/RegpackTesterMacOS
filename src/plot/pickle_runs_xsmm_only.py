@@ -2,6 +2,7 @@ from ast import literal_eval as eval
 import pickle
 import sys
 import os
+import numpy as np
 
 PANEL_WIDTH = 48
 
@@ -16,6 +17,14 @@ timestamp = sys.argv[4]
 test_gimmik = sys.argv[5]
 # n_iters = int(sys.argv[6])
 n_widths = sys.argv[6].split()
+
+n_widths_np = []
+for width in n_widths:
+    n_widths_np.append(int(width))
+
+n_widths_np = np.array(n_widths_np)
+
+total_num_panels = np.floor_divide(n_widths_np, PANEL_WIDTH).sum()
 
 runs = []
 for _ in range(n_runs):
@@ -63,7 +72,7 @@ for i, run in enumerate(runs):
                         res = eval(line)
 
                         num_panels = res['size_n'] / PANEL_WIDTH
-                        res['xsmm_reference_avg'] /= num_panels
+                        # res['xsmm_reference_avg'] /= num_panels
                         res['xsmm_reference_best'] /= num_panels
 
                         if j == 0:
@@ -95,7 +104,7 @@ for i, run in enumerate(runs):
                                 run[t]['xsmm_reference_worst'][m] = res['xsmm_reference_best']
 
         for m, average_time in enumerate(run[t]['xsmm_reference_avg']):
-            run[t]['xsmm_reference_avg'][m] = average_time / len(n_widths)
+            run[t]['xsmm_reference_avg'][m] = average_time / total_num_panels
 
     out_file = "./bin/log_data/run_{}_{}.out".format(timestamp, i+1)
 
