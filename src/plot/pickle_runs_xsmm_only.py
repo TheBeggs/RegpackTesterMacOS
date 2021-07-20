@@ -3,8 +3,10 @@ import pickle
 import sys
 import os
 
+PANEL_WIDTH = 48
+
 if len(sys.argv) != 7:
-    print("expected 6 arguments: mat_type n_runs log_dir timestamp test_gimmik n_iters")
+    print("expected 6 arguments: mat_type n_runs log_dir timestamp test_gimmik N_WIDTHS")
     exit(1)
 
 mat_type = sys.argv[1]  # "pyfr" of "synth"
@@ -12,7 +14,8 @@ n_runs = int(sys.argv[2])
 log_dir = sys.argv[3]
 timestamp = sys.argv[4]
 test_gimmik = sys.argv[5]
-n_iters = int(sys.argv[6])
+# n_iters = int(sys.argv[6])
+n_widths = sys.argv[6].split()
 
 runs = []
 for _ in range(n_runs):
@@ -47,9 +50,9 @@ for i, run in enumerate(runs):
         run[t]['xsmm_reference_kernel_type'] = []
         run[t]['size_n'] = []
 
-        for j in range(n_iters):
+        for j, n_width in enumerate(n_widths):
             log_file = os.path.join(
-                log_dir, "run_{}_{}_{}.out".format(timestamp, i+1, j+1))
+                log_dir, "run_{}_{}_{}.out".format(timestamp, i+1, n_width))
 
             with open(log_file) as f:
                 m = -1
@@ -58,6 +61,10 @@ for i, run in enumerate(runs):
                     if '{' in line and t in line:
                         m += 1
                         res = eval(line)
+
+                        num_panels = res['size_n'] / PANEL_WIDTH
+                        res['xsmm_reference_avg'] /= num_panels
+                        res['xsmm_reference_best'] /= num_panels
 
                         if j == 0:
                             run[t]['a_cols'].append(res['a_cols'])
@@ -71,6 +78,7 @@ for i, run in enumerate(runs):
                             # run[t]['speedup_best_over_ref'].append(res['speedup_best_over_ref'])
                             # run[t]['xsmm_custom_avg'].append(res['xsmm_custom_avg'])
                             # run[t]['xsmm_custom_best'].append(res['xsmm_custom_best'])
+                            run[t]['size_n'].append(PANEL_WIDTH)
                             run[t]['xsmm_reference_avg'].append(
                                 res['xsmm_reference_avg'])
                             run[t]['xsmm_reference_best'].append(
@@ -79,7 +87,6 @@ for i, run in enumerate(runs):
                                 res['xsmm_reference_best'])
                             run[t]['xsmm_reference_kernel_type'].append(
                                 res['xsmm_reference_kernel_type'])
-                            run[t]['size_n'].append(res['size_n'])
                         else:
                             run[t]['xsmm_reference_avg'][m] += res['xsmm_reference_avg']
                             if res['xsmm_reference_best'] < run[t]['xsmm_reference_best'][m]:
@@ -88,7 +95,7 @@ for i, run in enumerate(runs):
                                 run[t]['xsmm_reference_worst'][m] = res['xsmm_reference_best']
 
         for m, average_time in enumerate(run[t]['xsmm_reference_avg']):
-            run[t]['xsmm_reference_avg'][m] = average_time / n_iters
+            run[t]['xsmm_reference_avg'][m] = average_time / len(n_widths)
 
     out_file = "./bin/log_data/run_{}_{}.out".format(timestamp, i+1)
 
