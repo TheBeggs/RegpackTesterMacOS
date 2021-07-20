@@ -73,7 +73,7 @@ def load_benchmark_data(n_runs, log_data_dir, timestamp):
     return runs
 
 # trait is from a run: i.e run["quad"] for pyfr mats
-def sort_values(x_term, trait, mat_flops, b_num_col, gimmik, t='best'):
+def sort_values(x_term, trait, mat_flops, b_num_col, gimmik, t='avg'):
     _NUM_PANELS = (np.array(trait["size_n"]) /
                    B_TARGET_PANEL_WIDTH).astype(int)
 
@@ -164,7 +164,7 @@ def sort_values_different_envs(x_term, trait, mat_flops, gimmik, envs, t):
 
 
 # sort_values(x_term, run, mat_flops, b_num_col, gimmik, t='best'):
-def get_perf(runs, n_runs, shape, x_term, mat_flops, b_num_col, gimmik, envs, t='best'):
+def get_perf(runs, n_runs, shape, x_term, mat_flops, b_num_col, gimmik, envs, t='avg'):
     if gimmik == "1":
         ref_x, custom_y, ref_y, gimmik_y = [], [], [], []
         for i in range(n_runs):
@@ -223,7 +223,7 @@ def get_perf(runs, n_runs, shape, x_term, mat_flops, b_num_col, gimmik, envs, t=
 
 
 # trait is from a run: i.e run["quad"] for pyfr mats
-def sort_values_xsmm_only(x_term, trait, mat_flops, b_num_col, gimmik, t='best'):
+def sort_values_xsmm_only(x_term, trait, mat_flops, b_num_col, gimmik, t='avg'):
     _NUM_PANELS = (np.array(trait["size_n"]) / B_TARGET_PANEL_WIDTH).astype(int)
 
     # custom_x, custom_y = [], []
@@ -270,7 +270,7 @@ def sort_values_xsmm_only(x_term, trait, mat_flops, b_num_col, gimmik, t='best')
     return ref_x, ref_y, ref_kernel_type
 
 # sort_values(x_term, run, mat_flops, b_num_col, gimmik, t='best'):
-def get_perf_xsmm_only(runs, n_runs, shape, x_term, mat_flops, b_num_col, gimmik, t='best'):
+def get_perf_xsmm_only(runs, n_runs, shape, x_term, mat_flops, b_num_col, gimmik, t='avg'):
     # if gimmik == "1":
     #     ref_x, ref_y, ref_kernel = [], [], []
     #     for i in range(n_runs):
@@ -307,7 +307,7 @@ def get_perf_xsmm_only(runs, n_runs, shape, x_term, mat_flops, b_num_col, gimmik
     return ref_x[0], ref_y_avg, ref_kernel[0]
 
 # data is a list formed from runs: i.e run["quad"] for pyfr mats
-def calc_GFLOPs(mat_FLOPS, mat_names, data, b_num_col, gimmik, t='best'):
+def calc_GFLOPs(mat_FLOPS, mat_names, data, b_num_col, gimmik, t='avg'):
     _NUM_PANELS = (np.array(data[0]["size_n"]) / B_TARGET_PANEL_WIDTH).astype(int)
 
     custom_GFLOPs = []
@@ -349,7 +349,7 @@ def calc_GFLOPs(mat_FLOPS, mat_names, data, b_num_col, gimmik, t='best'):
     else:
         return custom_GFLOPs, ref_GFLOPs
 
-def calc_GFLOPs_different_envs(mat_FLOPS, mat_names, data, TEST_GIMMIK, envs, t='best'):
+def calc_GFLOPs_different_envs(mat_FLOPS, mat_names, data, TEST_GIMMIK, envs, t='avg'):
     _NUM_PANELS = (np.array(data[0]["size_n"]) / B_TARGET_PANEL_WIDTH).astype(int)
     ref_GFLOPs = []
 
@@ -383,7 +383,7 @@ def calc_GFLOPs_different_envs(mat_FLOPS, mat_names, data, TEST_GIMMIK, envs, t=
     return custom_GFLOPs, ref_GFLOPs
 
 # data is a list formed from runs: i.e run["quad"] for pyfr mats
-def calc_GFLOPs_xsmm_only(mat_FLOPS, mat_names, data, b_num_col, gimmik, t='best'):
+def calc_GFLOPs_xsmm_only(mat_FLOPS, mat_names, data, b_num_col, gimmik, t='avg'):
     _NUM_PANELS = (np.array(data[0]["size_n"]) / B_TARGET_PANEL_WIDTH).astype(int)
 
     ref_GFLOPs = []

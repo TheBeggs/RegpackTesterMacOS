@@ -12,8 +12,9 @@ N_RUNS=3
 SKIP_BENCH="0" # 0 don't skip, otherwise == timestamp of previous benchmark
 N_ITER=60 # number of iterations for each run
 MATRIX_SIZE=288000000 # 1500*192000 DP numbers, taking 2197.27 MB
+N_WIDTHS=""
 
-while getopts ":d:g:m:t:o:p:n:s:i:" opt; do
+while getopts ":d:g:m:t:o:p:n:s:i:w:" opt; do
   case $opt in
     d) REF_IS_DENSE="$OPTARG"
     ;;
@@ -32,6 +33,8 @@ while getopts ":d:g:m:t:o:p:n:s:i:" opt; do
     s) SKIP_BENCH="$OPTARG"
     ;;
     i) N_ITER=$OPTARG
+    ;;
+    w) N_WIDTHS="$OPTARG"
     ;;
     \?) echo "Invalid option -$OPTARG" >&2
     ;;
@@ -63,10 +66,11 @@ then
   do
 	echo "Starting benchmark run $i"
 
-  for (( j=$START; j<=$N_ITER; j++ ))
+  for width in $N_WIDTHS
   do
-  echo -e "\titernation $j"
-  python3 src/benchmark/benchmark_xsmm_only.py $MATS_DIR $WD $MATRIX_SIZE $TEST_GIMMIK > $LOG_DIR/run_${TIMESTAMP}_${i}_${j}.out 2> $LOG_DIR/run_${TIMESTAMP}_${i}_${j}.err
+
+  python3 src/benchmark/benchmark_xsmm_only.py $MATS_DIR $WD $width $TEST_GIMMIK > $LOG_DIR/run_${TIMESTAMP}_${i}_${width}.out 2> $LOG_DIR/run_${TIMESTAMP}_${i}_${width}.err
+  
   done
 
 	echo "Finished benchmark run $i"
@@ -79,7 +83,7 @@ fi
 
 # Sort log data and pickle for plotting
 mkdir -p bin/log_data
-python3 src/plot/pickle_runs_xsmm_only.py $MAT_TYPE $N_RUNS $LOG_DIR $TIMESTAMP $TEST_GIMMIK $N_ITER
+python3 src/plot/pickle_runs_xsmm_only.py $MAT_TYPE $N_RUNS $LOG_DIR $TIMESTAMP $TEST_GIMMIK "$N_WIDTHS"
 
 # Plot
 if [ "$MAT_TYPE" = "pyfr" ]

@@ -1,7 +1,7 @@
 #ifndef BENCHMARK_COMMON_H
 #define BENCHMARK_COMMON_H
 
-#define MAX_REPS 60
+#define MAX_REPS 1000
 
 #define BLOCK_ALIGNMENT 48
 
