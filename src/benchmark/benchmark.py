@@ -6,19 +6,19 @@ import random
 import pprint as pp
 
 if len(sys.argv) != 5 and len(sys.argv) != 6:
-    print("expected 4 or 5 arguments: mat_dir cwd matrix_size test_gimmik opt:(envs)")
+    print("expected 4 or 5 arguments: mat_dir cwd N_width test_gimmik opt:(envs)")
     exit(1)
 
 mats_dir = sys.argv[1]
 cwd = sys.argv[2]
-M_SIZE = sys.argv[3]
+N_WIDTH = sys.argv[3]
 test_gimmik = sys.argv[4]
 if len(sys.argv) == 6:
     envs = sys.argv[5]
 else:
     envs = ""
 
-def benchmark_matrix(file_name, matrix_size, gimmik):
+def benchmark_matrix(file_name, n_width, gimmik):
     # print A matrix to bin/generated_kernels and compile benchmark program
     print("Generating and Compiling", file_name, file=sys.stderr)
     result = {"mat_file": file_name}
@@ -52,9 +52,9 @@ def benchmark_matrix(file_name, matrix_size, gimmik):
     clean_mat_path = file_name.replace("data", "cleaned_data")
 
     if not envs:
-        benchmark_cmd = ["./scripts/bin_benchmark.sh", str(matrix_size), str(random.randint(0, 2**31)), str(gimmik), clean_mat_path]
+        benchmark_cmd = ["./scripts/bin_benchmark.sh", str(n_width), str(random.randint(0, 2**31)), str(gimmik), clean_mat_path]
     else:
-        benchmark_cmd = ["./scripts/bin_benchmark.sh", str(matrix_size), str(random.randint(0, 2**31)), str(gimmik), clean_mat_path, envs]
+        benchmark_cmd = ["./scripts/bin_benchmark.sh", str(n_width), str(random.randint(0, 2**31)), str(gimmik), clean_mat_path, envs]
     
     runout = subprocess.Popen(
         benchmark_cmd,
@@ -148,7 +148,7 @@ if __name__ == "__main__":
 
     for mat_path in mat_paths:
         if test_gimmik == "0":
-            best, avg = benchmark_matrix(mat_path, M_SIZE, test_gimmik)
+            best, avg = benchmark_matrix(mat_path, N_WIDTH, test_gimmik)
             speedups_best_over_ref.append(best)
             speedups_avg_over_ref.append(avg)
         else:

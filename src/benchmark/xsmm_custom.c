@@ -39,9 +39,9 @@ int main(int argc, char** argv) {
   print_kernel_type(xsmm_d, run_type);
 
   // flush cache
-  flush_cache();
+  // flush_cache();
 
-  struct benchmark_data b_data = benchmark_xsmm_1iter(b_d, c_xsmm_d, n, xsmm_d, run_type);
+  struct benchmark_data b_data = benchmark_xsmm_macroiter(b_d, c_xsmm_d, n, xsmm_d, run_type);
 
   printf("%s", "Done.\n");
   printf("---------------------------------------------------------------\n");
