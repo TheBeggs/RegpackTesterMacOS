@@ -56,7 +56,7 @@ def plot(runs, mat_flops, shape, title, limit_y=False):
         #         get_perf(runs, N_RUNS, shape, x_term, mat_flops, B_NUM_COL, TEST_GIMMIK)
         # else:
         x_values, ref_y_avg, ref_y_kernel, custom_y_avg = \
-            get_perf(runs, N_RUNS, shape, x_term, mat_flops, 0, TEST_GIMMIK, envs)
+            get_perf(runs, N_RUNS, shape, x_term, mat_flops, 0, TEST_GIMMIK, envs, t="avg")
 
         plt.plot(x_values, ref_y_avg, label="Reference LIBXSMM", color=ref_colour)
 

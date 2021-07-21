@@ -2,9 +2,12 @@ from ast import literal_eval as eval
 import pickle
 import sys
 import os
+import numpy as np
+
+PANEL_WIDTH = 48
 
 if len(sys.argv) != 7 and len(sys.argv) != 8:
-    print("expected 6 or 7 arguments: mat_type n_runs log_dir timestamp test_gimmik n_iters opt:envs")
+    print("expected 6 or 7 arguments: mat_type n_runs log_dir timestamp test_gimmik N_WIDTHS opt:envs")
     exit(1)
 
 mat_type = sys.argv[1] # "pyfr" of "synth"
@@ -12,13 +15,22 @@ n_runs = int(sys.argv[2])
 log_dir = sys.argv[3]
 timestamp = sys.argv[4]
 test_gimmik = sys.argv[5]
-n_iters = int(sys.argv[6])
+# n_iters = int(sys.argv[6])
+n_widths = sys.argv[6].split()
 
 if (len(sys.argv) == 8 and sys.argv[7]):
     envs = sys.argv[7].split(',')
 else:
     envs = []
-    
+
+n_widths_np = []
+for width in n_widths:
+    n_widths_np.append(int(width))
+
+n_widths_np = np.array(n_widths_np)
+
+total_num_panels = np.floor_divide(n_widths_np, PANEL_WIDTH).sum()
+
 runs = []
 for _ in range(n_runs):
     runs.append({})
@@ -62,9 +74,9 @@ for i, run in enumerate(runs):
                 run[t][env + "_worst"] = []
                 run[t][env + "_kernel_type"] = []        
         
-        for j in range(n_iters):
+        for j, n_width in enumerate(n_widths):
             log_file = os.path.join(
-                log_dir, "run_{}_{}_{}.out".format(timestamp, i+1, j+1))
+                log_dir, "run_{}_{}_{}.out".format(timestamp, i+1, n_width))
 
             with open(log_file) as f:
                 m = -1
@@ -74,6 +86,15 @@ for i, run in enumerate(runs):
                         m += 1
                         res = eval(line)
 
+                        num_panels = res['size_n'] / PANEL_WIDTH
+                        res['xsmm_reference_best'] /= num_panels
+                        
+                        if not envs:
+                            res['xsmm_custom_best'] /= num_panels
+                        else:
+                            for env in envs:
+                                res[env + '_best'] /= num_panels
+
                         if j == 0:
                             run[t]['a_cols'].append(res['a_cols'])
                             run[t]['a_nonzero'].append(res['a_nonzero'])
@@ -82,7 +103,7 @@ for i, run in enumerate(runs):
                             run[t]['a_unique'].append(res['a_unique'])
                             run[t]['density'].append(res['density'])
                             run[t]['mat_file'].append(res['mat_file'])
-                            run[t]['size_n'].append(res['size_n'])
+                            run[t]['size_n'].append(PANEL_WIDTH)
                             run[t]['xsmm_reference_avg'].append(
                                 res['xsmm_reference_avg'])
                             run[t]['xsmm_reference_best'].append(
@@ -140,15 +161,15 @@ for i, run in enumerate(runs):
                                         run[t][env + '_worst'][m] = res[env + '_best']
 
         for m, average_time in enumerate(run[t]['xsmm_reference_avg']):
-            run[t]['xsmm_reference_avg'][m] = average_time / n_iters            
+            run[t]['xsmm_reference_avg'][m] = average_time / total_num_panels            
 
         if not envs:
             for m, average_time in enumerate(run[t]['xsmm_custom_avg']):
-                run[t]['xsmm_custom_avg'][m] = average_time / n_iters
+                run[t]['xsmm_custom_avg'][m] = average_time / total_num_panels
         else:
             for env in envs:
                 for m, average_time in enumerate(run[t][env + '_avg']):
-                    run[t][env + '_avg'][m] = average_time / n_iters
+                    run[t][env + '_avg'][m] = average_time / total_num_panels
 
     out_file = "./bin/log_data/run_{}_{}.out".format(timestamp, i+1)
 

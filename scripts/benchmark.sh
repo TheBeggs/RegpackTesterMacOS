@@ -89,26 +89,27 @@ else
   LOG_DIR=$LOG_DIR/$TIMESTAMP
 fi
 
-# # Sort log data and pickle for plotting
-# mkdir -p bin/log_data
-# python3 src/plot/pickle_runs.py $MAT_TYPE $N_RUNS $LOG_DIR $TIMESTAMP $TEST_GIMMIK $N_ITER "$ENVS"
+# Sort log data and pickle for plotting
+mkdir -p bin/log_data
+python3 src/plot/pickle_runs.py $MAT_TYPE $N_RUNS $LOG_DIR $TIMESTAMP $TEST_GIMMIK "$N_WIDTHS" "$ENVS"
 
-# # Plot
-# if [ "$MAT_TYPE" = "pyfr" ]
-# then
-#   mkdir -p $PLOT_DIR/$TIMESTAMP/pyfr/quad
-#   mkdir -p $PLOT_DIR/$TIMESTAMP/pyfr/hex
-#   mkdir -p $PLOT_DIR/$TIMESTAMP/pyfr/tet
-#   mkdir -p $PLOT_DIR/$TIMESTAMP/pyfr/tri
-#   mkdir -p $PLOT_DIR/$TIMESTAMP/pyfr/roofline
+# Plot
+if [ "$MAT_TYPE" = "pyfr" ]
+then
+  mkdir -p $PLOT_DIR/$TIMESTAMP/pyfr/quad
+  mkdir -p $PLOT_DIR/$TIMESTAMP/pyfr/hex
+  mkdir -p $PLOT_DIR/$TIMESTAMP/pyfr/tet
+  mkdir -p $PLOT_DIR/$TIMESTAMP/pyfr/tri
+  mkdir -p $PLOT_DIR/$TIMESTAMP/pyfr/roofline
 
-#   python3 src/plot/pyfr.py $MATS_DIR $N_RUNS $B_NUM_COL $TEST_GIMMIK $TIMESTAMP $PLOT_DIR/$TIMESTAMP "$ENVS"
-#   python3 src/plot/pyfr_roofline.py $MATS_DIR $N_RUNS $B_NUM_COL $TEST_GIMMIK $TIMESTAMP $PLOT_DIR/$TIMESTAMP $REF_IS_DENSE "$ENVS"
-# elif [ "$MAT_TYPE" = "synth" ]
-# then
-#   mkdir -p $PLOT_DIR/$TIMESTAMP/synth
-#   mkdir -p $PLOT_DIR/$TIMESTAMP/synth/roofline
+  python3 src/plot/pyfr.py $MATS_DIR $N_RUNS $B_NUM_COL $TEST_GIMMIK $TIMESTAMP $PLOT_DIR/$TIMESTAMP "$ENVS"
+  python3 src/plot/pyfr_roofline.py $MATS_DIR $N_RUNS $B_NUM_COL $TEST_GIMMIK $TIMESTAMP $PLOT_DIR/$TIMESTAMP $REF_IS_DENSE "$ENVS"
+  python3 src/plot/pyfr_speedup.py $N_RUNS $TEST_GIMMIK $TIMESTAMP "$ENVS" > $PLOT_DIR/$TIMESTAMP/summary.txt
+elif [ "$MAT_TYPE" = "synth" ]
+then
+  mkdir -p $PLOT_DIR/$TIMESTAMP/synth
+  mkdir -p $PLOT_DIR/$TIMESTAMP/synth/roofline
 
-#   python3 src/plot/synth.py $MATS_DIR $N_RUNS $B_NUM_COL $TEST_GIMMIK $TIMESTAMP $PLOT_DIR/$TIMESTAMP "$ENVS"
-#   python3 src/plot/synth_roofline.py $MATS_DIR $N_RUNS $B_NUM_COL $TEST_GIMMIK $TIMESTAMP $PLOT_DIR/$TIMESTAMP $REF_IS_DENSE "$ENVS"
-# fi
+  python3 src/plot/synth.py $MATS_DIR $N_RUNS $B_NUM_COL $TEST_GIMMIK $TIMESTAMP $PLOT_DIR/$TIMESTAMP "$ENVS"
+  python3 src/plot/synth_roofline.py $MATS_DIR $N_RUNS $B_NUM_COL $TEST_GIMMIK $TIMESTAMP $PLOT_DIR/$TIMESTAMP $REF_IS_DENSE "$ENVS"
+fi

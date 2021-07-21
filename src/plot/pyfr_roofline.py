@@ -55,7 +55,7 @@ for i_title, shape in enumerate(shapes):
 
     if TEST_GIMMIK == "1":
         custom_GFLOPs, ref_GFLOPs, gimmik_GFLOPs = \
-            calc_GFLOPs(mat_flops, mat_names, data, 0, TEST_GIMMIK)
+            calc_GFLOPs(mat_flops, mat_names, data, 0, TEST_GIMMIK, t="avg")
         if REF_IS_DENSE == "1":
             custom_AIs, ref_AIs, gimmik_AIs = get_AIs(mat_names, TEST_GIMMIK)
         else:
@@ -131,15 +131,15 @@ for i_title, shape in enumerate(shapes):
                 print(f"{mat_path}")
                 print(f"{custom_AIs[i] = }, {custom_GFLOPs[i] = }")
         
-        perf_ratio = []
-        for i in range(len(mat_names)):
-            perf_ratio.append(custom_GFLOPs[i] / ref_GFLOPs[i])
+        # perf_ratio = []
+        # for i in range(len(mat_names)):
+        #     perf_ratio.append(custom_GFLOPs[i] / ref_GFLOPs[i])
             
-            perf_ratio_avg = sum(perf_ratio) / len(perf_ratio)
+        # perf_ratio_avg = sum(perf_ratio) / len(perf_ratio)
 
-            print("==========")
-            print(f"{shape}: libxsmm_custom is {perf_ratio_avg} faster than libxsmm_reference.")
-            print("==========")
+        # print("==========")
+        # print(f"{shape}: libxsmm_custom is {perf_ratio_avg} faster than libxsmm_reference.")
+        # print("==========")
 
     else:
         for e, env in enumerate(envs):
@@ -157,11 +157,11 @@ for i_title, shape in enumerate(shapes):
             for i in range(len(mat_names)):
                 perf_ratio.append(custom_GFLOPs[env][i] / ref_GFLOPs[i])
             
-            perf_ratio_avg = sum(perf_ratio) / len(perf_ratio)
+            # perf_ratio_avg = sum(perf_ratio) / len(perf_ratio)
 
-            print("==========")
-            print(f"{shape}: {env} is {perf_ratio_avg} faster than libxsmm_reference.")
-            print("==========")
+            # print("==========")
+            # print(f"{shape}: {env} is {perf_ratio_avg} faster than libxsmm_reference.")
+            # print("==========")
 
     if TEST_GIMMIK == "1":
         ax.plot(gimmik_AIs[0], gimmik_GFLOPs[0], marker='x', color='orange', ms=1, label="GiMMiK")
