@@ -33,9 +33,9 @@ for _ in range(n_runs):
 if mat_type == "pyfr":
     types = ["hex", "quad", "tet", "tri"]
 elif mat_type == "synth":
-    types = ["vary_row/q_16", "vary_row/q_64",
-             "vary_col/q_16", "vary_col/q_64",
-             "vary_density/q_16", "vary_density/q_64",
+    types = ["vary_row/q_16", "vary_row/q_64", "vary_row/q_256",
+	         "vary_col/q_16", "vary_col/q_64", "vary_col/q_256",
+             "vary_density/q_16", "vary_density/q_64", "vary_density/q_256",
              "vary_unique"]
 
 for i, run in enumerate(runs):

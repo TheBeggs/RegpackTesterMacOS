@@ -18,3 +18,7 @@ xeon_8124M_stats["avx512_freq"] = 3.0 # 1 Cores Active AVX512 Boost (GHz), measu
 xeon_8124M_stats["peak_flops_dp"] = xeon_8124M_stats["avx512_freq"] * xeon_8124M_stats["num_avx512_units"] * AVX512_FLOPS_PER_CYCLE_DP
 xeon_8124M_stats["peak_memory_bw"] = 12.93656 # GB/s measured on c5n.large
 xeon_8124M_stats["linpack_flops_dp"] = 85.1125
+
+cpu_stats_dict = dict()
+cpu_stats_dict["Intel(R) Xeon(R) Platinum 8124M CPU @ 3.00GHz"] = xeon_8124M_stats
+cpu_stats_dict["AMD Ryzen 7 3700X 8-Core Processor"] = xeon_8124M_stats # only for testing

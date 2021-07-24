@@ -3,13 +3,14 @@ from matplotlib.ticker import ScalarFormatter, LogFormatter
 import os
 import sys
 import numpy as np
+import numexpr.cpuinfo as cpuinfo
 
 from tools import calc_FLOPS, load_benchmark_data, get_perf, B_TARGET_PANEL_WIDTH
 from tools import calc_GFLOPs, get_AIs, calc_GFLOPs_different_envs
-from cpu_stats import xeon_8175M_stats, xeon_8124M_stats
+from cpu_stats import cpu_stats_dict
 
 # cpu stats
-cpu_info = xeon_8124M_stats
+cpu_info = cpu_stats_dict[cpuinfo.cpu.info[0]['model name']]
 
 if len(sys.argv) != 8 and len(sys.argv) != 9:
     print("expected 7 or 8 arguments: mat_dir n_runs b_num_col test_gimmik TIMESTAMP plot_dir ref_is_dense opt:envs")

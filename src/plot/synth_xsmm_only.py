@@ -100,6 +100,11 @@ trait="vary_row/q_64"
 title="Number of Rows in A vs Pseudo-FLOP/s (U64)"
 save_as="vary_row_64"
 plot(runs, mat_flops, x_term, trait, xlabel, title, save_as)
+# 256 distinct non-zeros
+trait="vary_row/q_256"
+title="Number of Rows in A vs Pseudo-FLOP/s (U256)"
+save_as="vary_row_256"
+plot(runs, mat_flops, x_term, trait, xlabel, title, save_as)
 
 ### Vary Columns ###
 xlabel="Number of Columns"
@@ -113,6 +118,11 @@ plot(runs, mat_flops, x_term, trait, xlabel, title, save_as)
 trait="vary_col/q_64"
 title="Number of Columns in A vs Pseudo-FLOP/s (U64)"
 save_as="vary_cols_64"
+plot(runs, mat_flops, x_term, trait, xlabel, title, save_as)
+# 256 distinct non-zeros
+trait="vary_col/q_256"
+title="Number of Columns in A vs Pseudo-FLOP/s (U256)"
+save_as="vary_cols_256"
 plot(runs, mat_flops, x_term, trait, xlabel, title, save_as)
 
 ### Vary Density ###
@@ -128,6 +138,12 @@ trait="vary_density/q_64"
 title="Density of A vs Pseudo-FLOP/s (U64)"
 save_as="vary_density_64"
 plot(runs, mat_flops, x_term, trait, xlabel, title, save_as, x_logscale=False)
+# 256 distinct non-zeros
+trait="vary_density/q_256"
+title="Density of A vs Pseudo-FLOP/s (U256)"
+save_as="vary_density_256"
+plot(runs, mat_flops, x_term, trait, xlabel, title, save_as, x_logscale=False)
+
 
 ### Vary Unique ###
 xlabel="Number of Unique Constants"
