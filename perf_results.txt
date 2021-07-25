@@ -1,0 +1,137 @@
+rm -rf bin
+gcc -std=c11 -O3 -pthread -fopenmp -Wall -Wextra -I./../libxsmm_custom/include -I./../libxsmm_custom/src src/benchmark/xsmm_custom.c src/benchmark/common.c -L./../libxsmm_custom/lib -lxsmmnoblas -lxsmm -lpthread -lrt -ldl -lm -lc -lblas -o bin/benchmark_xsmm_custom
+M_BLOCKING=1 perf stat -e context-switches,cpu-migrations,page-faults,branches,branch-misses,task-clock,cycles,instructions,cache-references,cache-misses taskset -c 0 ./bin/benchmark_xsmm_custom 105600 0 cleaned_data/example_mats/tet/p6/shunn-ham/m3.txt
+
+LIBXSMM_VERSION: RT-bst-B-from-vreg-1.16.1-1577 (25183785)
+LIBXSMM_TARGET: skx
+Registry and code: 13 MB
+Uptime: 36.876781 s
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tet/p6/shunn-ham/m3.txt...
+Read matrix has 84 rows and 112 columns.
+Input arrays: A (84, 112), B (112, 105600).
+Output array: C (84, 105600).
+Array B width (N): 105600
+Randomly generating B matrix...
+Running XSMM Reference MM...
+n_blocking = 1
+l_m_blocking = 1
+xsmm-custom kernel type: dense
+xsmm-custom Time (gettimeofday): 122.396453 ms
+xsmm-custom Time (libxsmm): 122.400434 ms
+xsmm-custom No. of CPU cycles: 367191927
+CPU clock speed (GHz): 2.999923
+Done.
+---------------------------------------------------------------
+xsmm-custom best execution time: 122.39645333333334
+xsmm-custom avg execution time: 122.39645333333334
+
+ Performance counter stats for 'taskset -c 0 ./bin/benchmark_xsmm_custom 105600 0 cleaned_data/example_mats/tet/p6/shunn-ham/m3.txt':
+
+               136      context-switches          #    0.004 K/sec                  
+                 1      cpu-migrations            #    0.000 K/sec                  
+             41588      page-faults               #    0.001 M/sec                  
+         147804499      branches                  #    4.008 M/sec                    (83.33%)
+           3179521      branch-misses             #    2.15% of all branches          (83.33%)
+          36879.61 msec task-clock                #    1.000 CPUs utilized          
+      128471277892      cycles                    #    3.484 GHz                      (66.66%)
+       76075047537      instructions              #    0.59  insn per cycle           (83.33%)
+         516709310      cache-references          #   14.011 M/sec                    (83.34%)
+         371657462      cache-misses              #   71.928 % of all cache refs      (83.34%)
+
+      36.883971273 seconds time elapsed
+
+      36.800246000 seconds user
+       0.079991000 seconds sys
+
+
+M_BLOCKING=8 perf stat -e context-switches,cpu-migrations,page-faults,branches,branch-misses,task-clock,cycles,instructions,cache-references,cache-misses taskset -c 0 ./bin/benchmark_xsmm_custom 105600 0 cleaned_data/example_mats/tet/p6/shunn-ham/m3.txt
+
+LIBXSMM_VERSION: RT-bst-B-from-vreg-1.16.1-1577 (25183785)
+LIBXSMM_TARGET: skx
+Registry and code: 13 MB
+Uptime: 15.138834 s
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tet/p6/shunn-ham/m3.txt...
+Read matrix has 84 rows and 112 columns.
+Input arrays: A (84, 112), B (112, 105600).
+Output array: C (84, 105600).
+Array B width (N): 105600
+Randomly generating B matrix...
+Running XSMM Reference MM...
+n_blocking = 1
+l_m_blocking = 8
+xsmm-custom kernel type: dense
+xsmm-custom Time (gettimeofday): 49.958540 ms
+xsmm-custom Time (libxsmm): 49.959824 ms
+xsmm-custom No. of CPU cycles: 149876519
+CPU clock speed (GHz): 2.999941
+Done.
+---------------------------------------------------------------
+xsmm-custom best execution time: 49.958539999999999
+xsmm-custom avg execution time: 49.958539999999999
+
+ Performance counter stats for 'taskset -c 0 ./bin/benchmark_xsmm_custom 105600 0 cleaned_data/example_mats/tet/p6/shunn-ham/m3.txt':
+
+                58      context-switches          #    0.004 K/sec                  
+                 1      cpu-migrations            #    0.000 K/sec                  
+             41574      page-faults               #    0.003 M/sec                  
+         105948887      branches                  #    6.996 M/sec                    (83.34%)
+           2743950      branch-misses             #    2.59% of all branches          (83.33%)
+          15143.37 msec task-clock                #    1.000 CPUs utilized          
+       52754210180      cycles                    #    3.484 GHz                      (66.67%)
+       43571969564      instructions              #    0.83  insn per cycle           (83.33%)
+         457082613      cache-references          #   30.184 M/sec                    (83.33%)
+         352055923      cache-misses              #   77.022 % of all cache refs      (83.33%)
+
+      15.145432344 seconds time elapsed
+
+      15.088075000 seconds user
+       0.056000000 seconds sys
+
+
+M_BLOCKING=31 perf stat -e context-switches,cpu-migrations,page-faults,branches,branch-misses,task-clock,cycles,instructions,cache-references,cache-misses taskset -c 0 ./bin/benchmark_xsmm_custom 105600 0 cleaned_data/example_mats/tet/p6/shunn-ham/m3.txt
+
+LIBXSMM_VERSION: RT-bst-B-from-vreg-1.16.1-1577 (25183785)
+LIBXSMM_TARGET: skx
+Registry and code: 13 MB
+Uptime: 26.190637 s
+alpha = 1.000000, beta = 0.000000
+Loading matrix from path cleaned_data/example_mats/tet/p6/shunn-ham/m3.txt...
+Read matrix has 84 rows and 112 columns.
+Input arrays: A (84, 112), B (112, 105600).
+Output array: C (84, 105600).
+Array B width (N): 105600
+Randomly generating B matrix...
+Running XSMM Reference MM...
+n_blocking = 1
+l_m_blocking = 31
+xsmm-custom kernel type: dense
+xsmm-custom Time (gettimeofday): 86.793297 ms
+xsmm-custom Time (libxsmm): 86.797353 ms
+xsmm-custom No. of CPU cycles: 260381268
+CPU clock speed (GHz): 2.999876
+Done.
+---------------------------------------------------------------
+xsmm-custom best execution time: 86.793296666666677
+xsmm-custom avg execution time: 86.793296666666677
+
+ Performance counter stats for 'taskset -c 0 ./bin/benchmark_xsmm_custom 105600 0 cleaned_data/example_mats/tet/p6/shunn-ham/m3.txt':
+
+               105      context-switches          #    0.004 K/sec                  
+                 1      cpu-migrations            #    0.000 K/sec                  
+             41572      page-faults               #    0.002 M/sec                  
+         125337577      branches                  #    4.785 M/sec                    (83.32%)
+           2969683      branch-misses             #    2.37% of all branches          (83.33%)
+          26192.94 msec task-clock                #    1.000 CPUs utilized          
+       91211834520      cycles                    #    3.482 GHz                      (66.67%)
+       40096889482      instructions              #    0.44  insn per cycle           (83.34%)
+         460287723      cache-references          #   17.573 M/sec                    (83.34%)
+         354502353      cache-misses              #   77.018 % of all cache refs      (83.33%)
+
+      26.196616904 seconds time elapsed
+
+      26.109603000 seconds user
+       0.083992000 seconds sys
+
+
