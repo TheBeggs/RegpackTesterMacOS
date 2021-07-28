@@ -1,0 +1,56 @@
+Using CPUID GenuineIntel-6-55-4
+Compression enabled, disabling build id collection at the end of the session.
+nr_cblocks: 0
+affinity: SYS
+mmap flush: 1
+comp level: 1
+mmap size 528384B
+thread 0 monitor: 0-71 allowed: any
+couldn't open /proc/1/task/1/maps
+couldn't open /proc/1085/task/1085/maps
+couldn't open /proc/1146/task/1146/maps
+couldn't open /proc/11672/task/11672/maps
+couldn't open /proc/11743/task/11743/maps
+couldn't open /proc/1203/task/1203/maps
+couldn't open /proc/1207/task/1207/maps
+couldn't open /proc/1242/task/1242/maps
+couldn't open /proc/1243/task/1243/maps
+couldn't open /proc/1245/task/1245/maps
+couldn't open /proc/1246/task/1246/maps
+couldn't open /proc/1247/task/1247/maps
+couldn't open /proc/1248/task/1248/maps
+couldn't open /proc/1255/task/1255/maps
+couldn't open /proc/1257/task/1257/maps
+couldn't open /proc/1263/task/1263/maps
+couldn't open /proc/1269/task/1269/maps
+couldn't open /proc/1273/task/1273/maps
+couldn't open /proc/1279/task/1279/maps
+couldn't open /proc/1285/task/1285/maps
+couldn't open /proc/1288/task/1288/maps
+couldn't open /proc/1289/task/1289/maps
+couldn't open /proc/1293/task/1293/maps
+couldn't open /proc/1336/task/1336/maps
+couldn't open /proc/1341/task/1341/maps
+couldn't open /proc/1345/task/1345/maps
+couldn't open /proc/1350/task/1350/maps
+couldn't open /proc/1480/task/1480/maps
+couldn't open /proc/1484/task/1484/maps
+couldn't open /proc/1485/task/1485/maps
+couldn't open /proc/1508/task/1508/maps
+couldn't open /proc/1514/task/1514/maps
+couldn't open /proc/1530/task/1530/maps
+couldn't open /proc/1593/task/1593/maps
+couldn't open /proc/1934/task/1934/maps
+couldn't open /proc/2119/task/2119/maps
+couldn't open /proc/2123/task/2123/maps
+couldn't open /proc/2149/task/2149/maps
+couldn't open /proc/2220/task/2220/maps
+couldn't open /proc/2246/task/2246/maps
+couldn't open /proc/2421/task/2421/maps
+couldn't open /proc/763/task/763/maps
+couldn't open /proc/794/task/794/maps
+cmd_pipe: /tmp/amplxe-tmp-ubuntu/perf-pipe-14237-35037030455738
+
+14257:perf-sync:ready:SYS=2474861396486
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 2.226 MB /home/ubuntu/intel/vtune/projects/m31/r001macc/data.0/temp.dryrun.perf, compressed (original 0.034 MB, ratio is 6.227) ]
