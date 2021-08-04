@@ -1,0 +1,32 @@
+For quad matrices, speed up of N_BLOCKING=1 M_BLOCKING=1: 0.9852613145724592
+For quad matrices, speed up of N_BLOCKING=3 M_BLOCKING=1: 0.9938159379681747
+For quad matrices, speed up of N_BLOCKING=3 M_BLOCKING=2: 0.9885300901374039
+For quad matrices, speed up of N_BLOCKING=3 M_BLOCKING=4: 0.9669400113904417
+For quad matrices, speed up of N_BLOCKING=3 M_BLOCKING=6: 0.9755733251799451
+For quad matrices, speed up of N_BLOCKING=3 M_BLOCKING=8: 0.9701207396057961
+For hex matrices, speed up of N_BLOCKING=1 M_BLOCKING=1: 1.411608525304888
+For hex matrices, speed up of N_BLOCKING=3 M_BLOCKING=1: 1.5219275700785395
+For hex matrices, speed up of N_BLOCKING=3 M_BLOCKING=2: 1.5456777810667814
+For hex matrices, speed up of N_BLOCKING=3 M_BLOCKING=4: 1.505814881613393
+For hex matrices, speed up of N_BLOCKING=3 M_BLOCKING=6: 1.5320371516233686
+For hex matrices, speed up of N_BLOCKING=3 M_BLOCKING=8: 1.4943564099174766
+For tet matrices, speed up of N_BLOCKING=1 M_BLOCKING=1: 0.679195889745856
+For tet matrices, speed up of N_BLOCKING=3 M_BLOCKING=1: 0.8969215477468576
+For tet matrices, speed up of N_BLOCKING=3 M_BLOCKING=2: 1.2602743406731243
+For tet matrices, speed up of N_BLOCKING=3 M_BLOCKING=4: 1.3886246657665573
+For tet matrices, speed up of N_BLOCKING=3 M_BLOCKING=6: 1.5126216450290264
+For tet matrices, speed up of N_BLOCKING=3 M_BLOCKING=8: 1.4553779680139507
+For tri matrices, speed up of N_BLOCKING=1 M_BLOCKING=1: 1.0296740680466885
+For tri matrices, speed up of N_BLOCKING=3 M_BLOCKING=1: 1.1795195834018812
+For tri matrices, speed up of N_BLOCKING=3 M_BLOCKING=2: 1.3136994761325478
+For tri matrices, speed up of N_BLOCKING=3 M_BLOCKING=4: 1.299500656466463
+For tri matrices, speed up of N_BLOCKING=3 M_BLOCKING=6: 1.2908606425170028
+For tri matrices, speed up of N_BLOCKING=3 M_BLOCKING=8: 1.2266311943239427
+= = = = = = = = = = = = = = = = = = = =
+For all test matrices:
+Speed up of N_BLOCKING=1 M_BLOCKING=1: 1.1699708226740726
+Speed up of N_BLOCKING=3 M_BLOCKING=1: 1.3284717985797978
+Speed up of N_BLOCKING=3 M_BLOCKING=2: 1.4496086158449162
+Speed up of N_BLOCKING=3 M_BLOCKING=4: 1.4452791250591914
+Speed up of N_BLOCKING=3 M_BLOCKING=6: 1.4859817275904386
+Speed up of N_BLOCKING=3 M_BLOCKING=8: 1.4472484927284452
