@@ -54,12 +54,6 @@ def plot(runs, mat_flops, shape, title, limit_y=False):
             
             plt.plot(x_values, ref_y_avg, label=f"Machine {n_run + 1}", color=colours[n_run], marker=".")
 
-            if x_term == "a_cols" and shape == "tri":
-                for n_x, x in enumerate(x_values):
-                    if x == 42:
-                        print(f"{x = }, {ref_y_avg[n_x] = }")
-
-
         plt.legend()
         plt.xlabel(xlabels[i])
         plt.ylabel("Pseudo-FLOP/s")
