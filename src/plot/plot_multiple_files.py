@@ -7,7 +7,7 @@ from tools import calc_FLOPS, get_perf_xsmm_only, load_benchmark_data, B_TARGET_
 
 MAT_PATH = "data/example_mats"
 N_RUNS = 10
-TIMESTAMPS = ["21-07_21:45:53", "24-07_19:59:53"]
+TIMESTAMPS = ["11-08_11:41:39", "11-08_13:53:47", "11-08_16:28:47"]
 PLOT_DIR = "plots_multiple_machines"
 envs = []
 
@@ -46,7 +46,7 @@ def plot(runs, mat_flops, shape, title, limit_y=False):
     global xtitles
 
     for i, x_term in enumerate(x_terms):
-        plt.figure(figsize=(6,5))
+        plt.figure(figsize=(4,4))
 
         for n_run, run in enumerate(runs):
             x_values, ref_y_avg, ref_y_kernel = \
@@ -54,18 +54,24 @@ def plot(runs, mat_flops, shape, title, limit_y=False):
             
             plt.plot(x_values, ref_y_avg, label=f"Machine {n_run + 1}", color=colours[n_run], marker=".")
 
+            if x_term == "a_cols" and shape == "tri":
+                for n_x, x in enumerate(x_values):
+                    if x == 42:
+                        print(f"{x = }, {ref_y_avg[n_x] = }")
+
+
         plt.legend()
         plt.xlabel(xlabels[i])
         plt.ylabel("Pseudo-FLOP/s")
         plt.yscale("log", base=10)
-        plt.title(title + ": " + xtitles[i] + " vs Pseudo-FLOP/s")
+        # plt.title(title + ": " + xtitles[i] + " vs Pseudo-FLOP/s")
         if limit_y:
             plt.ylim(top=10e9)
         plt.tight_layout()
 
         os.makedirs(os.path.join(PLOT_DIR,"pyfr",shape), exist_ok=True)
 
-        plt.savefig(os.path.join(PLOT_DIR,"pyfr",shape,"{}_{}.pdf".format(x_term, f"{[t for t in TIMESTAMPS]}")), bbox_inches='tight')
+        plt.savefig(os.path.join(PLOT_DIR,"pyfr",shape,f"{shape}_{x_term}.pdf".format(x_term)), bbox_inches='tight')
 
 plot(runs, mat_flops, "quad", "Quad", limit_y=False)
 plot(runs, mat_flops, "hex", "Hex", limit_y=False)
