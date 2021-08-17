@@ -104,6 +104,7 @@ def sort_values(x_term, trait, mat_flops, b_num_col, gimmik, t='avg'):
 
     old_len = len(custom_y)
 
+    """
     custom_y = [x for _, x in sorted(zip(custom_x, custom_y))]
     custom_x.sort()
     assert(old_len == len(custom_y))
@@ -111,6 +112,20 @@ def sort_values(x_term, trait, mat_flops, b_num_col, gimmik, t='avg'):
     ref_y = [x for _, x in sorted(zip(ref_x, ref_y))]
     ref_kernel_type = [x for _, x in sorted(zip(ref_x, ref_kernel_type))]
     ref_x.sort()
+    """
+
+    # Sort custom
+    sort_idx_custom = np.argsort(custom_x)
+    custom_x = np.array(custom_x)[sort_idx_custom]
+    custom_y = np.array(custom_y)[sort_idx_custom]
+
+    # Sort ref
+    sort_idx_ref = np.argsort(ref_x)
+    ref_x = np.array(ref_x)[sort_idx_ref]
+    ref_y = np.array(ref_y)[sort_idx_ref]
+    ref_kernel_type_sorted = [""] * len(ref_kernel_type)
+    for n_kernel in range(len(ref_kernel_type)):
+        ref_kernel_type_sorted[n_kernel] = ref_kernel_type[sort_idx_ref[n_kernel]]
 
     if gimmik == "1":
         gimmik_y = [x for _, x in sorted(zip(gimmik_x, gimmik_y))]
@@ -119,7 +134,7 @@ def sort_values(x_term, trait, mat_flops, b_num_col, gimmik, t='avg'):
     if gimmik == "1":
         return custom_x, custom_y, ref_x, ref_y, gimmik_x, gimmik_y
     else:
-        return ref_x, ref_y, custom_y, ref_kernel_type
+        return ref_x, ref_y, custom_y, ref_kernel_type_sorted
 
 def sort_values_different_envs(x_term, trait, mat_flops, gimmik, envs, t):
     _NUM_PANELS = (np.array(trait["size_n"]) /
@@ -152,14 +167,26 @@ def sort_values_different_envs(x_term, trait, mat_flops, gimmik, envs, t):
         for env in envs:
             custom_y[env].append(FLOPS_PER_PANEL / time_per_panel_custom[env])
     
-    ref_y = [x for _, x in sorted(zip(ref_x, ref_y))]
-    ref_kernel_type = [x for _, x in sorted(zip(ref_x, ref_kernel_type))]
-    ref_x.sort()
+    # ref_y = [x for _, x in sorted(zip(ref_x, ref_y))]
+    # ref_kernel_type = [x for _, x in sorted(zip(ref_x, ref_kernel_type))]
+    # ref_x.sort()
+
+    # Sort ref
+    sort_idx_ref = np.argsort(ref_x)
+    ref_x = np.array(ref_x)[sort_idx_ref]
+    ref_y = np.array(ref_y)[sort_idx_ref]
+    ref_kernel_type_sorted = [""] * len(ref_kernel_type)
+    for n_kernel in range(len(ref_kernel_type)):
+        ref_kernel_type_sorted[n_kernel] = ref_kernel_type[sort_idx_ref[n_kernel]]
 
     for env in envs:
-        custom_y[env] = [x for _, x in sorted(zip(custom_x, custom_y[env]))]
+        # Sort custom
+        sort_idx_custom = np.argsort(custom_x)
+        custom_y[env] = np.array(custom_y[env])[sort_idx_custom]
+        
+        # custom_y[env] = [x for _, x in sorted(zip(custom_x, custom_y[env]))]
     
-    return ref_x, ref_y, custom_y, ref_kernel_type
+    return ref_x, ref_y, custom_y, ref_kernel_type_sorted
 
 
 
