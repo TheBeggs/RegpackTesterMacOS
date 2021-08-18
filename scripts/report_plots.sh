@@ -78,10 +78,9 @@ then
   # python3 src/plot/pyfr_report.py $N_RUNS $TEST_GIMMIK $TIMESTAMP "$ENVS" > $PLOT_DIR/$TIMESTAMP/summary.txt
 elif [ "$MAT_TYPE" = "synth" ]
 then
-  echo dummy
-  # mkdir -p $PLOT_DIR/$TIMESTAMP/synth
-  # mkdir -p $PLOT_DIR/$TIMESTAMP/synth/roofline
+  mkdir -p $PLOT_DIR/$TIMESTAMP/synth
+  mkdir -p $PLOT_DIR/$TIMESTAMP/synth/roofline
 
-  # python3 src/plot/synth.py $MATS_DIR $N_RUNS $B_NUM_COL $TEST_GIMMIK $TIMESTAMP $PLOT_DIR/$TIMESTAMP "$ENVS"
-  # python3 src/plot/synth_roofline.py $MATS_DIR $N_RUNS $B_NUM_COL $TEST_GIMMIK $TIMESTAMP $PLOT_DIR/$TIMESTAMP $REF_IS_DENSE "$ENVS"
+  python3 src/plot/synth_report.py $MATS_DIR $N_RUNS $B_NUM_COL $TEST_GIMMIK $TIMESTAMP $PLOT_DIR/$TIMESTAMP "$ENVS"
+  python3 src/plot/synth_roofline_report.py $MATS_DIR $N_RUNS $B_NUM_COL $TEST_GIMMIK $TIMESTAMP $PLOT_DIR/$TIMESTAMP $REF_IS_DENSE "$ENVS"
 fi
