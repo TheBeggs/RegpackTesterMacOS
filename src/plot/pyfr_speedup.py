@@ -38,10 +38,11 @@ for i_title, shape in enumerate(shapes):
         custom_time[env] = 0.0
 
     for i in range(N_RUNS):
-        ref_time += np.array(data[i]["xsmm_reference_avg"]).sum()
+
+        ref_time += (np.array(data[i]["xsmm_reference_avg"])[np.array(data[i]["mat_file"]) != "data/example_mats/hex/p6/gauss-legendre/m460.txt"]).sum()
     
         for env in envs:
-            custom_time[env] += np.array(data[i][env + "_avg"]).sum()
+            custom_time[env] += (np.array(data[i][env + "_avg"])[np.array(data[i]["mat_file"]) != "data/example_mats/hex/p6/gauss-legendre/m460.txt"]).sum()
 
     for env in envs:
         speedup = ref_time / custom_time[env]

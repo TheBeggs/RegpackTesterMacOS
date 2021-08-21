@@ -191,7 +191,7 @@ for i_title, shape in enumerate(shapes):
         ax.plot([], [], "x", color=custom_colour[0], label="our method")
     else:
         for e, env in enumerate(envs):
-            ax.plot([], [], "x", color=custom_colour[e], label=env)
+            ax.plot([], [], "x", color=custom_colour[e], label='$'+env.replace("N_BLOCKING", "n_B").replace("M_BLOCKING", "m_B").replace("K_BLOCKING", "k_B")+'$')
     plt.legend()
     plt.tight_layout()
     plt.savefig(os.path.join(PLOT_DIR,"pyfr","roofline",f"{shape}.pdf"), bbox_inches='tight')

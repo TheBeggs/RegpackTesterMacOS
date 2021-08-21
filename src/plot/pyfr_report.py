@@ -91,7 +91,7 @@ def plot(runs, mat_flops, shape, title, limit_y=False):
             plt.plot(x_values, custom_y_avg, marker=".", label="our method", color=custom_colour[0])
         else:
             for e, env in enumerate(envs):
-                plt.plot(x_values, custom_y_avg[env], marker=".", label=env, color=custom_colour[e])
+                plt.plot(x_values, custom_y_avg[env], marker=".", label='$'+env.replace("N_BLOCKING", "n_B").replace("M_BLOCKING", "m_B").replace("K_BLOCKING", "k_B")+'$', color=custom_colour[e])
                 
         # if TEST_GIMMIK == "1":
         #     plt.plot(x_values, gimmik_y_avg, label="GiMMiK", color="orange", marker=".")

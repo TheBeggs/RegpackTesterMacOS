@@ -5,7 +5,7 @@ import sys
 import numpy as np
 import numexpr.cpuinfo as cpuinfo
 
-plt.rc('legend',fontsize='small')
+plt.rc('legend',fontsize='x-small')
 
 from tools import calc_FLOPS, load_benchmark_data, get_perf, B_TARGET_PANEL_WIDTH
 from tools import calc_GFLOPs, get_AIs, calc_GFLOPs_different_envs
@@ -172,7 +172,7 @@ for i_title, term in enumerate(terms):
         ax.plot([], [], "x", color=custom_colour[0], label="our method")
     else:
         for e, env in enumerate(envs):
-            ax.plot([], [], "x", color=custom_colour[e], label=env)
+            ax.plot([], [], "x", color=custom_colour[e], label='$'+env.replace("N_BLOCKING", "n_B").replace("M_BLOCKING", "m_B").replace("K_BLOCKING", "k_B")+'$')
 
     plt.legend()
     plt.tight_layout()
