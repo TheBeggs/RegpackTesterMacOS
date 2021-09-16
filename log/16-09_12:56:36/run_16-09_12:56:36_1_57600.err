@@ -1,0 +1,2056 @@
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.017934 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.017068 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.026262 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.013124 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.018945 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.058768 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.063100 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.118276 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.094950 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.081915 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.059342 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.062877 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.097840 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.118841 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.082371 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.140190 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.166911 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.314474 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.313155 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.275020 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.175642 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.162847 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.316448 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.347728 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.278389 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.257008 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.333963 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.664032 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.885005 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.697396 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.383653 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.321955 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.651262 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.935359 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.787401 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.428150 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.604133 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 1.217206 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 1.736350 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 1.772971 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.746063 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.612595 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 1.207371 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 1.898282 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 1.841231 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.678285 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 1.016098 s
+Generating and Compiling data/example_mats/hex/p1/gauss-legendre/m0.txt
+Running data/example_mats/hex/p1/gauss-legendre/m0.txt
+Finished running in 0.4144333333333333ms
+Generating and Compiling data/example_mats/hex/p1/gauss-legendre/m3.txt
+Running data/example_mats/hex/p1/gauss-legendre/m3.txt
+Finished running in 0.28036666666666665ms
+Generating and Compiling data/example_mats/hex/p1/gauss-legendre/m6.txt
+Running data/example_mats/hex/p1/gauss-legendre/m6.txt
+Finished running in 0.565ms
+Generating and Compiling data/example_mats/hex/p1/gauss-legendre/m132.txt
+Running data/example_mats/hex/p1/gauss-legendre/m132.txt
+Finished running in 0.24969999999999998ms
+Generating and Compiling data/example_mats/hex/p1/gauss-legendre/m460.txt
+Running data/example_mats/hex/p1/gauss-legendre/m460.txt
+Finished running in 0.4111ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre-lobatto/m0.txt
+Running data/example_mats/hex/p2/gauss-legendre-lobatto/m0.txt
+Finished running in 1.3538666666666666ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre-lobatto/m3.txt
+Running data/example_mats/hex/p2/gauss-legendre-lobatto/m3.txt
+Finished running in 1.6527333333333334ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre-lobatto/m6.txt
+Running data/example_mats/hex/p2/gauss-legendre-lobatto/m6.txt
+Finished running in 2.7135666666666665ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre-lobatto/m132.txt
+Running data/example_mats/hex/p2/gauss-legendre-lobatto/m132.txt
+Finished running in 2.490866666666667ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre-lobatto/m460.txt
+Running data/example_mats/hex/p2/gauss-legendre-lobatto/m460.txt
+Finished running in 2.227733333333333ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre/m0.txt
+Running data/example_mats/hex/p2/gauss-legendre/m0.txt
+Finished running in 1.4583333333333333ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre/m3.txt
+Running data/example_mats/hex/p2/gauss-legendre/m3.txt
+Finished running in 1.5855ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre/m6.txt
+Running data/example_mats/hex/p2/gauss-legendre/m6.txt
+Finished running in 2.5801333333333334ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre/m132.txt
+Running data/example_mats/hex/p2/gauss-legendre/m132.txt
+Finished running in 2.5992ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre/m460.txt
+Running data/example_mats/hex/p2/gauss-legendre/m460.txt
+Finished running in 2.2147ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre-lobatto/m0.txt
+Running data/example_mats/hex/p3/gauss-legendre-lobatto/m0.txt
+Finished running in 3.1819333333333333ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre-lobatto/m3.txt
+Running data/example_mats/hex/p3/gauss-legendre-lobatto/m3.txt
+Finished running in 3.9131333333333336ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre-lobatto/m6.txt
+Running data/example_mats/hex/p3/gauss-legendre-lobatto/m6.txt
+Finished running in 7.598433333333333ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre-lobatto/m132.txt
+Running data/example_mats/hex/p3/gauss-legendre-lobatto/m132.txt
+Finished running in 8.476066666666668ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre-lobatto/m460.txt
+Running data/example_mats/hex/p3/gauss-legendre-lobatto/m460.txt
+Finished running in 6.438666666666666ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre/m0.txt
+Running data/example_mats/hex/p3/gauss-legendre/m0.txt
+Finished running in 4.418166666666666ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre/m3.txt
+Running data/example_mats/hex/p3/gauss-legendre/m3.txt
+Finished running in 3.854233333333333ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre/m6.txt
+Running data/example_mats/hex/p3/gauss-legendre/m6.txt
+Finished running in 7.5972333333333335ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre/m132.txt
+Running data/example_mats/hex/p3/gauss-legendre/m132.txt
+Finished running in 9.262300000000002ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre/m460.txt
+Running data/example_mats/hex/p3/gauss-legendre/m460.txt
+Finished running in 6.567366666666667ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre-lobatto/m0.txt
+Running data/example_mats/hex/p4/gauss-legendre-lobatto/m0.txt
+Finished running in 5.2736ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre-lobatto/m3.txt
+Running data/example_mats/hex/p4/gauss-legendre-lobatto/m3.txt
+Finished running in 7.181033333333334ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre-lobatto/m6.txt
+Running data/example_mats/hex/p4/gauss-legendre-lobatto/m6.txt
+Finished running in 13.454033333333333ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre-lobatto/m132.txt
+Running data/example_mats/hex/p4/gauss-legendre-lobatto/m132.txt
+Finished running in 23.242ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre-lobatto/m460.txt
+Running data/example_mats/hex/p4/gauss-legendre-lobatto/m460.txt
+Finished running in 16.138199999999998ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre/m0.txt
+Running data/example_mats/hex/p4/gauss-legendre/m0.txt
+Finished running in 8.591000000000001ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre/m3.txt
+Running data/example_mats/hex/p4/gauss-legendre/m3.txt
+Finished running in 7.358833333333333ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre/m6.txt
+Running data/example_mats/hex/p4/gauss-legendre/m6.txt
+Finished running in 15.286066666666667ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre/m132.txt
+Running data/example_mats/hex/p4/gauss-legendre/m132.txt
+Finished running in 23.73793333333333ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre/m460.txt
+Running data/example_mats/hex/p4/gauss-legendre/m460.txt
+Finished running in 18.8742ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre-lobatto/m0.txt
+Running data/example_mats/hex/p5/gauss-legendre-lobatto/m0.txt
+Finished running in 7.8493ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre-lobatto/m3.txt
+Running data/example_mats/hex/p5/gauss-legendre-lobatto/m3.txt
+Finished running in 14.591566666666667ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre-lobatto/m6.txt
+Running data/example_mats/hex/p5/gauss-legendre-lobatto/m6.txt
+Finished running in 24.2395ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre-lobatto/m132.txt
+Running data/example_mats/hex/p5/gauss-legendre-lobatto/m132.txt
+Finished running in 44.457300000000004ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre-lobatto/m460.txt
+Running data/example_mats/hex/p5/gauss-legendre-lobatto/m460.txt
+Finished running in 44.411833333333334ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre/m0.txt
+Running data/example_mats/hex/p5/gauss-legendre/m0.txt
+Finished running in 18.381166666666665ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre/m3.txt
+Running data/example_mats/hex/p5/gauss-legendre/m3.txt
+Finished running in 14.653833333333333ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre/m6.txt
+Running data/example_mats/hex/p5/gauss-legendre/m6.txt
+Finished running in 23.755866666666666ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre/m132.txt
+Running data/example_mats/hex/p5/gauss-legendre/m132.txt
+Finished running in 49.8089ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre/m460.txt
+Running data/example_mats/hex/p5/gauss-legendre/m460.txt
+Finished running in 46.558033333333334ms
+Generating and Compiling data/example_mats/hex/p6/gauss-legendre-lobatto/m0.txt
+Running data/example_mats/hex/p6/gauss-legendre-lobatto/m0.txt
+Finished running in 11.1564ms
+Generating and Compiling data/example_mats/hex/p6/gauss-legendre-lobatto/m3.txt
+Running data/example_mats/hex/p6/gauss-legendre-lobatto/m3.txt
+Finished running in 23.454333333333334ms
+Generating and CompilingLIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 2.103283 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 3.623766 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 3.758489 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 1.483267 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 1.024552 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 2.152472 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 3.895572 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 3.916295 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.008208 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.005580 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.008461 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.009028 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.007590 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.011116 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.009495 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.015377 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.011037 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.014700 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.010681 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.008582 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.014612 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.010570 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.014232 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.014471 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.014736 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.028060 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.027248 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.025776 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.014517 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.014695 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.025326 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.027869 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.026212 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.017800 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.021881 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.045692 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.065100 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.051421 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.027677 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.022025 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.045690 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.072994 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.051524 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.021633 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.034250 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.074323 s
+ data/example_mats/hex/p6/gauss-legendre-lobatto/m6.txt
+Running data/example_mats/hex/p6/gauss-legendre-lobatto/m6.txt
+Finished running in 39.041900000000005ms
+Generating and Compiling data/example_mats/hex/p6/gauss-legendre-lobatto/m132.txt
+Running data/example_mats/hex/p6/gauss-legendre-lobatto/m132.txt
+Finished running in 85.76236666666667ms
+Generating and Compiling data/example_mats/hex/p6/gauss-legendre-lobatto/m460.txt
+Running data/example_mats/hex/p6/gauss-legendre-lobatto/m460.txt
+Finished running in 88.87096666666666ms
+Generating and Compiling data/example_mats/hex/p6/gauss-legendre/m0.txt
+Running data/example_mats/hex/p6/gauss-legendre/m0.txt
+Finished running in 36.790733333333336ms
+Generating and Compiling data/example_mats/hex/p6/gauss-legendre/m3.txt
+Running data/example_mats/hex/p6/gauss-legendre/m3.txt
+Finished running in 23.861233333333335ms
+Generating and Compiling data/example_mats/hex/p6/gauss-legendre/m6.txt
+Running data/example_mats/hex/p6/gauss-legendre/m6.txt
+Finished running in 39.97586666666667ms
+Generating and Compiling data/example_mats/hex/p6/gauss-legendre/m132.txt
+Running data/example_mats/hex/p6/gauss-legendre/m132.txt
+Finished running in 96.1045ms
+Generating and Compiling data/example_mats/hex/p6/gauss-legendre/m460.txt
+Running data/example_mats/hex/p6/gauss-legendre/m460.txt
+Finished running in 95.39483333333332ms
+Generating and Compiling data/example_mats/quad/p1/gauss-legendre/m0.txt
+Running data/example_mats/quad/p1/gauss-legendre/m0.txt
+Finished running in 0.13376666666666667ms
+Generating and Compiling data/example_mats/quad/p1/gauss-legendre/m3.txt
+Running data/example_mats/quad/p1/gauss-legendre/m3.txt
+Finished running in 0.0732ms
+Generating and Compiling data/example_mats/quad/p1/gauss-legendre/m6.txt
+Running data/example_mats/quad/p1/gauss-legendre/m6.txt
+Finished running in 0.15746666666666667ms
+Generating and Compiling data/example_mats/quad/p1/gauss-legendre/m132.txt
+Running data/example_mats/quad/p1/gauss-legendre/m132.txt
+Finished running in 0.07896666666666667ms
+Generating and Compiling data/example_mats/quad/p1/gauss-legendre/m460.txt
+Running data/example_mats/quad/p1/gauss-legendre/m460.txt
+Finished running in 0.1419ms
+Generating and Compiling data/example_mats/quad/p2/gauss-legendre-lobatto/m0.txt
+Running data/example_mats/quad/p2/gauss-legendre-lobatto/m0.txt
+Finished running in 0.2147ms
+Generating and Compiling data/example_mats/quad/p2/gauss-legendre-lobatto/m3.txt
+Running data/example_mats/quad/p2/gauss-legendre-lobatto/m3.txt
+Finished running in 0.16556666666666667ms
+Generating and Compiling data/example_mats/quad/p2/gauss-legendre-lobatto/m6.txt
+Running data/example_mats/quad/p2/gauss-legendre-lobatto/m6.txt
+Finished running in 0.3133666666666667ms
+Generating and Compiling data/example_mats/quad/p2/gauss-legendre-lobatto/m132.txt
+Running data/example_mats/quad/p2/gauss-legendre-lobatto/m132.txt
+Finished running in 0.19313333333333332ms
+Generating and Compiling data/example_mats/quad/p2/gauss-legendre-lobatto/m460.txt
+Running data/example_mats/quad/p2/gauss-legendre-lobatto/m460.txt
+Finished running in 0.31293333333333334ms
+Generating and Compiling data/example_mats/quad/p2/gauss-legendre/m0.txt
+Running data/example_mats/quad/p2/gauss-legendre/m0.txt
+Finished running in 0.21030000000000001ms
+Generating and Compiling data/example_mats/quad/p2/gauss-legendre/m3.txt
+Running data/example_mats/quad/p2/gauss-legendre/m3.txt
+Finished running in 0.15896666666666667ms
+Generating and Compiling data/example_mats/quad/p2/gauss-legendre/m6.txt
+Running data/example_mats/quad/p2/gauss-legendre/m6.txt
+Finished running in 0.3156666666666667ms
+Generating and Compiling data/example_mats/quad/p2/gauss-legendre/m132.txt
+Running data/example_mats/quad/p2/gauss-legendre/m132.txt
+Finished running in 0.18706666666666666ms
+Generating and Compiling data/example_mats/quad/p2/gauss-legendre/m460.txt
+Running data/example_mats/quad/p2/gauss-legendre/m460.txt
+Finished running in 0.3123333333333333ms
+Generating and Compiling data/example_mats/quad/p3/gauss-legendre-lobatto/m0.txt
+Running data/example_mats/quad/p3/gauss-legendre-lobatto/m0.txt
+Finished running in 0.29406666666666664ms
+Generating and Compiling data/example_mats/quad/p3/gauss-legendre-lobatto/m3.txt
+Running data/example_mats/quad/p3/gauss-legendre-lobatto/m3.txt
+Finished running in 0.2954ms
+Generating and Compiling data/example_mats/quad/p3/gauss-legendre-lobatto/m6.txt
+Running data/example_mats/quad/p3/gauss-legendre-lobatto/m6.txt
+Finished running in 0.6234666666666667ms
+Generating and Compiling data/example_mats/quad/p3/gauss-legendre-lobatto/m132.txt
+Running data/example_mats/quad/p3/gauss-legendre-lobatto/m132.txt
+Finished running in 0.6195666666666667ms
+Generating and Compiling data/example_mats/quad/p3/gauss-legendre-lobatto/m460.txt
+Running data/example_mats/quad/p3/gauss-legendre-lobatto/m460.txt
+Finished running in 0.6032333333333334ms
+Generating and Compiling data/example_mats/quad/p3/gauss-legendre/m0.txt
+Running data/example_mats/quad/p3/gauss-legendre/m0.txt
+Finished running in 0.3ms
+Generating and Compiling data/example_mats/quad/p3/gauss-legendre/m3.txt
+Running data/example_mats/quad/p3/gauss-legendre/m3.txt
+Finished running in 0.29536666666666667ms
+Generating and Compiling data/example_mats/quad/p3/gauss-legendre/m6.txt
+Running data/example_mats/quad/p3/gauss-legendre/m6.txt
+Finished running in 0.5973666666666666ms
+Generating and Compiling data/example_mats/quad/p3/gauss-legendre/m132.txt
+Running data/example_mats/quad/p3/gauss-legendre/m132.txt
+Finished running in 0.6466999999999999ms
+Generating and Compiling data/example_mats/quad/p3/gauss-legendre/m460.txt
+Running data/example_mats/quad/p3/gauss-legendre/m460.txt
+Finished running in 0.6113999999999999ms
+Generating and Compiling data/example_mats/quad/p4/gauss-legendre-lobatto/m0.txt
+Running data/example_mats/quad/p4/gauss-legendre-lobatto/m0.txt
+Finished running in 0.35559999999999997ms
+Generating and Compiling data/example_mats/quad/p4/gauss-legendre-lobatto/m3.txt
+Running data/example_mats/quad/p4/gauss-legendre-lobatto/m3.txt
+Finished running in 0.4713333333333333ms
+Generating and Compiling data/example_mats/quad/p4/gauss-legendre-lobatto/m6.txt
+Running data/example_mats/quad/p4/gauss-legendre-lobatto/m6.txt
+Finished running in 1.1398333333333333ms
+Generating and Compiling data/example_mats/quad/p4/gauss-legendre-lobatto/m132.txt
+Running data/example_mats/quad/p4/gauss-legendre-lobatto/m132.txt
+Finished running in 1.7356ms
+Generating and Compiling data/example_mats/quad/p4/gauss-legendre-lobatto/m460.txt
+Running data/example_mats/quad/p4/gauss-legendre-lobatto/m460.txt
+Finished running in 1.2138333333333333ms
+Generating and Compiling data/example_mats/quad/p4/gauss-legendre/m0.txt
+Running data/example_mats/quad/p4/gauss-legendre/m0.txt
+Finished running in 0.5726333333333333ms
+Generating and Compiling data/example_mats/quad/p4/gauss-legendre/m3.txt
+Running data/example_mats/quad/p4/gauss-legendre/m3.txt
+Finished running in 0.47769999999999996ms
+Generating and Compiling data/example_mats/quad/p4/gauss-legendre/m6.txt
+Running data/example_mats/quad/p4/gauss-legendre/m6.txt
+Finished running in 1.1472333333333333ms
+Generating and Compiling data/example_mats/quad/p4/gauss-legendre/m132.txt
+Running data/example_mats/quad/p4/gauss-legendre/m132.txt
+Finished running in 1.9954333333333334ms
+Generating and Compiling data/example_mats/quad/p4/gauss-legendre/m460.txt
+Running data/example_mats/quad/p4/gauss-legendre/m460.txt
+Finished running in 1.2402333333333333ms
+Generating and Compiling data/example_mats/quad/p5/gauss-legendre-lobatto/m0.txt
+Running data/example_mats/quad/p5/gauss-legendre-lobatto/m0.txt
+Finished running in 0.43716666666666665ms
+Generating and Compiling data/example_mats/quad/p5/gauss-legendre-lobatto/m3.txt
+Running data/example_mats/quad/p5/gauss-legendre-lobatto/m3.txt
+Finished running in 0.8075ms
+Generating and Compiling data/example_mats/quad/p5/gauss-legendre-lobatto/m6.txt
+Running data/example_mats/quad/p5/gauss-legendre-lobatto/m6.txt
+Finished running in 1.9597666666666667ms
+Generating and Compiling data/example_mats/quad/p5/gauss-legendre-lobatto/m132.txt
+Running LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.114932 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.097128 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.045086 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.033732 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.075040 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.116167 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.113720 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.029086 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.052105 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.102547 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.187013 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.188348 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.074666 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.050311 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.131453 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.174800 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.205752 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.010682 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.011040 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.011515 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.007105 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.007128 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.028693 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.032596 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.048293 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.034897 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.032057 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.124369 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.128072 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.196859 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.187252 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.181354 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.338436 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.353535 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.542811 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.606133 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.569146 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.762878 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.775780 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 1.216261 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 1.571550 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 1.503664 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 1.618641 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 1.568929 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 2.436265 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 3.903317 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 3.866963 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.006141 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.006169 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.008186 s
+data/example_mats/quad/p5/gauss-legendre-lobatto/m132.txt
+Finished running in 3.0964ms
+Generating and Compiling data/example_mats/quad/p5/gauss-legendre-lobatto/m460.txt
+Running data/example_mats/quad/p5/gauss-legendre-lobatto/m460.txt
+Finished running in 2.4061333333333335ms
+Generating and Compiling data/example_mats/quad/p5/gauss-legendre/m0.txt
+Running data/example_mats/quad/p5/gauss-legendre/m0.txt
+Finished running in 1.1585666666666665ms
+Generating and Compiling data/example_mats/quad/p5/gauss-legendre/m3.txt
+Running data/example_mats/quad/p5/gauss-legendre/m3.txt
+Finished running in 0.7958ms
+Generating and Compiling data/example_mats/quad/p5/gauss-legendre/m6.txt
+Running data/example_mats/quad/p5/gauss-legendre/m6.txt
+Finished running in 1.9518333333333333ms
+Generating and Compiling data/example_mats/quad/p5/gauss-legendre/m132.txt
+Running data/example_mats/quad/p5/gauss-legendre/m132.txt
+Finished running in 3.129ms
+Generating and Compiling data/example_mats/quad/p5/gauss-legendre/m460.txt
+Running data/example_mats/quad/p5/gauss-legendre/m460.txt
+Finished running in 3.0928ms
+Generating and Compiling data/example_mats/quad/p6/gauss-legendre-lobatto/m0.txt
+Running data/example_mats/quad/p6/gauss-legendre-lobatto/m0.txt
+Finished running in 0.5553333333333333ms
+Generating and Compiling data/example_mats/quad/p6/gauss-legendre-lobatto/m3.txt
+Running data/example_mats/quad/p6/gauss-legendre-lobatto/m3.txt
+Finished running in 1.2258333333333333ms
+Generating and Compiling data/example_mats/quad/p6/gauss-legendre-lobatto/m6.txt
+Running data/example_mats/quad/p6/gauss-legendre-lobatto/m6.txt
+Finished running in 2.7892000000000015ms
+Generating and Compiling data/example_mats/quad/p6/gauss-legendre-lobatto/m132.txt
+Running data/example_mats/quad/p6/gauss-legendre-lobatto/m132.txt
+Finished running in 5.173100000000001ms
+Generating and Compiling data/example_mats/quad/p6/gauss-legendre-lobatto/m460.txt
+Running data/example_mats/quad/p6/gauss-legendre-lobatto/m460.txt
+Finished running in 5.237533333333333ms
+Generating and Compiling data/example_mats/quad/p6/gauss-legendre/m0.txt
+Running data/example_mats/quad/p6/gauss-legendre/m0.txt
+Finished running in 2.008966666666667ms
+Generating and Compiling data/example_mats/quad/p6/gauss-legendre/m3.txt
+Running data/example_mats/quad/p6/gauss-legendre/m3.txt
+Finished running in 1.2153ms
+Generating and Compiling data/example_mats/quad/p6/gauss-legendre/m6.txt
+Running data/example_mats/quad/p6/gauss-legendre/m6.txt
+Finished running in 2.7913ms
+Generating and Compiling data/example_mats/quad/p6/gauss-legendre/m132.txt
+Running data/example_mats/quad/p6/gauss-legendre/m132.txt
+Finished running in 4.6903999999999995ms
+Generating and Compiling data/example_mats/quad/p6/gauss-legendre/m460.txt
+Running data/example_mats/quad/p6/gauss-legendre/m460.txt
+Finished running in 5.802899999999999ms
+Generating and Compiling data/example_mats/tet/p1/shunn-ham/m0.txt
+Running data/example_mats/tet/p1/shunn-ham/m0.txt
+Finished running in 0.21056666666666668ms
+Generating and Compiling data/example_mats/tet/p1/shunn-ham/m3.txt
+Running data/example_mats/tet/p1/shunn-ham/m3.txt
+Finished running in 0.2371ms
+Generating and Compiling data/example_mats/tet/p1/shunn-ham/m6.txt
+Running data/example_mats/tet/p1/shunn-ham/m6.txt
+Finished running in 0.22383333333333333ms
+Generating and Compiling data/example_mats/tet/p1/shunn-ham/m132.txt
+Running data/example_mats/tet/p1/shunn-ham/m132.txt
+Finished running in 0.09666666666666666ms
+Generating and Compiling data/example_mats/tet/p1/shunn-ham/m460.txt
+Running data/example_mats/tet/p1/shunn-ham/m460.txt
+Finished running in 0.10543333333333332ms
+Generating and Compiling data/example_mats/tet/p2/shunn-ham/m0.txt
+Running data/example_mats/tet/p2/shunn-ham/m0.txt
+Finished running in 0.7158666666666667ms
+Generating and Compiling data/example_mats/tet/p2/shunn-ham/m3.txt
+Running data/example_mats/tet/p2/shunn-ham/m3.txt
+Finished running in 0.8948666666666667ms
+Generating and Compiling data/example_mats/tet/p2/shunn-ham/m6.txt
+Running data/example_mats/tet/p2/shunn-ham/m6.txt
+Finished running in 1.2402000000000002ms
+Generating and Compiling data/example_mats/tet/p2/shunn-ham/m132.txt
+Running data/example_mats/tet/p2/shunn-ham/m132.txt
+Finished running in 0.9534ms
+Generating and Compiling data/example_mats/tet/p2/shunn-ham/m460.txt
+Running data/example_mats/tet/p2/shunn-ham/m460.txt
+Finished running in 0.8509333333333333ms
+Generating and Compiling data/example_mats/tet/p3/shunn-ham/m0.txt
+Running data/example_mats/tet/p3/shunn-ham/m0.txt
+Finished running in 3.7640333333333333ms
+Generating and Compiling data/example_mats/tet/p3/shunn-ham/m3.txt
+Running data/example_mats/tet/p3/shunn-ham/m3.txt
+Finished running in 3.922166666666667ms
+Generating and Compiling data/example_mats/tet/p3/shunn-ham/m6.txt
+Running data/example_mats/tet/p3/shunn-ham/m6.txt
+Finished running in 5.8404ms
+Generating and Compiling data/example_mats/tet/p3/shunn-ham/m132.txt
+Running data/example_mats/tet/p3/shunn-ham/m132.txt
+Finished running in 5.6687666666666665ms
+Generating and Compiling data/example_mats/tet/p3/shunn-ham/m460.txt
+Running data/example_mats/tet/p3/shunn-ham/m460.txt
+Finished running in 5.461433333333333ms
+Generating and Compiling data/example_mats/tet/p4/shunn-ham/m0.txt
+Running data/example_mats/tet/p4/shunn-ham/m0.txt
+Finished running in 10.465533333333333ms
+Generating and Compiling data/example_mats/tet/p4/shunn-ham/m3.txt
+Running data/example_mats/tet/p4/shunn-ham/m3.txt
+Finished running in 10.8605ms
+Generating and Compiling data/example_mats/tet/p4/shunn-ham/m6.txt
+Running data/example_mats/tet/p4/shunn-ham/m6.txt
+Finished running in 16.6716ms
+Generating and Compiling data/example_mats/tet/p4/shunn-ham/m132.txt
+Running data/example_mats/tet/p4/shunn-ham/m132.txt
+Finished running in 18.828166666666668ms
+Generating and Compiling data/example_mats/tet/p4/shunn-ham/m460.txt
+Running data/example_mats/tet/p4/shunn-ham/m460.txt
+Finished running in 17.589499999999997ms
+Generating and Compiling data/example_mats/tet/p5/shunn-ham/m0.txt
+Running data/example_mats/tet/p5/shunn-ham/m0.txt
+Finished running in 23.873533333333334ms
+Generating and Compiling data/example_mats/tet/p5/shunn-ham/m3.txt
+Running data/example_mats/tet/p5/shunn-ham/m3.txt
+Finished running in 24.171766666666667ms
+Generating and Compiling data/example_mats/tet/p5/shunn-ham/m6.txt
+Running data/example_mats/tet/p5/shunn-ham/m6.txt
+Finished running in 37.4173ms
+Generating and Compiling data/example_mats/tet/p5/shunn-ham/m132.txt
+Running data/example_mats/tet/p5/shunn-ham/m132.txt
+Finished running in 48.653800000000004ms
+Generating and Compiling data/example_mats/tet/p5/shunn-ham/m460.txt
+Running data/example_mats/tet/p5/shunn-ham/m460.txt
+Finished running in 46.02113333333333ms
+Generating and Compiling data/example_mats/tet/p6/shunn-ham/m0.txt
+Running data/example_mats/tet/p6/shunn-ham/m0.txt
+Finished running in 50.4503ms
+Generating and Compiling data/example_mats/tet/p6/shunn-ham/m3.txt
+Running data/example_mats/tet/p6/shunn-ham/m3.txt
+Finished running in 48.36116666666667ms
+Generating and Compiling data/example_mats/tet/p6/shunn-ham/m6.txt
+Running data/example_mats/tet/p6/shunn-ham/m6.txt
+Finished running in 74.84666666666666ms
+Generating and Compiling data/example_mats/tet/p6/shunn-ham/m132.txt
+Running data/example_mats/tet/p6/shunn-ham/m132.txt
+Finished running in 117.3399ms
+Generating and Compiling data/example_mats/tet/p6/shunn-ham/m460.txt
+Running data/example_mats/tet/p6/shunn-ham/m460.txt
+Finished running in 112.75806666666668ms
+Generating and Compiling data/example_mats/tri/p1/williams-shunn/m0.txt
+Running data/example_mats/tri/p1/williams-shunn/m0.txt
+Finished running in 0.11713333333333333ms
+Generating and Compiling data/example_mats/tri/p1/williams-shunn/m3.txt
+Running data/example_mats/tri/p1/williams-shunn/m3.txt
+Finished running in 0.09726666666666667ms
+Generating and Compiling data/example_mats/tri/p1/williams-shunn/m6.txt
+Running data/example_mats/tri/p1/williams-shunn/m6.txt
+Finished running in 0.10823333333333333ms
+Generating and Compiling data/example_mats/tri/p1/williams-shunn/m132.txt
+Running LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.006188 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.004746 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.008501 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.009490 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.011184 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.012841 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.010443 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.016037 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.016471 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.021657 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.027881 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.025104 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.028258 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.028974 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.040258 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.071378 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.071789 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.060980 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.063726 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.084344 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.146362 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.143424 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.096033 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.097869 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.136518 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.260555 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: spgemm_unlimited_const_in_A-1.16.1-1757 (25183965)
+HSW/DP      TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB + 8 KB (gemm=1)
+Uptime: 0.271246 s
+data/example_mats/tri/p1/williams-shunn/m132.txt
+Finished running in 0.10010000000000001ms
+Generating and Compiling data/example_mats/tri/p1/williams-shunn/m460.txt
+Running data/example_mats/tri/p1/williams-shunn/m460.txt
+Finished running in 0.06646666666666666ms
+Generating and Compiling data/example_mats/tri/p2/williams-shunn/m0.txt
+Running data/example_mats/tri/p2/williams-shunn/m0.txt
+Finished running in 0.16069999999999998ms
+Generating and Compiling data/example_mats/tri/p2/williams-shunn/m3.txt
+Running data/example_mats/tri/p2/williams-shunn/m3.txt
+Finished running in 0.20359999999999998ms
+Generating and Compiling data/example_mats/tri/p2/williams-shunn/m6.txt
+Running data/example_mats/tri/p2/williams-shunn/m6.txt
+Finished running in 0.21153333333333332ms
+Generating and Compiling data/example_mats/tri/p2/williams-shunn/m132.txt
+Running data/example_mats/tri/p2/williams-shunn/m132.txt
+Finished running in 0.28923333333333334ms
+Generating and Compiling data/example_mats/tri/p2/williams-shunn/m460.txt
+Running data/example_mats/tri/p2/williams-shunn/m460.txt
+Finished running in 0.2079ms
+Generating and Compiling data/example_mats/tri/p3/williams-shunn/m0.txt
+Running data/example_mats/tri/p3/williams-shunn/m0.txt
+Finished running in 0.3972333333333333ms
+Generating and Compiling data/example_mats/tri/p3/williams-shunn/m3.txt
+Running data/example_mats/tri/p3/williams-shunn/m3.txt
+Finished running in 0.4076666666666667ms
+Generating and Compiling data/example_mats/tri/p3/williams-shunn/m6.txt
+Running data/example_mats/tri/p3/williams-shunn/m6.txt
+Finished running in 0.5453ms
+Generating and Compiling data/example_mats/tri/p3/williams-shunn/m132.txt
+Running data/example_mats/tri/p3/williams-shunn/m132.txt
+Finished running in 0.7555ms
+Generating and Compiling data/example_mats/tri/p3/williams-shunn/m460.txt
+Running data/example_mats/tri/p3/williams-shunn/m460.txt
+Finished running in 0.6672666666666667ms
+Generating and Compiling data/example_mats/tri/p4/williams-shunn/m0.txt
+Running data/example_mats/tri/p4/williams-shunn/m0.txt
+Finished running in 0.7539666666666667ms
+Generating and Compiling data/example_mats/tri/p4/williams-shunn/m3.txt
+Running data/example_mats/tri/p4/williams-shunn/m3.txt
+Finished running in 0.7837999999999999ms
+Generating and Compiling data/example_mats/tri/p4/williams-shunn/m6.txt
+Running data/example_mats/tri/p4/williams-shunn/m6.txt
+Finished running in 1.0603666666666667ms
+Generating and Compiling data/example_mats/tri/p4/williams-shunn/m132.txt
+Running data/example_mats/tri/p4/williams-shunn/m132.txt
+Finished running in 2.1380666666666666ms
+Generating and Compiling data/example_mats/tri/p4/williams-shunn/m460.txt
+Running data/example_mats/tri/p4/williams-shunn/m460.txt
+Finished running in 2.143133333333333ms
+Generating and Compiling data/example_mats/tri/p5/williams-shunn/m0.txt
+Running data/example_mats/tri/p5/williams-shunn/m0.txt
+Finished running in 1.7935666666666668ms
+Generating and Compiling data/example_mats/tri/p5/williams-shunn/m3.txt
+Running data/example_mats/tri/p5/williams-shunn/m3.txt
+Finished running in 1.8862999999999999ms
+Generating and Compiling data/example_mats/tri/p5/williams-shunn/m6.txt
+Running data/example_mats/tri/p5/williams-shunn/m6.txt
+Finished running in 2.4361666666666664ms
+Generating and Compiling data/example_mats/tri/p5/williams-shunn/m132.txt
+Running data/example_mats/tri/p5/williams-shunn/m132.txt
+Finished running in 4.4821333333333335ms
+Generating and Compiling data/example_mats/tri/p5/williams-shunn/m460.txt
+Running data/example_mats/tri/p5/williams-shunn/m460.txt
+Finished running in 4.337266666666666ms
+Generating and Compiling data/example_mats/tri/p6/williams-shunn/m0.txt
+Running data/example_mats/tri/p6/williams-shunn/m0.txt
+Finished running in 2.9141666666666666ms
+Generating and Compiling data/example_mats/tri/p6/williams-shunn/m3.txt
+Running data/example_mats/tri/p6/williams-shunn/m3.txt
+Finished running in 2.9478ms
+Generating and Compiling data/example_mats/tri/p6/williams-shunn/m6.txt
+Running data/example_mats/tri/p6/williams-shunn/m6.txt
+Finished running in 4.059ms
+Generating and Compiling data/example_mats/tri/p6/williams-shunn/m132.txt
+Running data/example_mats/tri/p6/williams-shunn/m132.txt
+Finished running in 8.0181ms
+Generating and Compiling data/example_mats/tri/p6/williams-shunn/m460.txt
+Running data/example_mats/tri/p6/williams-shunn/m460.txt
+Finished running in 8.312266666666666ms
