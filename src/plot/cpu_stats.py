@@ -36,7 +36,15 @@ ryzen_3700x_stats["peak_flops_dp"] = ryzen_3700x_stats["avx2_freq"] * ryzen_3700
 ryzen_3700x_stats["peak_memory_bw"] = 27.7753 # GB/s measured on m5n.large
 ryzen_3700x_stats["linpack_flops_dp"] = ryzen_3700x_stats["peak_flops_dp"] # could not be measured
 
+xeon_E5_2666_stats = dict()
+xeon_E5_2666_stats["num_avx2_units"] = 2
+xeon_E5_2666_stats["avx2_freq"] = 2.9 # TODO: need to measure this
+xeon_E5_2666_stats["peak_flops_dp"] = xeon_E5_2666_stats["avx2_freq"] * xeon_E5_2666_stats["num_avx2_units"] * AVX2_FLOPS_PER_CYCLE_DP
+xeon_E5_2666_stats["peak_memory_bw"] = 15.5535 # GB/s measured on m5n.large
+xeon_E5_2666_stats["linpack_flops_dp"] = xeon_E5_2666_stats["peak_flops_dp"] # could not be measured
+
 cpu_stats_dict = dict()
 cpu_stats_dict["Intel(R) Xeon(R) Platinum 8124M CPU @ 3.00GHz"] = xeon_8124M_stats
 cpu_stats_dict["Intel(R) Xeon(R) Platinum 8259CL CPU @ 2.50GHz"] = xeon_8259CL_stats
 cpu_stats_dict["AMD Ryzen 7 3700X 8-Core Processor"] = ryzen_3700x_stats
+cpu_stats_dict["Intel(R) Xeon(R) CPU E5-2666 v3 @ 2.90GHz"] = xeon_E5_2666_stats
