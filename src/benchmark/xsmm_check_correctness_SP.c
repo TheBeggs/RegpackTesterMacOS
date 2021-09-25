@@ -20,15 +20,15 @@
 #define DEBUG 0
 
 int main(int argc, char **argv) {
-  libxsmm_dfsspmdm* xsmm_d = NULL;
-  libxsmm_dfsspmdm* dense_handle = NULL;
-  double* a_d = NULL;
-  double* b_d = NULL;
-  double* c_xsmm_d = NULL;
+  libxsmm_sfsspmdm* xsmm_d = NULL;
+  libxsmm_sfsspmdm* dense_handle = NULL;
+  float* a_d = NULL;
+  float* b_d = NULL;
+  float* c_xsmm_d = NULL;
   int n = 0, m = 0, k = 0;
   int c_size = 0;
 
-  prepare_benchmark(argc, argv, &xsmm_d, &a_d, &b_d, &c_xsmm_d, &m, &n, &k, &c_size, true, &dense_handle);
+  prepare_benchmark_SP(argc, argv, &xsmm_d, &a_d, &b_d, &c_xsmm_d, &m, &n, &k, &c_size, true, &dense_handle);
 
   // Check kernel type  s
   assert(xsmm_d);
@@ -38,7 +38,7 @@ int main(int argc, char **argv) {
   // } else if ( xsmm_d->a_packed != NULL ) {
   //   printf("unlimited-sparse");
   } else {
-    int const N_vec_reg_dp = libxsmm_cpuid_vlen32(libxsmm_cpuid()) / 2;
+    int const N_vec_reg_dp = libxsmm_cpuid_vlen32(libxsmm_cpuid());
 
     if ( xsmm_d->N_chunksize == N_vec_reg_dp ) {
     printf("sparse");
@@ -53,12 +53,12 @@ int main(int argc, char **argv) {
   // flush cache
   flush_cache();
 
-  struct benchmark_data b_data = benchmark_xsmm_1iter(b_d, c_xsmm_d, n, xsmm_d, "check_correctness");
+  struct benchmark_data b_data = benchmark_xsmm_1iter_SP(b_d, c_xsmm_d, n, xsmm_d, "check_correctness");
 
   // check for correctness
 
   // allocate another C matrix
-  double* c_xsmm_ref_dense = (double *) calloc(c_size, sizeof(double));
+  float* c_xsmm_ref_dense = (float *) calloc(c_size, sizeof(float));
   assert(c_xsmm_ref_dense);
 
   // compute using the ref dense kernel
@@ -66,13 +66,13 @@ int main(int argc, char **argv) {
   // exec_xsmm(b_d, c_xsmm_ref_dense, n, dense_handle);
   
   // allocate C matrix for naive approach
-  double* c_xsmm_naive = (double *) calloc(c_size, sizeof(double));
+  float* c_xsmm_naive = (float *) calloc(c_size, sizeof(float));
 
   // computing using the naive approach
-  naive_mm(a_d, b_d, c_xsmm_naive, m, n, k);
-
+  naive_mm_SP(a_d, b_d, c_xsmm_naive, m, n, k);
+  
   // check for correctness
-  bool is_correct = is_matrices_eq(c_xsmm_d, c_xsmm_naive, m, n);
+  bool is_correct = is_matrices_eq_SP(c_xsmm_d, c_xsmm_naive, m, n);
   printf("The custom kernel is correct? %d\n", is_correct);  
   
   // printf("b_d:\n");

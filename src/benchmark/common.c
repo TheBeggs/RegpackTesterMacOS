@@ -30,7 +30,23 @@ void fill_B_matrix_semi_random(int b_size, double *b, int seed) {
   fill_matrix(b_size, b, element);
 }
 
+void fill_B_matrix_semi_random_SP(int b_size, float *b, int seed) {
+  srand(seed);
+
+  int element = rand() % 499 + 1;
+  
+  printf("B is filled with: %d\n", element);
+
+  fill_matrix_SP(b_size, b, element);
+}
+
 void fill_matrix(int size, double* arr, double value) {
+  for (int i = 0; i < size; i++) {
+    arr[i] = value;
+  }
+}
+
+void fill_matrix_SP(int size, float* arr, float value) {
   for (int i = 0; i < size; i++) {
     arr[i] = value;
   }
@@ -112,6 +128,48 @@ void load_matrix(char *path, double **mat, int *m_x, int *m_y) {
   }
 }
 
+void load_matrix_SP(char *path, float **mat, int *m_x, int *m_y) {
+  // Loads the A matrix from a file.
+  printf("Loading matrix from path %s...\n", path);
+  FILE *matrixFile;
+  matrixFile = fopen(path, "r");
+
+  // Check if loading succeeded.
+  if (matrixFile == NULL) {
+    printf("Error reading file %s! \n", path);
+    exit(-1);
+  }
+
+  // Read column and row count from the matrix.
+  char c;
+  bool first = true;
+  while ((c = getc(matrixFile)) != EOF) {
+    if (c == '\n') {
+      first = false;
+      (*m_y)++;
+    }
+    if (c == ' ' && first) {
+      (*m_x)++;
+    }
+  }
+
+  // Adjust matrix column count since there is no trailing space.
+  (*m_x)++;
+  
+  printf("Read matrix has %d rows and %d columns.\n", *m_y, *m_x);
+
+  // Allocate memory and read in the actual matrix.
+  *mat = calloc((*m_x) * (*m_y), sizeof(float));
+  
+  rewind(matrixFile);
+  float buffer;
+  int ix = 0;
+  
+  while (fscanf(matrixFile, "%f", &buffer) == 1) {
+    (*mat)[ix++] = buffer;
+  }
+}
+
 void save_matrix(char *path, double *mat, int m_x, int m_y) {
   // Stores the matrix to a file.
   printf("Storing matrix to path %s...\n", path);
@@ -138,6 +196,19 @@ void save_matrix(char *path, double *mat, int m_x, int m_y) {
 }
 
 void naive_mm(double *a, double *b, double *c, int mm, int nn, int kk) {
+  // Pre: c is filled with zeroes.
+  // m = a_y, n = b_x, k = a_x
+  for (int m = 0; m < mm; ++m) {
+    for (int n = 0; n < nn; ++n) {
+      c[m * nn + n] = 0.0;
+      for (int k = 0; k < kk; ++k) {
+        c[m * nn + n] += a[m * kk + k] * b[k * nn + n];
+      }
+    }
+  }
+}
+
+void naive_mm_SP(float *a, float *b, float *c, int mm, int nn, int kk) {
   // Pre: c is filled with zeroes.
   // m = a_y, n = b_x, k = a_x
   for (int m = 0; m < mm; ++m) {
@@ -197,6 +268,28 @@ bool is_matrices_eq(double const* const arr1, double const* const arr2,
     for (int n = 0; n < size_n; n++) {
       // if (fabs((arr1[m * size_n + n] - arr2[m * size_n + n]) / arr2[m * size_n + n]) > 1e-13) {
       if (fabs((arr1[m * size_n + n] - arr2[m * size_n + n])) > 1e-8) {
+        if (0 == n)
+          printf(
+              "m = %d, n = %d, arr1[m, n] = %e, arr2[m, n] = %e, diff = %e\n",
+              m, n, arr1[m * size_n + n], arr2[m * size_n + n],
+              arr1[m * size_n + n] - arr2[m * size_n + n]);
+        is_correct = false;
+      }
+    }
+  }
+
+  return is_correct;
+}
+
+bool is_matrices_eq_SP(float const* const arr1, float const* const arr2,
+                    int size_m, int size_n) {
+  
+  bool is_correct = true;
+
+  for (int m = 0; m < size_m; m++) {
+    for (int n = 0; n < size_n; n++) {
+      // if (fabs((arr1[m * size_n + n] - arr2[m * size_n + n]) / arr2[m * size_n + n]) > 1e-5) {
+      if (fabs((arr1[m * size_n + n] - arr2[m * size_n + n])) > 1e-2) {
         if (0 == n)
           printf(
               "m = %d, n = %d, arr1[m, n] = %e, arr2[m, n] = %e, diff = %e\n",

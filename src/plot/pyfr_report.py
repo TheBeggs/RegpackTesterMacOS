@@ -52,7 +52,7 @@ def plot(runs, mat_flops, shape, title, limit_y=False):
     global xtitles
 
     for i, x_term in enumerate(x_terms):
-        plt.figure(figsize=(4,4))
+        plt.figure(dpi=150, figsize=(4,4))
 
         # if TEST_GIMMIK == "1":
         #     x_values, custom_y_avg, ref_y_avg, gimmik_y_avg = \
@@ -63,7 +63,7 @@ def plot(runs, mat_flops, shape, title, limit_y=False):
 
         plt.plot(x_values, ref_y_avg, label="reference LIBXSMM", color=ref_colour)
         plt.plot([], [], "o", color=ref_colour, markerfacecolor='none', label="sparse kernel")
-        plt.plot([], [], "s", color=ref_colour, markerfacecolor='none', label="wide-sparse kernel")
+        # plt.plot([], [], "s", color=ref_colour, markerfacecolor='none', label="wide-sparse kernel")
         plt.plot([], [], "^", color=ref_colour, label="dense kernel")
 
         for j in range(len(x_values)):
@@ -73,7 +73,7 @@ def plot(runs, mat_flops, shape, title, limit_y=False):
                 face = False
                 # label = "sparse"
             elif (ref_y_kernel[j] == "wide-sparse"):
-                marker = "s"
+                marker = "o"
                 face = False
                 # label = "wide-sparse"
             elif (ref_y_kernel[j] == "dense"):
@@ -91,7 +91,9 @@ def plot(runs, mat_flops, shape, title, limit_y=False):
             plt.plot(x_values, custom_y_avg, marker=".", label="our method", color=custom_colour[0])
         else:
             for e, env in enumerate(envs):
-                plt.plot(x_values, custom_y_avg[env], marker=".", label='$'+env.replace("N_BLOCKING", "n_B").replace("M_BLOCKING", "m_B").replace("K_BLOCKING", "k_B")+'$', color=custom_colour[e])
+                if "N_BLOCKING" not in env:
+                    env = "N_BLOCKING=1 " + env
+                plt.plot(x_values, custom_y_avg[env], marker=".", label="my 2nd implementation", color=custom_colour[e])
                 
         # if TEST_GIMMIK == "1":
         #     plt.plot(x_values, gimmik_y_avg, label="GiMMiK", color="orange", marker=".")
@@ -102,12 +104,12 @@ def plot(runs, mat_flops, shape, title, limit_y=False):
         plt.xlabel(xlabels[i])
         plt.ylabel("Pseudo-FLOP/s")
         plt.yscale("log", base=10)
-        # plt.title(title + ": " + xtitles[i] + " vs Pseudo-FLOP/s")
+        plt.title(title + ": " + xtitles[i] + " vs Pseudo-FLOP/s")
         if limit_y:
             plt.ylim(top=10e9)
         plt.legend()
         plt.tight_layout()
-        plt.savefig(os.path.join(PLOT_DIR,"pyfr",shape,f"{x_term}.pdf"), bbox_inches='tight')
+        plt.savefig(os.path.join(PLOT_DIR,"pyfr",shape,f"{x_term}.png"), bbox_inches='tight')
 
 plot(runs, mat_flops, "quad", "Quad", limit_y=False)
 plot(runs, mat_flops, "hex", "Hex", limit_y=False)

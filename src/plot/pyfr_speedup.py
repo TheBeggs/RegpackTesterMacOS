@@ -24,8 +24,10 @@ shapes = ["quad", "hex", "tet", "tri"]
 
 ref_time_total = 0.0
 custom_time_total = dict()
+speedup_range = dict()
 for env in envs:
     custom_time_total[env] = 0.0
+    speedup_range[env] = []
 
 for i_title, shape in enumerate(shapes):
     data = []
@@ -33,21 +35,31 @@ for i_title, shape in enumerate(shapes):
         data.append(runs[i][shape])
 
     ref_time = 0.0
+    ref_time_each = np.zeros_like(np.array(data[i]["xsmm_reference_avg"])[np.array(data[0]["mat_file"]) != "data/example_mats/hex/p6/gauss-legendre/m460.txt"])
     custom_time = dict()
+    custom_time_each = dict()
     for env in envs:
         custom_time[env] = 0.0
+        custom_time_each[env] = np.zeros_like(np.array(data[i][env + "_avg"])[np.array(data[i]["mat_file"]) != "data/example_mats/hex/p6/gauss-legendre/m460.txt"])
 
     for i in range(N_RUNS):
 
         ref_time += (np.array(data[i]["xsmm_reference_avg"])[np.array(data[i]["mat_file"]) != "data/example_mats/hex/p6/gauss-legendre/m460.txt"]).sum()
-    
+        ref_time_each += np.array(data[i]["xsmm_reference_avg"])[np.array(data[i]["mat_file"]) != "data/example_mats/hex/p6/gauss-legendre/m460.txt"]
+
         for env in envs:
             custom_time[env] += (np.array(data[i][env + "_avg"])[np.array(data[i]["mat_file"]) != "data/example_mats/hex/p6/gauss-legendre/m460.txt"]).sum()
+            custom_time_each[env] += np.array(data[i][env + "_avg"])[np.array(data[i]["mat_file"]) != "data/example_mats/hex/p6/gauss-legendre/m460.txt"]
 
     for env in envs:
         speedup = ref_time / custom_time[env]
+        speedup_each = ref_time_each / custom_time_each[env]
+        speedup_max = speedup_each.max()
+        speedup_min = speedup_each.min()
+        speedup_range[env].append(speedup_max)
+        speedup_range[env].append(speedup_min)
 
-        print(f"For {shape} matrices, speed up of {env}: {speedup}")
+        print(f"For {shape} matrices, speed up of {env}: {speedup}, [{speedup_min}, {speedup_max}]")
     
     ref_time_total += ref_time
     for env in envs:
@@ -60,4 +72,5 @@ print("For all test matrices:")
 for env in envs:
     speedup = ref_time_total / custom_time_total[env]
 
-    print(f"Speed up of {env}: {speedup}")
+    print(f"Speed up of {env}: {speedup}, [{np.amin(speedup_range[env])}, {np.amax(speedup_range[env])}]")
+

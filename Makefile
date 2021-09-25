@@ -41,6 +41,9 @@ bin/benchmark_gimmik : src/benchmark/gimmik.c src/benchmark/common.c
 bin/benchmark_xsmm_check_correctness : src/benchmark/xsmm_check_correctness.c src/benchmark/common.c
 	$(CXX) $(CFLAGS_G) ${CFLAGS_XSMM_CUSTOM} $^ $(LDFLAGS_XSMM_CUSTOM) -o $@
 
+bin/benchmark_xsmm_check_correctness_SP : src/benchmark/xsmm_check_correctness_SP.c src/benchmark/common.c
+	$(CXX) $(CFLAGS_G) ${CFLAGS_XSMM_CUSTOM} $^ $(LDFLAGS_XSMM_CUSTOM) -o $@
+
 bin/benchmark_debug : src/benchmark/debug.c src/benchmark/common.c
 	$(CXX) $(CFLAGS_G) ${CFLAGS_XSMM_CUSTOM} $^ $(LDFLAGS_XSMM_CUSTOM) -o $@
 

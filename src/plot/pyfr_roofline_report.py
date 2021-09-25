@@ -9,7 +9,7 @@ from tools import calc_FLOPS, load_benchmark_data, get_perf, B_TARGET_PANEL_WIDT
 from tools import calc_GFLOPs, get_AIs, calc_GFLOPs_different_envs
 from cpu_stats import cpu_stats_dict
 
-plt.rc('legend',fontsize='small')
+plt.rc('legend',fontsize='x-small')
 
 # cpu stats
 cpu_info = cpu_stats_dict[cpuinfo.cpu.info[0]['model name']]
@@ -79,7 +79,8 @@ for i_title, shape in enumerate(shapes):
                 calc_GFLOPs_different_envs(mat_flops, mat_names, data, TEST_GIMMIK, envs)
 
     # plot rooflines
-    fig = plt.figure(dpi=150, figsize=(6,3))
+    fig = plt.figure(dpi=150, figsize=(4,4))
+    # fig = plt.figure(dpi=150, figsize=(6,3))
     ax = fig.add_subplot(111)
     x = np.array([2**(-4), cpu_info["peak_flops_dp"]/cpu_info["peak_memory_bw"]])
     y = x*cpu_info["peak_memory_bw"]
@@ -105,7 +106,7 @@ for i_title, shape in enumerate(shapes):
             marker = "o"
             face = False
         elif kernel_type == "wide-sparse":
-            marker = 's'
+            marker = 'o'
             face = False
         elif kernel_type == "dense":
             marker = "^"
@@ -180,18 +181,21 @@ for i_title, shape in enumerate(shapes):
     ax.yaxis.set_major_formatter(LogFormatter(base=2))
     ax.set_xlabel('Arithmetic Intensity (FLOP/DRAM Byte)')
     ax.set_ylabel('Performance (Pseudo-GFLOP/s)')
-    # ax.set_title('Roofline - '+shape_title[i_title])
+    ax.set_title('Roofline - '+shape_title[i_title])
 
     # legend
     ax.plot([], [], "o", color=ref_colour, markerfacecolor='none', label="ref. sparse kernel")
-    ax.plot([], [], "s", color=ref_colour, markerfacecolor='none', label="ref. wide-sparse kernel")
+    # ax.plot([], [], "s", color=ref_colour, markerfacecolor='none', label="ref. wide-sparse kernel")
     ax.plot([], [], "^", color=ref_colour, label="ref. dense kernel")
     
     if not envs:
         ax.plot([], [], "x", color=custom_colour[0], label="our method")
     else:
         for e, env in enumerate(envs):
-            ax.plot([], [], "x", color=custom_colour[e], label='$'+env.replace("N_BLOCKING", "n_B").replace("M_BLOCKING", "m_B").replace("K_BLOCKING", "k_B")+'$')
+            if "N_BLOCKING" not in env:
+                env = "N_BLOCKING=1 " + env
+            
+            ax.plot([], [], "x", color=custom_colour[e], label="my 2nd implementation")
     plt.legend()
     plt.tight_layout()
-    plt.savefig(os.path.join(PLOT_DIR,"pyfr","roofline",f"{shape}.pdf"), bbox_inches='tight')
+    plt.savefig(os.path.join(PLOT_DIR,"pyfr","roofline",f"{shape}.png"), bbox_inches='tight')
