@@ -28,15 +28,15 @@ int main(int argc, char **argv) {
   int n = 0, m = 0, k = 0;
   int c_size = 0;
 
-  prepare_benchmark_SP(argc, argv, &xsmm_d, &a_d, &b_d, &c_xsmm_d, &m, &n, &k, &c_size, true, &dense_handle);
+  prepare_benchmark_SP(argc, argv, &xsmm_d, &a_d, &b_d, &c_xsmm_d, &m, &n, &k, &c_size, false, &dense_handle);
 
   // Check kernel type  s
   assert(xsmm_d);
   printf("kernel type: ");
   if ( xsmm_d->a_dense != NULL ) {
     printf("dense");
-  // } else if ( xsmm_d->a_packed != NULL ) {
-  //   printf("unlimited-sparse");
+  } else if ( xsmm_d->a_packed != NULL ) {
+    printf("unlimited-sparse");
   } else {
     int const N_vec_reg_dp = libxsmm_cpuid_vlen32(libxsmm_cpuid());
 
@@ -62,7 +62,7 @@ int main(int argc, char **argv) {
   assert(c_xsmm_ref_dense);
 
   // compute using the ref dense kernel
-  assert(dense_handle);
+  // assert(dense_handle);
   // exec_xsmm(b_d, c_xsmm_ref_dense, n, dense_handle);
   
   // allocate C matrix for naive approach
@@ -95,4 +95,8 @@ int main(int argc, char **argv) {
   free(a_d);
   free(b_d);
   free(c_xsmm_d);
+  libxsmm_sfsspmdm_destroy(xsmm_d);
+  free(c_xsmm_ref_dense);
+  free(c_xsmm_naive);
+  // libxsmm_sfsspmdm_destroy(dense_handle);
 }
