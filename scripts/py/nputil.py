@@ -27,7 +27,7 @@ def clean(matrix, tol=1e-10):
     return arr
 
 def count_unique_constants(matrix, tol=1e-10):
-    arr = matrix.copy()
+    arr = np.absolute(matrix.copy())
     arr = arr[abs(arr) >= tol]
     unique, counts = np.unique(arr, return_counts=True)
     return np.array((unique, counts)).T

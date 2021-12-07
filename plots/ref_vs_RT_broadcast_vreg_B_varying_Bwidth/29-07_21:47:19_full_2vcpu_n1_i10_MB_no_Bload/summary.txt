@@ -1,0 +1,32 @@
+For quad matrices, speed up of M_BLOCKING=1: 0.0592789173683381
+For quad matrices, speed up of M_BLOCKING=2: 0.05839597256068451
+For quad matrices, speed up of M_BLOCKING=4: 0.05791348614665306
+For quad matrices, speed up of M_BLOCKING=8: 0.05781857891802891
+For quad matrices, speed up of M_BLOCKING=16: 0.05757652195365292
+For quad matrices, speed up of M_BLOCKING=31: 0.05734242755256928
+For hex matrices, speed up of M_BLOCKING=1: 0.1128881875153076
+For hex matrices, speed up of M_BLOCKING=2: 0.1123019124349105
+For hex matrices, speed up of M_BLOCKING=4: 0.11149040767260271
+For hex matrices, speed up of M_BLOCKING=8: 0.11057168896669582
+For hex matrices, speed up of M_BLOCKING=16: 0.10897557614823995
+For hex matrices, speed up of M_BLOCKING=31: 0.10755428602488562
+For tet matrices, speed up of M_BLOCKING=1: 0.01707371630915319
+For tet matrices, speed up of M_BLOCKING=2: 0.01701130623557304
+For tet matrices, speed up of M_BLOCKING=4: 0.016317608783171043
+For tet matrices, speed up of M_BLOCKING=8: 0.01579267603468639
+For tet matrices, speed up of M_BLOCKING=16: 0.015350462261194806
+For tet matrices, speed up of M_BLOCKING=31: 0.01494235951681478
+For tri matrices, speed up of M_BLOCKING=1: 0.021166763657705468
+For tri matrices, speed up of M_BLOCKING=2: 0.020674953260415022
+For tri matrices, speed up of M_BLOCKING=4: 0.019698512401103502
+For tri matrices, speed up of M_BLOCKING=8: 0.01938167563462036
+For tri matrices, speed up of M_BLOCKING=16: 0.019355551326705762
+For tri matrices, speed up of M_BLOCKING=31: 0.019262769820096816
+= = = = = = = = = = = = = = = = = = = =
+For all test matrices:
+Speed up of M_BLOCKING=1: 0.053504813946613314
+Speed up of M_BLOCKING=2: 0.053203111943605046
+Speed up of M_BLOCKING=4: 0.051716100620457645
+Speed up of M_BLOCKING=8: 0.05058713633151178
+Speed up of M_BLOCKING=16: 0.04952074710108464
+Speed up of M_BLOCKING=31: 0.048529131029463275

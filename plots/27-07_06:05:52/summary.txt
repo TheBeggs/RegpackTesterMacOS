@@ -1,0 +1,17 @@
+For quad matrices, speed up of N_BLOCKING=1: 0.9858049732573856
+For quad matrices, speed up of N_BLOCKING=2: 0.9933904684758332
+For quad matrices, speed up of N_BLOCKING=3: 1.0279792209217633
+For hex matrices, speed up of N_BLOCKING=1: 0.9903135783797753
+For hex matrices, speed up of N_BLOCKING=2: 0.9579619339780768
+For hex matrices, speed up of N_BLOCKING=3: 1.0022406725650659
+For tet matrices, speed up of N_BLOCKING=1: 0.5901783675417632
+For tet matrices, speed up of N_BLOCKING=2: 0.7291669386711082
+For tet matrices, speed up of N_BLOCKING=3: 0.7184674203292368
+For tri matrices, speed up of N_BLOCKING=1: 0.8447635654285334
+For tri matrices, speed up of N_BLOCKING=2: 0.9619994771747283
+For tri matrices, speed up of N_BLOCKING=3: 1.016082943342372
+= = = = = = = = = = = = = = = = = = = =
+For all test matrices:
+Speed up of N_BLOCKING=1: 0.8492396210075263
+Speed up of N_BLOCKING=2: 0.8933385813298121
+Speed up of N_BLOCKING=3: 0.9177089994319041

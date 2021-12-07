@@ -1,0 +1,29 @@
+
+void
+gimmik_mm(int ncol,
+         const double* restrict b, int ldb,
+         double* restrict c, int ldc)
+{
+    double dotp;
+
+    #pragma omp parallel for simd private(dotp)
+    for (int i = 0; i < ncol; i++)
+    {
+        dotp = 1.1*b[i + 0*ldb] + 2.2*b[i + 1*ldb] + 3.3*b[i + 2*ldb] + 4.4*b[i + 3*ldb];
+        c[i + 0*ldc] = dotp;
+        dotp = -1.1*b[i + 1*ldb] + -2.2*b[i + 2*ldb] + -3.3*b[i + 3*ldb];
+        c[i + 1*ldc] = dotp;
+        dotp = 1.1*b[i + 2*ldb] + 2.2*b[i + 3*ldb];
+        c[i + 2*ldc] = dotp;
+        dotp = -1.1*b[i + 3*ldb];
+        c[i + 3*ldc] = dotp;
+        dotp = 1.1*b[i + 0*ldb] + 2.2*b[i + 1*ldb] + 3.3*b[i + 2*ldb] + 4.4*b[i + 3*ldb];
+        c[i + 4*ldc] = dotp;
+        dotp = -1.1*b[i + 1*ldb] + -2.2*b[i + 2*ldb] + -3.3*b[i + 3*ldb];
+        c[i + 5*ldc] = dotp;
+        dotp = 1.1*b[i + 2*ldb] + 2.2*b[i + 3*ldb];
+        c[i + 6*ldc] = dotp;
+        dotp = -1.1*b[i + 3*ldb];
+        c[i + 7*ldc] = dotp;
+    }
+}
