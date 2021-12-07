@@ -27,10 +27,10 @@ bin/benchmark_xsmm_reference : src/benchmark/xsmm_reference.c src/benchmark/comm
 	$(CXX) $(CFLAGS_G) $(CFLAGS_XSMM_REFERENCE) $^ $(LDFLAGS_XSMM_REFERENCE) -o $@
 
 bin/benchmark_xsmm_custom : src/benchmark/xsmm_custom.c src/benchmark/common.c
-	$(CXX) $(CFLAGS) ${CFLAGS_XSMM_CUSTOM} $^ $(LDFLAGS_XSMM_CUSTOM) -o $@
+	$(CXX) $(CFLAGS_G) ${CFLAGS_XSMM_CUSTOM} $^ $(LDFLAGS_XSMM_CUSTOM) -o $@
 
 bin/benchmark_xsmm_only : src/benchmark/xsmm_reference_only.c src/benchmark/common.c
-	$(CXX) $(CFLAGS) $(CFLAGS_XSMM_REFERENCE) $^ $(LDFLAGS_XSMM_REFERENCE) -o $@
+	$(CXX) $(CFLAGS_G) $(CFLAGS_XSMM_REFERENCE) $^ $(LDFLAGS_XSMM_REFERENCE) -o $@
 
 bin/benchmark_xsmm_only_g : src/benchmark/xsmm_reference_only.c src/benchmark/common.c
 	$(CXX) $(CFLAGS_G) $(CFLAGS_XSMM_REFERENCE) $^ $(LDFLAGS_XSMM_REFERENCE) -o $@
@@ -45,6 +45,9 @@ bin/benchmark_xsmm_check_correctness_SP : src/benchmark/xsmm_check_correctness_S
 	$(CXX) $(CFLAGS_G) ${CFLAGS_XSMM_CUSTOM} $^ $(LDFLAGS_XSMM_CUSTOM) -o $@
 
 bin/benchmark_debug : src/benchmark/debug.c src/benchmark/common.c
+	$(CXX) $(CFLAGS_G) ${CFLAGS_XSMM_CUSTOM} $^ $(LDFLAGS_XSMM_CUSTOM) -o $@
+
+draft/test_sep : draft/test_sep.c
 	$(CXX) $(CFLAGS_G) ${CFLAGS_XSMM_CUSTOM} $^ $(LDFLAGS_XSMM_CUSTOM) -o $@
 
 clean :
