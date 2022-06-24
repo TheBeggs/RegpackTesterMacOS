@@ -1,0 +1,655 @@
+In file included from src/benchmark/xsmm_reference.c:16:
+src/benchmark/xsmm_common.h: In function 'exec_xsmm':
+src/benchmark/xsmm_common.h:181: warning: ignoring '#pragma omp parallel' [-Wunknown-pragmas]
+  181 |     #pragma omp parallel for private(i)
+      | 
+src/benchmark/xsmm_common.h: In function 'exec_xsmm_SP':
+src/benchmark/xsmm_common.h:189: warning: ignoring '#pragma omp parallel' [-Wunknown-pragmas]
+  189 |     #pragma omp parallel for private(i)
+      | 
+src/benchmark/xsmm_common.h: In function 'prepare_benchmark':
+src/benchmark/xsmm_common.h:306:29: warning: assignment to 'libxsmm_gemmfunction' {aka 'void (*)(const libxsmm_gemm_param *)'} from incompatible pointer type 'libxsmm_dmmfunction' {aka 'void (*)(const double *, const double *, double *)'} [-Wincompatible-pointer-types]
+  306 |     (*dense_handle)->kernel = libxsmm_dmmdispatch(
+      |                             ^
+src/benchmark/xsmm_common.h: In function 'prepare_benchmark_SP':
+src/benchmark/xsmm_common.h:384:29: warning: assignment to 'libxsmm_gemmfunction' {aka 'void (*)(const libxsmm_gemm_param *)'} from incompatible pointer type 'libxsmm_smmfunction' {aka 'void (*)(const float *, const float *, float *)'} [-Wincompatible-pointer-types]
+  384 |     (*dense_handle)->kernel = libxsmm_smmdispatch(
+      |                             ^
+In file included from src/benchmark/xsmm_custom.c:16:
+src/benchmark/xsmm_common.h: In function 'exec_xsmm':
+src/benchmark/xsmm_common.h:181: warning: ignoring '#pragma omp parallel' [-Wunknown-pragmas]
+  181 |     #pragma omp parallel for private(i)
+      | 
+src/benchmark/xsmm_common.h: In function 'exec_xsmm_SP':
+src/benchmark/xsmm_common.h:189: warning: ignoring '#pragma omp parallel' [-Wunknown-pragmas]
+  189 |     #pragma omp parallel for private(i)
+      | 
+src/benchmark/xsmm_common.h: In function 'prepare_benchmark':
+src/benchmark/xsmm_common.h:306:29: warning: assignment to 'libxsmm_gemmfunction' {aka 'void (*)(const libxsmm_gemm_param *)'} from incompatible pointer type 'libxsmm_dmmfunction' {aka 'void (*)(const double *, const double *, double *)'} [-Wincompatible-pointer-types]
+  306 |     (*dense_handle)->kernel = libxsmm_dmmdispatch(
+      |                             ^
+src/benchmark/xsmm_common.h: In function 'prepare_benchmark_SP':
+src/benchmark/xsmm_common.h:384:29: warning: assignment to 'libxsmm_gemmfunction' {aka 'void (*)(const libxsmm_gemm_param *)'} from incompatible pointer type 'libxsmm_smmfunction' {aka 'void (*)(const float *, const float *, float *)'} [-Wincompatible-pointer-types]
+  384 |     (*dense_handle)->kernel = libxsmm_smmdispatch(
+      |                             ^
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.008484 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.004782 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.004936 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.004603 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      1      1      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.004016 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.009525 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.009859 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.011835 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.012863 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.009670 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.007301 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      1      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.009860 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.011695 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.012919 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.010229 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.014282 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.022321 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.033045 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.043225 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.029346 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.016499 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.022084 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.033844 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.045811 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.027448 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.030738 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.044949 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.077834 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.134787 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.086820 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.036587 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.045322 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.078737 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.138716 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.079203 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.063190 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.093378 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.180221 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.305945 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.242835 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.089148 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.092533 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.179352 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.322284 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.206388 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.128012 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.177322 s
+Generating and Compiling data/example_mats/hex/p1/gauss-legendre/m0.txt
+Running data/example_mats/hex/p1/gauss-legendre/m0.txt
+Finished running in 0.10600000000000001ms
+Generating and Compiling data/example_mats/hex/p1/gauss-legendre/m3.txt
+Running data/example_mats/hex/p1/gauss-legendre/m3.txt
+Finished running in 0.04803333333333334ms
+Generating and Compiling data/example_mats/hex/p1/gauss-legendre/m6.txt
+Running data/example_mats/hex/p1/gauss-legendre/m6.txt
+Finished running in 0.0465ms
+Generating and Compiling data/example_mats/hex/p1/gauss-legendre/m132.txt
+Running data/example_mats/hex/p1/gauss-legendre/m132.txt
+Finished running in 0.04773333333333333ms
+Generating and Compiling data/example_mats/hex/p1/gauss-legendre/m460.txt
+Running data/example_mats/hex/p1/gauss-legendre/m460.txt
+Finished running in 0.03596666666666667ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre-lobatto/m0.txt
+Running data/example_mats/hex/p2/gauss-legendre-lobatto/m0.txt
+Finished running in 0.168ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre-lobatto/m3.txt
+Running data/example_mats/hex/p2/gauss-legendre-lobatto/m3.txt
+Finished running in 0.1501ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre-lobatto/m6.txt
+Running data/example_mats/hex/p2/gauss-legendre-lobatto/m6.txt
+Finished running in 0.1396666666666667ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre-lobatto/m132.txt
+Running data/example_mats/hex/p2/gauss-legendre-lobatto/m132.txt
+Finished running in 0.20443333333333333ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre-lobatto/m460.txt
+Running data/example_mats/hex/p2/gauss-legendre-lobatto/m460.txt
+Finished running in 0.14373333333333335ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre/m0.txt
+Running data/example_mats/hex/p2/gauss-legendre/m0.txt
+Finished running in 0.092ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre/m3.txt
+Running data/example_mats/hex/p2/gauss-legendre/m3.txt
+Finished running in 0.15046666666666667ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre/m6.txt
+Running data/example_mats/hex/p2/gauss-legendre/m6.txt
+Finished running in 0.14026666666666668ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre/m132.txt
+Running data/example_mats/hex/p2/gauss-legendre/m132.txt
+Finished running in 0.20453333333333334ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre/m460.txt
+Running data/example_mats/hex/p2/gauss-legendre/m460.txt
+Finished running in 0.14473333333333332ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre-lobatto/m0.txt
+Running data/example_mats/hex/p3/gauss-legendre-lobatto/m0.txt
+Finished running in 0.15593333333333334ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre-lobatto/m3.txt
+Running data/example_mats/hex/p3/gauss-legendre-lobatto/m3.txt
+Finished running in 0.3813333333333333ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre-lobatto/m6.txt
+Running data/example_mats/hex/p3/gauss-legendre-lobatto/m6.txt
+Finished running in 0.38630000000000003ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre-lobatto/m132.txt
+Running data/example_mats/hex/p3/gauss-legendre-lobatto/m132.txt
+Finished running in 0.7933666666666667ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre-lobatto/m460.txt
+Running data/example_mats/hex/p3/gauss-legendre-lobatto/m460.txt
+Finished running in 0.45859999999999995ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre/m0.txt
+Running data/example_mats/hex/p3/gauss-legendre/m0.txt
+Finished running in 0.21806666666666666ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre/m3.txt
+Running data/example_mats/hex/p3/gauss-legendre/m3.txt
+Finished running in 0.38026666666666664ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre/m6.txt
+Running data/example_mats/hex/p3/gauss-legendre/m6.txt
+Finished running in 0.41940000000000005ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre/m132.txt
+Running data/example_mats/hex/p3/gauss-legendre/m132.txt
+Finished running in 0.8775999999999999ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre/m460.txt
+Running data/example_mats/hex/p3/gauss-legendre/m460.txt
+Finished running in 0.40393333333333337ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre-lobatto/m0.txt
+Running data/example_mats/hex/p4/gauss-legendre-lobatto/m0.txt
+Finished running in 0.3265333333333333ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre-lobatto/m3.txt
+Running data/example_mats/hex/p4/gauss-legendre-lobatto/m3.txt
+Finished running in 0.7363999999999999ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre-lobatto/m6.txt
+Running data/example_mats/hex/p4/gauss-legendre-lobatto/m6.txt
+Finished running in 0.8514ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre-lobatto/m132.txt
+Running data/example_mats/hex/p4/gauss-legendre-lobatto/m132.txt
+Finished running in 2.6672333333333333ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre-lobatto/m460.txt
+Running data/example_mats/hex/p4/gauss-legendre-lobatto/m460.txt
+Finished running in 1.2962333333333333ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre/m0.txt
+Running data/example_mats/hex/p4/gauss-legendre/m0.txt
+Finished running in 0.46843333333333337ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre/m3.txt
+Running data/example_mats/hex/p4/gauss-legendre/m3.txt
+Finished running in 0.7304333333333334ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre/m6.txt
+Running data/example_mats/hex/p4/gauss-legendre/m6.txt
+Finished running in 0.8518666666666667ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre/m132.txt
+Running data/example_mats/hex/p4/gauss-legendre/m132.txt
+Finished running in 2.796ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre/m460.txt
+Running data/example_mats/hex/p4/gauss-legendre/m460.txt
+Finished running in 1.0869ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre-lobatto/m0.txt
+Running data/example_mats/hex/p5/gauss-legendre-lobatto/m0.txt
+Finished running in 0.5504ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre-lobatto/m3.txt
+Running data/example_mats/hex/p5/gauss-legendre-lobatto/m3.txt
+Finished running in 1.4591333333333334ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre-lobatto/m6.txt
+Running data/example_mats/hex/p5/gauss-legendre-lobatto/m6.txt
+Finished running in 1.9357666666666666ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre-lobatto/m132.txt
+Running data/example_mats/hex/p5/gauss-legendre-lobatto/m132.txt
+Finished running in 5.525766666666667ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre-lobatto/m460.txt
+Running data/example_mats/hex/p5/gauss-legendre-lobatto/m460.txt
+Finished running in 3.7563666666666666ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre/m0.txt
+Running data/example_mats/hex/p5/gauss-legendre/m0.txt
+Finished running in 1.3328666666666666ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre/m3.txt
+Running data/example_mats/hex/p5/gauss-legendre/m3.txt
+Finished running in 1.4577666666666649ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre/m6.txt
+Running data/example_mats/hex/p5/gauss-legendre/m6.txt
+Finished running in 1.9134666666666669ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre/m132.txt
+Running data/example_mats/hex/p5/gauss-legendre/m132.txt
+Finished running in 6.029300000000001ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre/m460.txt
+Running data/example_mats/hex/p5/gauss-legendre/m460.txt
+Finished running in 2.681ms
+Generating and Compiling data/example_mats/hex/p6/gauss-legendre-lobatto/m0.txt
+Running data/example_mats/hex/p6/gauss-legendre-lobatto/m0.txt
+Finished running in 1.1405333333333334ms
+Generating and Compiling data/example_mats/hex/p6/gauss-legendre-lobatto/m3.txt
+Running data/example_mats/hex/p6/gauss-legendre-lobatto/m3.txt
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.349229 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_aarch64_instruction_close_data): code generation ran out of buffer capacity (error #90002)!
+
+LIBXSMM_VERSION: master-1.17-2201 (25692313)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      1      0      0 
+Registry and code: 13 MB (gemm=1 nleaks=1)
+Uptime: 0.899523 s
+./scripts/bin_benchmark.sh: line 4: 56560 Abort trap: 6           sudo nice -n -20 bin/benchmark_xsmm_reference $1 $2 $4 "xsmm-reference"
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_aarch64_instruction_close_data): code generation ran out of buffer capacity (error #90002)!
+./scripts/bin_benchmark.sh: line 24: 56562 Abort trap: 6           sudo nice -n -20 bin/benchmark_xsmm_custom $1 $2 $4
+Finished running in 2.667133333333333ms
+Generating and Compiling data/example_mats/hex/p6/gauss-legendre-lobatto/m6.txt
+Running data/example_mats/hex/p6/gauss-legendre-lobatto/m6.txt
+Finished running in 3.1417ms
+Generating and Compiling data/example_mats/hex/p6/gauss-legendre-lobatto/m132.txt
+Running data/example_mats/hex/p6/gauss-legendre-lobatto/m132.txt
+Finished running in 19.378633333333333ms
+Generating and Compiling data/example_mats/hex/p6/gauss-legendre-lobatto/m460.txt
+Running data/example_mats/hex/p6/gauss-legendre-lobatto/m460.txt
+Traceback (most recent call last):
+  File "src/benchmark/benchmark.py", line 151, in <module>
+    best, avg = benchmark_matrix(mat_path, N_WIDTH, test_gimmik)
+  File "src/benchmark/benchmark.py", line 106, in benchmark_matrix
+    result["speedup_best_over_ref"] = result["xsmm_reference_best"] / result["xsmm_custom_best"]
+KeyError: 'xsmm_reference_best'

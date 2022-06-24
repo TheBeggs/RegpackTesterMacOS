@@ -1,0 +1,512 @@
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 8, 'a_nonzero': 48, 'a_rows': 24, 'a_size': 192, 'a_unique': 2, 'alpha': 1.0, 'beta': 0.0, 'density': 0.25, 'mat_file': 'data/example_mats/hex/p1/gauss-legendre/m0.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.4015874984497085, 'speedup_best_over_ref': 0.4015874984497085, 'xsmm_custom_avg': 0.2687666666666667, 'xsmm_custom_best': 0.2687666666666667, 'xsmm_reference_avg': 0.10793333333333334, 'xsmm_reference_best': 0.10793333333333334, 'xsmm_reference_cpu_freq': 0.999998, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 24, 'a_nonzero': 48, 'a_rows': 8, 'a_size': 192, 'a_unique': 2, 'alpha': 1.0, 'beta': 0.0, 'density': 0.25, 'mat_file': 'data/example_mats/hex/p1/gauss-legendre/m3.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9762550881953868, 'speedup_best_over_ref': 0.9762550881953868, 'xsmm_custom_avg': 0.049133333333333334, 'xsmm_custom_best': 0.049133333333333334, 'xsmm_reference_avg': 0.04796666666666667, 'xsmm_reference_best': 0.04796666666666667, 'xsmm_reference_cpu_freq': 0.999993, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 24, 'a_nonzero': 48, 'a_rows': 24, 'a_size': 576, 'a_unique': 2, 'alpha': 1.0, 'beta': 0.0, 'density': 0.08333333333333333, 'mat_file': 'data/example_mats/hex/p1/gauss-legendre/m6.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9624478442280945, 'speedup_best_over_ref': 0.9624478442280945, 'xsmm_custom_avg': 0.047933333333333335, 'xsmm_custom_best': 0.047933333333333335, 'xsmm_reference_avg': 0.04613333333333333, 'xsmm_reference_best': 0.04613333333333333, 'xsmm_reference_cpu_freq': 0.999993, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 24, 'a_nonzero': 48, 'a_rows': 8, 'a_size': 192, 'a_unique': 1, 'alpha': 1.0, 'beta': 0.0, 'density': 0.25, 'mat_file': 'data/example_mats/hex/p1/gauss-legendre/m132.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9262135922330097, 'speedup_best_over_ref': 0.9262135922330097, 'xsmm_custom_avg': 0.0515, 'xsmm_custom_best': 0.0515, 'xsmm_reference_avg': 0.0477, 'xsmm_reference_best': 0.0477, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 8, 'a_nonzero': 48, 'a_rows': 24, 'a_size': 192, 'a_unique': 1, 'alpha': 1.0, 'beta': 0.0, 'density': 0.25, 'mat_file': 'data/example_mats/hex/p1/gauss-legendre/m460.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9474590869939707, 'speedup_best_over_ref': 0.9474590869939707, 'xsmm_custom_avg': 0.0387, 'xsmm_custom_best': 0.0387, 'xsmm_reference_avg': 0.03666666666666667, 'xsmm_reference_best': 0.03666666666666667, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 27, 'a_nonzero': 54, 'a_rows': 54, 'a_size': 1458, 'a_unique': 1, 'alpha': 1.0, 'beta': 0.0, 'density': 0.037037037037037035, 'mat_file': 'data/example_mats/hex/p2/gauss-legendre-lobatto/m0.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.47282504321106206, 'speedup_best_over_ref': 0.47282504321106206, 'xsmm_custom_avg': 0.17356666666666667, 'xsmm_custom_best': 0.17356666666666667, 'xsmm_reference_avg': 0.08206666666666668, 'xsmm_reference_best': 0.08206666666666668, 'xsmm_reference_cpu_freq': 0.999996, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 54, 'a_nonzero': 162, 'a_rows': 27, 'a_size': 1458, 'a_unique': 3, 'alpha': 1.0, 'beta': 0.0, 'density': 0.1111111111111111, 'mat_file': 'data/example_mats/hex/p2/gauss-legendre-lobatto/m3.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9964943032427696, 'speedup_best_over_ref': 0.9964943032427696, 'xsmm_custom_avg': 0.15213333333333334, 'xsmm_custom_best': 0.15213333333333334, 'xsmm_reference_avg': 0.1516, 'xsmm_reference_best': 0.1516, 'xsmm_reference_cpu_freq': 0.999998, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 54, 'a_nonzero': 162, 'a_rows': 81, 'a_size': 4374, 'a_unique': 3, 'alpha': 1.0, 'beta': 0.0, 'density': 0.037037037037037035, 'mat_file': 'data/example_mats/hex/p2/gauss-legendre-lobatto/m6.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.006375227686703, 'speedup_best_over_ref': 1.006375227686703, 'xsmm_custom_avg': 0.1464, 'xsmm_custom_best': 0.1464, 'xsmm_reference_avg': 0.14733333333333334, 'xsmm_reference_best': 0.14733333333333334, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 81, 'a_nonzero': 216, 'a_rows': 27, 'a_size': 2187, 'a_unique': 3, 'alpha': 1.0, 'beta': 0.0, 'density': 0.09876543209876543, 'mat_file': 'data/example_mats/hex/p2/gauss-legendre-lobatto/m132.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9911560328490209, 'speedup_best_over_ref': 0.9911560328490209, 'xsmm_custom_avg': 0.21106666666666665, 'xsmm_custom_best': 0.21106666666666665, 'xsmm_reference_avg': 0.2092, 'xsmm_reference_best': 0.2092, 'xsmm_reference_cpu_freq': 0.999997, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 27, 'a_nonzero': 216, 'a_rows': 81, 'a_size': 2187, 'a_unique': 3, 'alpha': 1.0, 'beta': 0.0, 'density': 0.09876543209876543, 'mat_file': 'data/example_mats/hex/p2/gauss-legendre-lobatto/m460.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9862798020692758, 'speedup_best_over_ref': 0.9862798020692758, 'xsmm_custom_avg': 0.1482, 'xsmm_custom_best': 0.1482, 'xsmm_reference_avg': 0.14616666666666667, 'xsmm_reference_best': 0.14616666666666667, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 27, 'a_nonzero': 162, 'a_rows': 54, 'a_size': 1458, 'a_unique': 3, 'alpha': 1.0, 'beta': 0.0, 'density': 0.1111111111111111, 'mat_file': 'data/example_mats/hex/p2/gauss-legendre/m0.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.992131616595136, 'speedup_best_over_ref': 0.992131616595136, 'xsmm_custom_avg': 0.09319999999999999, 'xsmm_custom_best': 0.09319999999999999, 'xsmm_reference_avg': 0.09246666666666667, 'xsmm_reference_best': 0.09246666666666667, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 54, 'a_nonzero': 162, 'a_rows': 27, 'a_size': 1458, 'a_unique': 3, 'alpha': 1.0, 'beta': 0.0, 'density': 0.1111111111111111, 'mat_file': 'data/example_mats/hex/p2/gauss-legendre/m3.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.0094671950682517, 'speedup_best_over_ref': 1.0094671950682517, 'xsmm_custom_avg': 0.1514, 'xsmm_custom_best': 0.1514, 'xsmm_reference_avg': 0.15283333333333332, 'xsmm_reference_best': 0.15283333333333332, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 54, 'a_nonzero': 162, 'a_rows': 81, 'a_size': 4374, 'a_unique': 3, 'alpha': 1.0, 'beta': 0.0, 'density': 0.037037037037037035, 'mat_file': 'data/example_mats/hex/p2/gauss-legendre/m6.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9983841181902123, 'speedup_best_over_ref': 0.9983841181902123, 'xsmm_custom_avg': 0.1444, 'xsmm_custom_best': 0.1444, 'xsmm_reference_avg': 0.14416666666666667, 'xsmm_reference_best': 0.14416666666666667, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 81, 'a_nonzero': 216, 'a_rows': 27, 'a_size': 2187, 'a_unique': 4, 'alpha': 1.0, 'beta': 0.0, 'density': 0.09876543209876543, 'mat_file': 'data/example_mats/hex/p2/gauss-legendre/m132.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.012112403100775, 'speedup_best_over_ref': 1.012112403100775, 'xsmm_custom_avg': 0.2064, 'xsmm_custom_best': 0.2064, 'xsmm_reference_avg': 0.2089, 'xsmm_reference_best': 0.2089, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 27, 'a_nonzero': 216, 'a_rows': 81, 'a_size': 2187, 'a_unique': 4, 'alpha': 1.0, 'beta': 0.0, 'density': 0.09876543209876543, 'mat_file': 'data/example_mats/hex/p2/gauss-legendre/m460.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9836506159014559, 'speedup_best_over_ref': 0.9836506159014559, 'xsmm_custom_avg': 0.14883333333333332, 'xsmm_custom_best': 0.14883333333333332, 'xsmm_reference_avg': 0.1464, 'xsmm_reference_best': 0.1464, 'xsmm_reference_cpu_freq': 0.999998, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 64, 'a_nonzero': 96, 'a_rows': 96, 'a_size': 6144, 'a_unique': 1, 'alpha': 1.0, 'beta': 0.0, 'density': 0.015625, 'mat_file': 'data/example_mats/hex/p3/gauss-legendre-lobatto/m0.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.0237252861602497, 'speedup_best_over_ref': 1.0237252861602497, 'xsmm_custom_avg': 0.16016666666666665, 'xsmm_custom_best': 0.16016666666666665, 'xsmm_reference_avg': 0.16396666666666665, 'xsmm_reference_best': 0.16396666666666665, 'xsmm_reference_cpu_freq': 0.999996, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 96, 'a_nonzero': 384, 'a_rows': 64, 'a_size': 6144, 'a_unique': 3, 'alpha': 1.0, 'beta': 0.0, 'density': 0.0625, 'mat_file': 'data/example_mats/hex/p3/gauss-legendre-lobatto/m3.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9897985648828558, 'speedup_best_over_ref': 0.9897985648828558, 'xsmm_custom_avg': 0.3855666666666669, 'xsmm_custom_best': 0.3855666666666669, 'xsmm_reference_avg': 0.3816333333333333, 'xsmm_reference_best': 0.3816333333333333, 'xsmm_reference_cpu_freq': 0.999998, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 96, 'a_nonzero': 384, 'a_rows': 192, 'a_size': 18432, 'a_unique': 3, 'alpha': 1.0, 'beta': 0.0, 'density': 0.020833333333333332, 'mat_file': 'data/example_mats/hex/p3/gauss-legendre-lobatto/m6.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.0109777286368662, 'speedup_best_over_ref': 1.0109777286368662, 'xsmm_custom_avg': 0.4220666666666667, 'xsmm_custom_best': 0.4220666666666667, 'xsmm_reference_avg': 0.4267, 'xsmm_reference_best': 0.4267, 'xsmm_reference_cpu_freq': 0.999998, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 192, 'a_nonzero': 672, 'a_rows': 64, 'a_size': 12288, 'a_unique': 7, 'alpha': 1.0, 'beta': 0.0, 'density': 0.0546875, 'mat_file': 'data/example_mats/hex/p3/gauss-legendre-lobatto/m132.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.0020570085218925, 'speedup_best_over_ref': 1.0020570085218925, 'xsmm_custom_avg': 0.7940333333333334, 'xsmm_custom_best': 0.7940333333333334, 'xsmm_reference_avg': 0.7956666666666667, 'xsmm_reference_best': 0.7956666666666667, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 64, 'a_nonzero': 672, 'a_rows': 192, 'a_size': 12288, 'a_unique': 7, 'alpha': 1.0, 'beta': 0.0, 'density': 0.0546875, 'mat_file': 'data/example_mats/hex/p3/gauss-legendre-lobatto/m460.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9958116695551703, 'speedup_best_over_ref': 0.9958116695551703, 'xsmm_custom_avg': 0.4616, 'xsmm_custom_best': 0.4616, 'xsmm_reference_avg': 0.4596666666666666, 'xsmm_reference_best': 0.4596666666666666, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 64, 'a_nonzero': 384, 'a_rows': 96, 'a_size': 6144, 'a_unique': 4, 'alpha': 1.0, 'beta': 0.0, 'density': 0.0625, 'mat_file': 'data/example_mats/hex/p3/gauss-legendre/m0.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9931756141947224, 'speedup_best_over_ref': 0.9931756141947224, 'xsmm_custom_avg': 0.21980000000000002, 'xsmm_custom_best': 0.21980000000000002, 'xsmm_reference_avg': 0.21830000000000002, 'xsmm_reference_best': 0.21830000000000002, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 96, 'a_nonzero': 384, 'a_rows': 64, 'a_size': 6144, 'a_unique': 4, 'alpha': 1.0, 'beta': 0.0, 'density': 0.0625, 'mat_file': 'data/example_mats/hex/p3/gauss-legendre/m3.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.999301554042256, 'speedup_best_over_ref': 0.999301554042256, 'xsmm_custom_avg': 0.38180000000000003, 'xsmm_custom_best': 0.38180000000000003, 'xsmm_reference_avg': 0.38153333333333334, 'xsmm_reference_best': 0.38153333333333334, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 96, 'a_nonzero': 384, 'a_rows': 192, 'a_size': 18432, 'a_unique': 4, 'alpha': 1.0, 'beta': 0.0, 'density': 0.020833333333333332, 'mat_file': 'data/example_mats/hex/p3/gauss-legendre/m6.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.8866544789762341, 'speedup_best_over_ref': 0.8866544789762341, 'xsmm_custom_avg': 0.4376, 'xsmm_custom_best': 0.4376, 'xsmm_reference_avg': 0.388, 'xsmm_reference_best': 0.388, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 192, 'a_nonzero': 768, 'a_rows': 64, 'a_size': 12288, 'a_unique': 8, 'alpha': 1.0, 'beta': 0.0, 'density': 0.0625, 'mat_file': 'data/example_mats/hex/p3/gauss-legendre/m132.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.008745362307867, 'speedup_best_over_ref': 1.008745362307867, 'xsmm_custom_avg': 0.8804666666666667, 'xsmm_custom_best': 0.8804666666666667, 'xsmm_reference_avg': 0.8881666666666667, 'xsmm_reference_best': 0.8881666666666667, 'xsmm_reference_cpu_freq': 0.999999, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 64, 'a_nonzero': 768, 'a_rows': 192, 'a_size': 12288, 'a_unique': 8, 'alpha': 1.0, 'beta': 0.0, 'density': 0.0625, 'mat_file': 'data/example_mats/hex/p3/gauss-legendre/m460.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.0702465931213498, 'speedup_best_over_ref': 1.0702465931213498, 'xsmm_custom_avg': 0.4109333333333333, 'xsmm_custom_best': 0.4109333333333333, 'xsmm_reference_avg': 0.4398, 'xsmm_reference_best': 0.4398, 'xsmm_reference_cpu_freq': 0.999999, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 125, 'a_nonzero': 150, 'a_rows': 150, 'a_size': 18750, 'a_unique': 1, 'alpha': 1.0, 'beta': 0.0, 'density': 0.008, 'mat_file': 'data/example_mats/hex/p4/gauss-legendre-lobatto/m0.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.1399022616206387, 'speedup_best_over_ref': 1.1399022616206387, 'xsmm_custom_avg': 0.2933, 'xsmm_custom_best': 0.2933, 'xsmm_reference_avg': 0.3343333333333333, 'xsmm_reference_best': 0.3343333333333333, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 150, 'a_nonzero': 750, 'a_rows': 125, 'a_size': 18750, 'a_unique': 4, 'alpha': 1.0, 'beta': 0.0, 'density': 0.04, 'mat_file': 'data/example_mats/hex/p4/gauss-legendre-lobatto/m3.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9947535052012664, 'speedup_best_over_ref': 0.9947535052012664, 'xsmm_custom_avg': 0.737, 'xsmm_custom_best': 0.737, 'xsmm_reference_avg': 0.7331333333333333, 'xsmm_reference_best': 0.7331333333333333, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 150, 'a_nonzero': 750, 'a_rows': 375, 'a_size': 56250, 'a_unique': 4, 'alpha': 1.0, 'beta': 0.0, 'density': 0.013333333333333334, 'mat_file': 'data/example_mats/hex/p4/gauss-legendre-lobatto/m6.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9755194324250575, 'speedup_best_over_ref': 0.9755194324250575, 'xsmm_custom_avg': 0.8551, 'xsmm_custom_best': 0.8551, 'xsmm_reference_avg': 0.8341666666666666, 'xsmm_reference_best': 0.8341666666666666, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 375, 'a_nonzero': 1650, 'a_rows': 125, 'a_size': 46875, 'a_unique': 11, 'alpha': 1.0, 'beta': 0.0, 'density': 0.0352, 'mat_file': 'data/example_mats/hex/p4/gauss-legendre-lobatto/m132.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.0047471517089746, 'speedup_best_over_ref': 1.0047471517089746, 'xsmm_custom_avg': 2.668266666666667, 'xsmm_custom_best': 2.668266666666667, 'xsmm_reference_avg': 2.6809333333333334, 'xsmm_reference_best': 2.6809333333333334, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 125, 'a_nonzero': 1650, 'a_rows': 375, 'a_size': 46875, 'a_unique': 11, 'alpha': 1.0, 'beta': 0.0, 'density': 0.0352, 'mat_file': 'data/example_mats/hex/p4/gauss-legendre-lobatto/m460.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.0098942873509347, 'speedup_best_over_ref': 1.0098942873509347, 'xsmm_custom_avg': 1.2802, 'xsmm_custom_best': 1.2802, 'xsmm_reference_avg': 1.2928666666666666, 'xsmm_reference_best': 1.2928666666666666, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 125, 'a_nonzero': 750, 'a_rows': 150, 'a_size': 18750, 'a_unique': 5, 'alpha': 1.0, 'beta': 0.0, 'density': 0.04, 'mat_file': 'data/example_mats/hex/p4/gauss-legendre/m0.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9901415393282164, 'speedup_best_over_ref': 0.9901415393282164, 'xsmm_custom_avg': 0.47336666666666666, 'xsmm_custom_best': 0.47336666666666666, 'xsmm_reference_avg': 0.4687, 'xsmm_reference_best': 0.4687, 'xsmm_reference_cpu_freq': 0.999999, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 150, 'a_nonzero': 750, 'a_rows': 125, 'a_size': 18750, 'a_unique': 5, 'alpha': 1.0, 'beta': 0.0, 'density': 0.04, 'mat_file': 'data/example_mats/hex/p4/gauss-legendre/m3.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9999547306473517, 'speedup_best_over_ref': 0.9999547306473517, 'xsmm_custom_avg': 0.7363333333333333, 'xsmm_custom_best': 0.7363333333333333, 'xsmm_reference_avg': 0.7363, 'xsmm_reference_best': 0.7363, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 150, 'a_nonzero': 750, 'a_rows': 375, 'a_size': 56250, 'a_unique': 5, 'alpha': 1.0, 'beta': 0.0, 'density': 0.013333333333333334, 'mat_file': 'data/example_mats/hex/p4/gauss-legendre/m6.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9662791592886288, 'speedup_best_over_ref': 0.9662791592886288, 'xsmm_custom_avg': 0.8659333333333333, 'xsmm_custom_best': 0.8659333333333333, 'xsmm_reference_avg': 0.8367333333333333, 'xsmm_reference_best': 0.8367333333333333, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 375, 'a_nonzero': 1800, 'a_rows': 125, 'a_size': 46875, 'a_unique': 12, 'alpha': 1.0, 'beta': 0.0, 'density': 0.0384, 'mat_file': 'data/example_mats/hex/p4/gauss-legendre/m132.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9939922640111925, 'speedup_best_over_ref': 0.9939922640111925, 'xsmm_custom_avg': 2.8352333333333335, 'xsmm_custom_best': 2.8352333333333335, 'xsmm_reference_avg': 2.8182, 'xsmm_reference_best': 2.8182, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 125, 'a_nonzero': 1800, 'a_rows': 375, 'a_size': 46875, 'a_unique': 12, 'alpha': 1.0, 'beta': 0.0, 'density': 0.0384, 'mat_file': 'data/example_mats/hex/p4/gauss-legendre/m460.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9912902319483032, 'speedup_best_over_ref': 0.9912902319483032, 'xsmm_custom_avg': 1.0677666666666668, 'xsmm_custom_best': 1.0677666666666668, 'xsmm_reference_avg': 1.0584666666666667, 'xsmm_reference_best': 1.0584666666666667, 'xsmm_reference_cpu_freq': 0.999999, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 216, 'a_nonzero': 216, 'a_rows': 216, 'a_size': 46656, 'a_unique': 1, 'alpha': 1.0, 'beta': 0.0, 'density': 0.004629629629629629, 'mat_file': 'data/example_mats/hex/p5/gauss-legendre-lobatto/m0.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.0280701754385964, 'speedup_best_over_ref': 1.0280701754385964, 'xsmm_custom_avg': 0.551, 'xsmm_custom_best': 0.551, 'xsmm_reference_avg': 0.5664666666666667, 'xsmm_reference_best': 0.5664666666666667, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 216, 'a_nonzero': 1296, 'a_rows': 216, 'a_size': 46656, 'a_unique': 4, 'alpha': 1.0, 'beta': 0.0, 'density': 0.027777777777777776, 'mat_file': 'data/example_mats/hex/p5/gauss-legendre-lobatto/m3.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.013986335718065, 'speedup_best_over_ref': 1.013986335718065, 'xsmm_custom_avg': 1.4490333333333334, 'xsmm_custom_best': 1.4490333333333334, 'xsmm_reference_avg': 1.4693, 'xsmm_reference_best': 1.4693, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 216, 'a_nonzero': 1296, 'a_rows': 648, 'a_size': 139968, 'a_unique': 4, 'alpha': 1.0, 'beta': 0.0, 'density': 0.009259259259259259, 'mat_file': 'data/example_mats/hex/p5/gauss-legendre-lobatto/m6.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.0097332058746848, 'speedup_best_over_ref': 1.0097332058746848, 'xsmm_custom_avg': 1.9178333333333333, 'xsmm_custom_best': 1.9178333333333333, 'xsmm_reference_avg': 1.9364999999999999, 'xsmm_reference_best': 1.9364999999999999, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 648, 'a_nonzero': 3456, 'a_rows': 216, 'a_size': 139968, 'a_unique': 16, 'alpha': 1.0, 'beta': 0.0, 'density': 0.024691358024691357, 'mat_file': 'data/example_mats/hex/p5/gauss-legendre-lobatto/m132.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.0025034619129112, 'speedup_best_over_ref': 1.0025034619129112, 'xsmm_custom_avg': 5.512366666666666, 'xsmm_custom_best': 5.512366666666666, 'xsmm_reference_avg': 5.526166666666667, 'xsmm_reference_best': 5.526166666666667, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 216, 'a_nonzero': 3456, 'a_rows': 648, 'a_size': 139968, 'a_unique': 16, 'alpha': 1.0, 'beta': 0.0, 'density': 0.024691358024691357, 'mat_file': 'data/example_mats/hex/p5/gauss-legendre-lobatto/m460.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9975513245914439, 'speedup_best_over_ref': 0.9975513245914439, 'xsmm_custom_avg': 3.7571333333333334, 'xsmm_custom_best': 3.7571333333333334, 'xsmm_reference_avg': 3.7479333333333336, 'xsmm_reference_best': 3.7479333333333336, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 216, 'a_nonzero': 1296, 'a_rows': 216, 'a_size': 46656, 'a_unique': 6, 'alpha': 1.0, 'beta': 0.0, 'density': 0.027777777777777776, 'mat_file': 'data/example_mats/hex/p5/gauss-legendre/m0.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.0034775212028721, 'speedup_best_over_ref': 1.0034775212028721, 'xsmm_custom_avg': 1.3323666666666665, 'xsmm_custom_best': 1.3323666666666665, 'xsmm_reference_avg': 1.337, 'xsmm_reference_best': 1.337, 'xsmm_reference_cpu_freq': 0.999999, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 216, 'a_nonzero': 1296, 'a_rows': 216, 'a_size': 46656, 'a_unique': 6, 'alpha': 1.0, 'beta': 0.0, 'density': 0.027777777777777776, 'mat_file': 'data/example_mats/hex/p5/gauss-legendre/m3.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.0036464743151465, 'speedup_best_over_ref': 1.0036464743151465, 'xsmm_custom_avg': 1.4626, 'xsmm_custom_best': 1.4626, 'xsmm_reference_avg': 1.4679333333333333, 'xsmm_reference_best': 1.4679333333333333, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 216, 'a_nonzero': 1296, 'a_rows': 648, 'a_size': 139968, 'a_unique': 6, 'alpha': 1.0, 'beta': 0.0, 'density': 0.009259259259259259, 'mat_file': 'data/example_mats/hex/p5/gauss-legendre/m6.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9995694999311198, 'speedup_best_over_ref': 0.9995694999311198, 'xsmm_custom_avg': 1.9357333333333335, 'xsmm_custom_best': 1.9357333333333335, 'xsmm_reference_avg': 1.9348999999999998, 'xsmm_reference_best': 1.9348999999999998, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 648, 'a_nonzero': 3888, 'a_rows': 216, 'a_size': 139968, 'a_unique': 18, 'alpha': 1.0, 'beta': 0.0, 'density': 0.027777777777777776, 'mat_file': 'data/example_mats/hex/p5/gauss-legendre/m132.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.0105683458409604, 'speedup_best_over_ref': 1.0105683458409604, 'xsmm_custom_avg': 6.027433333333334, 'xsmm_custom_best': 6.027433333333334, 'xsmm_reference_avg': 6.0911333333333335, 'xsmm_reference_best': 6.0911333333333335, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 216, 'a_nonzero': 3888, 'a_rows': 648, 'a_size': 139968, 'a_unique': 18, 'alpha': 1.0, 'beta': 0.0, 'density': 0.027777777777777776, 'mat_file': 'data/example_mats/hex/p5/gauss-legendre/m460.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.0017734454448495, 'speedup_best_over_ref': 1.0017734454448495, 'xsmm_custom_avg': 2.6878, 'xsmm_custom_best': 2.6878, 'xsmm_reference_avg': 2.6925666666666666, 'xsmm_reference_best': 2.6925666666666666, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 343, 'a_nonzero': 294, 'a_rows': 294, 'a_size': 100842, 'a_unique': 1, 'alpha': 1.0, 'beta': 0.0, 'density': 0.0029154518950437317, 'mat_file': 'data/example_mats/hex/p6/gauss-legendre-lobatto/m0.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9953501888985761, 'speedup_best_over_ref': 0.9953501888985761, 'xsmm_custom_avg': 1.1469999999999998, 'xsmm_custom_best': 1.1469999999999998, 'xsmm_reference_avg': 1.1416666666666666, 'xsmm_reference_best': 1.1416666666666666, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 294, 'a_nonzero': 2058, 'a_rows': 343, 'a_size': 100842, 'a_unique': 5, 'alpha': 1.0, 'beta': 0.0, 'density': 0.02040816326530612, 'mat_file': 'data/example_mats/hex/p6/gauss-legendre-lobatto/m3.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.0015088410604285, 'speedup_best_over_ref': 1.0015088410604285, 'xsmm_custom_avg': 2.6731333333333334, 'xsmm_custom_best': 2.6731333333333334, 'xsmm_reference_avg': 2.6771666666666665, 'xsmm_reference_best': 2.6771666666666665, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 294, 'a_nonzero': 2058, 'a_rows': 1029, 'a_size': 302526, 'a_unique': 5, 'alpha': 1.0, 'beta': 0.0, 'density': 0.006802721088435374, 'mat_file': 'data/example_mats/hex/p6/gauss-legendre-lobatto/m6.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.0012969479200995, 'speedup_best_over_ref': 1.0012969479200995, 'xsmm_custom_avg': 3.1355666666666666, 'xsmm_custom_best': 3.1355666666666666, 'xsmm_reference_avg': 3.1396333333333333, 'xsmm_reference_best': 3.1396333333333333, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 1029, 'a_nonzero': 6468, 'a_rows': 343, 'a_size': 352947, 'a_unique': 22, 'alpha': 1.0, 'beta': 0.0, 'density': 0.018325697625989172, 'mat_file': 'data/example_mats/hex/p6/gauss-legendre-lobatto/m132.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9897400677197516, 'speedup_best_over_ref': 0.9897400677197516, 'xsmm_custom_avg': 11.114433333333332, 'xsmm_custom_best': 11.114433333333332, 'xsmm_reference_avg': 11.000399999999997, 'xsmm_reference_best': 11.000399999999997, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 343, 'a_nonzero': 6468, 'a_rows': 1029, 'a_size': 352947, 'a_unique': 22, 'alpha': 1.0, 'beta': 0.0, 'density': 0.018325697625989172, 'mat_file': 'data/example_mats/hex/p6/gauss-legendre-lobatto/m460.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9988512983642046, 'speedup_best_over_ref': 0.9988512983642046, 'xsmm_custom_avg': 9.0537, 'xsmm_custom_best': 9.0537, 'xsmm_reference_avg': 9.043299999999999, 'xsmm_reference_best': 9.043299999999999, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 343, 'a_nonzero': 2058, 'a_rows': 294, 'a_size': 100842, 'a_unique': 7, 'alpha': 1.0, 'beta': 0.0, 'density': 0.02040816326530612, 'mat_file': 'data/example_mats/hex/p6/gauss-legendre/m0.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.0032641244341003, 'speedup_best_over_ref': 1.0032641244341003, 'xsmm_custom_avg': 2.3487666666666667, 'xsmm_custom_best': 2.3487666666666667, 'xsmm_reference_avg': 2.3564333333333334, 'xsmm_reference_best': 2.3564333333333334, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 294, 'a_nonzero': 2058, 'a_rows': 343, 'a_size': 100842, 'a_unique': 7, 'alpha': 1.0, 'beta': 0.0, 'density': 0.02040816326530612, 'mat_file': 'data/example_mats/hex/p6/gauss-legendre/m3.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.0005376814674953, 'speedup_best_over_ref': 1.0005376814674953, 'xsmm_custom_avg': 2.665766666666667, 'xsmm_custom_best': 2.665766666666667, 'xsmm_reference_avg': 2.6672000000000002, 'xsmm_reference_best': 2.6672000000000002, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 294, 'a_nonzero': 2058, 'a_rows': 1029, 'a_size': 302526, 'a_unique': 7, 'alpha': 1.0, 'beta': 0.0, 'density': 0.006802721088435374, 'mat_file': 'data/example_mats/hex/p6/gauss-legendre/m6.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.0005438317747044, 'speedup_best_over_ref': 1.0005438317747044, 'xsmm_custom_avg': 3.1259666666666663, 'xsmm_custom_best': 3.1259666666666663, 'xsmm_reference_avg': 3.127666666666667, 'xsmm_reference_best': 3.127666666666667, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 1029, 'a_nonzero': 7056, 'a_rows': 343, 'a_size': 352947, 'a_unique': 24, 'alpha': 1.0, 'beta': 0.0, 'density': 0.019991670137442734, 'mat_file': 'data/example_mats/hex/p6/gauss-legendre/m132.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9979301156280237, 'speedup_best_over_ref': 0.9979301156280237, 'xsmm_custom_avg': 12.609399999999999, 'xsmm_custom_best': 12.609399999999999, 'xsmm_reference_avg': 12.583300000000001, 'xsmm_reference_best': 12.583300000000001, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 343, 'a_nonzero': 7056, 'a_rows': 1029, 'a_size': 352947, 'a_unique': 24, 'alpha': 1.0, 'beta': 0.0, 'density': 0.019991670137442734, 'mat_file': 'data/example_mats/hex/p6/gauss-legendre/m460.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9972618448612784, 'speedup_best_over_ref': 0.9972618448612784, 'xsmm_custom_avg': 5.697266666666667, 'xsmm_custom_best': 5.697266666666667, 'xsmm_reference_avg': 5.681666666666667, 'xsmm_reference_best': 5.681666666666667, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 4, 'a_nonzero': 16, 'a_rows': 8, 'a_size': 32, 'a_unique': 2, 'alpha': 1.0, 'beta': 0.0, 'density': 0.5, 'mat_file': 'data/example_mats/quad/p1/gauss-legendre/m0.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.926086956521739, 'speedup_best_over_ref': 0.926086956521739, 'xsmm_custom_avg': 0.015333333333333334, 'xsmm_custom_best': 0.015333333333333334, 'xsmm_reference_avg': 0.014199999999999999, 'xsmm_reference_best': 0.014199999999999999, 'xsmm_reference_cpu_freq': 0.999978, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 8, 'a_nonzero': 16, 'a_rows': 4, 'a_size': 32, 'a_unique': 2, 'alpha': 1.0, 'beta': 0.0, 'density': 0.5, 'mat_file': 'data/example_mats/quad/p1/gauss-legendre/m3.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.963436928702011, 'speedup_best_over_ref': 0.963436928702011, 'xsmm_custom_avg': 0.018233333333333334, 'xsmm_custom_best': 0.018233333333333334, 'xsmm_reference_avg': 0.017566666666666668, 'xsmm_reference_best': 0.017566666666666668, 'xsmm_reference_cpu_freq': 0.999982, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 8, 'a_nonzero': 16, 'a_rows': 8, 'a_size': 64, 'a_unique': 2, 'alpha': 1.0, 'beta': 0.0, 'density': 0.25, 'mat_file': 'data/example_mats/quad/p1/gauss-legendre/m6.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9664179104477612, 'speedup_best_over_ref': 0.9664179104477612, 'xsmm_custom_avg': 0.017866666666666666, 'xsmm_custom_best': 0.017866666666666666, 'xsmm_reference_avg': 0.017266666666666666, 'xsmm_reference_best': 0.017266666666666666, 'xsmm_reference_cpu_freq': 0.999963, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 8, 'a_nonzero': 16, 'a_rows': 4, 'a_size': 32, 'a_unique': 1, 'alpha': 1.0, 'beta': 0.0, 'density': 0.5, 'mat_file': 'data/example_mats/quad/p1/gauss-legendre/m132.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9075043630017452, 'speedup_best_over_ref': 0.9075043630017452, 'xsmm_custom_avg': 0.0191, 'xsmm_custom_best': 0.0191, 'xsmm_reference_avg': 0.017333333333333333, 'xsmm_reference_best': 0.017333333333333333, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 4, 'a_nonzero': 16, 'a_rows': 8, 'a_size': 32, 'a_unique': 1, 'alpha': 1.0, 'beta': 0.0, 'density': 0.5, 'mat_file': 'data/example_mats/quad/p1/gauss-legendre/m460.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9538461538461538, 'speedup_best_over_ref': 0.9538461538461538, 'xsmm_custom_avg': 0.015166666666666667, 'xsmm_custom_best': 0.015166666666666667, 'xsmm_reference_avg': 0.014466666666666666, 'xsmm_reference_best': 0.014466666666666666, 'xsmm_reference_cpu_freq': 0.999956, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 9, 'a_nonzero': 12, 'a_rows': 12, 'a_size': 108, 'a_unique': 1, 'alpha': 1.0, 'beta': 0.0, 'density': 0.1111111111111111, 'mat_file': 'data/example_mats/quad/p2/gauss-legendre-lobatto/m0.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9727414330218069, 'speedup_best_over_ref': 0.9727414330218069, 'xsmm_custom_avg': 0.0856, 'xsmm_custom_best': 0.0856, 'xsmm_reference_avg': 0.08326666666666667, 'xsmm_reference_best': 0.08326666666666667, 'xsmm_reference_cpu_freq': 0.999992, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 12, 'a_nonzero': 36, 'a_rows': 9, 'a_size': 108, 'a_unique': 3, 'alpha': 1.0, 'beta': 0.0, 'density': 0.3333333333333333, 'mat_file': 'data/example_mats/quad/p2/gauss-legendre-lobatto/m3.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9644913627639154, 'speedup_best_over_ref': 0.9644913627639154, 'xsmm_custom_avg': 0.03473333333333333, 'xsmm_custom_best': 0.03473333333333333, 'xsmm_reference_avg': 0.033499999999999995, 'xsmm_reference_best': 0.033499999999999995, 'xsmm_reference_cpu_freq': 0.99999, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 12, 'a_nonzero': 36, 'a_rows': 18, 'a_size': 216, 'a_unique': 3, 'alpha': 1.0, 'beta': 0.0, 'density': 0.16666666666666666, 'mat_file': 'data/example_mats/quad/p2/gauss-legendre-lobatto/m6.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9651046859421736, 'speedup_best_over_ref': 0.9651046859421736, 'xsmm_custom_avg': 0.03343333333333333, 'xsmm_custom_best': 0.03343333333333333, 'xsmm_reference_avg': 0.032266666666666666, 'xsmm_reference_best': 0.032266666666666666, 'xsmm_reference_cpu_freq': 0.99999, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 18, 'a_nonzero': 48, 'a_rows': 9, 'a_size': 162, 'a_unique': 3, 'alpha': 1.0, 'beta': 0.0, 'density': 0.2962962962962963, 'mat_file': 'data/example_mats/quad/p2/gauss-legendre-lobatto/m132.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9675516224188789, 'speedup_best_over_ref': 0.9675516224188789, 'xsmm_custom_avg': 0.045200000000000004, 'xsmm_custom_best': 0.045200000000000004, 'xsmm_reference_avg': 0.04373333333333333, 'xsmm_reference_best': 0.04373333333333333, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 9, 'a_nonzero': 48, 'a_rows': 18, 'a_size': 162, 'a_unique': 3, 'alpha': 1.0, 'beta': 0.0, 'density': 0.2962962962962963, 'mat_file': 'data/example_mats/quad/p2/gauss-legendre-lobatto/m460.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9801980198019802, 'speedup_best_over_ref': 0.9801980198019802, 'xsmm_custom_avg': 0.037033333333333335, 'xsmm_custom_best': 0.037033333333333335, 'xsmm_reference_avg': 0.0363, 'xsmm_reference_best': 0.0363, 'xsmm_reference_cpu_freq': 0.999991, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 9, 'a_nonzero': 36, 'a_rows': 12, 'a_size': 108, 'a_unique': 3, 'alpha': 1.0, 'beta': 0.0, 'density': 0.3333333333333333, 'mat_file': 'data/example_mats/quad/p2/gauss-legendre/m0.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.3022494887525563, 'speedup_best_over_ref': 0.3022494887525563, 'xsmm_custom_avg': 0.08149999999999999, 'xsmm_custom_best': 0.08149999999999999, 'xsmm_reference_avg': 0.024633333333333333, 'xsmm_reference_best': 0.024633333333333333, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 12, 'a_nonzero': 36, 'a_rows': 9, 'a_size': 108, 'a_unique': 3, 'alpha': 1.0, 'beta': 0.0, 'density': 0.3333333333333333, 'mat_file': 'data/example_mats/quad/p2/gauss-legendre/m3.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9710144927536232, 'speedup_best_over_ref': 0.9710144927536232, 'xsmm_custom_avg': 0.034499999999999996, 'xsmm_custom_best': 0.034499999999999996, 'xsmm_reference_avg': 0.033499999999999995, 'xsmm_reference_best': 0.033499999999999995, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 12, 'a_nonzero': 36, 'a_rows': 18, 'a_size': 216, 'a_unique': 3, 'alpha': 1.0, 'beta': 0.0, 'density': 0.16666666666666666, 'mat_file': 'data/example_mats/quad/p2/gauss-legendre/m6.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9949494949494949, 'speedup_best_over_ref': 0.9949494949494949, 'xsmm_custom_avg': 0.033, 'xsmm_custom_best': 0.033, 'xsmm_reference_avg': 0.03283333333333333, 'xsmm_reference_best': 0.03283333333333333, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 18, 'a_nonzero': 48, 'a_rows': 9, 'a_size': 162, 'a_unique': 4, 'alpha': 1.0, 'beta': 0.0, 'density': 0.2962962962962963, 'mat_file': 'data/example_mats/quad/p2/gauss-legendre/m132.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9746268656716418, 'speedup_best_over_ref': 0.9746268656716418, 'xsmm_custom_avg': 0.04466666666666667, 'xsmm_custom_best': 0.04466666666666667, 'xsmm_reference_avg': 0.043533333333333334, 'xsmm_reference_best': 0.043533333333333334, 'xsmm_reference_cpu_freq': 0.999985, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 9, 'a_nonzero': 48, 'a_rows': 18, 'a_size': 162, 'a_unique': 4, 'alpha': 1.0, 'beta': 0.0, 'density': 0.2962962962962963, 'mat_file': 'data/example_mats/quad/p2/gauss-legendre/m460.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9654859218891917, 'speedup_best_over_ref': 0.9654859218891917, 'xsmm_custom_avg': 0.036699999999999997, 'xsmm_custom_best': 0.036699999999999997, 'xsmm_reference_avg': 0.03543333333333333, 'xsmm_reference_best': 0.03543333333333333, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 16, 'a_nonzero': 16, 'a_rows': 16, 'a_size': 256, 'a_unique': 1, 'alpha': 1.0, 'beta': 0.0, 'density': 0.0625, 'mat_file': 'data/example_mats/quad/p3/gauss-legendre-lobatto/m0.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9887393573194179, 'speedup_best_over_ref': 0.9887393573194179, 'xsmm_custom_avg': 0.12136666666666666, 'xsmm_custom_best': 0.12136666666666666, 'xsmm_reference_avg': 0.12000000000000001, 'xsmm_reference_best': 0.12000000000000001, 'xsmm_reference_cpu_freq': 0.999997, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 16, 'a_nonzero': 64, 'a_rows': 16, 'a_size': 256, 'a_unique': 3, 'alpha': 1.0, 'beta': 0.0, 'density': 0.25, 'mat_file': 'data/example_mats/quad/p3/gauss-legendre-lobatto/m3.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9742962056303551, 'speedup_best_over_ref': 0.9742962056303551, 'xsmm_custom_avg': 0.05446666666666666, 'xsmm_custom_best': 0.05446666666666666, 'xsmm_reference_avg': 0.05306666666666667, 'xsmm_reference_best': 0.05306666666666667, 'xsmm_reference_cpu_freq': 0.999994, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 16, 'a_nonzero': 64, 'a_rows': 32, 'a_size': 512, 'a_unique': 3, 'alpha': 1.0, 'beta': 0.0, 'density': 0.125, 'mat_file': 'data/example_mats/quad/p3/gauss-legendre-lobatto/m6.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9792843691148776, 'speedup_best_over_ref': 0.9792843691148776, 'xsmm_custom_avg': 0.0531, 'xsmm_custom_best': 0.0531, 'xsmm_reference_avg': 0.052000000000000005, 'xsmm_reference_best': 0.052000000000000005, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 32, 'a_nonzero': 112, 'a_rows': 16, 'a_size': 512, 'a_unique': 7, 'alpha': 1.0, 'beta': 0.0, 'density': 0.21875, 'mat_file': 'data/example_mats/quad/p3/gauss-legendre-lobatto/m132.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9922069825436408, 'speedup_best_over_ref': 0.9922069825436408, 'xsmm_custom_avg': 0.10693333333333334, 'xsmm_custom_best': 0.10693333333333334, 'xsmm_reference_avg': 0.1061, 'xsmm_reference_best': 0.1061, 'xsmm_reference_cpu_freq': 0.999997, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 16, 'a_nonzero': 112, 'a_rows': 32, 'a_size': 512, 'a_unique': 7, 'alpha': 1.0, 'beta': 0.0, 'density': 0.21875, 'mat_file': 'data/example_mats/quad/p3/gauss-legendre-lobatto/m460.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9877161055505005, 'speedup_best_over_ref': 0.9877161055505005, 'xsmm_custom_avg': 0.07326666666666666, 'xsmm_custom_best': 0.07326666666666666, 'xsmm_reference_avg': 0.07236666666666666, 'xsmm_reference_best': 0.07236666666666666, 'xsmm_reference_cpu_freq': 0.999991, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 16, 'a_nonzero': 64, 'a_rows': 16, 'a_size': 256, 'a_unique': 4, 'alpha': 1.0, 'beta': 0.0, 'density': 0.25, 'mat_file': 'data/example_mats/quad/p3/gauss-legendre/m0.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9625108979947691, 'speedup_best_over_ref': 0.9625108979947691, 'xsmm_custom_avg': 0.038233333333333334, 'xsmm_custom_best': 0.038233333333333334, 'xsmm_reference_avg': 0.036800000000000006, 'xsmm_reference_best': 0.036800000000000006, 'xsmm_reference_cpu_freq': 0.999991, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 16, 'a_nonzero': 64, 'a_rows': 16, 'a_size': 256, 'a_unique': 4, 'alpha': 1.0, 'beta': 0.0, 'density': 0.25, 'mat_file': 'data/example_mats/quad/p3/gauss-legendre/m3.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9742647058823531, 'speedup_best_over_ref': 0.9742647058823531, 'xsmm_custom_avg': 0.0544, 'xsmm_custom_best': 0.0544, 'xsmm_reference_avg': 0.053000000000000005, 'xsmm_reference_best': 0.053000000000000005, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 16, 'a_nonzero': 64, 'a_rows': 32, 'a_size': 512, 'a_unique': 4, 'alpha': 1.0, 'beta': 0.0, 'density': 0.125, 'mat_file': 'data/example_mats/quad/p3/gauss-legendre/m6.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.0012674271229405, 'speedup_best_over_ref': 1.0012674271229405, 'xsmm_custom_avg': 0.0526, 'xsmm_custom_best': 0.0526, 'xsmm_reference_avg': 0.05266666666666667, 'xsmm_reference_best': 0.05266666666666667, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 32, 'a_nonzero': 128, 'a_rows': 16, 'a_size': 512, 'a_unique': 8, 'alpha': 1.0, 'beta': 0.0, 'density': 0.25, 'mat_file': 'data/example_mats/quad/p3/gauss-legendre/m132.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9913137893593919, 'speedup_best_over_ref': 0.9913137893593919, 'xsmm_custom_avg': 0.1228, 'xsmm_custom_best': 0.1228, 'xsmm_reference_avg': 0.12173333333333333, 'xsmm_reference_best': 0.12173333333333333, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 16, 'a_nonzero': 128, 'a_rows': 32, 'a_size': 512, 'a_unique': 8, 'alpha': 1.0, 'beta': 0.0, 'density': 0.25, 'mat_file': 'data/example_mats/quad/p3/gauss-legendre/m460.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9914829659318638, 'speedup_best_over_ref': 0.9914829659318638, 'xsmm_custom_avg': 0.06653333333333333, 'xsmm_custom_best': 0.06653333333333333, 'xsmm_reference_avg': 0.06596666666666667, 'xsmm_reference_best': 0.06596666666666667, 'xsmm_reference_cpu_freq': 0.999995, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 25, 'a_nonzero': 20, 'a_rows': 20, 'a_size': 500, 'a_unique': 1, 'alpha': 1.0, 'beta': 0.0, 'density': 0.04, 'mat_file': 'data/example_mats/quad/p4/gauss-legendre-lobatto/m0.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.27249357326478146, 'speedup_best_over_ref': 0.27249357326478146, 'xsmm_custom_avg': 0.12966666666666668, 'xsmm_custom_best': 0.12966666666666668, 'xsmm_reference_avg': 0.035333333333333335, 'xsmm_reference_best': 0.035333333333333335, 'xsmm_reference_cpu_freq': 0.999995, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 20, 'a_nonzero': 100, 'a_rows': 25, 'a_size': 500, 'a_unique': 4, 'alpha': 1.0, 'beta': 0.0, 'density': 0.2, 'mat_file': 'data/example_mats/quad/p4/gauss-legendre-lobatto/m3.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9876339653751031, 'speedup_best_over_ref': 0.9876339653751031, 'xsmm_custom_avg': 0.08086666666666667, 'xsmm_custom_best': 0.08086666666666667, 'xsmm_reference_avg': 0.07986666666666667, 'xsmm_reference_best': 0.07986666666666667, 'xsmm_reference_cpu_freq': 0.999992, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 20, 'a_nonzero': 100, 'a_rows': 50, 'a_size': 1000, 'a_unique': 4, 'alpha': 1.0, 'beta': 0.0, 'density': 0.1, 'mat_file': 'data/example_mats/quad/p4/gauss-legendre-lobatto/m6.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9827204253433762, 'speedup_best_over_ref': 0.9827204253433762, 'xsmm_custom_avg': 0.07523333333333333, 'xsmm_custom_best': 0.07523333333333333, 'xsmm_reference_avg': 0.07393333333333334, 'xsmm_reference_best': 0.07393333333333334, 'xsmm_reference_cpu_freq': 0.999996, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 50, 'a_nonzero': 220, 'a_rows': 25, 'a_size': 1250, 'a_unique': 11, 'alpha': 1.0, 'beta': 0.0, 'density': 0.176, 'mat_file': 'data/example_mats/quad/p4/gauss-legendre-lobatto/m132.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9926160337552743, 'speedup_best_over_ref': 0.9926160337552743, 'xsmm_custom_avg': 0.1896, 'xsmm_custom_best': 0.1896, 'xsmm_reference_avg': 0.1882, 'xsmm_reference_best': 0.1882, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 25, 'a_nonzero': 220, 'a_rows': 50, 'a_size': 1250, 'a_unique': 11, 'alpha': 1.0, 'beta': 0.0, 'density': 0.176, 'mat_file': 'data/example_mats/quad/p4/gauss-legendre-lobatto/m460.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9957880735978718, 'speedup_best_over_ref': 0.9957880735978718, 'xsmm_custom_avg': 0.15036666666666668, 'xsmm_custom_best': 0.15036666666666668, 'xsmm_reference_avg': 0.14973333333333333, 'xsmm_reference_best': 0.14973333333333333, 'xsmm_reference_cpu_freq': 0.999996, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 25, 'a_nonzero': 100, 'a_rows': 20, 'a_size': 500, 'a_unique': 5, 'alpha': 1.0, 'beta': 0.0, 'density': 0.2, 'mat_file': 'data/example_mats/quad/p4/gauss-legendre/m0.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9852216748768473, 'speedup_best_over_ref': 0.9852216748768473, 'xsmm_custom_avg': 0.05413333333333334, 'xsmm_custom_best': 0.05413333333333334, 'xsmm_reference_avg': 0.05333333333333334, 'xsmm_reference_best': 0.05333333333333334, 'xsmm_reference_cpu_freq': 0.999994, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 20, 'a_nonzero': 100, 'a_rows': 25, 'a_size': 500, 'a_unique': 5, 'alpha': 1.0, 'beta': 0.0, 'density': 0.2, 'mat_file': 'data/example_mats/quad/p4/gauss-legendre/m3.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9794407894736843, 'speedup_best_over_ref': 0.9794407894736843, 'xsmm_custom_avg': 0.08106666666666666, 'xsmm_custom_best': 0.08106666666666666, 'xsmm_reference_avg': 0.0794, 'xsmm_reference_best': 0.0794, 'xsmm_reference_cpu_freq': 0.999992, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 20, 'a_nonzero': 100, 'a_rows': 50, 'a_size': 1000, 'a_unique': 5, 'alpha': 1.0, 'beta': 0.0, 'density': 0.1, 'mat_file': 'data/example_mats/quad/p4/gauss-legendre/m6.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9717439293598233, 'speedup_best_over_ref': 0.9717439293598233, 'xsmm_custom_avg': 0.0755, 'xsmm_custom_best': 0.0755, 'xsmm_reference_avg': 0.07336666666666666, 'xsmm_reference_best': 0.07336666666666666, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 50, 'a_nonzero': 240, 'a_rows': 25, 'a_size': 1250, 'a_unique': 12, 'alpha': 1.0, 'beta': 0.0, 'density': 0.192, 'mat_file': 'data/example_mats/quad/p4/gauss-legendre/m132.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9953871499176277, 'speedup_best_over_ref': 0.9953871499176277, 'xsmm_custom_avg': 0.20233333333333334, 'xsmm_custom_best': 0.20233333333333334, 'xsmm_reference_avg': 0.2014, 'xsmm_reference_best': 0.2014, 'xsmm_reference_cpu_freq': 0.999998, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 25, 'a_nonzero': 240, 'a_rows': 50, 'a_size': 1250, 'a_unique': 12, 'alpha': 1.0, 'beta': 0.0, 'density': 0.192, 'mat_file': 'data/example_mats/quad/p4/gauss-legendre/m460.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.0053333333333334, 'speedup_best_over_ref': 1.0053333333333334, 'xsmm_custom_avg': 0.125, 'xsmm_custom_best': 0.125, 'xsmm_reference_avg': 0.12566666666666668, 'xsmm_reference_best': 0.12566666666666668, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 36, 'a_nonzero': 24, 'a_rows': 24, 'a_size': 864, 'a_unique': 1, 'alpha': 1.0, 'beta': 0.0, 'density': 0.027777777777777776, 'mat_file': 'data/example_mats/quad/p5/gauss-legendre-lobatto/m0.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9944944944944945, 'speedup_best_over_ref': 0.9944944944944945, 'xsmm_custom_avg': 0.1332, 'xsmm_custom_best': 0.1332, 'xsmm_reference_avg': 0.13246666666666668, 'xsmm_reference_best': 0.13246666666666668, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 24, 'a_nonzero': 144, 'a_rows': 36, 'a_size': 864, 'a_unique': 4, 'alpha': 1.0, 'beta': 0.0, 'density': 0.16666666666666666, 'mat_file': 'data/example_mats/quad/p5/gauss-legendre-lobatto/m3.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9932508436445443, 'speedup_best_over_ref': 0.9932508436445443, 'xsmm_custom_avg': 0.11853333333333334, 'xsmm_custom_best': 0.11853333333333334, 'xsmm_reference_avg': 0.11773333333333333, 'xsmm_reference_best': 0.11773333333333333, 'xsmm_reference_cpu_freq': 0.999997, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 24, 'a_nonzero': 144, 'a_rows': 72, 'a_size': 1728, 'a_unique': 4, 'alpha': 1.0, 'beta': 0.0, 'density': 0.08333333333333333, 'mat_file': 'data/example_mats/quad/p5/gauss-legendre-lobatto/m6.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9819761828130029, 'speedup_best_over_ref': 0.9819761828130029, 'xsmm_custom_avg': 0.10356666666666667, 'xsmm_custom_best': 0.10356666666666667, 'xsmm_reference_avg': 0.1017, 'xsmm_reference_best': 0.1017, 'xsmm_reference_cpu_freq': 0.999994, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 72, 'a_nonzero': 384, 'a_rows': 36, 'a_size': 2592, 'a_unique': 16, 'alpha': 1.0, 'beta': 0.0, 'density': 0.14814814814814814, 'mat_file': 'data/example_mats/quad/p5/gauss-legendre-lobatto/m132.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9864641454846041, 'speedup_best_over_ref': 0.9864641454846041, 'xsmm_custom_avg': 0.32260000000000005, 'xsmm_custom_best': 0.32260000000000005, 'xsmm_reference_avg': 0.31823333333333337, 'xsmm_reference_best': 0.31823333333333337, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 36, 'a_nonzero': 384, 'a_rows': 72, 'a_size': 2592, 'a_unique': 16, 'alpha': 1.0, 'beta': 0.0, 'density': 0.14814814814814814, 'mat_file': 'data/example_mats/quad/p5/gauss-legendre-lobatto/m460.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9951886553557864, 'speedup_best_over_ref': 0.9951886553557864, 'xsmm_custom_avg': 0.26326666666666665, 'xsmm_custom_best': 0.26326666666666665, 'xsmm_reference_avg': 0.262, 'xsmm_reference_best': 0.262, 'xsmm_reference_cpu_freq': 0.999997, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 36, 'a_nonzero': 144, 'a_rows': 24, 'a_size': 864, 'a_unique': 6, 'alpha': 1.0, 'beta': 0.0, 'density': 0.16666666666666666, 'mat_file': 'data/example_mats/quad/p5/gauss-legendre/m0.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.980514096185738, 'speedup_best_over_ref': 0.980514096185738, 'xsmm_custom_avg': 0.0804, 'xsmm_custom_best': 0.0804, 'xsmm_reference_avg': 0.07883333333333334, 'xsmm_reference_best': 0.07883333333333334, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 24, 'a_nonzero': 144, 'a_rows': 36, 'a_size': 864, 'a_unique': 6, 'alpha': 1.0, 'beta': 0.0, 'density': 0.16666666666666666, 'mat_file': 'data/example_mats/quad/p5/gauss-legendre/m3.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9874965268130035, 'speedup_best_over_ref': 0.9874965268130035, 'xsmm_custom_avg': 0.11996666666666668, 'xsmm_custom_best': 0.11996666666666668, 'xsmm_reference_avg': 0.11846666666666666, 'xsmm_reference_best': 0.11846666666666666, 'xsmm_reference_cpu_freq': 0.999994, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 24, 'a_nonzero': 144, 'a_rows': 72, 'a_size': 1728, 'a_unique': 6, 'alpha': 1.0, 'beta': 0.0, 'density': 0.08333333333333333, 'mat_file': 'data/example_mats/quad/p5/gauss-legendre/m6.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.988792827409542, 'speedup_best_over_ref': 0.988792827409542, 'xsmm_custom_avg': 0.10410000000000001, 'xsmm_custom_best': 0.10410000000000001, 'xsmm_reference_avg': 0.10293333333333334, 'xsmm_reference_best': 0.10293333333333334, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 72, 'a_nonzero': 432, 'a_rows': 36, 'a_size': 2592, 'a_unique': 18, 'alpha': 1.0, 'beta': 0.0, 'density': 0.16666666666666666, 'mat_file': 'data/example_mats/quad/p5/gauss-legendre/m132.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.03488042348048, 'speedup_best_over_ref': 1.03488042348048, 'xsmm_custom_avg': 0.35263333333333335, 'xsmm_custom_best': 0.35263333333333335, 'xsmm_reference_avg': 0.36493333333333333, 'xsmm_reference_best': 0.36493333333333333, 'xsmm_reference_cpu_freq': 0.999999, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 36, 'a_nonzero': 432, 'a_rows': 72, 'a_size': 2592, 'a_unique': 18, 'alpha': 1.0, 'beta': 0.0, 'density': 0.16666666666666666, 'mat_file': 'data/example_mats/quad/p5/gauss-legendre/m460.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.992055926278996, 'speedup_best_over_ref': 0.992055926278996, 'xsmm_custom_avg': 0.2098, 'xsmm_custom_best': 0.2098, 'xsmm_reference_avg': 0.20813333333333334, 'xsmm_reference_best': 0.20813333333333334, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 49, 'a_nonzero': 28, 'a_rows': 28, 'a_size': 1372, 'a_unique': 1, 'alpha': 1.0, 'beta': 0.0, 'density': 0.02040816326530612, 'mat_file': 'data/example_mats/quad/p6/gauss-legendre-lobatto/m0.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9937484972349215, 'speedup_best_over_ref': 0.9937484972349215, 'xsmm_custom_avg': 0.13863333333333333, 'xsmm_custom_best': 0.13863333333333333, 'xsmm_reference_avg': 0.13776666666666795, 'xsmm_reference_best': 0.13776666666666795, 'xsmm_reference_cpu_freq': 0.999998, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 28, 'a_nonzero': 196, 'a_rows': 49, 'a_size': 1372, 'a_unique': 5, 'alpha': 1.0, 'beta': 0.0, 'density': 0.14285714285714285, 'mat_file': 'data/example_mats/quad/p6/gauss-legendre-lobatto/m3.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9919389053882054, 'speedup_best_over_ref': 0.9919389053882054, 'xsmm_custom_avg': 0.15713333333333335, 'xsmm_custom_best': 0.15713333333333335, 'xsmm_reference_avg': 0.15586666666666668, 'xsmm_reference_best': 0.15586666666666668, 'xsmm_reference_cpu_freq': 0.999998, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 28, 'a_nonzero': 196, 'a_rows': 98, 'a_size': 2744, 'a_unique': 5, 'alpha': 1.0, 'beta': 0.0, 'density': 0.07142857142857142, 'mat_file': 'data/example_mats/quad/p6/gauss-legendre-lobatto/m6.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.544582320583344, 'speedup_best_over_ref': 0.544582320583344, 'xsmm_custom_avg': 0.26056666666666667, 'xsmm_custom_best': 0.26056666666666667, 'xsmm_reference_avg': 0.1419, 'xsmm_reference_best': 0.1419, 'xsmm_reference_cpu_freq': 0.999997, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 98, 'a_nonzero': 616, 'a_rows': 49, 'a_size': 4802, 'a_unique': 22, 'alpha': 1.0, 'beta': 0.0, 'density': 0.1282798833819242, 'mat_file': 'data/example_mats/quad/p6/gauss-legendre-lobatto/m132.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9924699772801038, 'speedup_best_over_ref': 0.9924699772801038, 'xsmm_custom_avg': 0.5135, 'xsmm_custom_best': 0.5135, 'xsmm_reference_avg': 0.5096333333333333, 'xsmm_reference_best': 0.5096333333333333, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 49, 'a_nonzero': 616, 'a_rows': 98, 'a_size': 4802, 'a_unique': 22, 'alpha': 1.0, 'beta': 0.0, 'density': 0.1282798833819242, 'mat_file': 'data/example_mats/quad/p6/gauss-legendre-lobatto/m460.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9953159733248652, 'speedup_best_over_ref': 0.9953159733248652, 'xsmm_custom_avg': 0.41986666666666667, 'xsmm_custom_best': 0.41986666666666667, 'xsmm_reference_avg': 0.41790000000000005, 'xsmm_reference_best': 0.41790000000000005, 'xsmm_reference_cpu_freq': 0.999998, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 49, 'a_nonzero': 196, 'a_rows': 28, 'a_size': 1372, 'a_unique': 7, 'alpha': 1.0, 'beta': 0.0, 'density': 0.14285714285714285, 'mat_file': 'data/example_mats/quad/p6/gauss-legendre/m0.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9805459679949796, 'speedup_best_over_ref': 0.9805459679949796, 'xsmm_custom_avg': 0.10623333333333333, 'xsmm_custom_best': 0.10623333333333333, 'xsmm_reference_avg': 0.10416666666666667, 'xsmm_reference_best': 0.10416666666666667, 'xsmm_reference_cpu_freq': 0.999997, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 28, 'a_nonzero': 196, 'a_rows': 49, 'a_size': 1372, 'a_unique': 7, 'alpha': 1.0, 'beta': 0.0, 'density': 0.14285714285714285, 'mat_file': 'data/example_mats/quad/p6/gauss-legendre/m3.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9934028516705684, 'speedup_best_over_ref': 0.9934028516705684, 'xsmm_custom_avg': 0.15663333333333332, 'xsmm_custom_best': 0.15663333333333332, 'xsmm_reference_avg': 0.15560000000000002, 'xsmm_reference_best': 0.15560000000000002, 'xsmm_reference_cpu_freq': 0.999998, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 28, 'a_nonzero': 196, 'a_rows': 98, 'a_size': 2744, 'a_unique': 7, 'alpha': 1.0, 'beta': 0.0, 'density': 0.07142857142857142, 'mat_file': 'data/example_mats/quad/p6/gauss-legendre/m6.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9882297551789079, 'speedup_best_over_ref': 0.9882297551789079, 'xsmm_custom_avg': 0.1416, 'xsmm_custom_best': 0.1416, 'xsmm_reference_avg': 0.13993333333333335, 'xsmm_reference_best': 0.13993333333333335, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 98, 'a_nonzero': 672, 'a_rows': 49, 'a_size': 4802, 'a_unique': 24, 'alpha': 1.0, 'beta': 0.0, 'density': 0.13994169096209913, 'mat_file': 'data/example_mats/quad/p6/gauss-legendre/m132.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.00980690747396, 'speedup_best_over_ref': 1.00980690747396, 'xsmm_custom_avg': 0.5472333333333333, 'xsmm_custom_best': 0.5472333333333333, 'xsmm_reference_avg': 0.5526, 'xsmm_reference_best': 0.5526, 'xsmm_reference_cpu_freq': 0.999999, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 49, 'a_nonzero': 672, 'a_rows': 98, 'a_size': 4802, 'a_unique': 24, 'alpha': 1.0, 'beta': 0.0, 'density': 0.13994169096209913, 'mat_file': 'data/example_mats/quad/p6/gauss-legendre/m460.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9930375142886833, 'speedup_best_over_ref': 0.9930375142886833, 'xsmm_custom_avg': 0.32076666666666664, 'xsmm_custom_best': 0.32076666666666664, 'xsmm_reference_avg': 0.3185333333333333, 'xsmm_reference_best': 0.3185333333333333, 'xsmm_reference_cpu_freq': 0.999998, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 4, 'a_nonzero': 48, 'a_rows': 12, 'a_size': 48, 'a_unique': 3, 'alpha': 1.0, 'beta': 0.0, 'density': 1.0, 'mat_file': 'data/example_mats/tet/p1/shunn-ham/m0.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.2793627269359022, 'speedup_best_over_ref': 0.2793627269359022, 'xsmm_custom_avg': 0.08996666666666667, 'xsmm_custom_best': 0.08996666666666667, 'xsmm_reference_avg': 0.025133333333333334, 'xsmm_reference_best': 0.025133333333333334, 'xsmm_reference_cpu_freq': 0.999993, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 12, 'a_nonzero': 48, 'a_rows': 4, 'a_size': 48, 'a_unique': 6, 'alpha': 1.0, 'beta': 0.0, 'density': 1.0, 'mat_file': 'data/example_mats/tet/p1/shunn-ham/m3.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9270976616231088, 'speedup_best_over_ref': 0.9270976616231088, 'xsmm_custom_avg': 0.024233333333333332, 'xsmm_custom_best': 0.024233333333333332, 'xsmm_reference_avg': 0.02246666666666667, 'xsmm_reference_best': 0.02246666666666667, 'xsmm_reference_cpu_freq': 0.999986, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 12, 'a_nonzero': 72, 'a_rows': 12, 'a_size': 144, 'a_unique': 3, 'alpha': 1.0, 'beta': 0.0, 'density': 0.5, 'mat_file': 'data/example_mats/tet/p1/shunn-ham/m6.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9657293497363796, 'speedup_best_over_ref': 0.9657293497363796, 'xsmm_custom_avg': 0.03793333333333333, 'xsmm_custom_best': 0.03793333333333333, 'xsmm_reference_avg': 0.03663333333333333, 'xsmm_reference_best': 0.03663333333333333, 'xsmm_reference_cpu_freq': 0.999991, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 12, 'a_nonzero': 24, 'a_rows': 4, 'a_size': 48, 'a_unique': 1, 'alpha': 1.0, 'beta': 0.0, 'density': 0.5, 'mat_file': 'data/example_mats/tet/p1/shunn-ham/m132.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.8720095693779905, 'speedup_best_over_ref': 0.8720095693779905, 'xsmm_custom_avg': 0.027866666666666665, 'xsmm_custom_best': 0.027866666666666665, 'xsmm_reference_avg': 0.0243, 'xsmm_reference_best': 0.0243, 'xsmm_reference_cpu_freq': 0.999976, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 4, 'a_nonzero': 24, 'a_rows': 12, 'a_size': 48, 'a_unique': 1, 'alpha': 1.0, 'beta': 0.0, 'density': 0.5, 'mat_file': 'data/example_mats/tet/p1/shunn-ham/m460.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9502074688796681, 'speedup_best_over_ref': 0.9502074688796681, 'xsmm_custom_avg': 0.016066666666666667, 'xsmm_custom_best': 0.016066666666666667, 'xsmm_reference_avg': 0.015266666666666668, 'xsmm_reference_best': 0.015266666666666668, 'xsmm_reference_cpu_freq': 0.999959, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 10, 'a_nonzero': 240, 'a_rows': 24, 'a_size': 240, 'a_unique': 14, 'alpha': 1.0, 'beta': 0.0, 'density': 1.0, 'mat_file': 'data/example_mats/tet/p2/shunn-ham/m0.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9751650424394843, 'speedup_best_over_ref': 0.9751650424394843, 'xsmm_custom_avg': 0.10603333333333334, 'xsmm_custom_best': 0.10603333333333334, 'xsmm_reference_avg': 0.10339999999999999, 'xsmm_reference_best': 0.10339999999999999, 'xsmm_reference_cpu_freq': 0.999997, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: dense
+
+{'a_cols': 24, 'a_nonzero': 240, 'a_rows': 10, 'a_size': 240, 'a_unique': 28, 'alpha': 1.0, 'beta': 0.0, 'density': 1.0, 'mat_file': 'data/example_mats/tet/p2/shunn-ham/m3.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9294487289345902, 'speedup_best_over_ref': 0.9294487289345902, 'xsmm_custom_avg': 0.1167, 'xsmm_custom_best': 0.1167, 'xsmm_reference_avg': 0.10846666666666667, 'xsmm_reference_best': 0.10846666666666667, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'dense'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 24, 'a_nonzero': 360, 'a_rows': 30, 'a_size': 720, 'a_unique': 14, 'alpha': 1.0, 'beta': 0.0, 'density': 0.5, 'mat_file': 'data/example_mats/tet/p2/shunn-ham/m6.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9963775407526663, 'speedup_best_over_ref': 0.9963775407526663, 'xsmm_custom_avg': 0.16563333333333335, 'xsmm_custom_best': 0.16563333333333335, 'xsmm_reference_avg': 0.1650333333333333, 'xsmm_reference_best': 0.1650333333333333, 'xsmm_reference_cpu_freq': 0.999998, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: dense
+
+{'a_cols': 30, 'a_nonzero': 252, 'a_rows': 10, 'a_size': 300, 'a_unique': 23, 'alpha': 1.0, 'beta': 0.0, 'density': 0.84, 'mat_file': 'data/example_mats/tet/p2/shunn-ham/m132.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9424579682690031, 'speedup_best_over_ref': 0.9424579682690031, 'xsmm_custom_avg': 0.14076666666666665, 'xsmm_custom_best': 0.14076666666666665, 'xsmm_reference_avg': 0.13266666666666665, 'xsmm_reference_best': 0.13266666666666665, 'xsmm_reference_cpu_freq': 0.999995, 'xsmm_reference_kernel_type': 'dense'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 10, 'a_nonzero': 252, 'a_rows': 30, 'a_size': 300, 'a_unique': 23, 'alpha': 1.0, 'beta': 0.0, 'density': 0.84, 'mat_file': 'data/example_mats/tet/p2/shunn-ham/m460.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.0017678255745432, 'speedup_best_over_ref': 1.0017678255745432, 'xsmm_custom_avg': 0.11313333333333334, 'xsmm_custom_best': 0.11313333333333334, 'xsmm_reference_avg': 0.11333333333333333, 'xsmm_reference_best': 0.11333333333333333, 'xsmm_reference_cpu_freq': 0.999997, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: dense
+
+{'a_cols': 20, 'a_nonzero': 800, 'a_rows': 40, 'a_size': 800, 'a_unique': 40, 'alpha': 1.0, 'beta': 0.0, 'density': 1.0, 'mat_file': 'data/example_mats/tet/p3/shunn-ham/m0.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.989060731799321, 'speedup_best_over_ref': 0.989060731799321, 'xsmm_custom_avg': 0.35346666666666665, 'xsmm_custom_best': 0.35346666666666665, 'xsmm_reference_avg': 0.34959999999999997, 'xsmm_reference_best': 0.34959999999999997, 'xsmm_reference_cpu_freq': 0.999998, 'xsmm_reference_kernel_type': 'dense'}
+err on line AMX supported: 1xsmm-custom kernel type: dense
+
+{'a_cols': 40, 'a_nonzero': 800, 'a_rows': 20, 'a_size': 800, 'a_unique': 80, 'alpha': 1.0, 'beta': 0.0, 'density': 1.0, 'mat_file': 'data/example_mats/tet/p3/shunn-ham/m3.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9788020225593154, 'speedup_best_over_ref': 0.9788020225593154, 'xsmm_custom_avg': 0.34280000000000005, 'xsmm_custom_best': 0.34280000000000005, 'xsmm_reference_avg': 0.33553333333333335, 'xsmm_reference_best': 0.33553333333333335, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'dense'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 40, 'a_nonzero': 1200, 'a_rows': 60, 'a_size': 2400, 'a_unique': 40, 'alpha': 1.0, 'beta': 0.0, 'density': 0.5, 'mat_file': 'data/example_mats/tet/p3/shunn-ham/m6.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9984079683226517, 'speedup_best_over_ref': 0.9984079683226517, 'xsmm_custom_avg': 0.8165666666666667, 'xsmm_custom_best': 0.8165666666666667, 'xsmm_reference_avg': 0.8152666666666666, 'xsmm_reference_best': 0.8152666666666666, 'xsmm_reference_cpu_freq': 0.999999, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: dense
+
+{'a_cols': 60, 'a_nonzero': 1092, 'a_rows': 20, 'a_size': 1200, 'a_unique': 100, 'alpha': 1.0, 'beta': 0.0, 'density': 0.91, 'mat_file': 'data/example_mats/tet/p3/shunn-ham/m132.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.000130471655034, 'speedup_best_over_ref': 1.000130471655034, 'xsmm_custom_avg': 0.5109666666666667, 'xsmm_custom_best': 0.5109666666666667, 'xsmm_reference_avg': 0.5110333333333339, 'xsmm_reference_best': 0.5110333333333339, 'xsmm_reference_cpu_freq': 0.999999, 'xsmm_reference_kernel_type': 'dense'}
+err on line AMX supported: 1xsmm-custom kernel type: dense
+
+{'a_cols': 20, 'a_nonzero': 1092, 'a_rows': 60, 'a_size': 1200, 'a_unique': 100, 'alpha': 1.0, 'beta': 0.0, 'density': 0.91, 'mat_file': 'data/example_mats/tet/p3/shunn-ham/m460.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9904979095400989, 'speedup_best_over_ref': 0.9904979095400989, 'xsmm_custom_avg': 0.5262, 'xsmm_custom_best': 0.5262, 'xsmm_reference_avg': 0.5212, 'xsmm_reference_best': 0.5212, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'dense'}
+err on line AMX supported: 1xsmm-custom kernel type: dense
+
+{'a_cols': 35, 'a_nonzero': 2100, 'a_rows': 60, 'a_size': 2100, 'a_unique': 101, 'alpha': 1.0, 'beta': 0.0, 'density': 1.0, 'mat_file': 'data/example_mats/tet/p4/shunn-ham/m0.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9844265638325485, 'speedup_best_over_ref': 0.9844265638325485, 'xsmm_custom_avg': 0.8989666666666667, 'xsmm_custom_best': 0.8989666666666667, 'xsmm_reference_avg': 0.8849666666666667, 'xsmm_reference_best': 0.8849666666666667, 'xsmm_reference_cpu_freq': 0.999999, 'xsmm_reference_kernel_type': 'dense'}
+err on line AMX supported: 1xsmm-custom kernel type: dense
+
+{'a_cols': 60, 'a_nonzero': 2100, 'a_rows': 35, 'a_size': 2100, 'a_unique': 202, 'alpha': 1.0, 'beta': 0.0, 'density': 1.0, 'mat_file': 'data/example_mats/tet/p4/shunn-ham/m3.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9927516880936939, 'speedup_best_over_ref': 0.9927516880936939, 'xsmm_custom_avg': 0.8737666666666667, 'xsmm_custom_best': 0.8737666666666667, 'xsmm_reference_avg': 0.8674333333333333, 'xsmm_reference_best': 0.8674333333333333, 'xsmm_reference_cpu_freq': 0.999999, 'xsmm_reference_kernel_type': 'dense'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 60, 'a_nonzero': 3150, 'a_rows': 105, 'a_size': 6300, 'a_unique': 101, 'alpha': 1.0, 'beta': 0.0, 'density': 0.5, 'mat_file': 'data/example_mats/tet/p4/shunn-ham/m6.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9980273790284249, 'speedup_best_over_ref': 0.9980273790284249, 'xsmm_custom_avg': 1.4025333333333334, 'xsmm_custom_best': 1.4025333333333334, 'xsmm_reference_avg': 1.3997666666666668, 'xsmm_reference_best': 1.3997666666666668, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: dense
+
+{'a_cols': 105, 'a_nonzero': 3432, 'a_rows': 35, 'a_size': 3675, 'a_unique': 304, 'alpha': 1.0, 'beta': 0.0, 'density': 0.9338775510204081, 'mat_file': 'data/example_mats/tet/p4/shunn-ham/m132.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9862198827406172, 'speedup_best_over_ref': 0.9862198827406172, 'xsmm_custom_avg': 1.5578, 'xsmm_custom_best': 1.5578, 'xsmm_reference_avg': 1.5363333333333336, 'xsmm_reference_best': 1.5363333333333336, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'dense'}
+err on line AMX supported: 1xsmm-custom kernel type: dense
+
+{'a_cols': 35, 'a_nonzero': 3432, 'a_rows': 105, 'a_size': 3675, 'a_unique': 304, 'alpha': 1.0, 'beta': 0.0, 'density': 0.9338775510204081, 'mat_file': 'data/example_mats/tet/p4/shunn-ham/m460.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9962688913576624, 'speedup_best_over_ref': 0.9962688913576624, 'xsmm_custom_avg': 1.5902333333333334, 'xsmm_custom_best': 1.5902333333333334, 'xsmm_reference_avg': 1.5843, 'xsmm_reference_best': 1.5843, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'dense'}
+err on line AMX supported: 1xsmm-custom kernel type: dense
+
+{'a_cols': 56, 'a_nonzero': 4704, 'a_rows': 84, 'a_size': 4704, 'a_unique': 214, 'alpha': 1.0, 'beta': 0.0, 'density': 1.0, 'mat_file': 'data/example_mats/tet/p5/shunn-ham/m0.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.001142377152457, 'speedup_best_over_ref': 1.001142377152457, 'xsmm_custom_avg': 1.9841666666666666, 'xsmm_custom_best': 1.9841666666666666, 'xsmm_reference_avg': 1.9864333333333335, 'xsmm_reference_best': 1.9864333333333335, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'dense'}
+err on line AMX supported: 1xsmm-custom kernel type: dense
+
+{'a_cols': 84, 'a_nonzero': 4704, 'a_rows': 56, 'a_size': 4704, 'a_unique': 428, 'alpha': 1.0, 'beta': 0.0, 'density': 1.0, 'mat_file': 'data/example_mats/tet/p5/shunn-ham/m3.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.0024676850763807, 'speedup_best_over_ref': 1.0024676850763807, 'xsmm_custom_avg': 1.9856666666666667, 'xsmm_custom_best': 1.9856666666666667, 'xsmm_reference_avg': 1.9905666666666666, 'xsmm_reference_best': 1.9905666666666666, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'dense'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 84, 'a_nonzero': 7056, 'a_rows': 168, 'a_size': 14112, 'a_unique': 214, 'alpha': 1.0, 'beta': 0.0, 'density': 0.5, 'mat_file': 'data/example_mats/tet/p5/shunn-ham/m6.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9981542182477802, 'speedup_best_over_ref': 0.9981542182477802, 'xsmm_custom_avg': 3.1423, 'xsmm_custom_best': 3.1423, 'xsmm_reference_avg': 3.1365, 'xsmm_reference_best': 3.1365, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: dense
+
+{'a_cols': 168, 'a_nonzero': 8976, 'a_rows': 56, 'a_size': 9408, 'a_unique': 784, 'alpha': 1.0, 'beta': 0.0, 'density': 0.9540816326530612, 'mat_file': 'data/example_mats/tet/p5/shunn-ham/m132.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.0026445554705679, 'speedup_best_over_ref': 1.0026445554705679, 'xsmm_custom_avg': 4.096466666666667, 'xsmm_custom_best': 4.096466666666667, 'xsmm_reference_avg': 4.1072999999999995, 'xsmm_reference_best': 4.1072999999999995, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'dense'}
+err on line AMX supported: 1xsmm-custom kernel type: dense
+
+{'a_cols': 56, 'a_nonzero': 8976, 'a_rows': 168, 'a_size': 9408, 'a_unique': 784, 'alpha': 1.0, 'beta': 0.0, 'density': 0.9540816326530612, 'mat_file': 'data/example_mats/tet/p5/shunn-ham/m460.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9973421980915843, 'speedup_best_over_ref': 0.9973421980915843, 'xsmm_custom_avg': 4.101133333333333, 'xsmm_custom_best': 4.101133333333333, 'xsmm_reference_avg': 4.090233333333333, 'xsmm_reference_best': 4.090233333333333, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'dense'}
+err on line AMX supported: 1xsmm-custom kernel type: dense
+
+{'a_cols': 84, 'a_nonzero': 9408, 'a_rows': 112, 'a_size': 9408, 'a_unique': 425, 'alpha': 1.0, 'beta': 0.0, 'density': 1.0, 'mat_file': 'data/example_mats/tet/p6/shunn-ham/m0.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9988701699766502, 'speedup_best_over_ref': 0.9988701699766502, 'xsmm_custom_avg': 3.9829, 'xsmm_custom_best': 3.9829, 'xsmm_reference_avg': 3.9784, 'xsmm_reference_best': 3.9784, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'dense'}
+err on line AMX supported: 1xsmm-custom kernel type: dense
+
+{'a_cols': 112, 'a_nonzero': 9408, 'a_rows': 84, 'a_size': 9408, 'a_unique': 850, 'alpha': 1.0, 'beta': 0.0, 'density': 1.0, 'mat_file': 'data/example_mats/tet/p6/shunn-ham/m3.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9965746490280777, 'speedup_best_over_ref': 0.9965746490280777, 'xsmm_custom_avg': 3.9509333333333334, 'xsmm_custom_best': 3.9509333333333334, 'xsmm_reference_avg': 3.9374, 'xsmm_reference_best': 3.9374, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'dense'}
+err on line AMX supported: 1xsmm-custom kernel type: dense
+
+{'a_cols': 112, 'a_nonzero': 14112, 'a_rows': 252, 'a_size': 28224, 'a_unique': 425, 'alpha': 1.0, 'beta': 0.0, 'density': 0.5, 'mat_file': 'data/example_mats/tet/p6/shunn-ham/m6.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.00485986049461, 'speedup_best_over_ref': 1.00485986049461, 'xsmm_custom_avg': 13.141666666666667, 'xsmm_custom_best': 13.141666666666667, 'xsmm_reference_avg': 13.205533333333333, 'xsmm_reference_best': 13.205533333333333, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'dense'}
+err on line AMX supported: 1xsmm-custom kernel type: dense
+
+{'a_cols': 252, 'a_nonzero': 20400, 'a_rows': 84, 'a_size': 21168, 'a_unique': 1760, 'alpha': 1.0, 'beta': 0.0, 'density': 0.963718820861678, 'mat_file': 'data/example_mats/tet/p6/shunn-ham/m132.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.0034813653829073, 'speedup_best_over_ref': 1.0034813653829073, 'xsmm_custom_avg': 11.633366666666666, 'xsmm_custom_best': 11.633366666666666, 'xsmm_reference_avg': 11.673866666666667, 'xsmm_reference_best': 11.673866666666667, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'dense'}
+err on line AMX supported: 1xsmm-custom kernel type: dense
+
+{'a_cols': 84, 'a_nonzero': 20400, 'a_rows': 252, 'a_size': 21168, 'a_unique': 1760, 'alpha': 1.0, 'beta': 0.0, 'density': 0.963718820861678, 'mat_file': 'data/example_mats/tet/p6/shunn-ham/m460.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.0018075206123682, 'speedup_best_over_ref': 1.0018075206123682, 'xsmm_custom_avg': 10.0506, 'xsmm_custom_best': 10.0506, 'xsmm_reference_avg': 10.068766666666667, 'xsmm_reference_best': 10.068766666666667, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'dense'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 3, 'a_nonzero': 18, 'a_rows': 6, 'a_size': 18, 'a_unique': 3, 'alpha': 1.0, 'beta': 0.0, 'density': 1.0, 'mat_file': 'data/example_mats/tri/p1/williams-shunn/m0.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9705159705159706, 'speedup_best_over_ref': 0.9705159705159706, 'xsmm_custom_avg': 0.013566666666666666, 'xsmm_custom_best': 0.013566666666666666, 'xsmm_reference_avg': 0.013166666666666667, 'xsmm_reference_best': 0.013166666666666667, 'xsmm_reference_cpu_freq': 0.999951, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 6, 'a_nonzero': 18, 'a_rows': 3, 'a_size': 18, 'a_unique': 6, 'alpha': 1.0, 'beta': 0.0, 'density': 1.0, 'mat_file': 'data/example_mats/tri/p1/williams-shunn/m3.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.3736263736263736, 'speedup_best_over_ref': 1.3736263736263736, 'xsmm_custom_avg': 0.012133333333333333, 'xsmm_custom_best': 0.012133333333333333, 'xsmm_reference_avg': 0.016666666666666666, 'xsmm_reference_best': 0.016666666666666666, 'xsmm_reference_cpu_freq': 0.999973, 'xsmm_reference_kernel_type': 'dense'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 6, 'a_nonzero': 24, 'a_rows': 6, 'a_size': 36, 'a_unique': 3, 'alpha': 1.0, 'beta': 0.0, 'density': 0.6666666666666666, 'mat_file': 'data/example_mats/tri/p1/williams-shunn/m6.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.8714285714285713, 'speedup_best_over_ref': 0.8714285714285713, 'xsmm_custom_avg': 0.018666666666666668, 'xsmm_custom_best': 0.018666666666666668, 'xsmm_reference_avg': 0.016266666666666665, 'xsmm_reference_best': 0.016266666666666665, 'xsmm_reference_cpu_freq': 0.999964, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 6, 'a_nonzero': 12, 'a_rows': 3, 'a_size': 18, 'a_unique': 1, 'alpha': 1.0, 'beta': 0.0, 'density': 0.6666666666666666, 'mat_file': 'data/example_mats/tri/p1/williams-shunn/m132.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.0, 'speedup_best_over_ref': 1.0, 'xsmm_custom_avg': 0.014366666666666666, 'xsmm_custom_best': 0.014366666666666666, 'xsmm_reference_avg': 0.014366666666666666, 'xsmm_reference_best': 0.014366666666666666, 'xsmm_reference_cpu_freq': 0.999954, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 3, 'a_nonzero': 12, 'a_rows': 6, 'a_size': 18, 'a_unique': 1, 'alpha': 1.0, 'beta': 0.0, 'density': 0.6666666666666666, 'mat_file': 'data/example_mats/tri/p1/williams-shunn/m460.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9385964912280701, 'speedup_best_over_ref': 0.9385964912280701, 'xsmm_custom_avg': 0.0114, 'xsmm_custom_best': 0.0114, 'xsmm_reference_avg': 0.0107, 'xsmm_reference_best': 0.0107, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 6, 'a_nonzero': 54, 'a_rows': 9, 'a_size': 54, 'a_unique': 10, 'alpha': 1.0, 'beta': 0.0, 'density': 1.0, 'mat_file': 'data/example_mats/tri/p2/williams-shunn/m0.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.8884165781083952, 'speedup_best_over_ref': 0.8884165781083952, 'xsmm_custom_avg': 0.03136666666666667, 'xsmm_custom_best': 0.03136666666666667, 'xsmm_reference_avg': 0.027866666666666665, 'xsmm_reference_best': 0.027866666666666665, 'xsmm_reference_cpu_freq': 0.999979, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 9, 'a_nonzero': 54, 'a_rows': 6, 'a_size': 54, 'a_unique': 20, 'alpha': 1.0, 'beta': 0.0, 'density': 1.0, 'mat_file': 'data/example_mats/tri/p2/williams-shunn/m3.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.117359413202934, 'speedup_best_over_ref': 1.117359413202934, 'xsmm_custom_avg': 0.027266666666666665, 'xsmm_custom_best': 0.027266666666666665, 'xsmm_reference_avg': 0.030466666666666666, 'xsmm_reference_best': 0.030466666666666666, 'xsmm_reference_cpu_freq': 0.999976, 'xsmm_reference_kernel_type': 'dense'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 9, 'a_nonzero': 72, 'a_rows': 12, 'a_size': 108, 'a_unique': 10, 'alpha': 1.0, 'beta': 0.0, 'density': 0.6666666666666666, 'mat_file': 'data/example_mats/tri/p2/williams-shunn/m6.txt', 'size_n': 9600, 'speedup_avg_over_ref': 2.335185185185185, 'speedup_best_over_ref': 2.335185185185185, 'xsmm_custom_avg': 0.036000000000000004, 'xsmm_custom_best': 0.036000000000000004, 'xsmm_reference_avg': 0.08406666666666666, 'xsmm_reference_best': 0.08406666666666666, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: dense
+
+{'a_cols': 12, 'a_nonzero': 64, 'a_rows': 6, 'a_size': 72, 'a_unique': 14, 'alpha': 1.0, 'beta': 0.0, 'density': 0.8888888888888888, 'mat_file': 'data/example_mats/tri/p2/williams-shunn/m132.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.7655007949125595, 'speedup_best_over_ref': 0.7655007949125595, 'xsmm_custom_avg': 0.041933333333333336, 'xsmm_custom_best': 0.041933333333333336, 'xsmm_reference_avg': 0.0321, 'xsmm_reference_best': 0.0321, 'xsmm_reference_cpu_freq': 0.999992, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 6, 'a_nonzero': 64, 'a_rows': 12, 'a_size': 72, 'a_unique': 14, 'alpha': 1.0, 'beta': 0.0, 'density': 0.8888888888888888, 'mat_file': 'data/example_mats/tri/p2/williams-shunn/m460.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9823356231599607, 'speedup_best_over_ref': 0.9823356231599607, 'xsmm_custom_avg': 0.033966666666666666, 'xsmm_custom_best': 0.033966666666666666, 'xsmm_reference_avg': 0.03336666666666666, 'xsmm_reference_best': 0.03336666666666666, 'xsmm_reference_cpu_freq': 0.99998, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: dense
+
+{'a_cols': 10, 'a_nonzero': 120, 'a_rows': 12, 'a_size': 120, 'a_unique': 20, 'alpha': 1.0, 'beta': 0.0, 'density': 1.0, 'mat_file': 'data/example_mats/tri/p3/williams-shunn/m0.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9147869674185463, 'speedup_best_over_ref': 0.9147869674185463, 'xsmm_custom_avg': 0.0665, 'xsmm_custom_best': 0.0665, 'xsmm_reference_avg': 0.06083333333333333, 'xsmm_reference_best': 0.06083333333333333, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'dense'}
+err on line AMX supported: 1xsmm-custom kernel type: dense
+
+{'a_cols': 12, 'a_nonzero': 120, 'a_rows': 10, 'a_size': 120, 'a_unique': 40, 'alpha': 1.0, 'beta': 0.0, 'density': 1.0, 'mat_file': 'data/example_mats/tri/p3/williams-shunn/m3.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9170103092783505, 'speedup_best_over_ref': 0.9170103092783505, 'xsmm_custom_avg': 0.06466666666666666, 'xsmm_custom_best': 0.06466666666666666, 'xsmm_reference_avg': 0.0593, 'xsmm_reference_best': 0.0593, 'xsmm_reference_cpu_freq': 0.99999, 'xsmm_reference_kernel_type': 'dense'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 12, 'a_nonzero': 160, 'a_rows': 20, 'a_size': 240, 'a_unique': 20, 'alpha': 1.0, 'beta': 0.0, 'density': 0.6666666666666666, 'mat_file': 'data/example_mats/tri/p3/williams-shunn/m6.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9865410497981155, 'speedup_best_over_ref': 0.9865410497981155, 'xsmm_custom_avg': 0.0743, 'xsmm_custom_best': 0.0743, 'xsmm_reference_avg': 0.07329999999999999, 'xsmm_reference_best': 0.07329999999999999, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: dense
+
+{'a_cols': 20, 'a_nonzero': 192, 'a_rows': 10, 'a_size': 200, 'a_unique': 48, 'alpha': 1.0, 'beta': 0.0, 'density': 0.96, 'mat_file': 'data/example_mats/tri/p3/williams-shunn/m132.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9265347198926536, 'speedup_best_over_ref': 0.9265347198926536, 'xsmm_custom_avg': 0.09936666666666666, 'xsmm_custom_best': 0.09936666666666666, 'xsmm_reference_avg': 0.09206666666666667, 'xsmm_reference_best': 0.09206666666666667, 'xsmm_reference_cpu_freq': 0.999993, 'xsmm_reference_kernel_type': 'dense'}
+err on line AMX supported: 1xsmm-custom kernel type: dense
+
+{'a_cols': 10, 'a_nonzero': 192, 'a_rows': 20, 'a_size': 200, 'a_unique': 48, 'alpha': 1.0, 'beta': 0.0, 'density': 0.96, 'mat_file': 'data/example_mats/tri/p3/williams-shunn/m460.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9398924391015502, 'speedup_best_over_ref': 0.9398924391015502, 'xsmm_custom_avg': 0.10536666666666666, 'xsmm_custom_best': 0.10536666666666666, 'xsmm_reference_avg': 0.09903333333333333, 'xsmm_reference_best': 0.09903333333333333, 'xsmm_reference_cpu_freq': 0.999994, 'xsmm_reference_kernel_type': 'dense'}
+err on line AMX supported: 1xsmm-custom kernel type: dense
+
+{'a_cols': 15, 'a_nonzero': 225, 'a_rows': 15, 'a_size': 225, 'a_unique': 39, 'alpha': 1.0, 'beta': 0.0, 'density': 1.0, 'mat_file': 'data/example_mats/tri/p4/williams-shunn/m0.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9418536009445101, 'speedup_best_over_ref': 0.9418536009445101, 'xsmm_custom_avg': 0.11293333333333333, 'xsmm_custom_best': 0.11293333333333333, 'xsmm_reference_avg': 0.10636666666666666, 'xsmm_reference_best': 0.10636666666666666, 'xsmm_reference_cpu_freq': 0.999997, 'xsmm_reference_kernel_type': 'dense'}
+err on line AMX supported: 1xsmm-custom kernel type: dense
+
+{'a_cols': 15, 'a_nonzero': 225, 'a_rows': 15, 'a_size': 225, 'a_unique': 78, 'alpha': 1.0, 'beta': 0.0, 'density': 1.0, 'mat_file': 'data/example_mats/tri/p4/williams-shunn/m3.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9367051168293404, 'speedup_best_over_ref': 0.9367051168293404, 'xsmm_custom_avg': 0.1127, 'xsmm_custom_best': 0.1127, 'xsmm_reference_avg': 0.10556666666666666, 'xsmm_reference_best': 0.10556666666666666, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'dense'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 15, 'a_nonzero': 300, 'a_rows': 30, 'a_size': 450, 'a_unique': 39, 'alpha': 1.0, 'beta': 0.0, 'density': 0.6666666666666666, 'mat_file': 'data/example_mats/tri/p4/williams-shunn/m6.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9912663755458515, 'speedup_best_over_ref': 0.9912663755458515, 'xsmm_custom_avg': 0.17556666666666668, 'xsmm_custom_best': 0.17556666666666668, 'xsmm_reference_avg': 0.17403333333333335, 'xsmm_reference_best': 0.17403333333333335, 'xsmm_reference_cpu_freq': 0.999996, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: dense
+
+{'a_cols': 30, 'a_nonzero': 432, 'a_rows': 15, 'a_size': 450, 'a_unique': 108, 'alpha': 1.0, 'beta': 0.0, 'density': 0.96, 'mat_file': 'data/example_mats/tri/p4/williams-shunn/m132.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9683377308707125, 'speedup_best_over_ref': 0.9683377308707125, 'xsmm_custom_avg': 0.20213333333333333, 'xsmm_custom_best': 0.20213333333333333, 'xsmm_reference_avg': 0.19573333333333334, 'xsmm_reference_best': 0.19573333333333334, 'xsmm_reference_cpu_freq': 0.999998, 'xsmm_reference_kernel_type': 'dense'}
+err on line AMX supported: 1xsmm-custom kernel type: dense
+
+{'a_cols': 15, 'a_nonzero': 432, 'a_rows': 30, 'a_size': 450, 'a_unique': 108, 'alpha': 1.0, 'beta': 0.0, 'density': 0.96, 'mat_file': 'data/example_mats/tri/p4/williams-shunn/m460.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.977356083559241, 'speedup_best_over_ref': 0.977356083559241, 'xsmm_custom_avg': 0.20903333333333332, 'xsmm_custom_best': 0.20903333333333332, 'xsmm_reference_avg': 0.20429999999999998, 'xsmm_reference_best': 0.20429999999999998, 'xsmm_reference_cpu_freq': 0.999998, 'xsmm_reference_kernel_type': 'dense'}
+err on line AMX supported: 1xsmm-custom kernel type: dense
+
+{'a_cols': 21, 'a_nonzero': 378, 'a_rows': 18, 'a_size': 378, 'a_unique': 63, 'alpha': 1.0, 'beta': 0.0, 'density': 1.0, 'mat_file': 'data/example_mats/tri/p5/williams-shunn/m0.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9600614439324116, 'speedup_best_over_ref': 0.9600614439324116, 'xsmm_custom_avg': 0.1736, 'xsmm_custom_best': 0.1736, 'xsmm_reference_avg': 0.16666666666666666, 'xsmm_reference_best': 0.16666666666666666, 'xsmm_reference_cpu_freq': 0.999996, 'xsmm_reference_kernel_type': 'dense'}
+err on line AMX supported: 1xsmm-custom kernel type: dense
+
+{'a_cols': 18, 'a_nonzero': 378, 'a_rows': 21, 'a_size': 378, 'a_unique': 126, 'alpha': 1.0, 'beta': 0.0, 'density': 1.0, 'mat_file': 'data/example_mats/tri/p5/williams-shunn/m3.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9644486692015211, 'speedup_best_over_ref': 0.9644486692015211, 'xsmm_custom_avg': 0.1753333333333333, 'xsmm_custom_best': 0.1753333333333333, 'xsmm_reference_avg': 0.1691, 'xsmm_reference_best': 0.1691, 'xsmm_reference_cpu_freq': 0.999998, 'xsmm_reference_kernel_type': 'dense'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 18, 'a_nonzero': 504, 'a_rows': 42, 'a_size': 756, 'a_unique': 63, 'alpha': 1.0, 'beta': 0.0, 'density': 0.6666666666666666, 'mat_file': 'data/example_mats/tri/p5/williams-shunn/m6.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9984140715109574, 'speedup_best_over_ref': 0.9984140715109574, 'xsmm_custom_avg': 0.2312, 'xsmm_custom_best': 0.2312, 'xsmm_reference_avg': 0.23083333333333333, 'xsmm_reference_best': 0.23083333333333333, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: dense
+
+{'a_cols': 42, 'a_nonzero': 864, 'a_rows': 21, 'a_size': 882, 'a_unique': 216, 'alpha': 1.0, 'beta': 0.0, 'density': 0.9795918367346939, 'mat_file': 'data/example_mats/tri/p5/williams-shunn/m132.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9539050269612106, 'speedup_best_over_ref': 0.9539050269612106, 'xsmm_custom_avg': 0.38326666666666664, 'xsmm_custom_best': 0.38326666666666664, 'xsmm_reference_avg': 0.3656, 'xsmm_reference_best': 0.3656, 'xsmm_reference_cpu_freq': 0.999998, 'xsmm_reference_kernel_type': 'dense'}
+err on line AMX supported: 1xsmm-custom kernel type: dense
+
+{'a_cols': 21, 'a_nonzero': 864, 'a_rows': 42, 'a_size': 882, 'a_unique': 216, 'alpha': 1.0, 'beta': 0.0, 'density': 0.9795918367346939, 'mat_file': 'data/example_mats/tri/p5/williams-shunn/m460.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9865459249676585, 'speedup_best_over_ref': 0.9865459249676585, 'xsmm_custom_avg': 0.3865, 'xsmm_custom_best': 0.3865, 'xsmm_reference_avg': 0.38130000000000003, 'xsmm_reference_best': 0.38130000000000003, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'dense'}
+err on line AMX supported: 1xsmm-custom kernel type: dense
+
+{'a_cols': 28, 'a_nonzero': 588, 'a_rows': 21, 'a_size': 588, 'a_unique': 100, 'alpha': 1.0, 'beta': 0.0, 'density': 1.0, 'mat_file': 'data/example_mats/tri/p6/williams-shunn/m0.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9757583614207934, 'speedup_best_over_ref': 0.9757583614207934, 'xsmm_custom_avg': 0.2571333333333333, 'xsmm_custom_best': 0.2571333333333333, 'xsmm_reference_avg': 0.2509, 'xsmm_reference_best': 0.2509, 'xsmm_reference_cpu_freq': 0.999999, 'xsmm_reference_kernel_type': 'dense'}
+err on line AMX supported: 1xsmm-custom kernel type: dense
+
+{'a_cols': 21, 'a_nonzero': 588, 'a_rows': 28, 'a_size': 588, 'a_unique': 200, 'alpha': 1.0, 'beta': 0.0, 'density': 1.0, 'mat_file': 'data/example_mats/tri/p6/williams-shunn/m3.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9771863117870723, 'speedup_best_over_ref': 0.9771863117870723, 'xsmm_custom_avg': 0.263, 'xsmm_custom_best': 0.263, 'xsmm_reference_avg': 0.257, 'xsmm_reference_best': 0.257, 'xsmm_reference_cpu_freq': 1.0, 'xsmm_reference_kernel_type': 'dense'}
+err on line AMX supported: 1xsmm-custom kernel type: undefined
+
+{'a_cols': 21, 'a_nonzero': 784, 'a_rows': 56, 'a_size': 1176, 'a_unique': 100, 'alpha': 1.0, 'beta': 0.0, 'density': 0.6666666666666666, 'mat_file': 'data/example_mats/tri/p6/williams-shunn/m6.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9971194945177476, 'speedup_best_over_ref': 0.9971194945177476, 'xsmm_custom_avg': 0.35873333333333335, 'xsmm_custom_best': 0.35873333333333335, 'xsmm_reference_avg': 0.3577, 'xsmm_reference_best': 0.3577, 'xsmm_reference_cpu_freq': 0.999999, 'xsmm_reference_kernel_type': 'undefined'}
+err on line AMX supported: 1xsmm-custom kernel type: dense
+
+{'a_cols': 56, 'a_nonzero': 1536, 'a_rows': 28, 'a_size': 1568, 'a_unique': 384, 'alpha': 1.0, 'beta': 0.0, 'density': 0.9795918367346939, 'mat_file': 'data/example_mats/tri/p6/williams-shunn/m132.txt', 'size_n': 9600, 'speedup_avg_over_ref': 0.9697857720291024, 'speedup_best_over_ref': 0.9697857720291024, 'xsmm_custom_avg': 0.6597333333333334, 'xsmm_custom_best': 0.6597333333333334, 'xsmm_reference_avg': 0.6397999999999999, 'xsmm_reference_best': 0.6397999999999999, 'xsmm_reference_cpu_freq': 0.999999, 'xsmm_reference_kernel_type': 'dense'}
+err on line AMX supported: 1xsmm-custom kernel type: dense
+
+{'a_cols': 28, 'a_nonzero': 1536, 'a_rows': 56, 'a_size': 1568, 'a_unique': 384, 'alpha': 1.0, 'beta': 0.0, 'density': 0.9795918367346939, 'mat_file': 'data/example_mats/tri/p6/williams-shunn/m460.txt', 'size_n': 9600, 'speedup_avg_over_ref': 1.0020519493518842, 'speedup_best_over_ref': 1.0020519493518842, 'xsmm_custom_avg': 0.6660333333333334, 'xsmm_custom_best': 0.6660333333333334, 'xsmm_reference_avg': 0.6674, 'xsmm_reference_best': 0.6674, 'xsmm_reference_cpu_freq': 0.999999, 'xsmm_reference_kernel_type': 'dense'}
+Average speedup (best) of custom over reference 0.9721318899013454
+Average speedup (iqr avg) of custom over reference 0.9721318899013454

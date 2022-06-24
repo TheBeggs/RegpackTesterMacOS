@@ -2,8 +2,12 @@
 
 WD=$(pwd)
 
-XSMM_REFERENCE_DIR=./../libxsmm_reference
-XSMM_CUSTOM_DIR=./../libxsmm_custom
+#XSMM_REFERENCE_DIR=./../libxsmm_reference
+#XSMM_CUSTOM_DIR=./../libxsmm_custom
+## TODO ##
+## also need cahnged in the makefile
+XSMM_REFERENCE_DIR=./../libxsmm_ab_asimd_ref
+XSMM_CUSTOM_DIR=./../libxsmm_ab_amx_cust
 GIMMIK_DIR=./../GiMMiK
 
 B_NUM_COL=192000
@@ -53,8 +57,11 @@ make clean
 if [ "$SKIP_BENCH" = "0" ]
 then
   echo "Building LIBXSMM libraries"
+  echo "Reference"
   cd $XSMM_REFERENCE_DIR
-  make CXX=gcc CC=gcc
+  git status
+  make CXX=gcc CC=gcc XSMM_REFERENCE_DIR=$XSMM_REFERENCE_DIR
+  echo "Custom"
   cd $XSMM_CUSTOM_DIR
   git status
   make CXX=gcc CC=gcc DBG=1
@@ -76,7 +83,8 @@ then
 
 	for width in $N_WIDTHS
   do
-  
+
+  echo "Doing width $width"
   python3 src/benchmark/benchmark.py $MATS_DIR $WD $width $TEST_GIMMIK "$ENVS" > $LOG_DIR/run_${TIMESTAMP}_${i}_${width}.out 2> $LOG_DIR/run_${TIMESTAMP}_${i}_${width}.err
   
   done

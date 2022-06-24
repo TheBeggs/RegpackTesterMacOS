@@ -1,0 +1,1703 @@
+In file included from src/benchmark/xsmm_reference.c:16:
+src/benchmark/xsmm_common.h: In function 'prepare_benchmark':
+src/benchmark/xsmm_common.h:304:29: warning: assignment to 'libxsmm_gemmfunction' {aka 'void (*)(const libxsmm_gemm_param *)'} from incompatible pointer type 'libxsmm_dmmfunction' {aka 'void (*)(const double *, const double *, double *)'} [-Wincompatible-pointer-types]
+  304 |     (*dense_handle)->kernel = libxsmm_dmmdispatch(
+      |                             ^
+src/benchmark/xsmm_common.h: In function 'prepare_benchmark_SP':
+src/benchmark/xsmm_common.h:382:29: warning: assignment to 'libxsmm_gemmfunction' {aka 'void (*)(const libxsmm_gemm_param *)'} from incompatible pointer type 'libxsmm_smmfunction' {aka 'void (*)(const float *, const float *, float *)'} [-Wincompatible-pointer-types]
+  382 |     (*dense_handle)->kernel = libxsmm_smmdispatch(
+      |                             ^
+In file included from src/benchmark/xsmm_custom.c:16:
+src/benchmark/xsmm_common.h: In function 'prepare_benchmark':
+src/benchmark/xsmm_common.h:304:29: warning: assignment to 'libxsmm_gemmfunction' {aka 'void (*)(const libxsmm_gemm_param *)'} from incompatible pointer type 'libxsmm_dmmfunction' {aka 'void (*)(const double *, const double *, double *)'} [-Wincompatible-pointer-types]
+  304 |     (*dense_handle)->kernel = libxsmm_dmmdispatch(
+      |                             ^
+src/benchmark/xsmm_common.h: In function 'prepare_benchmark_SP':
+src/benchmark/xsmm_common.h:382:29: warning: assignment to 'libxsmm_gemmfunction' {aka 'void (*)(const libxsmm_gemm_param *)'} from incompatible pointer type 'libxsmm_smmfunction' {aka 'void (*)(const float *, const float *, float *)'} [-Wincompatible-pointer-types]
+  382 |     (*dense_handle)->kernel = libxsmm_smmdispatch(
+      |                             ^
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      1      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.007897 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      1      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.004646 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.005027 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      1      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.004736 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      1      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.004031 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.009293 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.009762 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.011071 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.012509 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.009218 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.007163 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.009803 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.011030 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.012570 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.009380 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.013111 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.020995 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.029999 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.040847 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.027422 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.015158 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.021214 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.031682 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.043574 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.025097 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.027837 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.041755 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.067331 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.125305 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.077723 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.032888 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.041735 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.068637 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.129631 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.070612 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.054374 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.084208 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.151811 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.276885 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.215144 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.079684 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.083774 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.151623 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.295351 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.179298 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.107652 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.156908 s
+Generating and Compiling data/example_mats/hex/p1/gauss-legendre/m0.txt
+Running data/example_mats/hex/p1/gauss-legendre/m0.txt
+Finished running in 0.1076ms
+Generating and Compiling data/example_mats/hex/p1/gauss-legendre/m3.txt
+Running data/example_mats/hex/p1/gauss-legendre/m3.txt
+Finished running in 0.048133333333333334ms
+Generating and Compiling data/example_mats/hex/p1/gauss-legendre/m6.txt
+Running data/example_mats/hex/p1/gauss-legendre/m6.txt
+Finished running in 0.046933333333333334ms
+Generating and Compiling data/example_mats/hex/p1/gauss-legendre/m132.txt
+Running data/example_mats/hex/p1/gauss-legendre/m132.txt
+Finished running in 0.04786666666666666ms
+Generating and Compiling data/example_mats/hex/p1/gauss-legendre/m460.txt
+Running data/example_mats/hex/p1/gauss-legendre/m460.txt
+Finished running in 0.035699999999999996ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre-lobatto/m0.txt
+Running data/example_mats/hex/p2/gauss-legendre-lobatto/m0.txt
+Finished running in 0.16756666666666667ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre-lobatto/m3.txt
+Running data/example_mats/hex/p2/gauss-legendre-lobatto/m3.txt
+Finished running in 0.1513ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre-lobatto/m6.txt
+Running data/example_mats/hex/p2/gauss-legendre-lobatto/m6.txt
+Finished running in 0.1396ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre-lobatto/m132.txt
+Running data/example_mats/hex/p2/gauss-legendre-lobatto/m132.txt
+Finished running in 0.20529999999999998ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre-lobatto/m460.txt
+Running data/example_mats/hex/p2/gauss-legendre-lobatto/m460.txt
+Finished running in 0.14373333333333335ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre/m0.txt
+Running data/example_mats/hex/p2/gauss-legendre/m0.txt
+Finished running in 0.0906ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre/m3.txt
+Running data/example_mats/hex/p2/gauss-legendre/m3.txt
+Finished running in 0.15006666666666665ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre/m6.txt
+Running data/example_mats/hex/p2/gauss-legendre/m6.txt
+Finished running in 0.13946666666666668ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre/m132.txt
+Running data/example_mats/hex/p2/gauss-legendre/m132.txt
+Finished running in 0.20473333333333335ms
+Generating and Compiling data/example_mats/hex/p2/gauss-legendre/m460.txt
+Running data/example_mats/hex/p2/gauss-legendre/m460.txt
+Finished running in 0.14413333333333334ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre-lobatto/m0.txt
+Running data/example_mats/hex/p3/gauss-legendre-lobatto/m0.txt
+Finished running in 0.15623333333333334ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre-lobatto/m3.txt
+Running data/example_mats/hex/p3/gauss-legendre-lobatto/m3.txt
+Finished running in 0.38186666666666663ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre-lobatto/m6.txt
+Running data/example_mats/hex/p3/gauss-legendre-lobatto/m6.txt
+Finished running in 0.4234666666666667ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre-lobatto/m132.txt
+Running data/example_mats/hex/p3/gauss-legendre-lobatto/m132.txt
+Finished running in 0.7915333333333333ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre-lobatto/m460.txt
+Running data/example_mats/hex/p3/gauss-legendre-lobatto/m460.txt
+Finished running in 0.4609666666666667ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre/m0.txt
+Running data/example_mats/hex/p3/gauss-legendre/m0.txt
+Finished running in 0.21919999999999998ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre/m3.txt
+Running data/example_mats/hex/p3/gauss-legendre/m3.txt
+Finished running in 0.38303333333333334ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre/m6.txt
+Running data/example_mats/hex/p3/gauss-legendre/m6.txt
+Finished running in 0.442ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre/m132.txt
+Running data/example_mats/hex/p3/gauss-legendre/m132.txt
+Finished running in 0.8759333333333333ms
+Generating and Compiling data/example_mats/hex/p3/gauss-legendre/m460.txt
+Running data/example_mats/hex/p3/gauss-legendre/m460.txt
+Finished running in 0.4058333333333334ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre-lobatto/m0.txt
+Running data/example_mats/hex/p4/gauss-legendre-lobatto/m0.txt
+Finished running in 0.3234ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre-lobatto/m3.txt
+Running data/example_mats/hex/p4/gauss-legendre-lobatto/m3.txt
+Finished running in 0.7368666666666667ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre-lobatto/m6.txt
+Running data/example_mats/hex/p4/gauss-legendre-lobatto/m6.txt
+Finished running in 0.8207333333333333ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre-lobatto/m132.txt
+Running data/example_mats/hex/p4/gauss-legendre-lobatto/m132.txt
+Finished running in 2.6672333333333333ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre-lobatto/m460.txt
+Running data/example_mats/hex/p4/gauss-legendre-lobatto/m460.txt
+Finished running in 1.276ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre/m0.txt
+Running data/example_mats/hex/p4/gauss-legendre/m0.txt
+Finished running in 0.45993333333333336ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre/m3.txt
+Running data/example_mats/hex/p4/gauss-legendre/m3.txt
+Finished running in 0.7324333333333333ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre/m6.txt
+Running data/example_mats/hex/p4/gauss-legendre/m6.txt
+Finished running in 0.8897333333333334ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre/m132.txt
+Running data/example_mats/hex/p4/gauss-legendre/m132.txt
+Finished running in 2.8153ms
+Generating and Compiling data/example_mats/hex/p4/gauss-legendre/m460.txt
+Running data/example_mats/hex/p4/gauss-legendre/m460.txt
+Finished running in 1.0687ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre-lobatto/m0.txt
+Running data/example_mats/hex/p5/gauss-legendre-lobatto/m0.txt
+Finished running in 0.5715ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre-lobatto/m3.txt
+Running data/example_mats/hex/p5/gauss-legendre-lobatto/m3.txt
+Finished running in 1.4609333333333334ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre-lobatto/m6.txt
+Running data/example_mats/hex/p5/gauss-legendre-lobatto/m6.txt
+Finished running in 1.9218ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre-lobatto/m132.txt
+Running data/example_mats/hex/p5/gauss-legendre-lobatto/m132.txt
+Finished running in 5.493733333333334ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre-lobatto/m460.txt
+Running data/example_mats/hex/p5/gauss-legendre-lobatto/m460.txt
+Finished running in 3.757633333333335ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre/m0.txt
+Running data/example_mats/hex/p5/gauss-legendre/m0.txt
+Finished running in 1.335ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre/m3.txt
+Running data/example_mats/hex/p5/gauss-legendre/m3.txt
+Finished running in 1.4631ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre/m6.txt
+Running data/example_mats/hex/p5/gauss-legendre/m6.txt
+Finished running in 1.9183666666666668ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre/m132.txt
+Running data/example_mats/hex/p5/gauss-legendre/m132.txt
+Finished running in 6.058933333333333ms
+Generating and Compiling data/example_mats/hex/p5/gauss-legendre/m460.txt
+Running data/example_mats/hex/p5/gauss-legendre/m460.txt
+Finished running in 2.6961333333333335ms
+Generating and Compiling data/example_mats/hex/p6/gauss-legendre-lobatto/m0.txt
+Running data/example_mats/hex/p6/gauss-legendre-lobatto/m0.txt
+Finished running in 1.1426ms
+Generating and Compiling data/example_mats/hex/p6/gauss-legendre-lobatto/m3.txt
+Running data/example_mats/hex/p6/gauss-legendre-lobatto/m3.txt
+Finished running in 2.671266666666667ms
+Generating and Compiling LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.288456 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.591104 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.515423 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.146835 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.157242 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.288484 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.634837 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+    > 64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.406456 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      1      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.002939 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      1      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.003245 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      1      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.003002 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      1      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.003006 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      1      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.003048 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      1      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.005206 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      1      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.004010 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      1      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.003936 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      1      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.004413 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      1      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.003972 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      1      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.003372 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      1      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.003775 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      1      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.003984 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      1      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.004364 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      1      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.003804 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      1      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.006684 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      1      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.004672 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.004901 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.007107 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.005495 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      1      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.004272 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      1      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.004816 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.004967 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.007581 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.005418 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.007180 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.006033 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.006141 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.010919 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.008877 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.005237 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.005838 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.006063 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.011180 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.008184 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.008039 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.007556 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.007722 s
+data/example_mats/hex/p6/gauss-legendre-lobatto/m6.txt
+Running data/example_mats/hex/p6/gauss-legendre-lobatto/m6.txt
+Finished running in 3.120366666666667ms
+Generating and Compiling data/example_mats/hex/p6/gauss-legendre-lobatto/m132.txt
+Running data/example_mats/hex/p6/gauss-legendre-lobatto/m132.txt
+Finished running in 11.023033333333332ms
+Generating and Compiling data/example_mats/hex/p6/gauss-legendre-lobatto/m460.txt
+Running data/example_mats/hex/p6/gauss-legendre-lobatto/m460.txt
+Finished running in 9.047933333333333ms
+Generating and Compiling data/example_mats/hex/p6/gauss-legendre/m0.txt
+Running data/example_mats/hex/p6/gauss-legendre/m0.txt
+Finished running in 2.346566666666667ms
+Generating and Compiling data/example_mats/hex/p6/gauss-legendre/m3.txt
+Running data/example_mats/hex/p6/gauss-legendre/m3.txt
+Finished running in 2.6693333333333333ms
+Generating and Compiling data/example_mats/hex/p6/gauss-legendre/m6.txt
+Running data/example_mats/hex/p6/gauss-legendre/m6.txt
+Finished running in 3.1546666666666665ms
+Generating and Compiling data/example_mats/hex/p6/gauss-legendre/m132.txt
+Running data/example_mats/hex/p6/gauss-legendre/m132.txt
+Finished running in 12.578399999999998ms
+Generating and Compiling data/example_mats/hex/p6/gauss-legendre/m460.txt
+Running data/example_mats/hex/p6/gauss-legendre/m460.txt
+Finished running in 5.779133333333333ms
+Generating and Compiling data/example_mats/quad/p1/gauss-legendre/m0.txt
+Running data/example_mats/quad/p1/gauss-legendre/m0.txt
+Finished running in 0.014266666666666667ms
+Generating and Compiling data/example_mats/quad/p1/gauss-legendre/m3.txt
+Running data/example_mats/quad/p1/gauss-legendre/m3.txt
+Finished running in 0.017266666666666666ms
+Generating and Compiling data/example_mats/quad/p1/gauss-legendre/m6.txt
+Running data/example_mats/quad/p1/gauss-legendre/m6.txt
+Finished running in 0.016833333333333332ms
+Generating and Compiling data/example_mats/quad/p1/gauss-legendre/m132.txt
+Running data/example_mats/quad/p1/gauss-legendre/m132.txt
+Finished running in 0.017033333333333334ms
+Generating and Compiling data/example_mats/quad/p1/gauss-legendre/m460.txt
+Running data/example_mats/quad/p1/gauss-legendre/m460.txt
+Finished running in 0.014233333333333332ms
+Generating and Compiling data/example_mats/quad/p2/gauss-legendre-lobatto/m0.txt
+Running data/example_mats/quad/p2/gauss-legendre-lobatto/m0.txt
+Finished running in 0.08453333333333334ms
+Generating and Compiling data/example_mats/quad/p2/gauss-legendre-lobatto/m3.txt
+Running data/example_mats/quad/p2/gauss-legendre-lobatto/m3.txt
+Finished running in 0.03386666666666667ms
+Generating and Compiling data/example_mats/quad/p2/gauss-legendre-lobatto/m6.txt
+Running data/example_mats/quad/p2/gauss-legendre-lobatto/m6.txt
+Finished running in 0.0325ms
+Generating and Compiling data/example_mats/quad/p2/gauss-legendre-lobatto/m132.txt
+Running data/example_mats/quad/p2/gauss-legendre-lobatto/m132.txt
+Finished running in 0.04373333333333333ms
+Generating and Compiling data/example_mats/quad/p2/gauss-legendre-lobatto/m460.txt
+Running data/example_mats/quad/p2/gauss-legendre-lobatto/m460.txt
+Finished running in 0.036366666666666665ms
+Generating and Compiling data/example_mats/quad/p2/gauss-legendre/m0.txt
+Running data/example_mats/quad/p2/gauss-legendre/m0.txt
+Finished running in 0.025166666666666667ms
+Generating and Compiling data/example_mats/quad/p2/gauss-legendre/m3.txt
+Running data/example_mats/quad/p2/gauss-legendre/m3.txt
+Finished running in 0.03333333333333333ms
+Generating and Compiling data/example_mats/quad/p2/gauss-legendre/m6.txt
+Running data/example_mats/quad/p2/gauss-legendre/m6.txt
+Finished running in 0.0323ms
+Generating and Compiling data/example_mats/quad/p2/gauss-legendre/m132.txt
+Running data/example_mats/quad/p2/gauss-legendre/m132.txt
+Finished running in 0.04356666666666666ms
+Generating and Compiling data/example_mats/quad/p2/gauss-legendre/m460.txt
+Running data/example_mats/quad/p2/gauss-legendre/m460.txt
+Finished running in 0.03613333333333334ms
+Generating and Compiling data/example_mats/quad/p3/gauss-legendre-lobatto/m0.txt
+Running data/example_mats/quad/p3/gauss-legendre-lobatto/m0.txt
+Finished running in 0.12016666666666667ms
+Generating and Compiling data/example_mats/quad/p3/gauss-legendre-lobatto/m3.txt
+Running data/example_mats/quad/p3/gauss-legendre-lobatto/m3.txt
+Finished running in 0.05293333333333334ms
+Generating and Compiling data/example_mats/quad/p3/gauss-legendre-lobatto/m6.txt
+Running data/example_mats/quad/p3/gauss-legendre-lobatto/m6.txt
+Finished running in 0.05276666666666666ms
+Generating and Compiling data/example_mats/quad/p3/gauss-legendre-lobatto/m132.txt
+Running data/example_mats/quad/p3/gauss-legendre-lobatto/m132.txt
+Finished running in 0.10603333333333334ms
+Generating and Compiling data/example_mats/quad/p3/gauss-legendre-lobatto/m460.txt
+Running data/example_mats/quad/p3/gauss-legendre-lobatto/m460.txt
+Finished running in 0.07156666666666665ms
+Generating and Compiling data/example_mats/quad/p3/gauss-legendre/m0.txt
+Running data/example_mats/quad/p3/gauss-legendre/m0.txt
+Finished running in 0.037033333333333335ms
+Generating and Compiling data/example_mats/quad/p3/gauss-legendre/m3.txt
+Running data/example_mats/quad/p3/gauss-legendre/m3.txt
+Finished running in 0.05313333333333334ms
+Generating and Compiling data/example_mats/quad/p3/gauss-legendre/m6.txt
+Running data/example_mats/quad/p3/gauss-legendre/m6.txt
+Finished running in 0.05223333333333333ms
+Generating and Compiling data/example_mats/quad/p3/gauss-legendre/m132.txt
+Running data/example_mats/quad/p3/gauss-legendre/m132.txt
+Finished running in 0.1214ms
+Generating and Compiling data/example_mats/quad/p3/gauss-legendre/m460.txt
+Running data/example_mats/quad/p3/gauss-legendre/m460.txt
+Finished running in 0.06566666666666666ms
+Generating and Compiling data/example_mats/quad/p4/gauss-legendre-lobatto/m0.txt
+Running data/example_mats/quad/p4/gauss-legendre-lobatto/m0.txt
+Finished running in 0.12926666666666667ms
+Generating and Compiling data/example_mats/quad/p4/gauss-legendre-lobatto/m3.txt
+Running data/example_mats/quad/p4/gauss-legendre-lobatto/m3.txt
+Finished running in 0.07973333333333334ms
+Generating and Compiling data/example_mats/quad/p4/gauss-legendre-lobatto/m6.txt
+Running data/example_mats/quad/p4/gauss-legendre-lobatto/m6.txt
+Finished running in 0.0742ms
+Generating and Compiling data/example_mats/quad/p4/gauss-legendre-lobatto/m132.txt
+Running data/example_mats/quad/p4/gauss-legendre-lobatto/m132.txt
+Finished running in 0.18869999999999998ms
+Generating and Compiling data/example_mats/quad/p4/gauss-legendre-lobatto/m460.txt
+Running data/example_mats/quad/p4/gauss-legendre-lobatto/m460.txt
+Finished running in 0.14833333333333334ms
+Generating and Compiling data/example_mats/quad/p4/gauss-legendre/m0.txt
+Running data/example_mats/quad/p4/gauss-legendre/m0.txt
+Finished running in 0.05346666666666667ms
+Generating and Compiling data/example_mats/quad/p4/gauss-legendre/m3.txt
+Running data/example_mats/quad/p4/gauss-legendre/m3.txt
+Finished running in 0.07973333333333334ms
+Generating and Compiling data/example_mats/quad/p4/gauss-legendre/m6.txt
+Running data/example_mats/quad/p4/gauss-legendre/m6.txt
+Finished running in 0.0735ms
+Generating and Compiling data/example_mats/quad/p4/gauss-legendre/m132.txt
+Running data/example_mats/quad/p4/gauss-legendre/m132.txt
+Finished running in 0.2011ms
+Generating and Compiling data/example_mats/quad/p4/gauss-legendre/m460.txt
+Running data/example_mats/quad/p4/gauss-legendre/m460.txt
+Finished running in 0.1258ms
+Generating and Compiling data/example_mats/quad/p5/gauss-legendre-lobatto/m0.txt
+Running data/example_mats/quad/p5/gauss-legendre-lobatto/m0.txt
+Finished running in 0.1329ms
+Generating and Compiling data/example_mats/quad/p5/gauss-legendre-lobatto/m3.txt
+Running data/example_mats/quad/p5/gauss-legendre-lobatto/m3.txt
+Finished running in 0.11856666666666667ms
+Generating and Compiling data/example_mats/quad/p5/gauss-legendre-lobatto/m6.txt
+Running data/example_mats/quad/p5/gauss-legendre-lobatto/m6.txt
+Finished running in 0.1027ms
+Generating and Compiling LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.016616 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.013875 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.006476 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.007485 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.007785 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.017500 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.012105 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.006301 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.009325 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.009589 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.024777 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.020726 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.008143 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.009038 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.009512 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.026451 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.017491 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      1      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.005330 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      1      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.003547 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      1      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.004133 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      1      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.003611 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      1      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.002927 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      1      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.006393 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      1      0      0      0 
+  14..23      0      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.006839 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.008893 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.008469 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.006606 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.019328 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.016751 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.031648 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.025241 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      1      0      0      0 
+  24..64      0      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.030907 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.049505 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.046084 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.073407 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.108557 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.150848 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.154284 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.111992 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+
+LIBXSMM_VERSION: m1_amx-1.8.2-7555 (21011843)
+APPL_M1/DP    TRY    JIT    STA    COL
+   0..13      0      0      0      0 
+  14..23      0      0      0      0 
+  24..64      1      0      0      0 
+Registry and code: 13 MB
+Uptime: 0.266119 s
+LIBXSMM WARNING: timer is maybe not cycle-accurate!
+LIBXSMM ERROR (libxsmm_aarch64_instruction_add_data): code generation ran out of buffer capacity (error #90002)!
+LIBXSMM ERROR (libxsmm_generator_gemm_kernel): ldb needs to be greater than or equal to n (error #90040)!
+LIBXSMM WARNING (libxsmm_dfsspmdm_create): failed to provide a kernel!
+Assertion failed: (kernel), function print_kernel_type, file src/benchmark/xsmm_common.h, line 390.
+./scripts/bin_benchmark.sh: line 28:  7299 Abort trap: 6           sudo nice -n -20 bin/benchmark_xsmm_custom $1 $2 $4
+data/example_mats/quad/p5/gauss-legendre-lobatto/m132.txt
+Running data/example_mats/quad/p5/gauss-legendre-lobatto/m132.txt
+Finished running in 0.31930000000000003ms
+Generating and Compiling data/example_mats/quad/p5/gauss-legendre-lobatto/m460.txt
+Running data/example_mats/quad/p5/gauss-legendre-lobatto/m460.txt
+Finished running in 0.26256666666666667ms
+Generating and Compiling data/example_mats/quad/p5/gauss-legendre/m0.txt
+Running data/example_mats/quad/p5/gauss-legendre/m0.txt
+Finished running in 0.07946666666666666ms
+Generating and Compiling data/example_mats/quad/p5/gauss-legendre/m3.txt
+Running data/example_mats/quad/p5/gauss-legendre/m3.txt
+Finished running in 0.11833333333333333ms
+Generating and Compiling data/example_mats/quad/p5/gauss-legendre/m6.txt
+Running data/example_mats/quad/p5/gauss-legendre/m6.txt
+Finished running in 0.10266666666666667ms
+Generating and Compiling data/example_mats/quad/p5/gauss-legendre/m132.txt
+Running data/example_mats/quad/p5/gauss-legendre/m132.txt
+Finished running in 0.3526666666666667ms
+Generating and Compiling data/example_mats/quad/p5/gauss-legendre/m460.txt
+Running data/example_mats/quad/p5/gauss-legendre/m460.txt
+Finished running in 0.20763333333333334ms
+Generating and Compiling data/example_mats/quad/p6/gauss-legendre-lobatto/m0.txt
+Running data/example_mats/quad/p6/gauss-legendre-lobatto/m0.txt
+Finished running in 0.049833333333333334ms
+Generating and Compiling data/example_mats/quad/p6/gauss-legendre-lobatto/m3.txt
+Running data/example_mats/quad/p6/gauss-legendre-lobatto/m3.txt
+Finished running in 0.1554ms
+Generating and Compiling data/example_mats/quad/p6/gauss-legendre-lobatto/m6.txt
+Running data/example_mats/quad/p6/gauss-legendre-lobatto/m6.txt
+Finished running in 0.1404ms
+Generating and Compiling data/example_mats/quad/p6/gauss-legendre-lobatto/m132.txt
+Running data/example_mats/quad/p6/gauss-legendre-lobatto/m132.txt
+Finished running in 0.5101ms
+Generating and Compiling data/example_mats/quad/p6/gauss-legendre-lobatto/m460.txt
+Running data/example_mats/quad/p6/gauss-legendre-lobatto/m460.txt
+Finished running in 0.4181666666666667ms
+Generating and Compiling data/example_mats/quad/p6/gauss-legendre/m0.txt
+Running data/example_mats/quad/p6/gauss-legendre/m0.txt
+Finished running in 0.10436666666666666ms
+Generating and Compiling data/example_mats/quad/p6/gauss-legendre/m3.txt
+Running data/example_mats/quad/p6/gauss-legendre/m3.txt
+Finished running in 0.1560666666666667ms
+Generating and Compiling data/example_mats/quad/p6/gauss-legendre/m6.txt
+Running data/example_mats/quad/p6/gauss-legendre/m6.txt
+Finished running in 0.14013333333333333ms
+Generating and Compiling data/example_mats/quad/p6/gauss-legendre/m132.txt
+Running data/example_mats/quad/p6/gauss-legendre/m132.txt
+Finished running in 0.5541333333333333ms
+Generating and Compiling data/example_mats/quad/p6/gauss-legendre/m460.txt
+Running data/example_mats/quad/p6/gauss-legendre/m460.txt
+Finished running in 0.3201333333333333ms
+Generating and Compiling data/example_mats/tet/p1/shunn-ham/m0.txt
+Running data/example_mats/tet/p1/shunn-ham/m0.txt
+Finished running in 0.08863333333333333ms
+Generating and Compiling data/example_mats/tet/p1/shunn-ham/m3.txt
+Running data/example_mats/tet/p1/shunn-ham/m3.txt
+Finished running in 0.022633333333333335ms
+Generating and Compiling data/example_mats/tet/p1/shunn-ham/m6.txt
+Running data/example_mats/tet/p1/shunn-ham/m6.txt
+Finished running in 0.03613333333333334ms
+Generating and Compiling data/example_mats/tet/p1/shunn-ham/m132.txt
+Running data/example_mats/tet/p1/shunn-ham/m132.txt
+Finished running in 0.024399999999999998ms
+Generating and Compiling data/example_mats/tet/p1/shunn-ham/m460.txt
+Running data/example_mats/tet/p1/shunn-ham/m460.txt
+Finished running in 0.015333333333333334ms
+Generating and Compiling data/example_mats/tet/p2/shunn-ham/m0.txt
+Running data/example_mats/tet/p2/shunn-ham/m0.txt
+Finished running in 0.1039ms
+Generating and Compiling data/example_mats/tet/p2/shunn-ham/m3.txt
+Running data/example_mats/tet/p2/shunn-ham/m3.txt
+Finished running in 0.10800000000000001ms
+Generating and Compiling data/example_mats/tet/p2/shunn-ham/m6.txt
+Running data/example_mats/tet/p2/shunn-ham/m6.txt
+Finished running in 0.16493333333333335ms
+Generating and Compiling data/example_mats/tet/p2/shunn-ham/m132.txt
+Running data/example_mats/tet/p2/shunn-ham/m132.txt
+Finished running in 0.13306666666666667ms
+Generating and Compiling data/example_mats/tet/p2/shunn-ham/m460.txt
+Running data/example_mats/tet/p2/shunn-ham/m460.txt
+Finished running in 0.11333333333333333ms
+Generating and Compiling data/example_mats/tet/p3/shunn-ham/m0.txt
+Running data/example_mats/tet/p3/shunn-ham/m0.txt
+Finished running in 0.34773333333333334ms
+Generating and Compiling data/example_mats/tet/p3/shunn-ham/m3.txt
+Running data/example_mats/tet/p3/shunn-ham/m3.txt
+Finished running in 0.33526666666666666ms
+Generating and Compiling data/example_mats/tet/p3/shunn-ham/m6.txt
+Running data/example_mats/tet/p3/shunn-ham/m6.txt
+Finished running in 0.8162ms
+Generating and Compiling data/example_mats/tet/p3/shunn-ham/m132.txt
+Running data/example_mats/tet/p3/shunn-ham/m132.txt
+Finished running in 0.4938ms
+Generating and Compiling data/example_mats/tet/p3/shunn-ham/m460.txt
+Running data/example_mats/tet/p3/shunn-ham/m460.txt
+Finished running in 0.5208333333333334ms
+Generating and Compiling data/example_mats/tet/p4/shunn-ham/m0.txt
+Running data/example_mats/tet/p4/shunn-ham/m0.txt
+Finished running in 0.890166666666668ms
+Generating and Compiling data/example_mats/tet/p4/shunn-ham/m3.txt
+Running data/example_mats/tet/p4/shunn-ham/m3.txt
+Finished running in 0.8762333333333333ms
+Generating and Compiling data/example_mats/tet/p4/shunn-ham/m6.txt
+Running data/example_mats/tet/p4/shunn-ham/m6.txt
+Finished running in 1.3979666666666666ms
+Generating and Compiling data/example_mats/tet/p4/shunn-ham/m132.txt
+Running data/example_mats/tet/p4/shunn-ham/m132.txt
+Finished running in 1.5411333333333335ms
+Generating and Compiling data/example_mats/tet/p4/shunn-ham/m460.txt
+Running data/example_mats/tet/p4/shunn-ham/m460.txt
+Finished running in 1.5749ms
+Generating and Compiling data/example_mats/tet/p5/shunn-ham/m0.txt
+Running data/example_mats/tet/p5/shunn-ham/m0.txt
+Finished running in 1.9868999999999999ms
+Generating and Compiling data/example_mats/tet/p5/shunn-ham/m3.txt
+Running data/example_mats/tet/p5/shunn-ham/m3.txt
+Finished running in 1.9933333333333318ms
+Generating and Compiling data/example_mats/tet/p5/shunn-ham/m6.txt
+Running data/example_mats/tet/p5/shunn-ham/m6.txt
+Finished running in 3.1441999999999997ms
+Generating and Compiling data/example_mats/tet/p5/shunn-ham/m132.txt
+Running data/example_mats/tet/p5/shunn-ham/m132.txt
+Traceback (most recent call last):
+  File "src/benchmark/benchmark.py", line 151, in <module>
+    best, avg = benchmark_matrix(mat_path, N_WIDTH, test_gimmik)
+  File "src/benchmark/benchmark.py", line 106, in benchmark_matrix
+    result["speedup_best_over_ref"] = result["xsmm_reference_best"] / result["xsmm_custom_best"]
+KeyError: 'xsmm_custom_best'

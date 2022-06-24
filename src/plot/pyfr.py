@@ -60,7 +60,7 @@ def plot(runs, mat_flops, shape, title, limit_y=False):
 
         plt.plot(x_values, ref_y_avg, label="Reference LIBXSMM", color=ref_colour)
 
-
+        print("There are", len(x_values),"values")
         for j in range(len(x_values)):
 
             if (ref_y_kernel[j] == "sparse"):
@@ -76,7 +76,10 @@ def plot(runs, mat_flops, shape, title, limit_y=False):
                 face = True
                 # label = "dense"
             else:
-                assert False, f"undefined kernel type: {ref_y_kernel[j]}"
+                marker = "*"
+                face = False
+                #assert False, f"undefined kernel type: {ref_y_kernel[j]}"
+            # print("Plotting X:",x_values[j], "\nY:", ref_y_avg[j])
             if face:
                 plt.plot(x_values[j], ref_y_avg[j], marker, color=ref_colour)
             else:
@@ -98,9 +101,12 @@ def plot(runs, mat_flops, shape, title, limit_y=False):
         plt.legend()
 
         plt.xlabel(xlabels[i])
-        plt.ylabel("Pseudo-FLOP/s")
+        plt.ylabel("FLOP/s")
+        # plt.ylabel("Pseudo-FLOP/s")
         plt.yscale("log", base=10)
-        plt.title(title + ": " + xtitles[i] + " vs Pseudo-FLOP/s")
+        plt.yscale("log", base=2)
+        # plt.title(title + ": " + xtitles[i] + " vs Pseudo-FLOP/s")
+        plt.title(title + ": " + xtitles[i] + " vs FLOP/s")
         if limit_y:
             plt.ylim(top=10e9)
         plt.legend()

@@ -1,0 +1,11 @@
+For quad matrices, speed up of xsmm_custom: 1.015662534507132, [0.7659392101272501, 1.7307534322827158]
+Took 1.5624877142857143 for reference and 1.5383925873015873 for custom
+For hex matrices, speed up of xsmm_custom: 0.8756664615465868, [0.7620140399760044, 3.913208201725277]
+Took 88.67728617460315 for reference and 101.26833682539683 for custom
+For tet matrices, speed up of xsmm_custom: 1.0787853828143632, [0.9128344459420737, 3.5907538885058643]
+Took 3.892886079365079 for reference and 3.6085825238095244 for custom
+For tri matrices, speed up of xsmm_custom: 1.0681794920358791, [0.8354165889332487, 1.6145811337753566]
+Took 0.2991794761904762 for reference and 0.2800835238095238 for custom
+= = = = = = = = = = = = = = = = = = = =
+For all test matrices:
+Speed up of xsmm_custom: 0.8850601193897429, [0.7620140399760044, 3.913208201725277]

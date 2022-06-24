@@ -1,26 +1,38 @@
-CFLAGS = -std=c11 -O3 -pthread -fopenmp -Wall -Wextra
+XSMM_REFERENCE_DIR = ./../libxsmm_ab_asimd_ref
+XSMM_CUSTOM_DIR = ./../libxsmm_ab_amx_cust
 
-CFLAGS_G = -std=c11 -O0 -g -pthread -fopenmp -Wall -Wextra
+CFLAGS = -std=c11 -O3 -pthread -Wall -Wextra
+#CFLAGS = -std=c11 -O3 -pthread -fopenmp -Wall -Wextra
+
+CFLAGS_G = -std=c11 -O0 -g -pthread -Wall -Wextra
+#CFLAGS_G = -std=c11 -O0 -g -pthread -fopenmp -Wall -Wextra
 
 GIMMIK_CFLAGS += -std=c11 -O3 -pthread -qopenmp
 GIMMIK_CFLAGS += -mavx512f -mavx512cd -mavx512vl -mavx512dq -mavx512bw -mfma
 GIMMIK_CFLAGS += -march=skylake-avx512
 GIMMIK_CFLAGS += -qopt-zmm-usage=high
 
-CFLAGS_XSMM_REFERENCE = -I./../libxsmm_reference/include -I./../libxsmm_reference/src
-CFLAGS_XSMM_CUSTOM = -I./../libxsmm_custom/include -I./../libxsmm_custom/src
+CFLAGS_XSMM_REFERENCE = -I$(XSMM_REFERENCE_DIR)/include -I$(XSMM_REFERENCE_DIR)/src
+CFLAGS_XSMM_CUSTOM = -I$(XSMM_CUSTOM_DIR)/include -I$(XSMM_CUSTOM_DIR)/src
+CFLAGS_XSMM_REFERENCE += -I/opt/homebrew/opt/openblas/include
+CFLAGS_XSMM_CUSTOM += -I/opt/homebrew/opt/openblas/include
 
 GIMMIK_CFLAGS = -I./bin/generated_kernels
 
-LDFLAGS_XSMM_REFERENCE =-L./../libxsmm_reference/lib -lxsmmnoblas -lxsmm -lpthread -lrt -ldl -lm -lc
-LDFLAGS_XSMM_CUSTOM =-L./../libxsmm_custom/lib -lxsmmnoblas -lxsmm -lpthread -lrt -ldl -lm -lc
+LDFLAGS_XSMM_REFERENCE =-L$(XSMM_REFERENCE_DIR)/lib -lxsmmnoblas -lxsmm -lpthread -ldl -lm -lc
+LDFLAGS_XSMM_CUSTOM =-L$(XSMM_CUSTOM_DIR)/lib -lxsmmnoblas -lxsmm -lpthread -ldl -lm -lc
 LDFLAGS_XSMM_REFERENCE += -lblas
 LDFLAGS_XSMM_CUSTOM += -lblas
+LDFLAGS_XSMM_REFERENCE += -L/opt/homebrew/opt/openblas/lib
+LDFLAGS_XSMM_CUSTOM += -L/opt/homebrew/opt/openblas/lib
+#LDFLAGS_XSMM_REFERENCE += -lv
+#LDFLAGS_XSMM_CUSTOM += -lv
 # LDFLAGS_XSMM_REFERENCE +=-L./../OpenBlas-build/lib -lopenblas
 # LDFLAGS_XSMM_CUSTOM +=-L./../OpenBlas-build/lib -lopenblas
 
 
-CXX = gcc
+CXX = gcc-11
+#CXX = clang
 GIMMIK_CXX = icc
 
 bin/benchmark_xsmm_reference : src/benchmark/xsmm_reference.c src/benchmark/common.c

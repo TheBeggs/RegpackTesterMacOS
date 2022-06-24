@@ -1,0 +1,5 @@
+For hex matrices, speed up of xsmm_custom: 1.7780563338740598, [1.7780563338740598, 1.7780563338740598]
+Took 0.0005741428571428572 for reference and 0.00032290476190476193 for custom
+= = = = = = = = = = = = = = = = = = = =
+For all test matrices:
+Speed up of xsmm_custom: 1.7780563338740598, [1.7780563338740598, 1.7780563338740598]

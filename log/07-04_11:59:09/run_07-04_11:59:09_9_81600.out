@@ -1,0 +1,107 @@
+run 0
+
+alpha = 1.000000, beta = 0.000000
+
+Loading matrix from path cleaned_data/example_mats/hex/p1/gauss-legendre/m0.txt...
+
+Read matrix has 24 rows and 8 columns.
+
+Input arrays: A (24, 8), B (8, 81600).
+
+Output array: C (24, 81600).
+
+Array B width (N): 81600
+
+Randomly generating B matrix...
+
+Running XSMM Reference MM...
+
+xsmm-reference kernel type: undefined
+
+xsmm-reference Time (gettimeofday): 0.329667 ms
+
+xsmm-reference Time (libxsmm): 0.329700 ms
+
+xsmm-reference No. of CPU cycles: 329700
+
+CPU clock speed (GHz): 1.000000
+
+Done.
+
+---------------------------------------------------------------
+
+xsmm-reference best execution time: 0.32966666666666666
+
+xsmm-reference avg execution time: 0.32966666666666666
+
+alpha = 1.000000, beta = 0.000000
+
+Loading matrix from path cleaned_data/example_mats/hex/p1/gauss-legendre/m0.txt...
+
+Read matrix has 24 rows and 8 columns.
+
+Input arrays: A (24, 8), B (8, 81600).
+
+Output array: C (24, 81600).
+
+Array B width (N): 81600
+
+Randomly generating B matrix...
+
+Running XSMM Reference MM...
+
+xsmm-custom kernel type: undefined
+
+xsmm-custom Time (gettimeofday): 0.339767 ms
+
+xsmm-custom Time (libxsmm): 0.339767 ms
+
+xsmm-custom No. of CPU cycles: 339766
+
+CPU clock speed (GHz): 0.999998
+
+Done.
+
+---------------------------------------------------------------
+
+xsmm-custom best execution time: 0.33976666666666666
+
+xsmm-custom avg execution time: 0.33976666666666666
+
+{'a_cols': 8, 'a_nonzero': 48, 'a_rows': 24, 'a_size': 192, 'a_unique': 2, 'alpha': 1.0, 'beta': 0.0, 'density': 0.25, 'mat_file': 'data/example_mats/hex/p1/gauss-legendre/m0.txt', 'size_n': 81600, 'speedup_avg_over_ref': 0.970273717256941, 'speedup_best_over_ref': 0.970273717256941, 'xsmm_custom_avg': 0.33976666666666666, 'xsmm_custom_best': 0.33976666666666666, 'xsmm_custom_kernel_type': 'undefined', 'xsmm_reference_avg': 0.32966666666666666, 'xsmm_reference_best': 0.32966666666666666, 'xsmm_reference_cpu_freq': 0.999998, 'xsmm_reference_kernel_type': 'undefined'}
+run 0
+
+alpha = 1.000000, beta = 0.000000
+
+Loading matrix from path cleaned_data/example_mats/hex/p1/gauss-legendre/m3.txt...
+
+Read matrix has 8 rows and 24 columns.
+
+Input arrays: A (8, 24), B (24, 81600).
+
+Output array: C (8, 81600).
+
+Array B width (N): 81600
+
+Randomly generating B matrix...
+
+Running XSMM Reference MM...
+
+xsmm-reference kernel type: undefined
+
+xsmm-reference Time (gettimeofday): 0.541600 ms
+
+xsmm-reference Time (libxsmm): 0.541633 ms
+
+xsmm-reference No. of CPU cycles: 541633
+
+CPU clock speed (GHz): 0.999999
+
+Done.
+
+---------------------------------------------------------------
+
+xsmm-reference best execution time: 0.54160000000000008
+
+xsmm-reference avg execution time: 0.54160000000000008
+

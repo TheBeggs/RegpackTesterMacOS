@@ -7,7 +7,12 @@ import numpy as np
 
 from cpu_stats import AVX_512_WIDTH
 
-B_TARGET_PANEL_WIDTH = 48
+B_TARGET_PANEL_WIDTH = 16
+# B_TARGET_PANEL_WIDTH = 48
+NEON_WIDTH = 2
+AMX_WIDTH = 16
+
+IS_NOT_PSEUDO = True
 
 def clean(matrix, tol=1e-10):
     arr = matrix.copy()
@@ -35,12 +40,14 @@ def clean(matrix, tol=1e-10):
 
     return arr
 
-def basic_flops(mat, b_cols):
+def basic_flops(mat, b_cols, amx_kernel=False):
     # A and B dimensions
     mat_a_dims = mat.shape
     mat_b_dims = (mat_a_dims[1], b_cols)
 
     # below count would be repeated across panels of B
+    num_panels_neon = b_cols/NEON_WIDTH
+    # num_panels_amx = b_cols/AMX_WIDTH
     num_panels = b_cols/AVX_512_WIDTH
 
     # ijk loop skipping 0s
@@ -48,9 +55,14 @@ def basic_flops(mat, b_cols):
     flops = 0
     for row in mat:
         for el in row:
-            if el != 0:
+            # if el != 0:
+            if IS_NOT_PSEUDO or el != 0:
+                if amx_kernel:
+                    flops += 1*16*16*2 #1 units, 16x16 wide DP, FMA
+                else:
                 # can add load of B here
-                flops += 16 # 8 wide DP FMA
+                    flops += 4*2*2 # 4 units, 2 wide DP, FMA
+                # flops += 8*2 # 1 unit, 8 wide DP, FMA
         # can add store count here
 
     return (flops * num_panels) # for whole mat mul
@@ -440,7 +452,8 @@ def _calc_mem_spMM_beta_0(mat):
     for col in mat.T:
         has_A = False
         for el in col:
-            if el != 0:
+            # if True:
+            if IS_NOT_PSEUDO or el != 0:
                 has_A = True
         # at least one A - load stride of B into cache
         if has_A:
@@ -450,7 +463,8 @@ def _calc_mem_spMM_beta_0(mat):
     for row in mat:
         has_A = False
         for el in row:
-            if el != 0:
+            # if True:
+            if IS_NOT_PSEUDO or el != 0:
                 has_A = True
         # at least one A - store a C stride
         if has_A:

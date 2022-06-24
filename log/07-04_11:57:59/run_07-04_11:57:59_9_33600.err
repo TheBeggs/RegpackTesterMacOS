@@ -1,0 +1,13 @@
+Generating and Compiling data/example_mats/hex/p1/gauss-legendre/m0.txt
+Traceback (most recent call last):
+  File "/Users/ajb3118/Code/regpack_tester/RegpackTester-default/scripts/py/generate_c_kernels.py", line 4, in <module>
+    import nputil as util
+  File "/Users/ajb3118/Code/regpack_tester/RegpackTester-default/scripts/py/nputil.py", line 1, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+Traceback (most recent call last):
+  File "/Users/ajb3118/Code/regpack_tester/RegpackTester-default/src/benchmark/benchmark.py", line 151, in <module>
+    best, avg = benchmark_matrix(mat_path, N_WIDTH, test_gimmik)
+  File "/Users/ajb3118/Code/regpack_tester/RegpackTester-default/src/benchmark/benchmark.py", line 47, in benchmark_matrix
+    result["density"] = result["a_nonzero"] / result["a_size"]
+KeyError: 'a_nonzero'

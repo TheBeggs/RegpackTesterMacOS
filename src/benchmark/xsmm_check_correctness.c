@@ -24,11 +24,12 @@ int main(int argc, char **argv) {
   libxsmm_dfsspmdm* dense_handle = NULL;
   double* a_d = NULL;
   double* b_d = NULL;
+  double* b_prime_d = NULL;
   double* c_xsmm_d = NULL;
   int n = 0, m = 0, k = 0;
   int c_size = 0;
 
-  prepare_benchmark(argc, argv, &xsmm_d, &a_d, &b_d, &c_xsmm_d, &m, &n, &k, &c_size, true, &dense_handle);
+  prepare_benchmark(argc, argv, &xsmm_d, &a_d, &b_d, &c_xsmm_d, &m, &n, &k, &c_size, true, &dense_handle, &b_prime_d, 1);
 
   // Check kernel type  s
   assert(xsmm_d);
@@ -53,7 +54,13 @@ int main(int argc, char **argv) {
   // flush cache
   flush_cache();
 
-  struct benchmark_data b_data = benchmark_xsmm_1iter(b_d, c_xsmm_d, n, xsmm_d, "check_correctness");
+//  struct benchmark_data b_data = benchmark_xsmm_1iter(b_d, c_xsmm_d, n, xsmm_d, "check_correctness");
+  struct benchmark_data b_data;
+  if (dense_handle->is_amx_kernel) {
+    b_data = benchmark_xsmm_1iter(b_prime_d, c_xsmm_d, n, xsmm_d, "check_correctness");
+  } else {
+    b_data = benchmark_xsmm_1iter(b_d, c_xsmm_d, n, xsmm_d, "check_correctness");
+  }
 
   // check for correctness
 

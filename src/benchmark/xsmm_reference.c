@@ -27,15 +27,16 @@ int main(int argc, char** argv) {
 
   char const* const run_type = "xsmm-reference";
 
+  printf("Preparing ref\n");
   prepare_benchmark(argc, argv, &xsmm_d, &a_d, &b_d, &c_xsmm_d, &m, &n, &k,
-                    &c_size, false, NULL);
+                    &c_size, false, NULL, NULL, 0);
 
   // Check kernel type
   print_kernel_type(xsmm_d, run_type);
 
   // flush cache
-  // flush_cache();
-
+   flush_cache();
+  printf("Benchmarking ref\n");
   struct benchmark_data b_data = benchmark_xsmm_macroiter(b_d, c_xsmm_d, n, xsmm_d, run_type);
 
   printf("%s", "Done.\n");
@@ -43,7 +44,10 @@ int main(int argc, char** argv) {
   printf("%s best execution time: %.17g\n", run_type, b_data.fastest_time);
   printf("%s avg execution time: %.17g\n", run_type, b_data.avg_iqr_time);
 
+  printf("Freeing A ref\n");
   free(a_d);
+  printf("Freeing B ref\n");
   free(b_d);
+  printf("Freeing C ref\n");
   free(c_xsmm_d);
 }

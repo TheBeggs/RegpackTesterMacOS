@@ -43,8 +43,16 @@ xeon_E5_2666_stats["peak_flops_dp"] = xeon_E5_2666_stats["avx2_freq"] * xeon_E5_
 xeon_E5_2666_stats["peak_memory_bw"] = 15.5535 # GB/s measured on m5n.large
 xeon_E5_2666_stats["linpack_flops_dp"] = xeon_E5_2666_stats["peak_flops_dp"] # could not be measured
 
+apple_M1_stats = dict()
+apple_M1_stats["num_avx2_units"] = 1 # TODO: not true
+apple_M1_stats["avx2_freq"] = 2.9 # TODO: need to measure this
+apple_M1_stats["peak_flops_dp"] = 409.6#apple_M1_stats["avx2_freq"] * apple_M1_stats["num_avx2_units"] * AVX2_FLOPS_PER_CYCLE_DP
+apple_M1_stats["peak_memory_bw"] = 68.0 # GB/s TODO measure
+apple_M1_stats["linpack_flops_dp"] = apple_M1_stats["peak_flops_dp"] # could not be measured
+
 cpu_stats_dict = dict()
 cpu_stats_dict["Intel(R) Xeon(R) Platinum 8124M CPU @ 3.00GHz"] = xeon_8124M_stats
 cpu_stats_dict["Intel(R) Xeon(R) Platinum 8259CL CPU @ 2.50GHz"] = xeon_8259CL_stats
 cpu_stats_dict["AMD Ryzen 7 3700X 8-Core Processor"] = ryzen_3700x_stats
 cpu_stats_dict["Intel(R) Xeon(R) CPU E5-2666 v3 @ 2.90GHz"] = xeon_E5_2666_stats
+cpu_stats_dict["Apple M1"] = apple_M1_stats

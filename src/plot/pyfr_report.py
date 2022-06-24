@@ -102,9 +102,11 @@ def plot(runs, mat_flops, shape, title, limit_y=False):
         plt.legend()
 
         plt.xlabel(xlabels[i])
-        plt.ylabel("Pseudo-FLOP/s")
+        plt.ylabel("FLOP/s")
+        # plt.ylabel("Pseudo-FLOP/s")
         plt.yscale("log", base=10)
-        plt.title(title + ": " + xtitles[i] + " vs Pseudo-FLOP/s")
+        plt.title(title + ": " + xtitles[i] + " vs FLOP/s")
+        # plt.title(title + ": " + xtitles[i] + " vs Pseudo-FLOP/s")
         if limit_y:
             plt.ylim(top=10e9)
         plt.legend()

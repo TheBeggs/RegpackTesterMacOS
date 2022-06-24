@@ -12,7 +12,8 @@ from cpu_stats import cpu_stats_dict
 plt.rc('legend',fontsize='x-small')
 
 # cpu stats
-cpu_info = cpu_stats_dict[cpuinfo.cpu.info[0]['model name']]
+#cpu_info = cpu_stats_dict[cpuinfo.cpu.info[0]['model name']]
+cpu_info = cpu_stats_dict['Apple M1']
 
 if len(sys.argv) != 8 and len(sys.argv) != 9:
     print("expected 7 or 8 arguments: mat_dir n_runs b_num_col test_gimmik TIMESTAMP plot_dir ref_is_dense opt:envs")
@@ -87,13 +88,17 @@ for i_title, shape in enumerate(shapes):
     ax.plot(x, y, 'r')
     x = np.array([cpu_info["peak_flops_dp"]/cpu_info["peak_memory_bw"], 2**4])
     y = [cpu_info["peak_flops_dp"],cpu_info["peak_flops_dp"]]
-    ax.plot(x, y, color='red', label="Double AVX512 Unit")
-    x = np.array([(cpu_info["peak_flops_dp"]/2)/cpu_info["peak_memory_bw"], 2**4])
-    y = [(cpu_info["peak_flops_dp"]/2),(cpu_info["peak_flops_dp"]/2)]
-    ax.plot(x, y, color='black', label="Single AVX512 Unit")
-    x = np.array([(cpu_info["linpack_flops_dp"])/cpu_info["peak_memory_bw"], 2**4])
-    y = [(cpu_info["linpack_flops_dp"]),(cpu_info["linpack_flops_dp"])]
-    ax.plot(x, y, "--", color='red', label="LINPACK")
+    ax.plot(x, y, color='red', label="Single AMX Unit")
+    x = np.array([(51.2)/cpu_info["peak_memory_bw"], 2**4])
+    y = [(51.2),(51.2)]
+    ax.plot(x, y, color='black', label="Firestorm Neon Pipeline")
+    # x = np.array([(cpu_info["peak_flops_dp"]/2)/cpu_info["peak_memory_bw"], 2**4])
+    # y = [(cpu_info["peak_flops_dp"]/2),(cpu_info["peak_flops_dp"]/2)]
+    # ax.plot(x, y, color='black', label="Single AVX512 Unit")
+    # TODO: Why does linpack suck??
+    # x = np.array([(cpu_info["linpack_flops_dp"])/cpu_info["peak_memory_bw"], 2**4])
+    # y = [(cpu_info["linpack_flops_dp"]),(cpu_info["linpack_flops_dp"])]
+    # ax.plot(x, y, "--", color='red', label="LINPACK")
 
 
     # ax.plot(ref_AIs[0], ref_GFLOPs[0], marker='x', color='maroon', ms=1, label="Reference LIBXSMM")
@@ -176,11 +181,13 @@ for i_title, shape in enumerate(shapes):
     ax.set_xscale('log', base=2)
     ax.set_yscale('log', base=2)
     ax.set_xticks([2**i for i in range(-4, 5)])
-    ax.set_yticks([2**i for i in range(-2, 8)])
+    ax.set_yticks([2**i for i in range(2, 10)])
+
     #ax.xaxis.set_major_formatter(LogFormatter(base=2))
     ax.yaxis.set_major_formatter(LogFormatter(base=2))
     ax.set_xlabel('Arithmetic Intensity (FLOP/DRAM Byte)')
-    ax.set_ylabel('Performance (Pseudo-GFLOP/s)')
+    ax.set_ylabel('Performance (GFLOP/s)')
+    # ax.set_ylabel('Performance (Pseudo-GFLOP/s)')
     ax.set_title('Roofline - '+shape_title[i_title])
 
     # legend

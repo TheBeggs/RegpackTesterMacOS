@@ -10,7 +10,8 @@ from tools import calc_GFLOPs, get_AIs, calc_GFLOPs_different_envs
 from cpu_stats import cpu_stats_dict
 
 # cpu stats
-cpu_info = cpu_stats_dict[cpuinfo.cpu.info[0]['model name']]
+#cpu_info = cpu_stats_dict[cpuinfo.cpu.info[0]['model name']]
+cpu_info = cpu_stats_dict['Apple M1']
 
 if len(sys.argv) != 8 and len(sys.argv) != 9:
     print("expected 7 or 8 arguments: mat_dir n_runs b_num_col test_gimmik TIMESTAMP plot_dir ref_is_dense opt:envs")
@@ -82,15 +83,25 @@ for i_title, shape in enumerate(shapes):
     x = np.array([2**(-4), cpu_info["peak_flops_dp"]/cpu_info["peak_memory_bw"]])
     y = x*cpu_info["peak_memory_bw"]
     ax.plot(x, y, 'r')
-    x = np.array([cpu_info["peak_flops_dp"]/cpu_info["peak_memory_bw"], 2**4])
+    if (shape_title[i_title] == "Hex"):
+        x = np.array([cpu_info["peak_flops_dp"]/cpu_info["peak_memory_bw"], 2**6])
+    else:
+        x = np.array([cpu_info["peak_flops_dp"]/cpu_info["peak_memory_bw"], 2**4])
     y = [cpu_info["peak_flops_dp"],cpu_info["peak_flops_dp"]]
-    ax.plot(x, y, color='red', label="Double AVX512 Unit")
-    x = np.array([(cpu_info["peak_flops_dp"]/2)/cpu_info["peak_memory_bw"], 2**4])
-    y = [(cpu_info["peak_flops_dp"]/2),(cpu_info["peak_flops_dp"]/2)]
-    ax.plot(x, y, color='black', label="Single AVX512 Unit")
-    x = np.array([(cpu_info["linpack_flops_dp"])/cpu_info["peak_memory_bw"], 2**4])
-    y = [(cpu_info["linpack_flops_dp"]),(cpu_info["linpack_flops_dp"])]
-    ax.plot(x, y, "--", color='red', label="LINPACK")
+    ax.plot(x, y, color='red', label="Single AMX Unit")
+    if (shape_title[i_title] == "Hex"):
+        x = np.array([(51.2)/cpu_info["peak_memory_bw"], 2**6])
+    else:
+        x = np.array([(51.2)/cpu_info["peak_memory_bw"], 2**4])
+    y = [(51.2),(51.2)]
+    ax.plot(x, y, color='black', label="Firestorm Neon Pipeline")
+    # x = np.array([(cpu_info["peak_flops_dp"]/2)/cpu_info["peak_memory_bw"], 2**4])
+    # y = [(cpu_info["peak_flops_dp"]/2),(cpu_info["peak_flops_dp"]/2)]
+    # ax.plot(x, y, color='black', label="Single AVX512 Unit")
+    # TODO: Why does linpack suck??
+    # x = np.array([(cpu_info["linpack_flops_dp"])/cpu_info["peak_memory_bw"], 2**4])
+    # y = [(cpu_info["linpack_flops_dp"]),(cpu_info["linpack_flops_dp"])]
+    # ax.plot(x, y, "--", color='red', label="LINPACK")
 
 
     # ax.plot(ref_AIs[0], ref_GFLOPs[0], marker='x', color='maroon', ms=1, label="Reference LIBXSMM")
@@ -109,7 +120,9 @@ for i_title, shape in enumerate(shapes):
             marker = "^"
             face = True
         else:
-            assert False, f"undefined kernel type: {kernel_type}"
+            marker = "*"
+            face = False
+            #assert False, f"undefined kernel type: {kernel_type}"
         
         if face:
             ax.plot(ref_AIs[i], ref_GFLOPs[i], marker, color=ref_colour)
@@ -126,12 +139,19 @@ for i_title, shape in enumerate(shapes):
     if not envs:
         ax.plot(custom_AIs, custom_GFLOPs, 'x', color=custom_colour[0])#, label="Custom LIBXSMM")
 
+        too_slow = 0
         for i, mat_path in enumerate(mat_names):
             if (custom_GFLOPs[i] > custom_AIs[i] * cpu_info["peak_memory_bw"]):
                 print(f"Over roofline (custom):")
                 print(f"{mat_path}")
                 print(f"{custom_AIs[i] = }, {custom_GFLOPs[i] = }")
-        
+            if custom_GFLOPs[i] < 4:
+                # print(f"Error with {mat_path}")
+                # print(f"Too slow at, {custom_GFLOPs[i] = }")
+                too_slow += 1
+
+        print(f"{too_slow} were too slow for {shape}")
+
         # perf_ratio = []
         # for i in range(len(mat_names)):
         #     perf_ratio.append(custom_GFLOPs[i] / ref_GFLOPs[i])
@@ -172,12 +192,18 @@ for i_title, shape in enumerate(shapes):
     # plot details
     ax.set_xscale('log', base=2)
     ax.set_yscale('log', base=2)
-    ax.set_xticks([2**i for i in range(-4, 5)])
-    ax.set_yticks([2**i for i in range(-2, 8)])
+    print(shape_title[i_title])
+    if (shape_title[i_title] == "Hex"):
+        ax.set_xticks([2**i for i in range(-4, 9)])
+    else:
+        ax.set_xticks([2**i for i in range(-4, 5)])
+    ax.set_yticks([2**i for i in range(2, 10)])
+
     #ax.xaxis.set_major_formatter(LogFormatter(base=2))
     ax.yaxis.set_major_formatter(LogFormatter(base=2))
     ax.set_xlabel('Arithmetic Intensity (FLOP/DRAM Byte)')
-    ax.set_ylabel('Performance (Pseudo-GFLOP/s)')
+    ax.set_ylabel('Performance (GFLOP/s)')
+    # ax.set_ylabel('Performance (Pseudo-GFLOP/s)')
     ax.set_title('Roofline - '+shape_title[i_title])
 
     # legend

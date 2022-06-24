@@ -60,6 +60,7 @@ for i_title, shape in enumerate(shapes):
         speedup_range[env].append(speedup_min)
 
         print(f"For {shape} matrices, speed up of {env}: {speedup}, [{speedup_min}, {speedup_max}]")
+        print(f"Took {ref_time} for reference and {custom_time[env]} for custom")
     
     ref_time_total += ref_time
     for env in envs:
