@@ -6,7 +6,7 @@ Process is scripted from code generation all the way to plotting. (Generate/get 
 Made to compare the Register Packing addition to LIBXSMM small-sparse A operator MM routine.
 
 ## Requirements
- - An AVX-512 CPU
+ - An Apple Silicon SoC
  - GCC
  - Python
  - numpy, matplotlib
@@ -85,7 +85,7 @@ bash ./scripts/benchmark.sh -o log -p plots -m "data/example_mats" -t pyfr -n 10
 
 
 ## Hardcoded values
-- Block alignment = 48
+- Block alignment = 64
   - *src/benchmark/common.h*
   - *src/plots/tools.py*
 
